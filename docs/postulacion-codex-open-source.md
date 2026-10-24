@@ -25,7 +25,7 @@ OpenAI acepta solicitudes de maintainers de proyectos OSS activos, revisa las po
 | Elemento | Estado conocido | Próximo paso |
 | --- | --- | --- |
 | Código y propósito identificables | MCP local en TypeScript para navegar SUNAT en Brave nativo y consultar un servicio oficial | Mantener README claro y limitar el alcance a funciones reales y verificadas |
-| Repositorio Git local | Rama `main`; preparación del primer commit con archivos revisados | Consultar `git log` para el historial real |
+| Repositorio Git local | Primer commit local en `main` con archivos revisados | Consultar `git log` para el historial real |
 | Repositorio GitHub público | [sunat-mcp](https://github.com/vincentbenavides145-create/sunat-mcp) creado el 23/10/2026; preparar el primer envío de código | Publicar el commit revisado y verificar Windows CI antes de postular |
 | Perfil GitHub público | [vincentbenavides145-create](https://github.com/vincentbenavides145-create), cuenta conectada y titular del repositorio | Mantener el perfil y rol de maintainer verificables |
 | Rol del postulante | El usuario confirma ser maintainer principal | Respaldar el rol con el historial de commits, releases y mantenimiento público cuando exista |
