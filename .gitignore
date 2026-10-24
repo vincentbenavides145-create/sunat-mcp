@@ -1,0 +1,21 @@
+node_modules/
+.env
+.env.*
+!.env.example
+dist/
+*.log
+
+# Local tooling is not part of the distributed MCP.
+.commandcode/
+.agents/skills/mcp-server-review/
+.agents/skills/winapp-ui-automation/
+skills-lock.json
+
+# Never distribute user workbooks, browser state or local learning.
+*.xlsx
+*.xls
+*.csv
+*.har
+*.dpapi.json
+learning/
+credentials/

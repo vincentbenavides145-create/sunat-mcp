@@ -1,0 +1,7 @@
+interface:
+  display_name: "SUNAT Perú"
+  short_description: "Herramientas SUNAT en Codex"
+  default_prompt: "Ayúdame a usar el MCP local de SUNAT para la operación que te indique."
+policy:
+  products:
+    - CODEX

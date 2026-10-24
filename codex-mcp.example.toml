@@ -1,0 +1,6 @@
+# Copia esta sección a %USERPROFILE%\.codex\config.toml.
+
+[mcp_servers.sunat_peru]
+command = "node"
+args = ["./node_modules/tsx/dist/cli.mjs", "./src/index.ts"]
+cwd = "C:/RUTA/A/SUNAT-MCP"

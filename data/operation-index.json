@@ -1,0 +1,628 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Clasifica solicitudes por acceso SOL y perfil, y conserva rutas de menú observadas para que el MCP las reutilice. Las rutas no son procedimientos completados y siempre se comprueba la pantalla actual.",
+  "evidenceStates": {
+    "inventariado": "El acceso o servicio aparece en el menú o en información oficial; su recorrido completo no está verificado.",
+    "guia_publica": "SUNAT publica instrucciones para este procedimiento; el flujo no ha sido verificado en la cuenta actual.",
+    "ruta_observada": "La ruta de menú se vio en pantalla, pero el trámite no se completó.",
+    "recorrido_verificado": "El usuario completó el flujo y el resultado visible se comprobó."
+  },
+  "profiles": [
+    {
+      "id": "personas",
+      "label": "Personas"
+    },
+    {
+      "id": "empresas",
+      "label": "Empresas"
+    },
+    {
+      "id": "aduanas",
+      "label": "Operador de Comercio Exterior"
+    }
+  ],
+  "entryPoints": [
+    {
+      "id": "declaraciones-pagos",
+      "label": "Mis Declaraciones y Pagos",
+      "aliases": [
+        "declaración mensual",
+        "pagar IGV",
+        "declarar IGV",
+        "renta mensual",
+        "retenciones",
+        "percepciones",
+        "detracciones"
+      ],
+      "profiles": [
+        "personas",
+        "empresas"
+      ],
+      "scope": "Declaración y pago de IGV y renta mensual; agentes de retención y percepción; pago y consulta de detracciones.",
+      "evidence": "inventariado",
+      "exactMenuPathKnown": false
+    },
+    {
+      "id": "tramites-consultas",
+      "label": "Mis Trámites y Consultas",
+      "aliases": [
+        "consultar",
+        "ficha RUC",
+        "deudas",
+        "fraccionamiento",
+        "recibos por honorarios",
+        "comprobantes",
+        "devolución",
+        "expediente",
+        "trámite virtual"
+      ],
+      "profiles": [
+        "personas",
+        "empresas",
+        "aduanas"
+      ],
+      "scope": "Trámites y consultas virtuales; el perfil se elige dentro de este acceso y determina las opciones disponibles.",
+      "evidence": "inventariado",
+      "exactMenuPathKnown": false
+    },
+    {
+      "id": "renta-anual-personas",
+      "label": "Declara Renta Anual — Personas",
+      "aliases": [
+        "renta anual persona",
+        "renta anual persona natural",
+        "declaración anual personal"
+      ],
+      "profiles": [
+        "personas"
+      ],
+      "scope": "Declaración y pago del Impuesto a la Renta anual para personas naturales.",
+      "evidence": "inventariado",
+      "exactMenuPathKnown": false
+    },
+    {
+      "id": "renta-anual-empresas",
+      "label": "Declara Renta Anual — Empresas",
+      "aliases": [
+        "renta anual empresa",
+        "renta anual empresa jurídica",
+        "declaración anual empresarial"
+      ],
+      "profiles": [
+        "empresas"
+      ],
+      "scope": "Declaración y pago del Impuesto a la Renta anual para empresas.",
+      "evidence": "inventariado",
+      "exactMenuPathKnown": false
+    }
+  ],
+  "routingRules": [
+    "Identifica primero el trámite pedido; el acceso SOL y el perfil son decisiones separadas.",
+    "La misma sesión Clave SOL puede mostrar funciones distintas en cada acceso inicial.",
+    "Si una solicitud encaja en más de un acceso o perfil y no se puede inferir por el trámite, pregunta solo cuál corresponde.",
+    "Busca primero una ruta coincidente en observedRoutes; sigue sus etiquetas con una comprobación breve de la pantalla actual y explora solo si falta una rama.",
+    "Lee solo la ficha coincidente en sunat://procedimientos/{id}; sus rutas publicadas son referencias y no routeId ejecutables. Contrasta el siguiente control con la pantalla.",
+    "Si exactMenuPathKnown es false y no existe ruta observada, explora únicamente la rama necesaria y conserva el estado de evidencia sin llamarlo recorrido verificado."
+  ],
+  "publicProcedureGuide": {
+    "path": "docs/procedimientos-publicos.md",
+    "uri": "sunat://procedimientos",
+    "procedureUriTemplate": "sunat://procedimientos/{id}",
+    "reviewedAt": "2026-10-23",
+    "routingNote": "Los IDs de fichas sirven para leer documentación; no son routeId ejecutables. Solo observedRoutes y rutas locales confirmadas pueden ejecutarse automáticamente. Una ruta publicada se contrasta con la pantalla.",
+    "records": [
+      {
+        "id": "ficha-ruc",
+        "title": "Ficha RUC y régimen",
+        "entryPoint": "tramites-consultas",
+        "profiles": [
+          "personas",
+          "empresas"
+        ],
+        "evidence": "guia_publica",
+        "coverage": "ruta_publicada",
+        "resourceUri": "sunat://procedimientos/ficha-ruc",
+        "aliases": [
+          "ficha RUC",
+          "mi régimen",
+          "tributos afectos",
+          "reporte certificado RUC"
+        ]
+      },
+      {
+        "id": "ruc-modificacion-3128",
+        "title": "Modificar datos del RUC",
+        "entryPoint": "tramites-consultas",
+        "profiles": [
+          "personas",
+          "empresas"
+        ],
+        "evidence": "guia_publica",
+        "coverage": "ruta_publicada",
+        "resourceUri": "sunat://procedimientos/ruc-modificacion-3128",
+        "aliases": [
+          "modificar RUC",
+          "Formulario 3128",
+          "actualizar domicilio",
+          "cambiar correo",
+          "cambiar celular"
+        ]
+      },
+      {
+        "id": "ruc-suspension-reinicio",
+        "title": "Suspensión o reinicio de actividades",
+        "entryPoint": "tramites-consultas",
+        "profiles": [
+          "personas",
+          "empresas"
+        ],
+        "evidence": "guia_publica",
+        "coverage": "parcial_reinicio",
+        "resourceUri": "sunat://procedimientos/ruc-suspension-reinicio",
+        "aliases": [
+          "suspender actividades",
+          "reiniciar actividades",
+          "suspensión temporal"
+        ]
+      },
+      {
+        "id": "sire-rvie-rce-sol",
+        "title": "Propuestas y generación RVIE/RCE",
+        "entryPoint": "tramites-consultas",
+        "profiles": [
+          "personas",
+          "empresas"
+        ],
+        "evidence": "guia_publica",
+        "coverage": "secuencia_publicada",
+        "resourceUri": "sunat://procedimientos/sire-rvie-rce-sol",
+        "aliases": [
+          "SIRE",
+          "RVIE",
+          "RCE",
+          "registro de compras",
+          "registro de ventas",
+          "aceptar propuesta",
+          "generar registro"
+        ]
+      },
+      {
+        "id": "sire-rce-complementar",
+        "title": "Complementar propuesta RCE",
+        "entryPoint": "tramites-consultas",
+        "profiles": [
+          "personas",
+          "empresas"
+        ],
+        "evidence": "guia_publica",
+        "coverage": "funciones_documentadas",
+        "resourceUri": "sunat://procedimientos/sire-rce-complementar",
+        "aliases": [
+          "complementar RCE",
+          "editar compra",
+          "excluir comprobante",
+          "actualizar propuesta",
+          "tipo de cambio RCE"
+        ]
+      },
+      {
+        "id": "sire-consultas-tickets",
+        "title": "Tickets y constancias SIRE",
+        "entryPoint": "tramites-consultas",
+        "profiles": [
+          "personas",
+          "empresas"
+        ],
+        "evidence": "guia_publica",
+        "coverage": "consulta_publicada",
+        "resourceUri": "sunat://procedimientos/sire-consultas-tickets",
+        "aliases": [
+          "estado de ticket SIRE",
+          "constancia RCE",
+          "reporte inconsistencias",
+          "cumplimiento SIRE"
+        ]
+      },
+      {
+        "id": "sire-desktop",
+        "title": "SIRE aplicativo cliente",
+        "accessMethod": "aplicativo-cliente",
+        "profiles": [
+          "personas",
+          "empresas"
+        ],
+        "evidence": "guia_publica",
+        "coverage": "otro_canal",
+        "resourceUri": "sunat://procedimientos/sire-desktop",
+        "aliases": [
+          "SIRE Desktop",
+          "aplicativo cliente SIRE",
+          "migrar propuesta"
+        ]
+      },
+      {
+        "id": "sire-api-acceso",
+        "title": "Revisar acceso API SIRE",
+        "accessMethod": "api-autenticacion",
+        "profiles": [
+          "personas",
+          "empresas"
+        ],
+        "evidence": "guia_publica",
+        "coverage": "autenticacion_sin_registros",
+        "resourceUri": "sunat://procedimientos/sire-api-acceso",
+        "aliases": [
+          "OAuth SIRE",
+          "API SIRE",
+          "credenciales API",
+          "habilitación API"
+        ]
+      },
+      {
+        "id": "declara-facil-621",
+        "title": "Declaración mensual IGV/Renta",
+        "entryPoint": "declaraciones-pagos",
+        "profiles": [
+          "personas",
+          "empresas"
+        ],
+        "evidence": "guia_publica",
+        "coverage": "secuencia_publicada",
+        "resourceUri": "sunat://procedimientos/declara-facil-621",
+        "aliases": [
+          "Declara Fácil",
+          "621",
+          "declaración mensual",
+          "IGV renta mensual",
+          "rectificar 621"
+        ]
+      },
+      {
+        "id": "consulta-declaraciones-pagos",
+        "title": "Consultar declaraciones y pagos",
+        "entryPoints": [
+          "declaraciones-pagos",
+          "tramites-consultas"
+        ],
+        "profiles": [
+          "personas",
+          "empresas"
+        ],
+        "evidence": "guia_publica",
+        "coverage": "dos_canales",
+        "resourceUri": "sunat://procedimientos/consulta-declaraciones-pagos",
+        "aliases": [
+          "consultar declaraciones",
+          "consultar pagos",
+          "constancia de presentación",
+          "pedido de declaraciones",
+          "reporte declaraciones"
+        ]
+      },
+      {
+        "id": "consulta-deuda",
+        "title": "Valores pendientes de pago",
+        "entryPoint": "tramites-consultas",
+        "profiles": [
+          "personas",
+          "empresas"
+        ],
+        "evidence": "guia_publica",
+        "coverage": "ruta_publicada",
+        "resourceUri": "sunat://procedimientos/consulta-deuda",
+        "aliases": [
+          "deuda pendiente",
+          "valores pendientes",
+          "revisar mis deudas"
+        ]
+      },
+      {
+        "id": "detracciones-consulta-pago",
+        "title": "Consultar pagos o depósitos de detracciones",
+        "entryPoints": [
+          "declaraciones-pagos",
+          "tramites-consultas"
+        ],
+        "profiles": [
+          "personas",
+          "empresas"
+        ],
+        "evidence": "guia_publica",
+        "coverage": "ruta_interna_pendiente",
+        "resourceUri": "sunat://procedimientos/detracciones-consulta-pago",
+        "aliases": [
+          "consulta de pago de detracciones",
+          "consultar depósitos SPOT",
+          "constancia detracción",
+          "consulta detracciones"
+        ]
+      },
+      {
+        "id": "detracciones-pago",
+        "title": "Preparar pago de detracciones",
+        "entryPoint": "declaraciones-pagos",
+        "profiles": [
+          "personas",
+          "empresas"
+        ],
+        "evidence": "guia_publica",
+        "coverage": "parcial_despues_busqueda",
+        "resourceUri": "sunat://procedimientos/detracciones-pago",
+        "aliases": [
+          "pagar detracciones",
+          "pago masivo SPOT",
+          "NPD"
+        ]
+      },
+      {
+        "id": "buzon-sol",
+        "title": "Consultar Buzón SOL",
+        "entryPoint": "tramites-consultas",
+        "profiles": [
+          "personas",
+          "empresas",
+          "aduanas"
+        ],
+        "evidence": "guia_publica",
+        "coverage": "acceso_publicado",
+        "resourceUri": "sunat://procedimientos/buzon-sol",
+        "aliases": [
+          "buzón electrónico",
+          "notificaciones",
+          "mensajes SOL"
+        ]
+      },
+      {
+        "id": "rhe-emision",
+        "title": "Emitir recibo por honorarios",
+        "entryPoint": "tramites-consultas",
+        "profiles": [
+          "personas"
+        ],
+        "evidence": "guia_publica",
+        "coverage": "secuencia_publicada",
+        "resourceUri": "sunat://procedimientos/rhe-emision",
+        "aliases": [
+          "emitir recibo",
+          "recibo por honorarios",
+          "RHE"
+        ]
+      },
+      {
+        "id": "rhe-registro-pagos",
+        "title": "Registrar cobro de honorarios",
+        "entryPoint": "tramites-consultas",
+        "profiles": [
+          "personas"
+        ],
+        "evidence": "guia_publica",
+        "coverage": "controles_finales_pendientes",
+        "resourceUri": "sunat://procedimientos/rhe-registro-pagos",
+        "aliases": [
+          "registrar pago RHE",
+          "cobro honorarios",
+          "pago parcial de recibo"
+        ]
+      },
+      {
+        "id": "see-sol-factura",
+        "title": "Factura o boleta SEE SOL",
+        "entryPoint": "tramites-consultas",
+        "profiles": [
+          "personas",
+          "empresas"
+        ],
+        "evidence": "guia_publica",
+        "coverage": "factura_parcial",
+        "resourceUri": "sunat://procedimientos/see-sol-factura",
+        "aliases": [
+          "factura electrónica",
+          "boleta electrónica",
+          "SEE SOL",
+          "Boleta de Venta Portal"
+        ]
+      },
+      {
+        "id": "t-registro",
+        "title": "Consulta y gestión T-Registro",
+        "entryPoint": "tramites-consultas",
+        "profiles": [
+          "empresas"
+        ],
+        "evidence": "guia_publica",
+        "coverage": "ruta_y_operaciones",
+        "resourceUri": "sunat://procedimientos/t-registro",
+        "aliases": [
+          "RRHH",
+          "recursos humanos",
+          "T-Registro",
+          "alta trabajador",
+          "baja trabajador",
+          "histórico prestadores"
+        ]
+      },
+      {
+        "id": "plame-web-601",
+        "title": "Planilla mensual PLAME Web",
+        "entryPoint": "declaraciones-pagos",
+        "profiles": [
+          "empresas"
+        ],
+        "evidence": "guia_publica",
+        "coverage": "elegibilidad_y_flujo_general",
+        "resourceUri": "sunat://procedimientos/plame-web-601",
+        "aliases": [
+          "PLAME",
+          "601",
+          "planilla mensual",
+          "PDT PLAME"
+        ]
+      },
+      {
+        "id": "devolucion-1649",
+        "title": "Solicitud de devolución",
+        "entryPoint": "tramites-consultas",
+        "profiles": [
+          "personas",
+          "empresas"
+        ],
+        "evidence": "guia_publica",
+        "coverage": "secuencia_publicada",
+        "resourceUri": "sunat://procedimientos/devolucion-1649",
+        "aliases": [
+          "devolución",
+          "1649",
+          "4949",
+          "pago indebido",
+          "pago en exceso",
+          "estado devolución"
+        ]
+      },
+      {
+        "id": "fraccionamiento-art36",
+        "title": "Aplazamiento o fraccionamiento",
+        "entryPoint": "tramites-consultas",
+        "profiles": [
+          "personas",
+          "empresas"
+        ],
+        "evidence": "guia_publica",
+        "coverage": "secuencia_publicada",
+        "resourceUri": "sunat://procedimientos/fraccionamiento-art36",
+        "aliases": [
+          "fraccionamiento",
+          "artículo 36",
+          "687",
+          "precalificación",
+          "pedido de deuda",
+          "aplazamiento"
+        ]
+      },
+      {
+        "id": "modificacion-1693",
+        "title": "Modificación e inclusión de datos",
+        "entryPoint": "tramites-consultas",
+        "profiles": [
+          "personas",
+          "empresas"
+        ],
+        "evidence": "guia_publica",
+        "coverage": "campos_segun_formulario",
+        "resourceUri": "sunat://procedimientos/modificacion-1693",
+        "aliases": [
+          "1693",
+          "modificar periodo",
+          "modificación DDJJ",
+          "dice debe decir"
+        ]
+      },
+      {
+        "id": "reconocimiento-pago-error",
+        "title": "Reconocimiento de pago con error",
+        "accessMethod": "mpv-o-presencial",
+        "profiles": [
+          "personas",
+          "empresas"
+        ],
+        "evidence": "guia_publica",
+        "coverage": "canal_y_requisitos_particulares",
+        "resourceUri": "sunat://procedimientos/reconocimiento-pago-error",
+        "aliases": [
+          "código de tributo errado",
+          "pago con error",
+          "reconocimiento de pago",
+          "Mesa de Partes"
+        ]
+      },
+      {
+        "id": "renta-anual-personas-709",
+        "title": "Renta anual personas",
+        "entryPoint": "renta-anual-personas",
+        "profiles": [
+          "personas"
+        ],
+        "evidence": "guia_publica",
+        "coverage": "campana_ruta_interna_pendiente",
+        "resourceUri": "sunat://procedimientos/renta-anual-personas-709",
+        "aliases": [
+          "709",
+          "renta anual personal",
+          "declaración anual persona natural"
+        ]
+      },
+      {
+        "id": "renta-anual-empresas-710",
+        "title": "Renta anual empresas",
+        "entryPoint": "renta-anual-empresas",
+        "profiles": [
+          "empresas"
+        ],
+        "evidence": "guia_publica",
+        "coverage": "campana_ruta_interna_pendiente",
+        "resourceUri": "sunat://procedimientos/renta-anual-empresas-710",
+        "aliases": [
+          "710",
+          "renta anual empresa",
+          "710 simplificado",
+          "710 completo"
+        ]
+      },
+      {
+        "id": "drawback-consulta",
+        "title": "Consulta de solicitud Drawback",
+        "entryPoint": "tramites-consultas",
+        "profiles": [
+          "aduanas"
+        ],
+        "evidence": "guia_publica",
+        "coverage": "manual_legado",
+        "resourceUri": "sunat://procedimientos/drawback-consulta",
+        "aliases": [
+          "Drawback",
+          "restitución derechos arancelarios",
+          "consulta solicitud aduanera"
+        ]
+      },
+      {
+        "id": "exporta-facil",
+        "title": "Declaración Exporta Fácil",
+        "entryPoint": "tramites-consultas",
+        "profiles": [
+          "aduanas"
+        ],
+        "evidence": "guia_publica",
+        "coverage": "flujo_mixto_historico",
+        "resourceUri": "sunat://procedimientos/exporta-facil",
+        "aliases": [
+          "Exporta Fácil",
+          "DEF",
+          "Serpost",
+          "exportación postal"
+        ]
+      }
+    ]
+  },
+  "observedRoutes": [
+    {
+      "id": "sire-registro-compras-menu-sol-personas",
+      "aliases": [
+        "SIRE registro de compras",
+        "registro de compras electrónico",
+        "gestión de compras"
+      ],
+      "entryPoint": "menu-sol",
+      "profile": "personas",
+      "path": [
+        "Personas",
+        "Sistema Integrado de Registros Electrónicos",
+        "Registros Electrónicos",
+        "Registro de Compras Electrónico",
+        "Gestión de Compras"
+      ],
+      "destination": "Registro de Compras Electrónico",
+      "evidence": "ruta_observada",
+      "observedAt": "2026-10-22",
+      "gate": "Si SUNAT informa que el usuario no está registrado como obligado en el sistema, detenerse y comunicarlo; no intentar seleccionar un período."
+    }
+  ]
+}
