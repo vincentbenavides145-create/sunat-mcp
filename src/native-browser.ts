@@ -115,13 +115,13 @@ function normalizeAccessibleLabel(value: string): string {
 }
 
 /** Find fresh, exact interactive references for a known SUNAT menu label. */
-export function findSnapshotReferencesByLabel(snapshot: string, label: string): Array<{ ref: string; role: string; label: string }> {
+export function findSnapshotReferencesByLabel(snapshot: string, label: string, options: { includeOffscreen?: boolean } = {}): Array<{ ref: string; role: string; label: string }> {
   const wanted = normalizeAccessibleLabel(label);
   const semanticMatches: Array<{ ref: string; role: string; label: string }> = [];
   const genericMatches: Array<{ ref: string; role: string; label: string }> = [];
   for (const line of snapshot.split(/\r?\n/)) {
     const ref = snapshotReference(line);
-    if (!ref || /\[(?:disabled|offscreen)\]/.test(line)) continue;
+    if (!ref || /\[disabled\]/.test(line) || !options.includeOffscreen && /\[offscreen\]/.test(line)) continue;
     const reference = describeSnapshotLine(line);
     if (normalizeAccessibleLabel(reference.label) !== wanted) continue;
     const match = { ref, role: reference.role, label: reference.label };
@@ -346,7 +346,8 @@ export function buildNativeSnapshot(window: UiaWindow, url: URL): { text: string
         const ref = referenceIds.get(key) ?? `e${nextReferenceId++}`;
         nextIds.set(key, ref);
         latestSelectors.set(ref, element);
-        if (menu && /^(Hyperlink|Link|MenuItem|TreeItem|TabItem|ListItem)$/.test(element.type ?? '')) navigationReferences.add(ref);
+        const profileTab = url.hostname === 'e-menu.sunat.gob.pe' && /^\/cl-ti-itmenu\/MenuInternet\.htm$/i.test(url.pathname) && element.type === 'TabItem' && /^divOpcionServicio[123]$/.test(element.automationId ?? '') && /^(personas|empresas|operador de comercio exterior)$/.test(normalizeAccessibleLabel(label));
+        if ((menu || profileTab) && /^(Hyperlink|Link|MenuItem|TreeItem|TabItem|ListItem)$/.test(element.type ?? '')) navigationReferences.add(ref);
         lines.push(`@${ref} ${role} ${JSON.stringify(label)}${element.isEnabled === false ? ' [disabled]' : ''}${element.isOffscreen ? ' [offscreen]' : ''}${element.expandState === 'expanded' ? ' [expanded]' : ''}`);
         formState.push([element.selector, element.type, element.name, element.value, element.isEnabled, element.toggleState, element.isSelected]);
       } else {

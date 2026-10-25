@@ -21,6 +21,17 @@ function windowWith(children: UiaElement[]): UiaWindow {
 }
 const button = (selector: string, name: string): UiaElement => ({ type: 'Button', selector, name, isInvokable: true, isEnabled: true });
 
+test('SOL profile tabs carry menu evidence without trusting a similarly named form tab', () => {
+  const snapshot = buildNativeSnapshot(windowWith([
+    { type: 'TabItem', selector: 'profile', name: 'Empresas', automationId: 'divOpcionServicio2' },
+    { type: 'TabItem', selector: 'form-tab', name: 'Empresas' },
+  ]), url);
+  const refs = findSnapshotReferencesByLabel(snapshot.text, 'Empresas');
+  assert.equal(refs.length, 2);
+  assert.equal(describeSnapshotReference(snapshot.text, refs[0].ref)?.navigation, true);
+  assert.equal(describeSnapshotReference(snapshot.text, refs[1].ref)?.navigation, undefined);
+});
+
 test('annual Entrar login is recognized only when unique, visible and enabled', () => {
   assert.equal(findLoginButton(windowWith([button('annual', 'Entrar')]))?.selector, 'annual');
   assert.equal(findLoginButton(windowWith([button('a', 'Entrar'), button('b', 'Ingresar')])), undefined);

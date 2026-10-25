@@ -28,6 +28,45 @@ test('a five-step known route reads the full page only at entry and destination'
   assert.equal(calls.steps.length, 5);
 });
 
+test('a unique offscreen route shortcut is revealed and reread before clicking its fresh reference', async () => {
+  const { io, calls } = harness([page('@e1 link "Ficha RUC" [offscreen]'), page('@e2 link "Ficha RUC"'), page('- generic "Ficha RUC"')]);
+  const revealed: string[] = [];
+  io.reveal = async (ref) => { revealed.push(ref); };
+  assert.deepEqual(await navigateObservedRoute({ path: ['Ficha RUC'], destination: 'Ficha RUC' }, true, io), { status: 'reached', stepsCompleted: 1 });
+  assert.deepEqual(revealed, ['e1']);
+  assert.deepEqual(calls.clicks, ['e2']);
+  assert.equal(calls.waits, 0);
+});
+
+test('offscreen ambiguity and tax controls never select or reveal a guessed target', async () => {
+  for (const [body, label, status] of [
+    ['@e1 link "Ficha RUC" [offscreen]\n@e2 link "Ficha RUC" [offscreen]', 'Ficha RUC', 'control_ambiguous'],
+    ['@e1 button "Pagar" [offscreen]', 'Pagar', 'approval_required'],
+  ]) {
+    const { io, calls } = harness([page(body)]);
+    let revealed = false;
+    io.reveal = async () => { revealed = true; };
+    assert.equal((await navigateObservedRoute({ path: [label], destination: 'Destino' }, true, io)).status, status);
+    assert.equal(revealed, false);
+    assert.equal(calls.clicks.length, 0);
+  }
+});
+
+test('revealing a route control never reuses references after a session change', async () => {
+  const { io, calls } = harness([page('@e1 link "Ficha RUC" [offscreen]'), { ...page('@e2 link "Ficha RUC"'), url: 'https://e-menu.sunat.gob.pe/other' }]);
+  io.reveal = async () => {};
+  assert.equal((await navigateObservedRoute({ path: ['Ficha RUC'], destination: 'Ficha RUC' }, true, io)).status, 'session_changed');
+  assert.equal(calls.clicks.length, 0);
+});
+
+test('observed employer and affectation gates stop navigation, including the rendered encoding variant', async () => {
+  for (const message of ['El contribuyente no ha sido registrado como Empleador', 'Contribuyente no cumple con las validaciones de Afectación.', 'Contribuyente no cumple con las validaciones de Afectaciï¿½n.']) {
+    const { io, calls } = harness([page(message)]);
+    assert.equal((await navigateObservedRoute({ path: ['Personas'], destination: 'Destino' }, true, io)).status, 'precondition_not_met');
+    assert.equal(calls.clicks.length, 0);
+  }
+});
+
 test('uncertain native clicks stop the route and are never repeated', async () => {
   const { calls, io } = harness([page('@e1 link "Personas"')]);
   io.focusedClick = async (label) => { calls.focused.push(label); throw new Error('uncertain'); };

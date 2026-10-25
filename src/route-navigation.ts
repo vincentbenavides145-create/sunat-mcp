@@ -4,6 +4,7 @@ export interface NavigationRoute { path: string[]; destination: string; destinat
 export interface RouteNavigationIo {
   snapshot(): Promise<BrowserSnapshot>;
   click(ref: string): Promise<void>;
+  reveal?(ref: string): Promise<void>;
   focusedClick(label: string, expectedUrl: string): Promise<FocusedRouteResult>;
   wait(label: string, timeoutMs: number, stopOnGate?: boolean): Promise<boolean>;
   observed(snapshot: BrowserSnapshot): Promise<void>;
@@ -17,7 +18,7 @@ export interface RouteNavigationResult {
   actionDispatched?: boolean;
 }
 const normalize = (text: string) => text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^\p{L}\p{N}]+/gu, ' ').trim().toLowerCase();
-export const hasSunatNavigationGate = (text: string) => /no se encuentra registrado como obligado|no esta registrado como obligado|acceso no autorizado|no (?:se encuentra|esta) autorizado|no tiene acceso/.test(normalize(text));
+export const hasSunatNavigationGate = (text: string) => /no se encuentra registrado como obligado|no esta registrado como obligado|acceso no autorizado|no (?:se encuentra|esta) autorizado|no tiene acceso|no ha sido registrado como empleador|no cumple con las validaciones de afectaci/.test(normalize(text));
 
 /** One MCP call, focused native reads between decisions, no screenshot or click retry. */
 export async function navigateObservedRoute(route: NavigationRoute, learned: boolean, io: RouteNavigationIo): Promise<RouteNavigationResult> {
@@ -68,6 +69,20 @@ export async function navigateObservedRoute(route: NavigationRoute, learned: boo
       if (!isAuthenticatedSunatPage(snapshot) || snapshot.url !== expectedUrl) return result('session_changed', label);
       if (hasSunatNavigationGate(snapshot.text)) return result('precondition_not_met', label);
       let matches = findSnapshotReferencesByLabel(snapshot.text, label);
+      if (!matches.length && io.reveal) {
+        const outside = findSnapshotReferencesByLabel(snapshot.text, label, { includeOffscreen: true });
+        if (outside.length > 1) return result('control_ambiguous', label);
+        if (outside.length === 1) {
+          const control = describeSnapshotReference(snapshot.text, outside[0].ref);
+          if (!control || isTaxCommitControl(control)) return result('approval_required', label);
+          try { await io.reveal(outside[0].ref); }
+          catch (error) { return failure(error, label); }
+          snapshot = await read();
+          if (!isAuthenticatedSunatPage(snapshot) || snapshot.url !== expectedUrl) return result('session_changed', label);
+          if (hasSunatNavigationGate(snapshot.text)) return result('precondition_not_met', label);
+          matches = findSnapshotReferencesByLabel(snapshot.text, label);
+        }
+      }
       if (!matches.length && await io.wait(label, 3000)) {
         snapshot = await read();
         if (!isAuthenticatedSunatPage(snapshot) || snapshot.url !== expectedUrl) return result('session_changed', label);

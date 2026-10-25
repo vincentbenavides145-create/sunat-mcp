@@ -6,7 +6,7 @@ import { serveStdio } from '@modelcontextprotocol/server/stdio';
 import * as z from 'zod/v4';
 import { captureBrowserScreenshot, compactBrowserResults, describeSnapshotReference, executeBrowserBatch, executeFocusedRouteStep, getLatestBrowserSnapshot, getNativeBrowserStatus, isAuthenticatedSunatPage, isSensitiveInput, isTaxCommitControl, loginWithSunatAccount, sanitizePageUrlForMcp, type BrowserStep } from './native-browser.js';
 import { findSunatAccountCredential, getSunatCredentialVaultStatus, normalizeAccountKey } from './credentials.js';
-import { getLearnedRoute, rememberDiscoveredNavigation, rememberSuccessfulNavigation, renderPersonalProfile } from './learning.js';
+import { getLearnedRoute, isLearnableMenuControl, rememberDiscoveredNavigation, rememberSuccessfulNavigation, renderPersonalProfile } from './learning.js';
 import { checkSireApiAccess } from './sire-api.js';
 import { readSunatConfig, validateCpe } from './sunat-api.js';
 import { releaseBraveUi, NativeUiError } from './windows-ui.js';
@@ -334,7 +334,11 @@ async function executeBrowserSteps(steps: BrowserStep[], context: ServerContext,
       break;
     } else {
       checkpoint?.(1);
-      labelsDiscoveredThisCall.push(reference.label);
+      if (isLearnableMenuControl(reference)) labelsDiscoveredThisCall.push(reference.label);
+      else {
+        navigationLearningTrail = [];
+        labelsDiscoveredThisCall.length = 0;
+      }
       observeProcedureStep('click', reference.label);
     }
     index++;
@@ -420,6 +424,10 @@ async function executeObservedRoute(routeId: string, checkpoint?: (count: number
       }
     },
     focusedClick: executeFocusedRouteStep,
+    reveal: async (ref) => {
+      const result = await executeBrowserBatch([{ action: 'scroll', ref }]);
+      if (hasBrowserActionError(result)) throw new NativeUiError('navigation_reveal_failed', 'No se pudo revelar el control de la ruta. No se repitió ningún clic.');
+    },
     wait: waitForBrowserLabel,
     observed: observeProcedureSnapshot,
     clicked: (label) => { checkpoint?.(1); observeProcedureStep('click', label); },

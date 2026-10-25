@@ -56,7 +56,7 @@ function parseStore(value: unknown): LearningStore {
         const labels = safePath as string[];
         parsedRoute.path = labels;
         if (typeof route.destination === 'string' && route.destination === labels.at(-1)) parsedRoute.destination = route.destination;
-      }
+      } else continue;
     }
     routes[id] = parsedRoute;
   }
@@ -103,11 +103,19 @@ function safeNavigationLabel(label: string, excludedLabels: string[] = []): stri
   if (/\b(s\.?a\.?c\.?|s\.?r\.?l\.?|e\.?i\.?r\.?l\.?|s\.?a\.?a\.?)\b/i.test(clean)) return undefined;
   if (/@|https?:\/\/|password|passwd|contrase(?:n|ñ)a|token|cookie|secret|credential|usuario|username|bienvenido|welcome/i.test(clean)) return undefined;
   const normalized = clean.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase();
+  // Legacy profiles sometimes captured form actions or internal field IDs.
+  // They are not menu routes, even when their text contains no private values.
+  if (/^(?:continuar|siguiente|anterior|volver|buscar|consultar|limpiar|aceptar|validar ruc o dni|tipdoc|mediopagoid|formapago\d*)$/.test(normalized)) return undefined;
   if (excludedLabels.some((excluded) => {
     const term = excluded.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase().trim();
     return term.length >= 4 && normalized.includes(term);
   })) return undefined;
   return clean;
+}
+
+/** Evidence is supplied by the current native/DOM snapshot, never MCP arguments. */
+export function isLearnableMenuControl(reference: { role: string; label: string; navigation?: boolean }): boolean {
+  return reference.navigation === true && /^(?:link|tab|option|menuitem|treeitem)$/.test(reference.role) && Boolean(safeNavigationLabel(reference.label));
 }
 
 /** Learns an arbitrary-length safe menu path, without a catalog route-count limit. */
