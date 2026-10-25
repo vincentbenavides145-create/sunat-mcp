@@ -2,15 +2,20 @@ import { randomUUID } from 'node:crypto';
 import { spawn } from 'node:child_process';
 import { readFileSync } from 'node:fs';
 import * as winapp from '@microsoft/winappcli';
+import { verifyActiveSunatTab, isSunatLoginUrl, isSunatSessionPageUrl } from './browser-context.js';
 const UI_COMMAND_TIMEOUT_MS = 6_000;
 const UI_WORKFLOW_ID = `sunat-mcp-${process.pid}-${randomUUID()}`;
 let targetWindow: number | undefined;
 let documentSelector: string | undefined;
 let scrollDocuments: Array<{ selector: string; directions: string }> = [];
 let desktopUsed = false;
+let foregroundReady = false;
+let lastDesktopActivityAt = 0;
+let lastTopLevelAddress: string | undefined;
 const nativeMetrics = new Map<string, { calls: number; failures: number; totalMs: number }>();
 
 export class NativeUiError extends Error {
+  actionDispatched?: boolean;
   constructor(public readonly code: string, message = 'Windows no pudo completar la acción en Brave.') { super(message); }
 }
 
@@ -67,6 +72,7 @@ export interface UiaElement {
   scrollDir?: string;
   toggleState?: string;
   isSelected?: boolean;
+  expandState?: string;
   children?: UiaElement[];
 }
 
@@ -75,6 +81,12 @@ export interface UiaWindow {
   title?: string;
   className?: string;
   elements?: UiaElement[];
+}
+
+/** Owned credential/tooltip windows do not make one Brave main window ambiguous. */
+export function selectBraveMainWindow(windows: Array<{ hwnd?: number; ownerHwnd?: number; processName?: string; className?: string }>): number | undefined {
+  const main = windows.filter((window) => window.hwnd && window.ownerHwnd === 0 && /^brave$/i.test(window.processName ?? '') && window.className === 'Chrome_WidgetWin_1');
+  return main.length === 1 ? main[0].hwnd : undefined;
 }
 
 export interface UiaInspectResult {
@@ -98,7 +110,7 @@ async function runWinApp(args: string[], deadlineAt?: number): Promise<string> {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeoutMs);
   const command = args[1];
-  if (['click', 'focus', 'invoke', 'send-keys', 'screenshot', 'scroll'].includes(command)) desktopUsed = true;
+  if (['click', 'focus', 'invoke', 'send-keys', 'screenshot', 'scroll', 'scroll-into-view'].includes(command)) desktopUsed = true;
   const started = performance.now();
   const metric = nativeMetrics.get(command) ?? { calls: 0, failures: 0, totalMs: 0 };
   metric.calls++;
@@ -120,11 +132,15 @@ async function runWinApp(args: string[], deadlineAt?: number): Promise<string> {
       result = await winapp.uiWaitFor({ ...common, selector: args[2], timeout: waitMs, ...(command === 'wait-for' && documentSelector ? { root: documentSelector } : {}) });
     } else if (command === 'search-tab') {
       result = await winapp.uiSearch({ ...common, selector: args[2], type: 'TabItem' });
+    } else if (command === 'route-control') {
+      result = await winapp.uiInspect({ ...common, selector: args[2], ancestors: true });
     } else if (command === 'screenshot') {
       result = await winapp.uiScreenshot({ ...common, output: args[2] });
     } else if (command === 'scroll') {
       const direction = args[3];
       result = await winapp.uiScroll({ ...common, selector: args[2], ...(direction === 'up' || direction === 'down' ? { wheel: direction === 'down' ? -3 : 3 } : { direction }) });
+    } else if (command === 'scroll-into-view') {
+      result = await winapp.uiScrollIntoView({ ...common, selector: args[2] });
     } else if (command === 'click') {
       result = await winapp.uiClick({ ...common, selector: args[2] });
     } else if (command === 'focus') {
@@ -141,6 +157,7 @@ async function runWinApp(args: string[], deadlineAt?: number): Promise<string> {
     } else {
       throw new Error('Comando nativo no permitido.');
     }
+    if (['click', 'focus', 'invoke', 'send-keys', 'scroll', 'scroll-into-view'].includes(command)) lastDesktopActivityAt = Date.now();
     return result.stdout.trim() || result.stderr.trim();
   } catch (error) {
     if (command === 'wait-for' || command === 'wait-for-native') {
@@ -182,25 +199,108 @@ export async function getBravePageUiState(deadlineAt?: number): Promise<UiaInspe
   if (targetWindow && documentSelector) {
     try { return await inspectBrave(deadlineAt, false, 12, true); }
     catch (error) {
-      if (!canRediscover(error)) throw error;
+      if (!canRediscover(error) && !(error instanceof NativeUiError && error.code === 'internal_error')) throw error;
       documentSelector = undefined;
     } // A new document can replace the old UIA root.
   }
-  const state = await getBraveUiState(deadlineAt);
+  // Discover browser chrome/tabs before reading a document. The active tab can
+  // be a large unrelated page; snapshotNative will select the existing SOL tab.
+  // Keep document containers: interactive-only filtering may omit the outer
+  // SOL document and leave only its embedded error/form document.
+  const state = await getBraveUiState(deadlineAt, false, 8);
+  if (!documentSelector && (state.windows ?? []).some((window) => {
+    const url = getBraveUrl(window);
+    return url?.protocol === 'https:' && (url.hostname === 'sunat.gob.pe' || url.hostname.endsWith('.sunat.gob.pe'));
+  })) return await getBraveUiState(deadlineAt);
   let truncated = false;
   for (const window of state.windows ?? []) walk(window.elements ?? [], (element) => { if (element.hasMoreChildren && element.isOffscreen !== true) truncated = true; });
   return truncated && documentSelector ? await inspectBrave(deadlineAt, false, 12, true) : state;
 }
 
 export async function releaseBraveUi(): Promise<void> {
+  foregroundReady = false;
   if (!desktopUsed) return;
   desktopUsed = false;
   try { await runWinApp(['ui', 'yield']); } catch { /* A release failure must not hide the operation result. */ }
 }
 
+/** One cheap chrome check at tool entry prevents reading an inactive document. */
+export async function beginBravePageContext(allowNavigation = false, deadlineAt?: number): Promise<boolean> {
+  foregroundReady = false;
+  if (!targetWindow) {
+    const windows = JSON.parse(await runWinApp(['ui', 'list-windows'], deadlineAt));
+    targetWindow = selectBraveMainWindow(windows);
+    if (!targetWindow) throw new NativeUiError('ambiguous_window', 'No se identificó una única ventana principal de Brave. Las ventanas auxiliares del navegador no se seleccionan.');
+  }
+  try {
+    const result = await verifyActiveSunatTab({
+      readAddress: async () => {
+        const state = JSON.parse(await runWinApp(['ui', 'inspect', '--root', 'view_1012', '--depth', '1'], deadlineAt)) as UiaInspectResult;
+        const window = state.windows?.find((item) => item.hwnd === targetWindow);
+        const value = window && getBraveAddressBar(window)?.value;
+        if (!value) throw new NativeUiError('address_unavailable');
+        return getBraveUrl({ elements: [{ type: 'Edit', selector: 'view_1012', automationId: 'view_1012', value }] })?.toString();
+      },
+      selectSunatTab: async () => {
+        const search = JSON.parse(await runWinApp(['ui', 'search-tab', 'SUNAT'], deadlineAt)) as UiaSearchResult;
+        const matches = search.matches.filter((item) => isSunatTabLabel(item.name));
+        if (!search.hasMore && matches.length === 0) return false;
+        if (search.hasMore || matches.length !== 1 || !matches[0].selector) throw new NativeUiError('ambiguous_tab', 'No se encontró una única pestaña SOL existente.');
+        await runWinApp(['ui', 'invoke', matches[0].selector, '--action', 'select'], deadlineAt);
+        return true;
+      },
+    }, lastTopLevelAddress, allowNavigation);
+    lastTopLevelAddress = result.address;
+    if (result.changed) { documentSelector = undefined; scrollDocuments = []; foregroundReady = false; }
+    return result.changed;
+  } catch (error) {
+    documentSelector = undefined;
+    scrollDocuments = [];
+    lastTopLevelAddress = undefined;
+    if (canRediscover(error)) targetWindow = undefined;
+    throw error;
+  }
+}
+
+async function prepareBraveForeground(deadlineAt?: number): Promise<void> {
+  if (foregroundReady && Date.now() - lastDesktopActivityAt < 2500) return;
+  // Desktop affinity expires after four seconds. A long read/approval may
+  // allow another workflow to change tabs; never act on that old page map.
+  if (await beginBravePageContext(false, deadlineAt)) throw new NativeUiError('context_changed', 'Brave cambió de pestaña durante el lote. Revisa una lectura nueva antes de continuar.');
+  // Tab selection alone does not activate the window for physical input.
+  await focusBraveElement('view_1012', deadlineAt);
+}
+
 export async function waitForBraveLabel(label: string, timeoutMs = 8000, deadlineAt?: number): Promise<boolean> {
   const output = await runWinApp(['ui', 'wait-for', label, '--timeout', String(timeoutMs)], deadlineAt);
   return JSON.parse(output).found === true;
+}
+
+export interface UiaSearchResult { matchCount: number; hasMore?: boolean; matches: Array<UiaElement & { invokableAncestor?: UiaElement }> }
+
+/** One narrow UIA read includes the target and its real document ancestors. */
+export async function findBraveRouteControl(label: string, expectedUrl: string, deadlineAt?: number): Promise<{ window: UiaWindow; search: UiaSearchResult } | undefined> {
+  if (!targetWindow || !documentSelector) return undefined;
+  try {
+    const state = JSON.parse(await runWinApp(['ui', 'route-control', label], deadlineAt)) as UiaInspectResult;
+    const window = state.windows?.find((item) => item.hwnd === targetWindow);
+    if (!window || !getBraveUrl(window)) return undefined;
+    if (getBraveUrl(window)!.toString() !== expectedUrl) return { window, search: { matchCount: 0, matches: [] } };
+    const matches: UiaElement[] = [];
+    let inDocument = false;
+    const collect = (elements: UiaElement[], inside = false) => {
+      for (const element of elements) {
+        const document = inside || element.type === 'Document';
+        if (document) { inDocument = true; matches.push(element); }
+        collect(element.children ?? [], document);
+      }
+    };
+    collect(window.elements ?? []);
+    return inDocument ? { window, search: { matchCount: matches.length, matches } } : undefined;
+  } catch (error) {
+    if (canRediscover(error) || error instanceof NativeUiError && /ambiguous/.test(error.code)) return undefined;
+    throw error;
+  }
 }
 
 export async function captureBraveWindow(output: string): Promise<void> {
@@ -213,7 +313,13 @@ export async function scrollBraveDocument(direction: 'up' | 'down' | 'left' | 'r
   const axis = direction === 'up' || direction === 'down' ? 'v' : 'h';
   const container = scrollDocuments.filter((item) => item.directions.includes(axis)).at(-1);
   if (!container) throw new NativeUiError('no_scroll_container', 'La página actual no expone un panel desplazable en esa dirección.');
+  await prepareBraveForeground(deadlineAt);
   await runWinApp(['ui', 'scroll', container.selector, direction], deadlineAt);
+}
+
+export async function scrollBraveElementIntoView(selector: string, deadlineAt?: number): Promise<void> {
+  await prepareBraveForeground(deadlineAt);
+  await runWinApp(['ui', 'scroll-into-view', selector], deadlineAt);
 }
 
 export async function hasBraveWindows(): Promise<boolean> {
@@ -223,16 +329,19 @@ export async function hasBraveWindows(): Promise<boolean> {
 
 export async function focusBraveElement(selector: string, deadlineAt?: number): Promise<void> {
   await runWinApp(['ui', 'focus', selector, '-a', 'brave', '--json'], deadlineAt);
+  foregroundReady = true;
 }
 
 export async function clickBraveElement(selector: string, deadlineAt?: number): Promise<void> {
+  await prepareBraveForeground(deadlineAt);
   await runWinApp(['ui', 'click', selector, '-a', 'brave', '--json'], deadlineAt);
 }
 
 export async function activateBraveElement(element: UiaElement, deadlineAt?: number): Promise<void> {
   if (!element.selector || element.isEnabled === false) throw new NativeUiError('target_disabled');
-  if (element.isInvokable === true) await invokeBraveElement(element.selector, deadlineAt);
-  else if (element.type === 'TabItem') await selectBraveTab(element.selector, deadlineAt);
+  if (element.type === 'TabItem') await selectBraveTab(element.selector, deadlineAt);
+  else if (/^(ComboBox|ListItem|RadioButton|CheckBox)$/.test(element.type ?? '')) await clickBraveElement(element.selector, deadlineAt);
+  else if (element.isInvokable === true) await invokeBraveElement(element.selector, deadlineAt);
   else await clickBraveElement(element.selector, deadlineAt);
 }
 
@@ -246,6 +355,9 @@ export async function selectBraveTab(selector: string, deadlineAt?: number): Pro
   const result = JSON.parse(await runWinApp(['ui', 'search-tab', selector], deadlineAt)) as { matchCount: number; hasMore?: boolean; matches: UiaElement[] };
   if (result.matchCount !== 1 || result.hasMore || !result.matches[0]?.selector) throw new NativeUiError('ambiguous_tab');
   await runWinApp(['ui', 'invoke', result.matches[0].selector, '--action', 'select'], deadlineAt);
+  documentSelector = undefined;
+  scrollDocuments = [];
+  foregroundReady = false;
 }
 
 export async function sendBraveKeys(keys: string, deadlineAt?: number): Promise<void> {
@@ -479,11 +591,11 @@ function browserUrl(window: UiaWindow): URL | undefined {
   return url?.protocol === 'https:' && (url.hostname === 'sunat.gob.pe' || url.hostname.endsWith('.sunat.gob.pe')) ? url : undefined;
 }
 
-function findLoginButton(window: UiaWindow): UiaElement | undefined {
+export function findLoginButton(window: UiaWindow): UiaElement | undefined {
   const buttons: UiaElement[] = [];
   walk(window.elements ?? [], (element) => {
-    if (element.type === 'Button' && element.selector && element.isEnabled !== false &&
-      /^(?:iniciar sesion|ingresar|login)$/i.test(normalized(element.name))) buttons.push(element);
+    if (element.type === 'Button' && element.selector && element.isEnabled !== false && element.isOffscreen !== true &&
+      /^(?:iniciar sesion|ingresar|entrar|login)$/i.test(normalized(element.name))) buttons.push(element);
   });
   return buttons.length === 1 ? buttons[0] : undefined;
 }
@@ -492,7 +604,7 @@ function loginPageIsOpen(state: UiaInspectResult): boolean {
   const sunatWindows = (state.windows ?? []).filter((window) => browserUrl(window));
   if (sunatWindows.length !== 1) return false;
   const url = browserUrl(sunatWindows[0]);
-  return Boolean(url && /loginMenuSol/i.test(url.pathname));
+  return Boolean(url && isSunatLoginUrl(url.toString()));
 }
 
 function loggedInToSunat(state: UiaInspectResult): boolean {
@@ -503,7 +615,7 @@ function loggedInToSunat(state: UiaInspectResult): boolean {
   walk(sunatWindows[0].elements ?? [], (element) => {
     if (['Button', 'Hyperlink', 'Link'].includes(element.type ?? '') && element.isOffscreen !== true && element.isEnabled !== false && /^(?:salir|cerrar sesion|desconectar)$/.test(normalized(element.name))) logoutVisible = true;
   });
-  return Boolean(url && url.hostname === 'e-menu.sunat.gob.pe' && /\/cl-ti-itmenu\/MenuInternet/i.test(url.pathname) && logoutVisible);
+  return Boolean(url && isSunatSessionPageUrl(url.toString()) && logoutVisible);
 }
 
 /** Log in on the existing Brave window using its one unique SUNAT password-manager suggestion. */

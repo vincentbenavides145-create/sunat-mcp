@@ -1,0 +1,2121 @@
+# Biblioteca de guías oficiales SUNAT
+
+Actualización: 2026-10-24. 2035 fuentes únicas.
+
+Biblioteca local depurada de fuentes públicas y resúmenes de SUNAT. Las fichas específicas y el contenido operativo revisado se consultan primero. Los índices, normativa y materiales técnicos permanecen como referencias explícitas. No es un censo de archivos no enlazados ni una certificación de trámites. Lectura, canal, origen de la clasificación y vigencia histórica se indican por fuente. Los enlaces fallidos se retiran, conservando únicamente cantidades agregadas.
+
+El catálogo conserva enlaces y resúmenes, no copias de manuales completos. `index-only` significa enlace inventariado; `content-reviewed`, `transcript-reviewed` y `visual-reviewed` identifican lectura documental, subtítulos y revisión visual respectivamente. Ninguna de estas etiquetas certifica un trámite en una cuenta.
+
+Páginas extraídas en la investigación: 803. Páginas pendientes del recorrido: 0. Fuentes fallidas retiradas: 131. Copias idénticas retiradas: 3.
+
+Consulta normal: 30 fichas locales estructuradas, seguidas de fuentes operativas revisadas. Los pasos se devuelven en la búsqueda. Los enlaces de referencia se consultan expresamente con alcance referencias o todo; no se abren automáticamente.
+
+El canal y la operación son filtros documentales, no pruebas de acceso de una cuenta. Una clasificación basada en título se identifica como tal. La antigüedad por sí sola no convierte una fuente en obsoleta.
+
+Usa `sunat_guias` para buscar, leer una fuente y paginar todos los resultados sin cargar esta lista completa en el contexto.
+
+## Procedimientos preparados
+
+- Consultar Ficha RUC y régimen — ficha-ruc; sol-web; recurso sunat://procedimientos/ficha-ruc.
+- Modificar datos del RUC — ruc-modificacion-3128; sol-web; recurso sunat://procedimientos/ruc-modificacion-3128.
+- Suspensión o reinicio — ruc-suspension-reinicio; sol-web; recurso sunat://procedimientos/ruc-suspension-reinicio.
+- Propuestas y generación RVIE/RCE — sire-rvie-rce-sol; sol-web; recurso sunat://procedimientos/sire-rvie-rce-sol.
+- Complementar RCE — sire-rce-complementar; sol-web; recurso sunat://procedimientos/sire-rce-complementar.
+- Tickets, constancias e inconsistencias — sire-consultas-tickets; sol-web; recurso sunat://procedimientos/sire-consultas-tickets.
+- SIRE por aplicativo cliente — sire-desktop; escritorio; recurso sunat://procedimientos/sire-desktop.
+- Revisar acceso API SIRE — sire-api-acceso; api; recurso sunat://procedimientos/sire-api-acceso.
+- Declaración mensual IGV y Renta — declara-facil-621; sol-web; recurso sunat://procedimientos/declara-facil-621.
+- Declaraciones, pagos y constancias — consulta-declaraciones-pagos; sol-web; recurso sunat://procedimientos/consulta-declaraciones-pagos.
+- Valores pendientes de pago — consulta-deuda; sol-web; recurso sunat://procedimientos/consulta-deuda.
+- Consultar pagos o depósitos SPOT — detracciones-consulta-pago; sol-web; recurso sunat://procedimientos/detracciones-consulta-pago.
+- Preparar y pagar detracciones — detracciones-pago; sol-web; recurso sunat://procedimientos/detracciones-pago.
+- Notificaciones y mensajes — buzon-sol; sol-web; recurso sunat://procedimientos/buzon-sol.
+- Emitir recibo por honorarios — rhe-emision; sol-web; recurso sunat://procedimientos/rhe-emision.
+- Registrar cobro de un RHE — rhe-registro-pagos; sol-web; recurso sunat://procedimientos/rhe-registro-pagos.
+- Factura o boleta SEE SOL — see-sol-factura; sol-web; recurso sunat://procedimientos/see-sol-factura.
+- Consulta, alta, modificación y baja laboral — t-registro; sol-web; recurso sunat://procedimientos/t-registro.
+- Planilla mensual por web — plame-web-601; sol-web; recurso sunat://procedimientos/plame-web-601.
+- Solicitud y seguimiento de devolución — devolucion-1649; sol-web; recurso sunat://procedimientos/devolucion-1649.
+- Aplazamiento o fraccionamiento — fraccionamiento-art36; sol-web; recurso sunat://procedimientos/fraccionamiento-art36.
+- Modificar o incluir datos — modificacion-1693; sol-web; recurso sunat://procedimientos/modificacion-1693.
+- Pago con código de tributo errado — reconocimiento-pago-error; sol-web; recurso sunat://procedimientos/reconocimiento-pago-error.
+- Renta anual de personas — renta-anual-personas-709; sol-web; recurso sunat://procedimientos/renta-anual-personas-709.
+- Renta anual empresarial — renta-anual-empresas-710; sol-web; recurso sunat://procedimientos/renta-anual-empresas-710.
+- Consultar solicitud Drawback — drawback-consulta; web-sunat; recurso sunat://procedimientos/drawback-consulta.
+- Declaración Exporta Fácil — exporta-facil; web-sunat, presencial; recurso sunat://procedimientos/exporta-facil.
+- Consulta de Número de Pago SUNAT — nps-consulta; sol-web; recurso sunat://procedimientos/nps-consulta.
+- Generar Número de Pago SUNAT — nps-generacion; sol-web; recurso sunat://procedimientos/nps-generacion.
+- Pago posterior de un NPS — nps-pago; banco; recurso sunat://procedimientos/nps-pago.
+
+## Índices de origen
+
+- [centrovirtual.sunat.gob.pe/](https://centrovirtual.sunat.gob.pe/)
+- [centrovirtual.sunat.gob.pe/nuestros-videos](https://centrovirtual.sunat.gob.pe/nuestros-videos)
+- [cpe.sunat.gob.pe/guias-y-manuales](https://cpe.sunat.gob.pe/guias-y-manuales)
+- [orientacion.sunat.gob.pe/guias-manuales-y-servicios-web-0](https://orientacion.sunat.gob.pe/guias-manuales-y-servicios-web-0)
+- [www.sunat.gob.pe/operatividadaduanera/](https://www.sunat.gob.pe/operatividadaduanera/)
+- [www.sunat.gob.pe/operatividadaduanera/sda/tutoriales-sda.html](https://www.sunat.gob.pe/operatividadaduanera/sda/tutoriales-sda.html)
+
+## Estado de lectura
+
+| Estado | Fuentes |
+|---|---:|
+| index-only | 1876 |
+| content-reviewed | 58 |
+| transcript-reviewed | 99 |
+| visual-reviewed | 2 |
+| unavailable | 0 |
+
+## pagina
+
+- [¿Como funcionan las detracciones? - Empresas](https://orientacion.sunat.gob.pe/como-funcionan-las-detracciones-empresas) — guia-224c463652592a743d50; index-only; referencia; sin-determinar.
+- [¿Quiénes están obligados a emitir comprobantes de pago electrónicos?](https://cpe.sunat.gob.pe/informacion_general/obligados_cpe) — guia-b737292dbee2508cf698; index-only; referencia; sin-determinar.
+- [**Centro de Servicios** Virtual](https://centrovirtual.sunat.gob.pe/) — guia-0b96638acaef7ae22cee; index-only; referencia; presencial.
+- [**Procedimientos de Despacho**](https://www.sunat.gob.pe/orientacionaduanera/procedimientos/asociados.html) — guia-5c6a68b9f5e764fe9b66; index-only; referencia; sin-determinar.
+- [**Procedimientos de Despacho**](https://www.sunat.gob.pe/orientacionaduanera/procedimientos/especificos.html) — guia-632ad65c40a7bc346c7c; index-only; referencia; sin-determinar.
+- [**Procedimientos de Despacho**](https://www.sunat.gob.pe/orientacionaduanera/procedimientos/index.html) — guia-a2450ee403453080d74c; index-only; referencia; sin-determinar.
+- [**Procedimientos de Recaudación**](https://www.sunat.gob.pe/orientacionaduanera/procedimientos/recaudacion.html) — guia-61e2e02c5c7e3f42995d; index-only; referencia; sin-determinar.
+- [\| Asistente Aduanero](https://asistenteaduanero.sunat.gob.pe/) — guia-74aa19480224e684d8d5; index-only; referencia; sin-determinar.
+- [01 Concepto de Clave SOL](https://orientacion.sunat.gob.pe/sistema-sol-sunat-operaciones-en-linea-personas) — guia-cc44d554c8aa433f3df9; index-only; referencia; sol-web.
+- [01. Alcance y tasa del Impuesto a las Embarcaciones de Recreo](https://orientacion.sunat.gob.pe/01-alcance-y-tasa-del-impuesto-las-embarcaciones-de-recreo) — guia-413c374caeb46982a5a5; index-only; referencia; sin-determinar.
+- [01. Asegurados EsSalud - Personas](https://orientacion.sunat.gob.pe/01-asegurados-essalud-personas) — guia-2c5da38eeb376477339f; index-only; referencia; sin-determinar.
+- [01. Aspectos Generales](https://orientacion.sunat.gob.pe/7321-aspectos-generales) — guia-14d071af5065983f0b7a; index-only; referencia; sin-determinar.
+- [01. Cartilla de Instrucciones](https://orientacion.sunat.gob.pe/renta-anual-2015-empresas) — guia-c4c50a2e1792984c3dda; index-only; referencia; sin-determinar.
+- [01. Cartilla sobre el Régimen Tributario de Donaciones](https://orientacion.sunat.gob.pe/01-cartilla-sobre-el-regimen-tributario-de-donaciones) — guia-67e8a73950913fe9b275; index-only; referencia; sin-determinar.
+- [01. Concepto](https://orientacion.sunat.gob.pe/01-concepto) — guia-2e93aa1e86abacba60fa; index-only; referencia; sin-determinar.
+- [01. Concepto - Buenos Contribuyentes](https://orientacion.sunat.gob.pe/01-concepto-buenos-contribuyentes) — guia-63a4b8054876f3901a26; index-only; referencia; sin-determinar.
+- [01. Concepto - Planilla Electrónica](https://orientacion.sunat.gob.pe/informacion-general-planilla-electronica) — guia-40569beee5b40180a897; index-only; referencia; sin-determinar.
+- [01. Concepto de Clave SOL](https://orientacion.sunat.gob.pe/6613-01-concepto-de-clave-sol) — guia-dca1e28f802201541d6b; index-only; referencia; sol-web.
+- [01. Concepto de NPS](https://orientacion.sunat.gob.pe/01-concepto-de-nps) — guia-882e0d33f1d9962deae9; index-only; referencia; sin-determinar.
+- [01. Concepto del Régimen Especial](https://orientacion.sunat.gob.pe/2932-concepto-del-regimen-especial) — guia-7a7e8345a1945e4c2970; index-only; referencia; sin-determinar.
+- [01. Concepto y características - Guía de Remisión electrónica desde SEE SOL](https://orientacion.sunat.gob.pe/01-concepto-y-caracteristicas-guia-de-remision-electronica-desde-see-sol) — guia-ed9e46be8a5864cc5fe1; index-only; referencia; sol-web.
+- [01. Concepto- Impuesto a las Transacciones Financieras - ITF](https://orientacion.sunat.gob.pe/01-concepto-impuesto-las-transacciones-financieras-itf) — guia-b9cd966cbf2ca2ea2ede; index-only; referencia; sin-determinar.
+- [01. Consultas SUNAT-Régimen de Retenciones](https://orientacion.sunat.gob.pe/01-consultas-sunat-regimen-de-retenciones) — guia-7a96b227f2222a627455; index-only; referencia; sin-determinar.
+- [01. Definición del Sistema](https://orientacion.sunat.gob.pe/see-operador-de-servicios-electronicos) — guia-f4ef8b503b74222d2478; index-only; referencia; sin-determinar.
+- [01. Demos y Tutoriales - Planilla Electrónica](https://orientacion.sunat.gob.pe/01-demos-y-tutoriales-planilla-electronica) — guia-74a2f9dbbc348771c7ed; index-only; referencia; sin-determinar.
+- [01. Depósitos de detracciones de la Ley N° 30737](https://orientacion.sunat.gob.pe/7140-01-depositos-de-detracciones-de-la-ley-n-30737) — guia-e460453c602c49c114d0; index-only; referencia; sin-determinar.
+- [01. Detracciones](https://orientacion.sunat.gob.pe/como-funcionan-las-detracciones) — guia-189d3d455809d1310cb5; index-only; referencia; sin-determinar.
+- [01. Eliminación de la Obligación de llevar libro de ingresos y gastos electrónicos](https://orientacion.sunat.gob.pe/01-eliminacion-de-la-obligacion-de-llevar-libro-de-ingresos-y-gastos-electronicos) — guia-8a900c152caac243dd3d; index-only; referencia; sin-determinar.
+- [01. Impuesto a la Renta - Renta Anual 2014](https://orientacion.sunat.gob.pe/renta-anual-2014-personas) — guia-c61cd0da8e3ca1db181a; index-only; referencia; sin-determinar.
+- [01. Infracciones](https://orientacion.sunat.gob.pe/01-infracciones-0) — guia-f096fcd791ad0392172e; index-only; referencia; sin-determinar.
+- [01. Instructivo de sistemas de embargo](https://orientacion.sunat.gob.pe/01-instructivo-de-sistemas-de-embargo) — guia-e711a43ab74c284534ca; index-only; referencia; sin-determinar.
+- [01. Introducción a Insumos Químicos](https://orientacion.sunat.gob.pe/01-introduccion-insumos-quimicos) — guia-64b21730b3d9387853ac; index-only; referencia; sin-determinar.
+- [01. La Norma Antielusiva General – NAG](https://orientacion.sunat.gob.pe/7299-01-la-norma-antielusiva-general-nag-empresas) — guia-632f40b36ebc164a7b38; index-only; referencia; sin-determinar.
+- [01. Normas Legales - Comprobantes de Pago](https://orientacion.sunat.gob.pe/01-normas-legales-comprobantes-de-pago) — guia-3c3843bd9f2c464e0c3c; index-only; referencia; sin-determinar.
+- [01. Personas Comprendidas en el RMT](https://orientacion.sunat.gob.pe/6825-01-personas-comprendidas) — guia-8cc8e6b8603b88e48d1a; index-only; referencia; sin-determinar.
+- [01. Procedimiento de Cobranza Coactiva – Sustento y base legal](https://orientacion.sunat.gob.pe/01-procedimiento-de-cobranza-coactiva-sustento-y-base-legal) — guia-a53bf4ccf72f2e08c9fe; index-only; referencia; sin-determinar.
+- [01. Régimen de Percepciones - Información General](https://orientacion.sunat.gob.pe/01-regimen-de-percepciones-informacion-general) — guia-104a9497247e021a68a3; index-only; referencia; sin-determinar.
+- [01. Requisitos para acceder al Refinanciamiento](https://orientacion.sunat.gob.pe/refinanciamiento-personas) — guia-9f2d743d3e85764d5661; index-only; referencia; sin-determinar.
+- [01. Servicios Web disponibles](https://orientacion.sunat.gob.pe/guias-manuales-y-servicios-web) — guia-f13c0de4977e81e6f256; index-only; tecnico; api.
+- [02. Acogimiento del régimen especial](https://orientacion.sunat.gob.pe/2944-acogimiento-del-regimen-especial) — guia-6f83fb064943cbcf914e; index-only; referencia; sin-determinar.
+- [02. Beneficios de ser Buen Contribuyente](https://orientacion.sunat.gob.pe/02-beneficios-de-ser-buen-contribuyente) — guia-d0a0b341a8c05fe4d291; index-only; referencia; sin-determinar.
+- [02. Cálculo del Impuesto](https://orientacion.sunat.gob.pe/3071-02-calculo-del-impuesto) — guia-9e2e4bdbe0e8a7ddd570; index-only; referencia; sin-determinar.
+- [02. Características](https://orientacion.sunat.gob.pe/02-caracteristicas) — guia-2672c8f25a7f91675025; index-only; referencia; sin-determinar.
+- [02. Concepto - Bancarización](https://orientacion.sunat.gob.pe/02-concepto-bancarizacion) — guia-a4d451a6fb2587ea9fec; index-only; referencia; banco.
+- [02. Declaración y pago anual](https://orientacion.sunat.gob.pe/declaracion-y-pago-anual-1) — guia-b89c114b952382060949; index-only; referencia; sin-determinar.
+- [02. Definiciones para aplicar la Norma Antielusiva General](https://orientacion.sunat.gob.pe/7291-02-definiciones-para-aplicar-la-norma-antielusiva-general-empresas) — guia-a79ec2915158212d420a; index-only; referencia; sin-determinar.
+- [02. Devolución y Compensación - Régimen de Retenciones](https://orientacion.sunat.gob.pe/02-devolucion-y-compensacion-regimen-de-retenciones) — guia-108bf5bb013f988a6002; index-only; referencia; sin-determinar.
+- [02. Guía de Remisión Remitente](https://orientacion.sunat.gob.pe/02-guia-de-remision-remitente) — guia-52fbbba513d69063c82f; index-only; referencia; sin-determinar.
+- [02. Guías de elaboración](https://orientacion.sunat.gob.pe/02-guias-de-elaboracion) — guia-90a70b03ff9e7c6f852a; index-only; referencia; sin-determinar.
+- [02. Inaplicación de Sanciones por las Infracciones del Artículo 175° Numeral 2 y 5 vinculadas a los Libros y/o Registros electrónicos](https://orientacion.sunat.gob.pe/7109-02-inaplicacion-de-sanciones-por-las-infracciones-del-articulo-175-numeral-2-y-5-vinculadas-a-los-libros-y-o-registros-electronicos) — guia-bac4ddf722591f321360; index-only; referencia; sin-determinar.
+- [02. Inscripción al Registro BF](https://orientacion.sunat.gob.pe/02-inscripcion-al-registro-bf) — guia-691b4a9bd2f0af885fe9; index-only; referencia; sin-determinar.
+- [02. Instructivo](https://orientacion.sunat.gob.pe/6967-01-instructivo) — guia-8cd18f47b07ec466dd3e; index-only; referencia; sin-determinar.
+- [02. Modalidades de pago electrónico](https://orientacion.sunat.gob.pe/6696-02-modalidades-de-pago-electronico-2) — guia-560ed807d09fe960d1cf; index-only; referencia; sin-determinar.
+- [02. Normas legales - Guía de Remisión Electrónica desde SEE SOL](https://orientacion.sunat.gob.pe/02-normas-legales-guia-de-remision-electronica-desde-see-sol) — guia-58c6c6a5c48fb64aa5e3; index-only; referencia; sol-web.
+- [02. Objetivos](https://orientacion.sunat.gob.pe/02-objetivos) — guia-29264c75f72589b68258; index-only; referencia; sin-determinar.
+- [02. Obligados a declarar](https://orientacion.sunat.gob.pe/02-obligados-declarar) — guia-fd7574d44e830c22af21; index-only; referencia; sin-determinar.
+- [02. Prestaciones otorgadas](https://orientacion.sunat.gob.pe/3285-02-prestaciones-otorgadas) — guia-ba13acbcb18edcb668a7; index-only; referencia; sin-determinar.
+- [02. Procedimientos Liberación de Fondos](https://orientacion.sunat.gob.pe/3148-02-procedimientos-liberacion-de-fondos-empresas) — guia-c178f81639b455f0563b; index-only; referencia; sin-determinar.
+- [02. Quiénes están obligados a suministrar información financiera a SUNAT](https://orientacion.sunat.gob.pe/02-quienes-estan-obligados-suministrar-informacion-financiera-sunat) — guia-5d7baffb6f96b1aaa144; index-only; referencia; sin-determinar.
+- [02. Régimen de Percepciones - Venta Interna](https://orientacion.sunat.gob.pe/02-regimen-de-percepciones-venta-interna) — guia-75475db9bd8676ce1e64; index-only; referencia; sin-determinar.
+- [02. Registros y libros](https://orientacion.sunat.gob.pe/registros-y-libros-1) — guia-f3866803c601c59886cc; index-only; referencia; sin-determinar.
+- [02. Renta de Primera Categoría](https://orientacion.sunat.gob.pe/02-renta-de-primera-categoria) — guia-a90f42056a9e0166c728; index-only; referencia; sin-determinar.
+- [02. Requerimientos del Sistema](https://orientacion.sunat.gob.pe/requerimientos_del_sistema) — guia-7bcba5521665645479fb; index-only; referencia; sin-determinar.
+- [02. Requisitos para obtener la Clave SOL](https://orientacion.sunat.gob.pe/6614-02-requisitos-para-obtener-la-clave-sol) — guia-855f9019de6d238905a6; index-only; referencia; sol-web.
+- [02. Sujetos Comprendidos](https://orientacion.sunat.gob.pe/3098-02-sujetos-comprendidos) — guia-b2bf5f25424fbcea743c; index-only; referencia; sin-determinar.
+- [02. Tasa del Impuesto a las Embarcaciones de Recreo](https://orientacion.sunat.gob.pe/02-tasa-del-impuesto-las-embarcaciones-de-recreo) — guia-c0bf8fc78295221330a6; index-only; referencia; sin-determinar.
+- [03. ¿Cómo ingresar/acceder a SUNAT Operaciones en Línea?](https://orientacion.sunat.gob.pe/3315-como-ingresar-acceder-a-sunat-operaciones-en-linea-personas) — guia-c6aa00578ca0d81c0cd2; index-only; referencia; sol-web.
+- [03. Acceso a SUNAT Operaciones en Línea (SOL)](https://orientacion.sunat.gob.pe/03-acceso-sunat-operaciones-en-linea-sol) — guia-6a3ac6c50f434ce08a88; index-only; referencia; sol-web.
+- [03. Cartas Inductivas](https://orientacion.sunat.gob.pe/03-cartas-inductivas) — guia-e20bbeed245cd7d09629; index-only; referencia; sin-determinar.
+- [03. Criterios para ser incorporado como Buen Contribuyente](https://orientacion.sunat.gob.pe/03-criterios-para-ser-incorporado-como-buen-contribuyente) — guia-2c1c8554978098559db2; index-only; referencia; sin-determinar.
+- [03. Exposición de Motivos - Decreto Legislativo N° 1422](https://orientacion.sunat.gob.pe/7292-03-exposicion-de-motivos-decreto-legislativo-n-1422-empresas) — guia-bfce3c48d50b57bb4a3c; index-only; normativa; sin-determinar.
+- [03. Generación del NPS](https://orientacion.sunat.gob.pe/6652-03-generacion-del-nps) — guia-1b72251823ba18cbd7e6; index-only; referencia; sin-determinar.
+- [03. Guía de Remisión Transportista](https://orientacion.sunat.gob.pe/03-guia-de-remision-transportista) — guia-328d2384543685f8a687; index-only; referencia; sin-determinar.
+- [03. Manuales](https://orientacion.sunat.gob.pe/03-manuales) — guia-aa0dd78b9adda8e21501; index-only; referencia; sin-determinar.
+- [03. Monto](https://orientacion.sunat.gob.pe/7282-03-monto) — guia-e3812357ace54d93b5a3; index-only; referencia; sin-determinar.
+- [03. Normas Legales - Régimen de Retenciones](https://orientacion.sunat.gob.pe/03-normas-legales-regimen-de-retenciones) — guia-d51627290745d303fb6e; index-only; referencia; sin-determinar.
+- [03. Nuevo - Registro de operaciones](https://orientacion.sunat.gob.pe/03-nuevo-registro-de-operaciones) — guia-8059f8d7be918a54dc9a; index-only; referencia; sin-determinar.
+- [03. Operatividad](https://orientacion.sunat.gob.pe/3529-operatividad) — guia-4c45657890cb504cd749; index-only; referencia; sin-determinar.
+- [03. Pasos del procedimiento](https://orientacion.sunat.gob.pe/03-pasos-del-procedimiento) — guia-2496b09d61da53835c10; index-only; referencia; sin-determinar.
+- [03. Procedimiento de Devolución](https://orientacion.sunat.gob.pe/6664-03-procedimiento-de-devolucion) — guia-c3cbd75023209d67eb4d; index-only; referencia; sin-determinar.
+- [03. Procedimiento de Ingreso como Recaudación (RS Nº 184-2017/SUNAT)](https://orientacion.sunat.gob.pe/6996-03-procedimiento-de-ingreso-como-recaudacion-rs-n-184-2017-sunat) — guia-f54ba0c183616d518c42; index-only; normativa; sin-determinar.
+- [03. Régimen de Percepciones - Importaciones](https://orientacion.sunat.gob.pe/3465-01-regimen-de-percepciones-importaciones) — guia-dad45f1903ac5b0d8616; index-only; referencia; sin-determinar.
+- [03. Tasa del Impuesto a las Transacciones Financieras](https://orientacion.sunat.gob.pe/03-tasa-del-impuesto-las-transacciones-financieras) — guia-75e25369e723017bc682; index-only; referencia; sin-determinar.
+- [03.Sujetos del Impuesto a las Embarcaciones de Recreo](https://orientacion.sunat.gob.pe/03sujetos-del-impuesto-las-embarcaciones-de-recreo-0) — guia-9aa921015cf48a5ecb1a; index-only; referencia; sin-determinar.
+- [04. Apelación de puro derecho](https://orientacion.sunat.gob.pe/04-apelacion-de-puro-derecho) — guia-28d5f12e6566735f2fb4; index-only; referencia; sin-determinar.
+- [04. Boletas de Pago](https://orientacion.sunat.gob.pe/04-boletas-de-pago) — guia-3ef7c7125355ac19e0b2; index-only; referencia; sin-determinar.
+- [04. Certificado Digital](https://orientacion.sunat.gob.pe/04-certificado-digital) — guia-797ea67bf688e3311e64; index-only; referencia; sin-determinar.
+- [04. Comprobantes de Pago](https://orientacion.sunat.gob.pe/04-comprobantes-de-pago) — guia-7e70b807e7b2eb676727; index-only; referencia; sin-determinar.
+- [04. Criterios para dejar sin efecto la incorporación - BUCS](https://orientacion.sunat.gob.pe/04-criterios-para-dejar-sin-efecto-la-incorporacion-bucs) — guia-efab2f2c0325cfd7db57; index-only; referencia; sin-determinar.
+- [04. Declaración por registro, transferencia o cancelación - Impuesto a las Embarcaciones de Recreo](https://orientacion.sunat.gob.pe/04-declaracion-por-registro-transferencia-o-cancelacion-impuesto-las-embarcaciones-de-recreo) — guia-7643d8e6d12c70371911; index-only; referencia; sin-determinar.
+- [04. En qué consiste el procedimiento de debida diligencia bajo el ECR](https://orientacion.sunat.gob.pe/7252-04-en-que-consiste-el-procedimiento-de-debida-diligencia-bajo-el-ecr) — guia-d0e56b4601a4b4102919; index-only; referencia; sin-determinar.
+- [04. Excepciones en la emisión de Guía de Remisión Remitente](https://orientacion.sunat.gob.pe/04-excepciones-en-la-emision-de-guia-de-remision-remitente) — guia-ccaa954ba1cbb2cf421b; index-only; referencia; sin-determinar.
+- [04. Inicio del procedimiento de cobranza coactiva](https://orientacion.sunat.gob.pe/04-inicio-del-procedimiento-de-cobranza-coactiva) — guia-2897f3f3a77a8796fd1d; index-only; referencia; sin-determinar.
+- [04. Medios de Pago - Bancarización](https://orientacion.sunat.gob.pe/3045-medios-de-pago-bancarizacion) — guia-424fe9c429c33ad675e4; index-only; referencia; banco.
+- [04. Modificación o actualización de información en el Registro](https://orientacion.sunat.gob.pe/04-modificacion-o-actualizacion-de-informacion-en-el-registro) — guia-4ea0d095d24caad28980; index-only; referencia; sin-determinar.
+- [04. Obligaciones del Agente de Retención](https://orientacion.sunat.gob.pe/04-obligaciones-del-agente-de-retencion) — guia-d9a440473e1124b7fa60; index-only; referencia; sin-determinar.
+- [04. Parámetros de fondo - Norma Antielusiva General](https://orientacion.sunat.gob.pe/7293-04-parametros-de-fondo-norma-antielusiva-general-empresas) — guia-40d2d6bf0c211152e789; index-only; referencia; sin-determinar.
+- [04. Plazos de Fraccionamiento](https://orientacion.sunat.gob.pe/04-plazos-de-fraccionamiento) — guia-ac41434c0256fdb0fd47; index-only; referencia; sin-determinar.
+- [04. Procedimiento y lugar para presentar el PDT](https://orientacion.sunat.gob.pe/6690-03-procedimiento-y-lugar-para-presentar-el-pdt-2) — guia-6dabdf1f6bcff4f8729d; index-only; referencia; sin-determinar.
+- [04. Procedimiento y lugar para presentar el PDT](https://orientacion.sunat.gob.pe/6634-03-procedimiento-y-lugar-para-presentar-el-pdt) — guia-bd49acc3107898e56034; index-only; referencia; sin-determinar.
+- [04. Régimen de Percepciones - Venta de Combustible](https://orientacion.sunat.gob.pe/04-regimen-de-percepciones-venta-de-combustible) — guia-0a592da5d52bda02e178; index-only; referencia; sin-determinar.
+- [04. Sujetos del Impuesto - ISC](https://orientacion.sunat.gob.pe/04-sujetos-del-impuesto-isc) — guia-1ee301fb5d991c82bd2d; index-only; referencia; sin-determinar.
+- [04. Trámites y/o transacciones con la Clave SOL](https://orientacion.sunat.gob.pe/04-tramites-yo-transacciones-con-la-clave-sol) — guia-c3e5f21e2e8aea759cc5; index-only; referencia; sol-web.
+- [04. Transacciones y trámites con la Clave SOL](https://orientacion.sunat.gob.pe/3325-transacciones-y-tramites-con-la-clave-sol-personas) — guia-6ba2c58ea2cdc7f7f627; index-only; referencia; sol-web.
+- [05. Autorización de ingreso y salida de bienes](https://orientacion.sunat.gob.pe/05-autorizacion-de-ingreso-y-salida-de-bienes) — guia-074643f01024e29bb567; index-only; referencia; sin-determinar.
+- [05. Comprobante de Percepción](https://orientacion.sunat.gob.pe/05-comprobante-de-percepcion) — guia-86910662fb572e4d6c6c; index-only; referencia; sin-determinar.
+- [05. Consultas SUNAT - Percepciones](https://orientacion.sunat.gob.pe/05-consultas-sunat-percepciones) — guia-7b5062da90bcc7d733b5; index-only; referencia; sin-determinar.
+- [05. Efectos de la Exclusión](https://orientacion.sunat.gob.pe/05-efectos-de-la-exclusion) — guia-d55c3146c14af06769ef; index-only; referencia; sin-determinar.
+- [05. Excepciones en la emisión de Guías de Remisión Remitente y Transportista](https://orientacion.sunat.gob.pe/05-excepciones-en-la-emision-de-guias-de-remision-remitente-y-transportista) — guia-645c79058d7d2905d3ba; index-only; referencia; sin-determinar.
+- [05. Guía básica de declaración y pago](https://orientacion.sunat.gob.pe/6675-05-guia-basica-de-declaracion-y-pago-2) — guia-9615e098a42443e5c8c1; index-only; referencia; sin-determinar.
+- [05. Guía básica de declaración y pago](https://orientacion.sunat.gob.pe/6630-05-guia-basica-de-declaracion-y-pago) — guia-bff419c4b4c31bfa8945; index-only; referencia; sin-determinar.
+- [05. Instructivo (Cartas de crédito transferibles)](https://orientacion.sunat.gob.pe/05-instructivo-cartas-de-credito-transferibles) — guia-43aaa546e9518bef98b7; index-only; referencia; sin-determinar.
+- [05. Medios de pago y código de tributo](https://orientacion.sunat.gob.pe/3030-medios-de-pago-y-codigo-de-tributo-impuesto-a-las-embaracaciones-de-recreo) — guia-7e950dc2229d97cb40ce; index-only; referencia; sin-determinar.
+- [05. Obligaciones del Proveedor](https://orientacion.sunat.gob.pe/05-obligaciones-del-proveedor) — guia-e8e9e7d7473fe7a74f6d; index-only; referencia; sin-determinar.
+- [05. Parámetros de forma para la aplicación de la norma XVI](https://orientacion.sunat.gob.pe/7294-05-pasos-empresas) — guia-830db494b4ac5524f1c6; index-only; referencia; sin-determinar.
+- [05. Parámetros de forma para la aplicación de la norma XVI](https://orientacion.sunat.gob.pe/7294-05-pasos) — guia-d2ed62260b7e456fd934; index-only; referencia; sin-determinar.
+- [05. Preguntas frecuentes - Guías de Remisión BF](https://orientacion.sunat.gob.pe/05-preguntas-frecuentes-guias-de-remision-bf) — guia-eeb5bfadde2b2b18ac51; index-only; referencia; sin-determinar.
+- [05. Prórroga del plazo de pago original por tres (3) meses](https://orientacion.sunat.gob.pe/6859-06-contribuyentes-no-comprendidos) — guia-72fa9d24524e17f97ae7; index-only; referencia; sin-determinar.
+- [05. Reporte Electrónico](https://orientacion.sunat.gob.pe/7112-05-reporte-electronico) — guia-2e5357c9856157f4406c; index-only; referencia; sin-determinar.
+- [05. Responsables de declarar y pagar el Impuesto a las Transacciones Financieras](https://orientacion.sunat.gob.pe/05-responsables-de-declarar-y-pagar-el-impuesto-las-transacciones-financieras) — guia-220bd97fa2d1b35b532b; index-only; referencia; sin-determinar.
+- [05.Constancia “Tax Free”](https://orientacion.sunat.gob.pe/7466-05-constancia-tax-free) — guia-0fd3446a9882139f8acd; index-only; referencia; sin-determinar.
+- [06. Cambio de usuario y Clave SOL](https://orientacion.sunat.gob.pe/6617-05-cambio-de-usuario-y-clave-sol) — guia-bbb47f5a1a6629451492; index-only; referencia; sol-web.
+- [06. Cambio de usuario y de Clave SOL](https://orientacion.sunat.gob.pe/06-cambio-de-usuario-y-de-clave-sol) — guia-ddcc30e4deba534f0859; index-only; referencia; sol-web.
+- [06. Casos Especiales en la Emisión de Guías de Remisión](https://orientacion.sunat.gob.pe/06-casos-especiales-en-la-emision-de-guias-de-remision) — guia-b7021875bdb84f5a40d5; index-only; referencia; sin-determinar.
+- [06. Criterios de reincorporación](https://orientacion.sunat.gob.pe/06-criterios-de-reincorporacion) — guia-b33503a9097d1b8afbf7; index-only; referencia; sin-determinar.
+- [06. Declaración](https://orientacion.sunat.gob.pe/7295-06-declaracion-empresas) — guia-e0eab80b3e88bc4fa6e3; index-only; referencia; sin-determinar.
+- [06. Formatos de Guía de Pago Fácil](https://orientacion.sunat.gob.pe/06-formatos-de-guia-de-pago-facil) — guia-9740d9b27b273f9884da; index-only; referencia; sin-determinar.
+- [06. Guía de remisión electrónica para bienes fiscalizados](https://orientacion.sunat.gob.pe/06-guia-de-remision-electronica-para-bienes-fiscalizados) — guia-a7de8257108fd6a8c189; index-only; referencia; sin-determinar.
+- [06. Instructivo para Declaración Informativa de los Concesionarios del servicio de revisiones técnicas vehiculares](https://orientacion.sunat.gob.pe/06-instructivo-para-declaracion-informativa-de-los-concesionarios-del-servicio-de-revisiones) — guia-3afcc69d5b0bb26e612c; index-only; referencia; sin-determinar.
+- [06. Instructivos](https://orientacion.sunat.gob.pe/3766-06-instructivos) — guia-4969b40d72db22bda150; index-only; referencia; sin-determinar.
+- [06. Operaciones que afectan a las personas naturales al Impuesto a las Transacciones Financieras](https://orientacion.sunat.gob.pe/06-operaciones-que-afectan-las-personas-naturales-al-impuesto-las-transacciones-financieras) — guia-fa523e17788a762f2262; index-only; referencia; sin-determinar.
+- [06. Plazos del Fraccionamiento](https://orientacion.sunat.gob.pe/06-plazos-del-fraccionamiento) — guia-bd9bd31b4d53a3987441; index-only; referencia; sin-determinar.
+- [06. Preguntas Frecuentes - Percepciones](https://orientacion.sunat.gob.pe/06-preguntas-frecuentes-percepciones) — guia-e07b6f09e9c2fdef0276; index-only; referencia; sin-determinar.
+- [06. Preguntas Frecuentes - Régimen de Retenciones](https://orientacion.sunat.gob.pe/06-preguntas-frecuentes-regimen-de-retenciones) — guia-5e885efc51e3478e2610; index-only; referencia; sin-determinar.
+- [06. Suspensión del procedimiento de cobranza coactiva](https://orientacion.sunat.gob.pe/06-suspension-del-procedimiento-de-cobranza-coactiva) — guia-0356b34dc709670f2cdb; index-only; referencia; sin-determinar.
+- [06. Tabla de Valores Referenciales](https://orientacion.sunat.gob.pe/3074-tabla-de-valores-referenciales) — guia-c0c75dcb490332c9f580; index-only; referencia; sin-determinar.
+- [06.Procedimiento de Certificación de Cheques de Detracciones del SPOT para pago de Tributos Aduaneros en Cajas de Aduanas](https://orientacion.sunat.gob.pe/06procedimiento-de-certificacion-de-cheques-de-detracciones-del-spot-para-pago-de-tributos) — guia-0f4455be9f3c2bc17bec; index-only; referencia; sin-determinar.
+- [06.Procedimiento de Certificación de Cheques de Detracciones del SPOT para pago de Tributos Aduaneros en Cajas de Aduanas](https://orientacion.sunat.gob.pe/7180-05-procedimiento-de-certificacion-de-cheques-de-detracciones-del-spot-para-pago-de-tributos-aduaneros-en-cajas-de-aduanas) — guia-62ecf2ca6748f6c3c4f2; index-only; referencia; sin-determinar.
+- [07 - Guia - Pago Electrónico](https://orientacion.sunat.gob.pe/07-guia-pago-electronico) — guia-ac834ae0f9985d0bf8b5; index-only; referencia; sin-determinar.
+- [07. Conclusión del procedimiento de cobranza coactiva](https://orientacion.sunat.gob.pe/07-conclusion-del-procedimiento-de-cobranza-coactiva) — guia-bb7ca200ed2757b7ef90; index-only; referencia; sin-determinar.
+- [07. Creación de Usuario Secundarios de la Clave SOL](https://orientacion.sunat.gob.pe/07-creacion-de-usuario-secundarios-de-la-clave-sol) — guia-cb3a9c571fc370590c1f; index-only; referencia; sol-web.
+- [07. Formato Declaración de Datos Art. 62-C del Código Tributario](https://orientacion.sunat.gob.pe/7296-07-formato-declaracion-de-datos-art-62-c-ct-empresas) — guia-e28f9fe3dca291594783; index-only; referencia; sin-determinar.
+- [07. Guía - Pago Electrónico - Personas](https://orientacion.sunat.gob.pe/7028-guia-pago-electronico-personas) — guia-414593ce6a775a8eea8c; index-only; referencia; sin-determinar.
+- [07. Instructivo descarga de información de declaraciones (PDT 600,601, 617 y 621)](https://orientacion.sunat.gob.pe/07-instructivo-descarga-de-informacion-de-declaraciones-pdt-600601-617-y-621) — guia-44865f0c1b0cd5c0be34; index-only; referencia; sin-determinar.
+- [07. Interés del Fraccionamiento](https://orientacion.sunat.gob.pe/07-interes-del-fraccionamiento) — guia-cae0a16276b810ad45cb; index-only; referencia; sin-determinar.
+- [07. Material de Charla](https://orientacion.sunat.gob.pe/07-material-de-charla) — guia-50d48fd8f526d3d2dd62; index-only; referencia; sin-determinar.
+- [07. Normas Legales](https://orientacion.sunat.gob.pe/7383-05-normas-legales) — guia-6b18375c0203b5ad9d59; index-only; referencia; sin-determinar.
+- [07. Normas Legales - Percepciones](https://orientacion.sunat.gob.pe/07-normas-legales-percepciones) — guia-2fe7c488aaf0068cb89d; index-only; referencia; sin-determinar.
+- [07. Nuevo procedimiento de autorización de comprobantes de pagos físicos (exclusivo para emisores electrónicos)](https://orientacion.sunat.gob.pe/7137-07-nuevo-procedimiento-de-autorizacion-de-comprobantes-de-pagos-fisicos) — guia-d580d4221cf4086c288c; index-only; referencia; sin-determinar.
+- [07. Operaciones no afectas al Impuesto a las Transacciones Financieras - ITF](https://orientacion.sunat.gob.pe/07-operaciones-no-afectas-al-impuesto-las-transacciones-financieras-itf) — guia-b34f1154e4576ddca9b1; index-only; referencia; sin-determinar.
+- [07. Operatividad - Insumos Quimicos](https://orientacion.sunat.gob.pe/07-operatividad-insumos-quimicos) — guia-dd7757c117604b98a01e; index-only; referencia; sin-determinar.
+- [07. Padrón de Buenos Contribuyentes](https://orientacion.sunat.gob.pe/07-padron-de-buenos-contribuyentes) — guia-6ab2cceeb54c300aebd3; index-only; referencia; sin-determinar.
+- [07. Padrón de Emisores Electrónicos](https://orientacion.sunat.gob.pe/07-padron-de-emisores-electronicos) — guia-1aeaf751781be57c9c71; index-only; referencia; sin-determinar.
+- [07. Procedimiento de imputación a través de SUNAT Virtual (Clave SOL)](https://orientacion.sunat.gob.pe/3153-07-procedimiento-de-imputacion-a-traves-de-sunat-virtual-clave-sol-empresas) — guia-303023878efbd44892df; index-only; referencia; sol-web.
+- [07. Procedimiento de imputación a través de SUNAT Virtual (Clave SOL)](https://orientacion.sunat.gob.pe/07-procedimiento-de-imputacion-traves-de-sunat-virtual-clave-sol) — guia-9ae02abedd8af66ee961; index-only; referencia; sol-web.
+- [07. Procedimiento para el Ingreso de Bienes a la Región (Loreto)](https://orientacion.sunat.gob.pe/07-procedimiento-para-el-ingreso-de-bienes-la-region-loreto) — guia-06218829624b89a48689; index-only; referencia; sin-determinar.
+- [07. Régimen de Retenciones - Información General](https://orientacion.sunat.gob.pe/07-regimen-de-retenciones-informacion-general) — guia-06ecff9d7f2c6fc5d824; index-only; referencia; sin-determinar.
+- [08. Buzón Electrónico](https://orientacion.sunat.gob.pe/6619-08-buzon-electronico) — guia-ee618085b5266249f577; index-only; referencia; sin-determinar.
+- [08. Cartillas y descarga de la PLAME](https://orientacion.sunat.gob.pe/3235-08-cartillas-y-descarga-del-plame) — guia-789c70a0b9b5f1265e3b; index-only; referencia; sin-determinar.
+- [08. Crédito del ITF para el Impuesto a la Renta - Personas naturales](https://orientacion.sunat.gob.pe/08-credito-del-itf-para-el-impuesto-la-renta-personas-naturales) — guia-2b453e2bee2ce532f31f; index-only; referencia; sin-determinar.
+- [08. Devolución](https://orientacion.sunat.gob.pe/7205-08-devolucion) — guia-b939b3a5a0c810701289; index-only; referencia; sin-determinar.
+- [08. Formularios: Insumos Químicos](https://orientacion.sunat.gob.pe/formularioinsumos-987) — guia-d3a3a8461332f7e0ec07; index-only; referencia; sin-determinar.
+- [08. Guías y Manuales](https://orientacion.sunat.gob.pe/08-guias-y-manuales) — guia-036cda4b57d84adddcf7; index-only; referencia; sin-determinar.
+- [08. Infracciones y sanciones - NAG](https://orientacion.sunat.gob.pe/7297-08-infracciones-y-sanciones-nag) — guia-d71f6ca8f05659401cfc; index-only; referencia; sin-determinar.
+- [08. Normas legales](https://orientacion.sunat.gob.pe/08-normas-legales-0) — guia-518c4ecc998f86e0e7e8; index-only; referencia; sin-determinar.
+- [08. Nuevas Tasa de Interes](https://orientacion.sunat.gob.pe/08-nuevas-tasa-de-interes) — guia-6774b151e5b94a20358c; index-only; referencia; sin-determinar.
+- [08. Obligaciones del OSE](https://orientacion.sunat.gob.pe/08-obligaciones-del-ose) — guia-211b2e4f2acbbdd0c692; index-only; referencia; sin-determinar.
+- [08. Recuperación de la Clave SOL](https://orientacion.sunat.gob.pe/3333-recuperacion-de-clave-sol-por-internet-personas) — guia-13e43799f2bc6f5f8903; index-only; referencia; sol-web.
+- [08. Tasa y cálculo del aporte al SNP - ONP](https://orientacion.sunat.gob.pe/08-tasa-y-calculo-del-aporte-al-snp-onp) — guia-8aaa25a6388485bc2f27; index-only; referencia; sin-determinar.
+- [09. Anexo](https://orientacion.sunat.gob.pe/anexo-9-personas) — guia-5b2b8979f699cd7a7f56; index-only; referencia; sin-determinar.
+- [09. Casos prácticos](https://orientacion.sunat.gob.pe/2992-09-casos-practicos) — guia-2473b7ac5604a551569d; index-only; referencia; sin-determinar.
+- [09. Conceptos afectos a ONP](https://orientacion.sunat.gob.pe/6722-10-conceptos-afectos-a-onp) — guia-710b0ddd050207abf9af; index-only; referencia; sin-determinar.
+- [09. Infracciones y Sanciones: Insumos Químicos](https://orientacion.sunat.gob.pe/6428-infracciones-y-sanciones) — guia-ee282064a80a1199f61e; index-only; referencia; sin-determinar.
+- [09. Lugares de atención](https://orientacion.sunat.gob.pe/09-lugares-de-atencion) — guia-e6ce6a965b5619481f3e; index-only; referencia; sin-determinar.
+- [09. Manual de Uso de la Aplicación Cliente](https://orientacion.sunat.gob.pe/9-Manual-de-uso-de-la-aplicaci%C3%B3n-cliente) — guia-1ee6b2ae564a5bfb66aa; index-only; referencia; sin-determinar.
+- [09. Normas legales](https://orientacion.sunat.gob.pe/7298-09-normas-legales-empresas) — guia-e1696eee21a9cee8a444; index-only; referencia; sin-determinar.
+- [09. Notificaciones Electrónicas](https://orientacion.sunat.gob.pe/6620-09-notificaciones-electronicas-empresas) — guia-13788b3b2e8023010446; index-only; referencia; sin-determinar.
+- [09. Preguntas Frecuentes](https://orientacion.sunat.gob.pe/7078-09-preguntas-frecuentes) — guia-71e1a9b48f9d0c398596; index-only; referencia; sin-determinar.
+- [09. Responsables solidarios en el procedimiento de cobranza coactiva](https://orientacion.sunat.gob.pe/09-responsables-solidarios-en-el-procedimiento-de-cobranza-coactiva) — guia-57bf565e88a990656041; index-only; referencia; sin-determinar.
+- [1. Definición, base imponible y tasa](https://orientacion.sunat.gob.pe/1-definicion-base-imponible-y-tasa) — guia-1ed257f4dc0a24c068c3; index-only; referencia; sin-determinar.
+- [10. Avisos Electrónicos](https://orientacion.sunat.gob.pe/10-avisos-electronicos) — guia-be23507eaf19d536076c; index-only; referencia; sin-determinar.
+- [10. Catálogo de Esquemas de Alto Riesgo Fiscal](https://orientacion.sunat.gob.pe/7320-10-catalogo-de-esquemas-de-alto-riesgo-fiscal-empresas) — guia-090b9ae65ad6c296a8d1; index-only; referencia; sin-determinar.
+- [10. Descarga del PVS](https://orientacion.sunat.gob.pe/3226-10-descarga-del-pvs) — guia-9194c8e26a49c9e019ab; index-only; referencia; escritorio.
+- [10. Manual de Servicios REST](https://orientacion.sunat.gob.pe/10-manual-de-servicios-rest) — guia-4ee1c03788ae36f52a57; index-only; referencia; sin-determinar.
+- [10. Manual Informático para SUNAT Operaciones en Línea](https://orientacion.sunat.gob.pe/10-manual-informatico-para-sunat-operaciones-en-linea) — guia-82db5318980d6c2fe1a6; index-only; referencia; sol-web.
+- [10. Normas Legales - Insumos Químicos](https://orientacion.sunat.gob.pe/10-normas-legales-insumos-quimicos) — guia-62c3a8156265d8a8b6c8; index-only; referencia; sin-determinar.
+- [10. Tasación](https://orientacion.sunat.gob.pe/10-tasacion) — guia-901e7410a0a47de34d4a; index-only; referencia; sin-determinar.
+- [11. Cartillas de Instrucciones](https://orientacion.sunat.gob.pe/11-cartillas-de-instrucciones) — guia-86f1a952aee3c4b21089; index-only; referencia; sin-determinar.
+- [11. Código de Conducta del Usuario de IQBF](https://orientacion.sunat.gob.pe/11-codigo-de-conducta-del-usuario-de-iqbf) — guia-90da5ad27ea46af7f88d; index-only; referencia; sin-determinar.
+- [11. Condiciones del Domicilio Fiscal](https://orientacion.sunat.gob.pe/11-condiciones-del-domicilio-fiscal) — guia-73c0bc63f9c53ab69962; index-only; referencia; sin-determinar.
+- [11. Guías y manuales](https://orientacion.sunat.gob.pe/11-guias-y-manuales) — guia-58c7f58e3ac0bd1f9d6e; index-only; referencia; sin-determinar.
+- [11. Normatividad](https://orientacion.sunat.gob.pe/7157-11-normatividad-internacional) — guia-eda06f50ef2a5a6d3443; index-only; referencia; sin-determinar.
+- [11. Recuperación de la Clave SOL](https://orientacion.sunat.gob.pe/6622-11-recuperacion-de-la-clave-sol-desde-internet) — guia-72e358dbc2425d4e2571; index-only; referencia; sol-web.
+- [11. Reporte de Gestión - Comité Revisor](https://orientacion.sunat.gob.pe/11-reporte-de-gestion-comite-revisor) — guia-4e6ab95cbd77873e86e9; index-only; referencia; sin-determinar.
+- [12. Consulta de Productos Controlados y no Controlados](https://orientacion.sunat.gob.pe/12-consulta-de-productos-controlados-y-no-controlados) — guia-03a5eca5c534fc1499fc; index-only; referencia; sin-determinar.
+- [12. Generación de nuevo usuario y Clave SOL](https://orientacion.sunat.gob.pe/12-generacion-de-nuevo-usuario-y-clave-sol) — guia-2200505719e98e26f521; index-only; referencia; sol-web.
+- [12. Preguntas frecuentes: Beneficiario Final](https://orientacion.sunat.gob.pe/7155-09-preguntas) — guia-ca203ad2e30f6cd3f840; index-only; referencia; sin-determinar.
+- [12. Utilización de servicios prestados por No Domiciliados](https://orientacion.sunat.gob.pe/12-utilizacion-de-servicios-prestados-por-no-domiciliados) — guia-6b8282b233ffefaae7ab; index-only; referencia; sin-determinar.
+- [13. Casuistica](https://orientacion.sunat.gob.pe/casuistica) — guia-9abb57ccdf1373559981; index-only; referencia; sin-determinar.
+- [13. Devolución](https://orientacion.sunat.gob.pe/13-devolucion) — guia-fe7b138ef71049735091; index-only; referencia; sin-determinar.
+- [13. Exceptuados de utilizar medios de pago](https://orientacion.sunat.gob.pe/7185-13-exceptuados-de-utilizar-medios-de-pago) — guia-b6e8e338d27a9d8871e8; index-only; referencia; sin-determinar.
+- [13. Garantías](https://orientacion.sunat.gob.pe/13-garantias) — guia-2baa3109f958e0ac2dc8; index-only; referencia; sin-determinar.
+- [13. Manual Informático para SUNAT Operaciones en Línea](https://orientacion.sunat.gob.pe/13-manual-informatico-para-sunat-operaciones-en-linea) — guia-01fccdc0179e94485dc3; index-only; referencia; sol-web.
+- [13. Permiso Excepcional](https://orientacion.sunat.gob.pe/13-permiso-excepcional) — guia-7acc09485b73ec6ce52c; index-only; referencia; sin-determinar.
+- [14. Cambio de Estado en el Registro para el Control de Bienes Fiscalizados](https://orientacion.sunat.gob.pe/14-cambio-de-estado-en-el-registro-para-el-control-de-bienes-fiscalizados) — guia-9416f7693a1cd3dd567b; index-only; referencia; sin-determinar.
+- [15. Ley 32412](https://orientacion.sunat.gob.pe/15-ley-32412) — guia-88f15f8765fc0a19f7f3; index-only; referencia; sin-determinar.
+- [16. Manual de Homologación de Proveedores de Servicios Electrónicos](https://orientacion.sunat.gob.pe/16-manual-de-homologacion-de-proveedores-de-servicios-electronicos) — guia-f23b4f2e5eff714419fd; index-only; tecnico; sin-determinar.
+- [16. Suspensión del procedimiento de cobranza coactiva](https://orientacion.sunat.gob.pe/2915-suspension-procedimiento-cobranza-coactiva) — guia-86b15e6462b95594c824; index-only; referencia; sin-determinar.
+- [17. Conclusión del procedimiento de cobranza coactiva](https://orientacion.sunat.gob.pe/2916-conclusion-procedimiento-cobranza-coactiva-personas) — guia-0187122142cd7523fd3f; index-only; referencia; sin-determinar.
+- [2. Deuda exigible coactivamente](https://orientacion.sunat.gob.pe/2912-deuda-exigible-coactivamente-personas) — guia-8079b13f9116798b6d91; index-only; referencia; sin-determinar.
+- [2. Requisitos, plazo y formas de acogimiento al Régimen Excepcional](https://orientacion.sunat.gob.pe/2-requisitos-plazo-y-formas-de-acogimiento-al-regimen-excepcional) — guia-6f8e98d0e6d204cdbb88; index-only; referencia; sin-determinar.
+- [2.2. Procedimiento de inscripción](https://orientacion.sunat.gob.pe/6235-03-procedimientos-de-inscripcion) — guia-8486826ea994495a9547; index-only; referencia; sin-determinar.
+- [2.7. Preguntas frecuentes - Procedimiento de renovación de inscripción en el Registro de Bienes Fiscalizados](https://orientacion.sunat.gob.pe/6374-09-preguntas-frecuentes-procedimiento-de-renovacion-de-inscripcion-en-el-registro-de-bienes-fiscalizados) — guia-0e1a0a76850e42df110a; index-only; referencia; sin-determinar.
+- [2.8. Material informativo y manuales](https://orientacion.sunat.gob.pe/6236-material-informativo-pvs-y-manuales) — guia-98051e01e7fa167d8e3e; index-only; referencia; escritorio.
+- [3. Actualización de Actividad Económica](https://orientacion.sunat.gob.pe/3-actualizacion-de-actividad-economica) — guia-cc806c9f1505ce0fef46; index-only; referencia; sin-determinar.
+- [3. Clave SOL - Obtención / Recuperación](https://orientacion.sunat.gob.pe/1088-clave-sol-obtencion-recuperacion) — guia-720ec78f576bb35408f5; index-only; referencia; sol-web.
+- [3. Procedimiento de Acuerdo Mutuo - PAM \| Fiscalidad Internacional](https://nodomiciliados.sunat.gob.pe/es/fiscalizacion-internacional/convenios-y-acuerdos-internacionales/3-procedimiento-de-acuerdo-mutuo-b) — guia-7fa163e1adebfef47eb5; index-only; referencia; sin-determinar.
+- [3.2. Inventario inicial - Registro y Presentación](https://orientacion.sunat.gob.pe/6257-inventario-inicial) — guia-fc0bc4d1565892a1386f; index-only; referencia; sin-determinar.
+- [3.4. Incidencias a comunicar](https://orientacion.sunat.gob.pe/6261-06-incidencias-a-comunicar) — guia-008d7eedd62263eefca6; index-only; referencia; sin-determinar.
+- [4.2. Procedimiento: Modificación de información en el Registro](https://orientacion.sunat.gob.pe/42-procedimiento-modificacion-de-informacion-en-el-registro) — guia-80ada51962d971c4c8e1; index-only; referencia; sin-determinar.
+- [6.01. Obligados - Guía Remisión Electrónica - Bienes Fiscalizados](https://orientacion.sunat.gob.pe/601-obligados-guia-remision-electronica-bienes-fiscalizados) — guia-58341cf50ab4e6a9c59a; index-only; referencia; sin-determinar.
+- [6.09. Tutoriales de la GRE para Bienes Fiscalizados](https://orientacion.sunat.gob.pe/609-tutoriales-de-la-gre-para-bienes-fiscalizados) — guia-1a775d7862ca0f202d4d; index-only; referencia; sin-determinar.
+- [6.09. Tutoriales de la GRE para Bienes Fiscalizados](https://orientacion.sunat.gob.pe/6852-08-tutoriales) — guia-35c81f239da89760e541; index-only; referencia; sin-determinar.
+- [6.10. Consulta pública de la Guía de Remisión Electrónica - Bienes Fiscalizados GRE - BF](https://orientacion.sunat.gob.pe/6853-9-consulta-publica-de-la-guia-de-remision-electronica-bienes-fiscalziados-gre-bf) — guia-8bccb6e2c9b54fd37330; index-only; referencia; sin-determinar.
+- [7. Inicio del Procedimiento de Cobranza Coactiva](https://orientacion.sunat.gob.pe/2914-inicio-procedimiento-cobranza-coactiva-personas) — guia-7041f2a0839d956163a5; index-only; referencia; sin-determinar.
+- [Acciones de Cobranza (*)](https://orientacion.sunat.gob.pe/acciones-de-cobranza-0) — guia-ee44ccca3529a0d6956a; index-only; referencia; sin-determinar.
+- [Acciones de Fiscalización - Personas](https://orientacion.sunat.gob.pe/acciones-de-fiscalizacion-personas-0) — guia-1bc1ae9cd70bd594c74b; index-only; referencia; sin-determinar.
+- [Acciones de SUNAT \| Emprender](https://emprender.sunat.gob.pe/acciones-sunat) — guia-a730207e45cfb615fc9d; index-only; referencia; sin-determinar.
+- [Acciones del contribuyente \| Emprender](https://emprender.sunat.gob.pe/acciones-contribuyente) — guia-b397ab520ce0ee796fbb; index-only; referencia; sin-determinar.
+- [Aceptar propuesta](https://cpe.sunat.gob.pe/videos/aceptar-propuesta) — guia-4587fc18dc7501244fde; index-only; referencia; sin-determinar.
+- [Actualiza tus datos de contacto desde internet](https://cpe.sunat.gob.pe/videos/actualiza-tus-datos-de-contacto-desde-internet) — guia-8d51975598834e9bbf5f; index-only; referencia; sin-determinar.
+- [Actualiza tus datos en el RUC](https://centrovirtual.sunat.gob.pe/tramites/actualizar-datos-ruc) — guia-075541061207c9fee627; index-only; referencia; sin-determinar.
+- [Actualización de Deuda Tributaria con IPC - Empresas](https://orientacion.sunat.gob.pe/actualizacion-de-deuda-tributaria-con-ipc-empresas-0) — guia-b65d64f8e62ef772e99f; index-only; referencia; sin-determinar.
+- [Actualización Excepcional de la Deuda Tributaria – Ley 30230](https://orientacion.sunat.gob.pe/actualizacion-excepcional-de-la-deuda-tributaria-ley-30230) — guia-757e5aac849c87bc60b0; index-only; referencia; sin-determinar.
+- [Apelación - Empresas](https://orientacion.sunat.gob.pe/apelacion-empresas-0) — guia-29b26cd9c83dc5b2b61e; index-only; referencia; sin-determinar.
+- [Apelación - Personas](https://orientacion.sunat.gob.pe/apelacion-personas-0) — guia-abb01b6fe05fa3de57b5; index-only; referencia; sin-determinar.
+- [Apéndices del Sistema de Detracciones](https://orientacion.sunat.gob.pe/apendices-del-sistema-de-detracciones-0) — guia-ba40e3b96d27f5cc4130; index-only; referencia; sin-determinar.
+- [APP Emprender \| Emprender](https://emprender.sunat.gob.pe/acciones-contribuyente/formalizacion/app-emprender) — guia-f6158edd23f422a02683; index-only; referencia; app-movil.
+- [Autorización de Imprentas SOL](https://orientacion.sunat.gob.pe/autorizacion-de-imprentas-sol-0) — guia-503ae94b3f3d3bcc98af; index-only; referencia; sol-web.
+- [Autorización de Impresión de Comprobantes de Pago](https://orientacion.sunat.gob.pe/autorizacion-de-impresion-de-comprobantes-de-pago-0) — guia-1287fdf61f3e2df73e4a; index-only; referencia; sin-determinar.
+- [B. Impuesto Selectivo al Consumo](https://orientacion.sunat.gob.pe/b-impuesto-selectivo-al-consumo) — guia-da60ac8f5e2d8f6e7cf3; index-only; referencia; sin-determinar.
+- [Baja de RUC - Empresas](https://orientacion.sunat.gob.pe/baja-de-ruc-empresas) — guia-b6d3431c0a1f04048449; index-only; referencia; sin-determinar.
+- [Baja de RUC - Personas](https://orientacion.sunat.gob.pe/baja-de-ruc-personas-0) — guia-c35b502432ecf0580526; index-only; referencia; sin-determinar.
+- [Bancarización \| Emprender](https://emprender.sunat.gob.pe/comprobantes-libros/comprobantes-pago/bancarizacion) — guia-26fe1b830f8fa3541d08; index-only; referencia; banco.
+- [Beneficiario Final \| Emprender](https://emprender.sunat.gob.pe/declaracion-pagos/declaracion/beneficiario-final) — guia-aacec160e773ab220bf5; index-only; referencia; sin-determinar.
+- [Beneficios de ser formal \| Emprender](https://emprender.sunat.gob.pe/acciones-contribuyente/formalizacion/beneficios-ser-formal) — guia-76dc4400e4bc3b10fe8c; index-only; referencia; sin-determinar.
+- [Beneficios para el Microempresario de la Factura Electrónica](https://cpe.sunat.gob.pe/noticias/beneficios-para-el-microempresario-de-la-factura-electronica) — guia-b7deafeb4d914e59ccfd; index-only; referencia; sin-determinar.
+- [Boleta de Venta \| Emprender](https://emprender.sunat.gob.pe/comprobantes-libros/comprobantes-pago/boleta-venta) — guia-2fb65ab32917263dc2c8; index-only; referencia; sin-determinar.
+- [Boleta de Venta Electrónica](https://cpe.sunat.gob.pe/tipos_de_comprobantes/boleta) — guia-ff18818355db1a897832; index-only; referencia; sin-determinar.
+- [Buscar y Registrar Prórroga](https://www.sunat.gob.pe/operatividadaduanera/sda/tutoriales/ManRegConFOB/Operador3016/manual-plantilla/ma_3016/paginas/pag6.1.1.html) — guia-f3a4b327121f5c98064e; index-only; referencia; sin-determinar; histórico.
+- [C. Prórroga del pago del IGV](https://orientacion.sunat.gob.pe/c-prorroga-del-pago-del-igv) — guia-c7650f863feb55ad6bae; index-only; referencia; sin-determinar.
+- [CALCULO ANUAL DEL IMPUESTO A LA RENTA – RG \| Emprender](https://emprender.sunat.gob.pe/node/162) — guia-b8f71ed18ee3548fcdc8; index-only; referencia; sin-determinar.
+- [Calendario de Vencimientos - Personas](https://www.sunat.gob.pe/orientacion/cronogramas/cronoRegistroC-V-2026.html) — guia-eeca28d2157eed3a829e; index-only; referencia; sin-determinar.
+- [Calificación como entidad perceptora de donaciones \| Emprender](https://emprender.sunat.gob.pe/acciones-contribuyente/formalizacion/calificacion-como-entidad-perceptora-donaciones) — guia-2e9dc01453cc042303d1; index-only; referencia; sin-determinar.
+- [Canales de Pago Electrónico \| Emprender](https://emprender.sunat.gob.pe/declaracion-pagos/pagos/canales-pago-electronico) — guia-8536a25b1bcb87155e7f; index-only; referencia; sin-determinar.
+- [Carpeta Tributaria para Nuevos Inscritos (empresas)](https://orientacion.sunat.gob.pe/carpeta-tributaria-para-nuevos-inscritos-empresas-0) — guia-b2dac5121bd5edbbdf8b; index-only; referencia; sin-determinar.
+- [Cartilla sobre el Régimen de Donaciones](https://orientacion.sunat.gob.pe/cartilla-sobre-el-regimen-de-donaciones-0) — guia-03803176318d15477aa6; index-only; referencia; sin-determinar.
+- [Cartillas de periodos anteriores \| Renta 2025](https://renta.sunat.gob.pe/empresas/cartillas-de-periodos-anteriores) — guia-1adb468da2b3606d4919; index-only; referencia; sin-determinar.
+- [Centro de Control Virtual \| Emprender](https://emprender.sunat.gob.pe/acciones-sunat/facultad-fiscalizacion/centro-control-virtual) — guia-8078a9cc73307c2c1ddb; index-only; referencia; sin-determinar.
+- [Certificado Digital](https://cpe.sunat.gob.pe/certificado-digital) — guia-39fe93c3e70926367fe5; index-only; referencia; sin-determinar.
+- [Certificado Digital](https://cpe.sunat.gob.pe/certificado-digital-tributario) — guia-e73aa8ebad15c51e3102; index-only; referencia; sin-determinar.
+- [Certificados Digitales](https://cpe.sunat.gob.pe/informacion_general/certificados_digitales) — guia-18cf6007ec4c7daf350e; index-only; referencia; sin-determinar.
+- [Clasificación Arancelaria](https://www.sunat.gob.pe/orientacionaduanera/nomenclaturaarancelaria/index.html) — guia-449db00437101dd2ed94; index-only; referencia; sin-determinar.
+- [Código de Producto SUNAT](https://cpe.sunat.gob.pe/informacion_general/codigoproducto) — guia-ab2d6e8050a49d449aaa; index-only; referencia; sin-determinar.
+- [Compensación](https://orientacion.sunat.gob.pe/1084-compensacion) — guia-f783877749fa52560083; index-only; referencia; sin-determinar.
+- [Comprobante de Pago Electrónico - CPE](https://cpe.sunat.gob.pe/node/136) — guia-b2c08a406d21e89a7d6b; index-only; referencia; sin-determinar.
+- [Comprobante de Pago Electrónico - CPE](https://cpe.sunat.gob.pe/node/140) — guia-c94c04910dc5d18acff6; index-only; referencia; sin-determinar.
+- [Comprobante de Percepción](https://cpe.sunat.gob.pe/tipos_de_comprobantes/comprobante_de_percepcion) — guia-2819c03ab7bd97aafce9; index-only; referencia; sin-determinar.
+- [Comprobante de Retención](https://cpe.sunat.gob.pe/tipos_de_comprobantes/comprobante_de_retencion) — guia-831a0beee9e976123ba2; index-only; referencia; sin-determinar.
+- [Comprobantes de pago](https://centrovirtual.sunat.gob.pe/tramites/comprobante-de-pago) — guia-b2a3e4e5262bddbe627a; index-only; referencia; sin-determinar.
+- [Comprobantes de pago \| Emprender](https://emprender.sunat.gob.pe/comprobantes-y-libros/comprobantes-de-pago) — guia-133080b149ceacc82cc2; index-only; referencia; sin-determinar.
+- [Comprobantes de Pago Electrónico - CPE](https://cpe.sunat.gob.pe/informacion_general/cpe) — guia-3304c89785475f913d2f; index-only; referencia; sin-determinar.
+- [Comprobantes de Pago Electrónicos - CPE](https://cpe.sunat.gob.pe/node/135) — guia-7a928ae71531c649c23c; index-only; referencia; sin-determinar.
+- [Comprobantes de Pago Electrónicos - Empresas](https://orientacion.sunat.gob.pe/comprobantes-de-pago-electronicos-empresas) — guia-c4ec7f18ab3586d7539b; index-only; referencia; sin-determinar.
+- [Comprobantes de Pago que se Pueden Emitir desde SOL](https://cpe.sunat.gob.pe/noticias/comprobantes-de-pago-que-se-pueden-emitir-desde-sol) — guia-18e26ef010d39f11bdcc; index-only; referencia; sol-web.
+- [Comprobantes del SEE Sistemas del Contribuyente](https://orientacion.sunat.gob.pe/comprobantes-del-see-sistemas-del-contribuyente) — guia-fb00d6a4979f232c5d6b; index-only; referencia; sin-determinar.
+- [Comprobantes desde los Sistemas del Contribuyente](https://cpe.sunat.gob.pe/noticias/comprobantes-desde-los-sistemas-del-contribuyente) — guia-0116860530005b9e9ad6; index-only; referencia; sin-determinar.
+- [Comprobantes que se pueden emitir desde SOL](https://cpe.sunat.gob.pe/comprobantes-que-se-pueden-emitir-desde-sol) — guia-16794c74d3928be5d424; index-only; referencia; sol-web.
+- [Comprobantes y libros \| Emprender](https://emprender.sunat.gob.pe/comprobantes-libros) — guia-2ec797ba35e3673c1d3a; index-only; referencia; sin-determinar.
+- [Comunicados CPE](https://cpe.sunat.gob.pe/comunicados) — guia-45463476825790c046fd; index-only; referencia; sin-determinar.
+- [Comunidad Andina (CAN)](https://www.sunat.gob.pe/orientacionaduanera/acuerdoscomerciales/index.html) — guia-8a74f6bc4a3ad16839e8; index-only; referencia; sin-determinar.
+- [Concepto del SEE desde los Sistemas del Contribuyente](https://orientacion.sunat.gob.pe/concepto-del-see-desde-los-sistemas-del-contribuyente) — guia-35c673a6070269475fc0; index-only; referencia; sin-determinar.
+- [Conceptos Generales](https://cpe.sunat.gob.pe/informacion_general/conceptos_generales) — guia-5cd920d0b963bdcb7a8e; index-only; referencia; sin-determinar.
+- [Conceptos Generales y beneficios del sistema](https://cpe.sunat.gob.pe/facturacion-mype) — guia-53e5155da83f5b1cccd7; index-only; referencia; sin-determinar.
+- [Concurrencia emisión fisica- SEE desde los Sistemas del Contribuyente](https://orientacion.sunat.gob.pe/concurrencia-emision-fisica-see-desde-los-sistemas-del-contribuyente) — guia-ee69073fb28d97b13154; index-only; referencia; sin-determinar.
+- [Concurrencia en la Emisión de Comprobantes de Pago](https://cpe.sunat.gob.pe/informacion_general/procedimiento_contingencia) — guia-35148ee126ffaead0097; index-only; referencia; sin-determinar.
+- [Condición de Domicilio Fiscal](https://orientacion.sunat.gob.pe/condicion-de-no-habido1) — guia-6498912c5f4e43d21448; index-only; referencia; sin-determinar.
+- [Condición de Domicilio Fiscal - Empresas](https://orientacion.sunat.gob.pe/condicion-de-domicilio-fiscal-empresas) — guia-18df1afb1b9e20bf5d13; index-only; referencia; sin-determinar.
+- [Conoce si está obligado a emitir comprobantes de pago](https://cpe.sunat.gob.pe/videos/conoce-si-esta-obligado-emitir-comprobantes-de-pago) — guia-c9de3a642b21ac8f3fcc; index-only; referencia; sin-determinar.
+- [Consideraciones Generales](https://www.sunat.gob.pe/orientacionaduanera/aranceles/index.html) — guia-ebf6477a42b3acb8de3c; index-only; referencia; sin-determinar.
+- [Consorcios \| Emprender](https://emprender.sunat.gob.pe/ruc/tipo-contribuyente/consorcios) — guia-340d1cc139eed0fb11ce; index-only; referencia; sin-determinar.
+- [Consulta de Contribuciones y Retenciones](https://orientacion.sunat.gob.pe/consulta-de-contribuciones-y-aportaciones) — guia-2a89da2e3a2068376579; index-only; referencia; sin-determinar.
+- [Consulta facturas electrónicas](https://cpe.sunat.gob.pe/videos/consulta-facturas-electronicas) — guia-a4fad7b1c103c84c2702; index-only; referencia; sin-determinar.
+- [Consultas de CPE](https://cpe.sunat.gob.pe/consultas-de-cpe) — guia-72c8a9ad69d1c2c018b7; index-only; referencia; sin-determinar.
+- [Consultas particulares – Art 95-A Código Tributario](https://orientacion.sunat.gob.pe/consultas-particulares-art-95-codigo-tributario) — guia-bdf9cca0a859245651a0; index-only; referencia; sin-determinar.
+- [Consultas SUNAT - Detracciones - Empresas](https://orientacion.sunat.gob.pe/consultas-sunat-detracciones-empresas-0) — guia-bf4a6a7bfd3c05008762; index-only; referencia; sin-determinar.
+- [Consultas SUNAT - Impuesto a la Renta - Empresas](https://orientacion.sunat.gob.pe/consultas-sunat-impuesto-la-renta-empresas) — guia-d84f387ddda0ec78886e; index-only; referencia; sin-determinar.
+- [Consultas SUNAT - Planilla Electrónica](https://orientacion.sunat.gob.pe/consultas-sunat-planilla-electronica-0) — guia-abd3729994d0e5d7af76; index-only; referencia; sin-determinar.
+- [Consultas SUNAT - Planilla Electrónica](https://orientacion.sunat.gob.pe/consultas-sunat-planilla-electronica) — guia-d6fe54a7559109b69a07; index-only; referencia; sin-determinar.
+- [Consultas SUNAT - RUC - Empresas](https://orientacion.sunat.gob.pe/consultas-sunat-ruc-empresas-0) — guia-6b20dc685c09a9bafb16; index-only; referencia; sin-determinar.
+- [Consultas SUNAT - RUC - Personas](https://orientacion.sunat.gob.pe/consultas-sunat-ruc-personas) — guia-121d40bdac510fa54750; index-only; referencia; sin-determinar.
+- [Consultas SUNAT – Acciones de Cobranza](https://orientacion.sunat.gob.pe/consultas-sunat-acciones-de-cobranza-0) — guia-c5de75b3797cbaabd9ad; index-only; referencia; sin-determinar.
+- [Cooperativas Agrarias - LEY Nº 31335 \| Emprender](https://emprender.sunat.gob.pe/ruc/tipo-contribuyente/cooperativas-agrarias-ley-no-31335) — guia-2c76d442641868dd120b; index-only; referencia; sin-determinar.
+- [Cooperative Compliance \| International Taxation](https://nodomiciliados.sunat.gob.pe/index%2Ephp/en/fiscalidad-internacional/cooperative-compliance) — guia-c8a02e2153dfac03168b; index-only; referencia; sin-determinar.
+- [Crédito Indirecto](https://orientacion.sunat.gob.pe/credito-indirecto-0) — guia-869df9d5cb9b6c7a02b1; index-only; referencia; sin-determinar.
+- [Cronograma 2023 - Registros Electrónicos](https://cpe.sunat.gob.pe/noticias/cronograma-2023-registros-electronicos) — guia-c6048ce527cd41e9ecee; index-only; referencia; sin-determinar.
+- [Cronograma 2026](https://cpe.sunat.gob.pe/cronograma-2026) — guia-940493931942717cdb2f; index-only; referencia; sin-determinar.
+- [Cuestionarios \| Emprender](https://emprender.sunat.gob.pe/cuestionario) — guia-50984c288ac4e677bd7b; index-only; referencia; sin-determinar.
+- [Cursos de capacitación para las microempresas \| Emprender](https://emprender.sunat.gob.pe/acciones-sunat/facultad-sancionadora/cursos-capacitacion-para-las-microempresas) — guia-58b475304b1922ec1a82; index-only; referencia; sin-determinar.
+- [Declaración \| Emprender](https://emprender.sunat.gob.pe/declaracion-pagos/declaracion) — guia-26c9a83d248545487c49; index-only; referencia; sin-determinar.
+- [Declaración de Notarios - Empresas](https://orientacion.sunat.gob.pe/declaracion-de-notarios-empresas) — guia-e9845a928541141bf33e; index-only; referencia; sin-determinar.
+- [Declaración de Predios \| Personas](https://personas.sunat.gob.pe/alquilo-mi-casa-o-auto/declaracion-predios-0) — guia-9b5c4c4d47b8785e7355; index-only; referencia; sin-determinar.
+- [Declaración Informativa del Beneficiario Final](https://orientacion.sunat.gob.pe/declaracion-informativa-del-beneficiario-final-0) — guia-b26f57e94a5ad75fb322; index-only; referencia; sin-determinar.
+- [Declaración Simplificada - Empresas](https://orientacion.sunat.gob.pe/declaracion-simplificada-empresas-0) — guia-e2ffc23ec35a3f18d986; index-only; referencia; sin-determinar.
+- [Declaración Simplificada - Personas](https://orientacion.sunat.gob.pe/declaracion-simplificada-personas-0) — guia-e4882f9c4262a7668e15; index-only; referencia; sin-determinar.
+- [Declaración y pago de aportes del Trabajador (a) del Hogar/ Procedimientos \| Personas](https://personas.sunat.gob.pe/trabajador-dependiente/declaracion-pago-aportes-trabajador-hogar-procedimientos) — guia-86464535ea351ca80a30; index-only; referencia; sin-determinar.
+- [Declaración y pagos \| Emprender](https://emprender.sunat.gob.pe/declaracion-pagos) — guia-58868dfdaf7dcfe2f80c; index-only; referencia; sin-determinar.
+- [Declaraciones Anuales - Empresas](https://orientacion.sunat.gob.pe/declaraciones-anuales-empresas) — guia-281c979eb0b86f2aea4b; index-only; referencia; sin-determinar.
+- [Declaraciones Informativas - Empresas](https://orientacion.sunat.gob.pe/declaraciones-informativas-empresas) — guia-a6d49448bab00babac5b; index-only; referencia; sin-determinar.
+- [Declaraciones Informativas - Personas](https://orientacion.sunat.gob.pe/declaraciones-informativas-personas) — guia-bdaf07ce621aa01e50c4; index-only; referencia; sin-determinar.
+- [Declaraciones Juradas Virtuales](https://orientacion.sunat.gob.pe/declaraciones-juradas-virtuales14) — guia-a445e9c08591ce23e8de; index-only; referencia; sin-determinar.
+- [Declaraciones tributarias \| Emprender](https://emprender.sunat.gob.pe/declaracion-pagos/declaracion/declaraciones-tributarias) — guia-6aa69343f5f2a4a29342; index-only; referencia; sin-determinar.
+- [Declaraciones y pago](https://centrovirtual.sunat.gob.pe/tramites/declaracion-y-pago) — guia-b80b51beb282b5a08841; index-only; referencia; sin-determinar.
+- [Definiciones relacionadas al Impuesto a la Renta](https://orientacion.sunat.gob.pe/definiciones-relacionadas-al-impuesto-la-renta) — guia-f788fc6a84346d12cdb0; index-only; referencia; sin-determinar.
+- [Demanda Contenciosa Administrativa \| Emprender](https://emprender.sunat.gob.pe/acciones-contribuyente/recursos-impugnatorios/demanda-contenciosa-administrativa) — guia-8725188a9fea00c185c4; index-only; referencia; sin-determinar.
+- [Demos y tutoriales - Planilla Electrónica](https://orientacion.sunat.gob.pe/demos-y-tutoriales-planilla-electronica) — guia-8e3968d82e57463f49f9; index-only; referencia; sin-determinar.
+- [Denuncias](https://orientacion.sunat.gob.pe/denuncias) — guia-66c3ded344fd690c708c; index-only; referencia; sin-determinar.
+- [Denuncias - Empresas](https://orientacion.sunat.gob.pe/denuncias-empresas) — guia-5ff2e89093e9282593a8; index-only; referencia; sin-determinar.
+- [Despacho Simplificado de Importación](https://www.sunat.gob.pe/orientacionaduanera/despsimpimportacion/index.html) — guia-b38b413f05d032531dae; index-only; referencia; sin-determinar.
+- [Detracciones - Servicio público de transporte de pasajeros via terrestre](https://orientacion.sunat.gob.pe/detracciones-servicio-publico-de-transporte-de-pasajeros-terrestre) — guia-fd82cfcbc6eb99f5cb97; index-only; referencia; sin-determinar.
+- [Detracciones \| Emprender](https://emprender.sunat.gob.pe/detracciones-operatividad) — guia-01e64966da4d74561baa; index-only; referencia; sin-determinar.
+- [Detracciones e IVAP - Empresas](https://orientacion.sunat.gob.pe/detracciones-e-ivap-empresas-0) — guia-4f29a0741250b7b91498; index-only; referencia; sin-determinar.
+- [Detracciones en el transporte de bienes por vía terrestre - Empresas](https://orientacion.sunat.gob.pe/detracciones-en-el-transporte-de-bienes-por-terrestre-empresas) — guia-076a9412203aa191dcda; index-only; referencia; sin-determinar.
+- [Devolución a solicitud de parte](https://orientacion.sunat.gob.pe/devolucion-solicitud-de-parte) — guia-6e4f58723e95bbdc0702; index-only; referencia; sin-determinar.
+- [Devolución de impuestos \| Emprender](https://emprender.sunat.gob.pe/acciones-contribuyente/procedimiento-devolucion/devolucion-impuestos) — guia-596750c08718de9d7f62; index-only; referencia; sin-determinar.
+- [Devolución de oficio](https://orientacion.sunat.gob.pe/devolucion-de-oficio-0) — guia-fd2e18ecf01568281d79; index-only; referencia; sin-determinar.
+- [Devolución de Retenciones y Percepciones del IGV](https://orientacion.sunat.gob.pe/devolucion-de-retenciones-y-percepciones-del-igv) — guia-6d3dcbe18e9a00cf2905; index-only; referencia; sin-determinar.
+- [Devolución de Saldo a Favor Materia de Beneficio](https://orientacion.sunat.gob.pe/devolucion-de-saldo-favor-materia-de-beneficio) — guia-5f5a025b40a72ed310cc; index-only; referencia; sin-determinar.
+- [Devolución del Impuesto General a las Ventas a los Turistas Extranjeros](https://orientacion.sunat.gob.pe/devolucion-del-impuesto-general-las-ventas-los-turistas-extranjeros) — guia-25299a877e81d09de83a; index-only; referencia; sin-determinar.
+- [Devolución ISC a Combustible - Transporte pasajeros y carga](https://orientacion.sunat.gob.pe/devolucion-isc-combustible-transporte-pasajeros-y-carga) — guia-418dfffec3ca080ab086; index-only; referencia; sin-determinar.
+- [Devolución ISC al Combustible \| Emprender](https://emprender.sunat.gob.pe/principales-impuestos/impuesto-selectivo-consumo-isc/devolucion-isc-combustible) — guia-2e04d79001cb1db2dfe3; index-only; referencia; sin-determinar.
+- [Devolución Saldo a Favor Materia de Beneficio (SFMB) \| Emprender](https://emprender.sunat.gob.pe/acciones-contribuyente/procedimiento-devolucion/devolucion-saldo-favor-materia-beneficio-sfmb) — guia-aafc194ec3497dc55963; index-only; referencia; sin-determinar.
+- [Devoluciones](https://centrovirtual.sunat.gob.pe/tramites/devoluciones-1) — guia-2b03341a39d0d213ffdf; index-only; referencia; sin-determinar.
+- [Devoluciones de pagos indebidos y/o en exceso - Empresas](https://orientacion.sunat.gob.pe/devoluciones-de-pagos-indebidos-yo-en-exceso-empresas) — guia-841e9698d0f651b12039; index-only; referencia; sin-determinar.
+- [Digital Services \| International Taxation](https://nodomiciliados.sunat.gob.pe/index%2Ephp/en/fiscalidad-internacional/digital-services) — guia-a04ce0883932fd7e505c; index-only; referencia; sin-determinar.
+- [Directorio de Cabinas de Internet](https://orientacion.sunat.gob.pe/directorio-de-cabinas-de-internet-0) — guia-1d5e8f06bf7798d9c9fb; index-only; referencia; sin-determinar.
+- [Discrecionalidad en la aplicación de sanciones](https://orientacion.sunat.gob.pe/discrecionalidad-en-la-aplicacion-de-sanciones) — guia-0b65737b8c07a506ea36; index-only; referencia; sin-determinar.
+- [DOCUMENTACION DEL USUARIO](https://www.sunat.gob.pe/operatividadaduanera/sda/tutoriales/ManPORegAux/Operador/paginas/pagina1.html) — guia-1d4d49869414fe62fa28; index-only; referencia; sin-determinar; histórico.
+- [DOCUMENTACION DEL USUARIO](https://www.sunat.gob.pe/operatividadaduanera/manuales/exposimplificada/ManualUsuario/paginas/pag2.html) — guia-2606b474bd0d8b667751; index-only; referencia; sin-determinar.
+- [DOCUMENTACION DEL USUARIO](https://www.sunat.gob.pe/operatividadaduanera/manuales/drawback/ma_npase/paginas/pag3.2.html) — guia-3652ff667e7705fc60df; index-only; referencia; sin-determinar.
+- [DOCUMENTACION DEL USUARIO](https://www.sunat.gob.pe/operatividadaduanera/manuales/drawback/ma_npase/paginas/pag1.html) — guia-4330452fdb9b8be6abf0; index-only; referencia; sin-determinar.
+- [DOCUMENTACION DEL USUARIO](https://www.sunat.gob.pe/operatividadaduanera/sda/tutoriales/ManPORegAux/Operador/index.html) — guia-45b5236ba925c2f4a03d; index-only; referencia; sin-determinar; histórico.
+- [DOCUMENTACION DEL USUARIO](https://www.sunat.gob.pe/operatividadaduanera/sda/tutoriales/ManPORegAux/Operador/paginas/RegAux/pagina2_2.html) — guia-5aec02d64b10251dd476; index-only; referencia; sin-determinar; histórico.
+- [DOCUMENTACION DEL USUARIO](https://www.sunat.gob.pe/operatividadaduanera/manuales/exposimplificada/ManualUsuario/paginas/pag3_1.html) — guia-5e266dab1ab53e0dc069; index-only; referencia; sin-determinar.
+- [DOCUMENTACION DEL USUARIO](https://www.sunat.gob.pe/operatividadaduanera/manuales/exposimplificada/ManualUsuario.html) — guia-6e7c4ea76948d839533e; index-only; referencia; sin-determinar.
+- [DOCUMENTACION DEL USUARIO](https://www.sunat.gob.pe/operatividadaduanera/manuales/drawback/ma_npase/paginas/pag3.1.html) — guia-71db25a48e113fde6d4e; index-only; referencia; sin-determinar.
+- [DOCUMENTACION DEL USUARIO](https://www.sunat.gob.pe/operatividadaduanera/manuales/drawback/ma_npase/paginas/pag2.html) — guia-7385fa821f07e0f8110f; index-only; referencia; sin-determinar.
+- [DOCUMENTACION DEL USUARIO](https://www.sunat.gob.pe/operatividadaduanera/manuales/exposimplificada/ManualUsuario/paginas/pag3_3.html) — guia-87179099af9f7d21881b; index-only; referencia; sin-determinar.
+- [DOCUMENTACION DEL USUARIO](https://www.sunat.gob.pe/operatividadaduanera/sda/tutoriales/ManPORegAux/Operador/paginas/RegAux/pagina2_1.html) — guia-89f970a740fa951b5b46; index-only; referencia; sin-determinar; histórico.
+- [DOCUMENTACION DEL USUARIO](https://www.sunat.gob.pe/operatividadaduanera/manuales/exposimplificada/ManualUsuario/paginas/pag1.html) — guia-a2f72e075f0b138bde05; index-only; referencia; sin-determinar.
+- [DOCUMENTACION DEL USUARIO](https://www.sunat.gob.pe/operatividadaduanera/manuales/exposimplificada/ManualUsuario/paginas/pag3_4.html) — guia-b7ce07b1f12b5ed1ddaf; index-only; referencia; sin-determinar.
+- [DOCUMENTACION DEL USUARIO](https://www.sunat.gob.pe/operatividadaduanera/sda/tutoriales/ManPORegAux/Operador/paginas/PFRegPers/pagina1_2.html) — guia-b9f4edb25a49f7dbf262; index-only; referencia; sin-determinar; histórico.
+- [DOCUMENTACION DEL USUARIO](https://www.sunat.gob.pe/operatividadaduanera/manuales/exposimplificada/ManualUsuario/paginas/pag3_2.html) — guia-c2db860a25750b0c4f67; index-only; referencia; sin-determinar.
+- [DOCUMENTACION DEL USUARIO](https://www.sunat.gob.pe/operatividadaduanera/sda/tutoriales/ManPORegAux/Operador/paginas/PFRegPers/pagina1_1.html) — guia-c4e5c105828ffc877147; index-only; referencia; sin-determinar; histórico.
+- [DOCUMENTACION DEL USUARIO](https://www.sunat.gob.pe/operatividadaduanera/sda/tutoriales/ManPORegAux/Operador/paginas/pagina3.html) — guia-cbd29c3d56c0a0b8f903; index-only; referencia; sin-determinar; histórico.
+- [DOCUMENTACION DEL USUARIO](https://www.sunat.gob.pe/operatividadaduanera/manuales/drawback/ma_npase/paginas/pag4.html) — guia-cbeec89f0ae8278b7ac1; index-only; referencia; sin-determinar.
+- [DOCUMENTACIÓN DEL USUARIO](https://www.sunat.gob.pe/operatividadaduanera/sda/tutoriales/ManRegConFOB/Operador3016/manual-plantilla/ma_3016.html) — guia-058e553052ed1a0f76d5; index-only; referencia; sin-determinar; histórico.
+- [DOCUMENTACIÓN DEL USUARIO](https://www.sunat.gob.pe/operatividadaduanera/manuales/drawback/Manual_Usuario_DrawbackWeb.html) — guia-7ed0504a56e4d259a427; index-only; referencia; sin-determinar.
+- [DOCUMENTACIÓN DEL USUARIO](https://www.sunat.gob.pe/operatividadaduanera/sda/tutoriales/ManRegConFOB/Operador3016/manual-plantilla/ma_3016/paginas/pag6.1.2.html) — guia-83229e8329b401f1a940; index-only; referencia; sin-determinar; histórico.
+- [DOCUMENTACIÓN DEL USUARIO](https://www.sunat.gob.pe/operatividadaduanera/sda/tutoriales/ManRegConFOB/Operador3016/manual-plantilla/ma_3016/paginas/pag3.22.html) — guia-a013d4671e1187f2c77b; index-only; referencia; sin-determinar; histórico.
+- [DOCUMENTACIÓN DEL USUARIO](https://www.sunat.gob.pe/operatividadaduanera/sda/tutoriales/ManRegConFOB/Operador3016/manual-plantilla/ma_3016/paginas/pag1.html) — guia-c6af489c3e3559e1f436; index-only; referencia; sin-determinar; histórico.
+- [DOCUMENTACIÓN DEL USUARIO](https://www.sunat.gob.pe/operatividadaduanera/sda/tutoriales/ManRegConFOB/Operador3016/manual-plantilla/ma_3016/paginas/pag3.21.html) — guia-c98126e238736300ab24; index-only; referencia; sin-determinar; histórico.
+- [DOCUMENTACIÓN DEL USUARIO](https://www.sunat.gob.pe/operatividadaduanera/sda/tutoriales/ManRegConFOB/Operador3016/manual-plantilla/ma_3016/paginas/pag4.2.2.html) — guia-d3bc68a5e6e81449837f; index-only; referencia; sin-determinar; histórico.
+- [DOCUMENTACIÓN DEL USUARIO](https://www.sunat.gob.pe/operatividadaduanera/sda/tutoriales/ManRegConFOB/Operador3016/manual-plantilla/ma_3016/paginas/pag2.html) — guia-ff0395b6b02d95291305; index-only; referencia; sin-determinar; histórico.
+- [Documentos Autorizados - Comprobantes de Pago Físicos - Empresas](https://orientacion.sunat.gob.pe/documentos-autorizados-comprobantes-de-pago-fisicos-empresas-0) — guia-348a5ed8ed9fdd9f7cbc; index-only; referencia; sin-determinar.
+- [Donaciones](https://www.sunat.gob.pe/orientacionaduanera/donaciones/index.html) — guia-cb0a5e83da608a837f00; index-only; referencia; sin-determinar.
+- [Efectos de ser emisor electrónico - SEE Contribuyente](https://orientacion.sunat.gob.pe/efectos-de-ser-emisor-electronico-see-contribuyente) — guia-33063a180404271139cd; index-only; referencia; sin-determinar.
+- [Elección de Administrador Provisional](https://orientacion.sunat.gob.pe/eleccion-de-administrador-provisional) — guia-21b11215f03b6fed8482; index-only; referencia; sin-determinar.
+- [Elección de Administrador Provisional](https://orientacion.sunat.gob.pe/eleccion-de-administrador-provisional-0) — guia-73d808bf4dd38da24b32; index-only; referencia; sin-determinar.
+- [Emisor electrónico SEE desde los Sistemas del Contribuyente](https://orientacion.sunat.gob.pe/emisor-electronico-see-desde-los-sistemas-del-contribuyente) — guia-3123af8d30298207cd13; index-only; referencia; sin-determinar.
+- [Envíos Postales](https://www.sunat.gob.pe/orientacionaduanera/enviospostales/index.html) — guia-84e047f649724abab7a8; index-only; referencia; sin-determinar.
+- [Envios Postales - Exporta Fácil](https://www.sunat.gob.pe/orientacionaduanera/exportafacil/index.html) — guia-328e9e2584c4d72160c3; index-only; referencia; sin-determinar.
+- [Envíos Postales - Importa Fácil](https://www.sunat.gob.pe/orientacionaduanera/importaFacil/index.html) — guia-83cc9e554ea68fa2d3ec; index-only; referencia; sin-determinar.
+- [ESSALUD - Personas](https://orientacion.sunat.gob.pe/essalud-personas) — guia-952b72ffca2ca37def97; index-only; referencia; sin-determinar.
+- [Estadistica](https://cpe.sunat.gob.pe/estadistica) — guia-82b4447ccbf4a06818ae; index-only; referencia; sin-determinar.
+- [Estadistica - SIRE](https://cpe.sunat.gob.pe/estadistica-sire) — guia-05815d88cfebe4c92ee6; index-only; referencia; sin-determinar.
+- [Estadística CPE](https://cpe.sunat.gob.pe/estadistica-cpe) — guia-962b4aa17b6a7380e4ba; index-only; referencia; sin-determinar.
+- [Estadísticas](https://cpe.sunat.gob.pe/estadisticas) — guia-3cf889ebeb568692e64c; index-only; referencia; sin-determinar.
+- [Estructura de archivos](https://cpe.sunat.gob.pe/estructura-de-archivos) — guia-e6cf5087ae988d3efd22; index-only; tecnico; sin-determinar.
+- [Estructuras de Transmisión](https://www.sunat.gob.pe/operatividadaduanera/sda/tutoriales-sda.html) — guia-8d09ee0495213f89fb85; index-only; referencia; sin-determinar; histórico.
+- [Exoneración del Impuesto a la Renta \| Emprender](https://emprender.sunat.gob.pe/acciones-contribuyente/formalizacion/exoneracion-impuesto-renta) — guia-b3eabd16f3854e1b4c14; index-only; referencia; sin-determinar.
+- [Expediente Electrónico](https://orientacion.sunat.gob.pe/expediente-electronico-0) — guia-e93a29d250664397ab0a; index-only; referencia; sin-determinar.
+- [Expediente electrónico - Personas](https://orientacion.sunat.gob.pe/expediente-electronico-personas-0) — guia-2f5dadba564403b250fc; index-only; referencia; sin-determinar.
+- [Expediente Electrónico de Control Móvil - EECM](https://orientacion.sunat.gob.pe/expediente-electronico-de-control-movil-eecm) — guia-893fc4a6dae095b5619c; index-only; referencia; app-movil.
+- [Exporta Fácil \| Emprender](https://emprender.sunat.gob.pe/principales-impuestos/otros/exporta-facil) — guia-749236b56540a97d3552; index-only; referencia; sin-determinar.
+- [Exportación de Servicios \| Emprender](https://emprender.sunat.gob.pe/principales-impuestos/impuesto-general-las-ventas-igv/exportacion-servicios) — guia-af18aaea2e4af765a868; index-only; referencia; sin-determinar.
+- [Exportación Definitiva](https://www.sunat.gob.pe/orientacionaduanera/exportacion/index.html) — guia-46712edfd461451e0915; index-only; referencia; sin-determinar.
+- [Factura - Personas](https://orientacion.sunat.gob.pe/factura-personas-0) — guia-63a6d3bc66a7f2af37c9; index-only; referencia; sin-determinar.
+- [Factura \| Emprender](https://emprender.sunat.gob.pe/comprobantes-libros/comprobantes-pago/factura) — guia-149388ee9b09e658bcf2; index-only; referencia; sin-determinar.
+- [FACTURA CON DETRACCION](https://cpe.sunat.gob.pe/noticias/factura-con-detraccion) — guia-acf6259d604d53771d77; index-only; referencia; sin-determinar.
+- [Factura con detracción](https://cpe.sunat.gob.pe/factura-con-detraccion) — guia-835d2ee9580f7b14d46f; index-only; referencia; sin-determinar.
+- [Factura Electrónica - SEE SOL](https://orientacion.sunat.gob.pe/factura-electronica-see-sol) — guia-6b8f42bb928d17fb99c6; index-only; referencia; sol-web.
+- [Facturación Electrónica para las MYPES](https://cpe.sunat.gob.pe/factura-mype) — guia-0d1d1342ce701f20c3e9; index-only; referencia; sin-determinar.
+- [Facturador - SUNAT](https://orientacion.sunat.gob.pe/facturador-sunat-0) — guia-da069f7e16b28b3b9ccd; index-only; referencia; sin-determinar.
+- [Facturas Falsas \| Emprender](https://emprender.sunat.gob.pe/acciones-sunat/facultad-fiscalizacion/facturas-falsas) — guia-277cdecfc0fe0a4922fc; index-only; referencia; sin-determinar.
+- [Facultad de fiscalización \| Emprender](https://emprender.sunat.gob.pe/acciones-sunat/facultad-fiscalizacion) — guia-8ff41973aee276637655; index-only; referencia; sin-determinar.
+- [Facultad de Fiscalización \| Emprender](https://emprender.sunat.gob.pe/acciones-sunat/facultad-fiscalizacion/facultad-fiscalizacion) — guia-208f63a8fc7044c49396; index-only; referencia; sin-determinar.
+- [Facultad de sancionar \| Emprender](https://emprender.sunat.gob.pe/acciones-sunat/facultad-sancionadora/facultad-sancionar) — guia-50b92dc0c7d15bde0cc6; index-only; referencia; sin-determinar.
+- [Facultad discrecional \| Emprender](https://emprender.sunat.gob.pe/acciones-sunat/facultad-sancionadora/facultad-discrecional) — guia-30e0a443b506fd72d9cc; index-only; referencia; sin-determinar.
+- [Facultad sancionadora \| Emprender](https://emprender.sunat.gob.pe/acciones-sunat/facultad-sancionadora) — guia-de0457252474db8be8a3; index-only; referencia; sin-determinar.
+- [Fechas - Emisores electrónicos obligatorios](https://orientacion.sunat.gob.pe/fechas-emisores-electronicos-obligatorios) — guia-6f13d13ba45d059cbe76; index-only; referencia; sin-determinar.
+- [Fiscalidad Internacional \| SUNAT Perú](https://nodomiciliados.sunat.gob.pe/es) — guia-0b6a4b0d0436ddae345e; index-only; referencia; sin-determinar.
+- [Fiscalidad Internacional y Precios de Transferencia](https://orientacion.sunat.gob.pe/fiscalidad-internacional-y-precios-de-transferencia) — guia-5ff0e4af7d4228260d07; index-only; referencia; sin-determinar.
+- [Fiscalización Parcial Electrónica](https://orientacion.sunat.gob.pe/3403-02-fiscalizacion-parcial-electronica) — guia-dcefaffb5ae2a0d062cf; index-only; referencia; sin-determinar.
+- [Formalización \| Emprender](https://emprender.sunat.gob.pe/acciones-contribuyente/formalizacion) — guia-8ccb7fd287a8ba51c0d4; index-only; referencia; sin-determinar.
+- [Formas de acceso al SIRE](https://cpe.sunat.gob.pe/node/158) — guia-189d7c399445b8a842e5; index-only; referencia; sin-determinar.
+- [Formulario Virtual N° 601 Plame Web](https://orientacion.sunat.gob.pe/formulario-virtual-601-plame-web) — guia-6caa0a115eb7496949a5; index-only; referencia; sin-determinar.
+- [Formularios para trámites - Comprobantes de Pago](https://orientacion.sunat.gob.pe/formularios-para-tramites-comprobantes-de-pago) — guia-b8e4d415cc3ce98123cc; index-only; referencia; sin-determinar.
+- [Formularios y Formatos - Declaración y Pago - Personas](https://orientacion.sunat.gob.pe/formularios-y-formatos-declaracion-y-pago-personas-0) — guia-88bb599542e459d789e9; index-only; referencia; sin-determinar.
+- [Formularios y Formatos -Declaración y Pago- Empresas](https://orientacion.sunat.gob.pe/formularios-y-formatos-declaracion-y-pago-empresas) — guia-104d8586079386e548e4; index-only; referencia; sin-determinar.
+- [Fraccionamiento de deudas \| Emprender](https://emprender.sunat.gob.pe/declaracion-pagos/pagos/fraccionamiento-deudas) — guia-406479b71bbb65db7527; index-only; referencia; sin-determinar.
+- [Fraccionamiento del IGV \| Emprender](https://emprender.sunat.gob.pe/declaracion-pagos/pagos/fraccionamiento-igv) — guia-9b3bcfda89614f003131; index-only; referencia; sin-determinar.
+- [Fraccionamiento Especial de la Deuda Tributaria D.Leg. 1634 \| Emprender](https://emprender.sunat.gob.pe/declaracion-pagos/pagos/fraccionamiento-especial-deuda-tributaria-dleg-1634) — guia-48ccc272a8fbf2d6d5aa; index-only; referencia; sin-determinar.
+- [Fraccionamiento y/o Aplazamiento - Empresas](https://orientacion.sunat.gob.pe/fraccionamiento-yo-aplazamiento-empresas) — guia-77b7f36bd64a8957dd1e; index-only; referencia; sin-determinar.
+- [Fraccionamiento y/o Aplazamiento - Personas](https://orientacion.sunat.gob.pe/fraccionamiento-yo-aplazamiento-personas) — guia-844c90426f944b9fd0ec; index-only; referencia; sin-determinar.
+- [FRAES- Fraccionamiento Especial de Deudas Tributarias y otros Ingresos Administrados por SUNAT](https://orientacion.sunat.gob.pe/fraes-fraccionamiento-especial-de-deudas-tributarias-y-otros-ingresos-administrados-por-sunat) — guia-131ba7242638f0b336cd; index-only; referencia; sin-determinar.
+- [Frequently Asked Questions](https://orientacion.sunat.gob.pe/frequently-asked-question) — guia-8f301485e09577b6e517; index-only; referencia; sin-determinar.
+- [Gastos no deducibles \| Renta 2025](https://renta.sunat.gob.pe/empresas/gastos-no-deducibles) — guia-f1aa2b4f4df7db6b5d83; index-only; referencia; sin-determinar.
+- [Genera o recupera tu clave SOL](https://centrovirtual.sunat.gob.pe/tramites/clave-sol) — guia-10100bfc46f027c89cbc; index-only; referencia; sol-web.
+- [Generación de los registros electrónicos](https://cpe.sunat.gob.pe/node/162) — guia-6f505213ff7713d1d852; index-only; referencia; sin-determinar.
+- [General Anti-Elusive Standards \| International Taxation](https://nodomiciliados.sunat.gob.pe/index%2Ephp/en/fiscalidad-internacional/general-anti-elusive-standards) — guia-f6206fcb74943935a985; index-only; referencia; sin-determinar.
+- [Guía Black Friday - Informes y publicaciones - Superintendencia Nacional de Aduanas y de Administración Tributaria - Plataforma del Estado Peruano](https://www.gob.pe/institucion/sunat/informes-publicaciones/2441665-guia-black-friday) — guia-fcfe3aa436ecdc5b4eed; index-only; referencia; sin-determinar.
+- [Guía de Compras en el Extranjero - Informes y publicaciones - Superintendencia Nacional de Aduanas y de Administración Tributaria - Plataforma del Estado Peruano](https://www.gob.pe/institucion/sunat/informes-publicaciones/2519555-guia-de-compras-en-el-extranjero) — guia-c6c60b4b3f4b48c59563; index-only; referencia; sin-determinar.
+- [Guía de Remisión](https://cpe.sunat.gob.pe/tipos_de_comprobantes/guiaderemision) — guia-75968fee9ed09ca43cde; index-only; referencia; sin-determinar.
+- [Guía de Remisión Bienes Fiscalizados](https://orientacion.sunat.gob.pe/guia-de-remision-bienes-fiscalizados-0) — guia-1e0b39213a002ddcf9ec; index-only; referencia; sin-determinar.
+- [Guía de Remisión de Bienes Fiscalizados](https://cpe.sunat.gob.pe/noticias/guia-de-remision-de-bienes-fiscalizados) — guia-ab0373ed8b20af2faead; index-only; referencia; sin-determinar.
+- [Guía de Remisión Electrónica](https://cpe.sunat.gob.pe/videos/guia-de-remision-electronica) — guia-2a3dbb9c868f200fcaca; index-only; referencia; sin-determinar.
+- [Guía de Remisión Electrónica - GRE](https://cpe.sunat.gob.pe/node/143) — guia-840055f077e76b219b55; index-only; referencia; sin-determinar.
+- [Guía de Remisión Electrónica - GRE](https://cpe.sunat.gob.pe/landing/guia-de-remision-electronica-gre) — guia-922b9f7def18d911594e; index-only; referencia; sin-determinar.
+- [Guía de Remisión Electrónica - Modelo general](https://orientacion.sunat.gob.pe/guia-de-remision-electronica-modelo-general) — guia-5d914e4620414a75e8a4; index-only; referencia; sin-determinar.
+- [Guía de Remisión Electrónica - Modelo General - Desde SEE del Contribuyente](https://orientacion.sunat.gob.pe/guia-de-remision-electronica-modelo-general-desde-see-del-contribuyente-0) — guia-855c8170c805cd6ee14b; index-only; referencia; sin-determinar.
+- [Guía de remisión electrónica \| Emprender](https://emprender.sunat.gob.pe/comprobantes-libros/otros-documentos/guia-remision-electronica) — guia-dee6c95c47fb27c9584d; index-only; referencia; sin-determinar.
+- [Guía de Remisión Electrónica de Bienes Fiscalizados](https://cpe.sunat.gob.pe/tipos_de_comprobantes/guiadebienesfiscalizados) — guia-a97849d92d428c67bad1; index-only; referencia; sin-determinar.
+- [Guía de Remisión Electrónica desde SEE SOL](https://orientacion.sunat.gob.pe/guia-de-remision-electronica-desde-see-sol-0) — guia-61f669206c67879c5abc; index-only; referencia; sol-web.
+- [Guía para la Clasificación de Mercancías en la Nomenclatura Arancelaria](https://www.sunat.gob.pe/orientacionaduanera/nomenclaturaarancelaria/guiaClasifica.html) — guia-dc7d7152234f5ccec5c0; index-only; referencia; sin-determinar.
+- [Guía para Solicitar la Devolución de Retenciones y Percepciones del IGV](https://orientacion.sunat.gob.pe/guia-para-solicitar-la-devolucion-de-retenciones-y-percepciones-del-igv) — guia-3d20341a08d028d19bda; index-only; referencia; sin-determinar.
+- [Guía para Solicitar la Devolución de Retenciones y Percepciones del IGV \| Emprender](https://emprender.sunat.gob.pe/principales-impuestos/imp-general-las-ventas-igv/guia-para-solicitar-devolucion-retenciones) — guia-1ad44edebf7524507f1c; index-only; referencia; sin-determinar.
+- [Guías de Remisión- Comprobantes de Pago Físicos- Empresas](https://orientacion.sunat.gob.pe/guias-de-remision-comprobantes-de-pago-fisicos-empresas-0) — guia-6ddfdf2fbcaade4cc970; index-only; referencia; sin-determinar.
+- [Guías y Manuales](https://cpe.sunat.gob.pe/guias-y-manuales) — guia-90562c6646536a2d17b1; index-only; referencia; sin-determinar.
+- [Guías, Manuales y Servicios Web](https://orientacion.sunat.gob.pe/guias-manuales-y-servicios-web-0) — guia-f95ec3a9aa13b5a3d658; index-only; tecnico; api.
+- [IGV Justo \| Emprender](https://emprender.sunat.gob.pe/principales-impuestos/impuesto-general-las-ventas-igv/igv-justo) — guia-a8d61d479d895c2a0a46; index-only; referencia; sin-determinar.
+- [III. Guía Referencial de IFD \| Fiscalidad Internacional](https://nodomiciliados.sunat.gob.pe/es/fiscalidad-internacional/instrumentos-financieros-derivados/iii-guia-referencial-de-ifd) — guia-a825bc52057c709951c1; index-only; referencia; sin-determinar.
+- [Imp. General a las Ventas (IGV) \| Emprender](https://emprender.sunat.gob.pe/principales-impuestos/imp-general-las-ventas-igv) — guia-4e014b0ff7c054acd1c2; index-only; referencia; sin-determinar.
+- [Importa Fácil \| Emprender](https://emprender.sunat.gob.pe/principales-impuestos/otros/importa-facil) — guia-efcc839f8fc0946be36c; index-only; referencia; sin-determinar.
+- [Importación para el Consumo](https://www.sunat.gob.pe/orientacionaduanera/importacion/index.html) — guia-26ed1b1cb50295c1fe42; index-only; referencia; sin-determinar.
+- [Impuesto a las Embarcaciones de Recreo - Empresas](https://orientacion.sunat.gob.pe/impuesto-las-embarcaciones-de-recreo-empresas) — guia-870f545966db4e464923; index-only; referencia; sin-determinar.
+- [Impuesto a los Juegos a distancia y apuestas deportivas a distancia](https://orientacion.sunat.gob.pe/impuesto-a-los-juegos) — guia-30923abd43304d26d79b; index-only; referencia; sin-determinar.
+- [Impuesto a los juegos y apuestas deportivas a distancia \| Emprender](https://emprender.sunat.gob.pe/principales-impuestos/otros/impuesto-los-juegos-apuestas-deportivas-distancia) — guia-19ebd93a837dd61b3169; index-only; referencia; sin-determinar.
+- [Impuesto al consumo de las bolsas de plástico](https://orientacion.sunat.gob.pe/impuesto-al-consumo-de-las-bolsas-de-plastico-0) — guia-445beca1a8ea698a2556; index-only; referencia; sin-determinar.
+- [Impuesto Extraordinario para la Promoción y Desarrollo Turístico Nacional](https://orientacion.sunat.gob.pe/impuesto-extraordinario-para-la-promocion-y-desarrollo-turistico-nacional-iepdtn) — guia-c115a6015cf8071edec1; index-only; referencia; sin-determinar.
+- [Impuesto General a las Ventas - IGV- Empresas](https://orientacion.sunat.gob.pe/impuesto-general-las-ventas-igv-empresas) — guia-ece6057eebbf16305284; index-only; referencia; sin-determinar.
+- [Impuesto General a las Ventas \| Emprender](https://emprender.sunat.gob.pe/principales-impuestos/impuesto-general-las-ventas-igv/impuesto-general-las-ventas) — guia-27efb811d76be382d99f; index-only; referencia; sin-determinar.
+- [Impuesto Selectivo al Consumo (ISC) \| Emprender](https://emprender.sunat.gob.pe/principales-impuestos/impuesto-selectivo-consumo-isc) — guia-0634e06b07ea00613043; index-only; referencia; sin-determinar.
+- [Impuesto Temporal a los Activos Netos-ITAN](https://orientacion.sunat.gob.pe/impuesto-temporal-los-activos-netos-itan) — guia-88ee8a5d7cc2b3e5ff33; index-only; referencia; sin-determinar.
+- [Incentivos Migratorios](https://www.sunat.gob.pe/orientacionaduanera/incentivosmigratorios/index.html) — guia-f8a0f198744db6ecc037; index-only; referencia; sin-determinar.
+- [Influencers \| Emprender](https://emprender.sunat.gob.pe/principales-impuestos/otros/influencers) — guia-4ba7aac9dc340ae990b2; index-only; referencia; sin-determinar.
+- [Información General - Planilla Electrónica](https://orientacion.sunat.gob.pe/informacion-general-planilla-electronica-0) — guia-a42d9cd6359543a07551; index-only; referencia; sin-determinar.
+- [Información para BODEGUEROS \| Emprender](https://emprender.sunat.gob.pe/principales-impuestos/otros/informacion-para-bodegueros) — guia-21aa56417b2273e7587f; index-only; referencia; sin-determinar.
+- [Información para Terceros Retenedores](https://orientacion.sunat.gob.pe/informacion-para-terceros-retenedores-0) — guia-0a48dd54154df5b127a1; index-only; referencia; sin-determinar.
+- [Infórmate aquí](https://centrovirtual.sunat.gob.pe/informate-aqui) — guia-6355016488a84454e9ba; index-only; referencia; sin-determinar.
+- [Informes SUNAT - Comprobantes de Pago Físicos](https://orientacion.sunat.gob.pe/informes-sunat-comprobantes-de-pago-fisicos) — guia-0d31a3e5e6e77d8ece28; index-only; referencia; sin-determinar.
+- [Infracciones y gradualidad](https://orientacion.sunat.gob.pe/infracciones-y-gradualidad) — guia-b2f1c1e3788f6f97a372; index-only; referencia; sin-determinar.
+- [Infracciones y Sanciones vinculadas con la Declaración y Pago - Empresas](https://orientacion.sunat.gob.pe/infracciones-y-sanciones-vinculadas-con-la-declaracion-y-pago-empresas-0) — guia-498ce7d6cec857364c88; index-only; referencia; sin-determinar.
+- [Ingreso como recaudación y extorno](https://orientacion.sunat.gob.pe/ingreso-como-recaudacion-y-extorno-0) — guia-acaed59a0676056ba189; index-only; referencia; sin-determinar.
+- [Inscríbete en el RUC](https://centrovirtual.sunat.gob.pe/tramites/inscribete-ruc) — guia-7ca7cc60ce71bea59be1; index-only; referencia; sin-determinar.
+- [Inscripción al RUC](https://orientacion.sunat.gob.pe/inscripcion-al-ruc) — guia-2370c0f163a6971d552e; index-only; referencia; sin-determinar.
+- [Inscripción al RUC \| Emprender](https://emprender.sunat.gob.pe/acciones-contribuyente/formalizacion/inscripcion-ruc) — guia-0279d20706b1c1becbd7; index-only; referencia; sin-determinar.
+- [Inscripción al RUC- Empresa](https://orientacion.sunat.gob.pe/inscripcion-al-ruc-empresa) — guia-9b5861e20fc44231ee75; index-only; referencia; sin-determinar.
+- [Inscripción al RUC- Personas](https://orientacion.sunat.gob.pe/inscripcion-al-ruc-personas) — guia-cdc16348e7dd9913dec4; index-only; referencia; sin-determinar.
+- [Inscripción en el RUC \| Emprender](https://emprender.sunat.gob.pe/ruc/mi-ruc/inscripcion-ruc) — guia-62afc9af72191d0c3db0; index-only; referencia; sin-determinar.
+- [Instructivo para la Instalación del Facturador Sunat - Informes y publicaciones - Superintendencia Nacional de Aduanas y de Administración Tributaria - Plataforma del Estado Peruano](https://www.gob.pe/institucion/sunat/informes-publicaciones/1893360-instructivo-para-la-instalacion-del-facturador-sunat) — guia-1b949cab36a17066352c; index-only; referencia; escritorio.
+- [Instructivos](https://www.sunat.gob.pe/orientacionaduanera/procedimientos/Instructivos.html) — guia-671dcb56975526e76532; index-only; referencia; sin-determinar.
+- [Instructivos - Procedimientos - IMPORTACION DEFINITIVA](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/crAnexas/cr-despa-it.01.15.htm) — guia-1a294ea0244b232240ce; index-only; referencia; sin-determinar.
+- [Instructivos - Procedimientos - IMPORTACION DEFINITIVA](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importacA/instructivos/index.htm) — guia-6345df0e2010221a54ae; index-only; referencia; sin-determinar.
+- [Instructivos - Procedimientos - IMPORTACION DEFINITIVA](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/crAnexas/cr-despa-it.01.12.htm) — guia-6ea4a2eb7f46e6d80bde; index-only; referencia; sin-determinar.
+- [Instructivos - Procedimientos - IMPORTACION DEFINITIVA](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/crAnexas/cr-despa-it.01.08.htm) — guia-906c15c056771d80ffe4; index-only; referencia; sin-determinar.
+- [Instructivos - Procedimientos - IMPORTACION DEFINITIVA](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/crAnexas/cr-despa-it.01.18.htm) — guia-98372269d63905fa0462; index-only; referencia; sin-determinar.
+- [Instructivos - Procedimientos - IMPORTACION DEFINITIVA](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/crAnexas/cr-despa-it.01.17.htm) — guia-99450a041979dc8ac58a; index-only; referencia; sin-determinar.
+- [Instructivos - Procedimientos - IMPORTACION DEFINITIVA](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/crAnexas/cr-despa-it.01.13.htm) — guia-acfb74f7aede24f492b5; index-only; referencia; sin-determinar.
+- [Instructivos - Procedimientos - IMPORTACION DEFINITIVA](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/crAnexas/cr-despa-it.01.14.htm) — guia-c5850d32299f1a8202b2; index-only; referencia; sin-determinar.
+- [Instructivos - Procedimientos - IMPORTACION DEFINITIVA](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/crAnexas/cr-despa-it.01.11.htm) — guia-e85867426e6867d252e4; index-only; referencia; sin-determinar.
+- [Instructivos - Procedimientos - IMPORTACION DEFINITIVA](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/index.htm) — guia-e98fbc4666b568c82a4f; index-only; referencia; sin-determinar.
+- [Instructivos - PROCEDIMIENTOS ASOCIADOS - DESPACHO](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/instructivos/index.html) — guia-d9b500a1eedc6035b27a; index-only; referencia; sin-determinar.
+- [Insumos Químicos y Bienes Fiscalizados \| Emprender](https://emprender.sunat.gob.pe/insumos-quimicos) — guia-b46e3102daf4966f6938; index-only; referencia; sin-determinar.
+- [International Treaties and Agreements \| International Taxation](https://nodomiciliados.sunat.gob.pe/index%2Ephp/en/fiscalizacion-internacional/international-treaties-and-agreements) — guia-6d0f9617f694a5465df3; index-only; referencia; sin-determinar.
+- [ISC - Juegos a distancia y apuestas deportivas a distancia](https://orientacion.sunat.gob.pe/isc-juegos-distancia-y-apuestas-deportivas-distancia) — guia-7400c36045699c7805b9; index-only; referencia; sin-determinar.
+- [ISC a los juegos y apuestas deportivas a distancia \| Emprender](https://emprender.sunat.gob.pe/principales-impuestos/impuesto-selectivo-consumo-isc/isc-los-juegos-apuestas-deportivas-distancia) — guia-18f673bdd1a0a300a80e; index-only; referencia; sin-determinar.
+- [ITF - Bancarización y Medios de Pago](https://orientacion.sunat.gob.pe/itf-bancarizacion-y-medios-de-pago-0) — guia-dfa1aec5367a3f04a8e5; index-only; referencia; banco.
+- [La cobranza coactiva \| Emprender](https://emprender.sunat.gob.pe/declaracion-pagos/pagos/cobranza-coactiva) — guia-f1ba22f5695e631df65c; index-only; referencia; sin-determinar.
+- [La forma más rápida, fácil y segura de emitir comprobantes de pago](https://cpe.sunat.gob.pe/) — guia-4054d74c95c6d2b50ccd; index-only; referencia; sin-determinar.
+- [Las donaciones en el IGV](https://orientacion.sunat.gob.pe/las-donaciones-en-el-igv) — guia-48a4eaffdb73cbed1f7f; index-only; referencia; sin-determinar.
+- [Las donaciones en el Impuesto a la Renta](https://orientacion.sunat.gob.pe/las-donaciones-en-el-impuesto-la-renta) — guia-a5d6db2d5dc4ef3f67aa; index-only; referencia; sin-determinar.
+- [Legal regulations](https://orientacion.sunat.gob.pe/normas-legales) — guia-de9518c88fad011074f3; index-only; referencia; sin-determinar.
+- [Levantamiento de Embargos](https://orientacion.sunat.gob.pe/levantamiento-de-embargos-0) — guia-c81587d679d60c59b10f; index-only; referencia; sin-determinar.
+- [Ley 30737](https://orientacion.sunat.gob.pe/ley-30737-0) — guia-dbb7c8406f64ada827d3; index-only; referencia; sin-determinar.
+- [Ley del Joven Empresario \| Emprender](https://emprender.sunat.gob.pe/principales-impuestos/otros/ley-joven-empresario) — guia-3a9c4fad09470ab0e4d4; index-only; referencia; sin-determinar.
+- [Ley del Mecenazgo Deportivo](https://orientacion.sunat.gob.pe/ley-del-mecenazgo-deportivo-0) — guia-fc1032157ec1303ce500; index-only; referencia; sin-determinar.
+- [Ley que fomenta renovación del parque automotor y la formalización en la venta de unidades inmatriculadas](https://orientacion.sunat.gob.pe/ley-que-fomenta-renovacion-del-parque-automotor-y-la-formalizacion-en-la-venta-de-unidades) — guia-16ad42ea433a96151fec; index-only; referencia; sin-determinar.
+- [Liberación de Fondos](https://orientacion.sunat.gob.pe/liberacion-de-fondos) — guia-e3e4252cd3a69c3cc937; index-only; referencia; sin-determinar.
+- [Libre disposición de los fondos de detracción para las MYPE \| Emprender](https://emprender.sunat.gob.pe/principales-impuestos/impuesto-general-las-ventas-igv/libre-disposicion-los-fondos-detraccion-para) — guia-260cf44b1eed89f0a480; index-only; referencia; sin-determinar.
+- [Libro de Reclamaciones, Quejas y Sugerencias](https://orientacion.sunat.gob.pe/libro-de-reclamaciones-quejas-y-sugerencias-0) — guia-1a9514a320a82c42ddb6; index-only; referencia; sin-determinar.
+- [Libro de Reclamaciones, Quejas y Sugerencias - Empresas](https://orientacion.sunat.gob.pe/libro-de-reclamaciones-quejas-y-sugerencias-empresas-0) — guia-02a8f9e9649caac86391; index-only; referencia; sin-determinar.
+- [Libros Electrónicos - Concepto \| Emprender](https://emprender.sunat.gob.pe/node/152) — guia-9ac75ce5747258101da3; index-only; referencia; sin-determinar.
+- [Libros y registros contables obligatorios \| Emprender](https://emprender.sunat.gob.pe/comprobantes-libros/registros-libros-electronicos/libros-registros-contables-obligatorios) — guia-9e88f478bf158de57b4a; index-only; referencia; sin-determinar.
+- [Libros y Registros Obligatorios](https://orientacion.sunat.gob.pe/libros-y-registros-obligatorios) — guia-7fd3425be78c64dce5d3; index-only; referencia; sin-determinar.
+- [Liquidación de Compra](https://cpe.sunat.gob.pe/tipos_de_comprobantes/liquidacion_de_compra) — guia-c2c78ef0a0cdccd8362a; index-only; referencia; sin-determinar.
+- [Liquidación de compra \| Emprender](https://emprender.sunat.gob.pe/comprobantes-libros/comprobantes-pago/liquidacion-compra) — guia-268483e7e675c9407bb8; index-only; referencia; sin-determinar.
+- [Listado de Contribuyentes](https://cpe.sunat.gob.pe/listado-de-contribuyentes) — guia-9b13b74383b898197406; index-only; referencia; sin-determinar.
+- [Listado de contribuyentes no domiciliados inscritos en el RUC](https://orientacion.sunat.gob.pe/listado-de-contribuyentes-no-domiciliados-inscritos-en-el-ruc) — guia-6ac7ea6da57c18057dca; index-only; referencia; sin-determinar.
+- [Listado de sujetos no domiciliados inscritos en el RUC](https://orientacion.sunat.gob.pe/listado-de-sujetos-no-domiciliados-inscritos-en-el-ruc) — guia-71413a28ba7a6c114e34; index-only; referencia; sin-determinar.
+- [Mantengo mis datos actualizados \| Emprender](https://emprender.sunat.gob.pe/ruc/mi-ruc/mantengo-mis-datos-actualizados) — guia-3cb7cbe823d8724bcc31; index-only; referencia; sin-determinar.
+- [Manual - Consulta l Régimen Rancho de Nave](https://www.sunat.gob.pe/operatividadaduanera/fast/tutoriales/ranNave/9/index.html) — guia-74732a2bb71955b16888; index-only; referencia; sin-determinar; histórico.
+- [Manual - Identificación del Régimen Rancho de Nave](https://www.sunat.gob.pe/operatividadaduanera/fast/tutoriales/ranNave/2/index.html) — guia-b405f1742c93136a9a38; index-only; referencia; sin-determinar; histórico.
+- [Manual - Numeración de Rancho de Nave](https://www.sunat.gob.pe/operatividadaduanera/fast/tutoriales/ranNave/4/index.html) — guia-fb6c03016da4d012f800; index-only; referencia; sin-determinar; histórico.
+- [Manual - Numeración de Reparación - Mantenimiento](https://www.sunat.gob.pe/operatividadaduanera/fast/tutoriales/repaMant/1/index.html) — guia-5f919b9205dc6f66413c; index-only; referencia; sin-determinar; histórico.
+- [Manual - Registrar Ingreso de Rancho de Nave](https://www.sunat.gob.pe/operatividadaduanera/fast/tutoriales/ranNave/6/index.html) — guia-457c2d75d53f2b130f86; index-only; referencia; sin-determinar; histórico.
+- [Manual - Registrar Ingreso de Reparación - Mantenimiento](https://www.sunat.gob.pe/operatividadaduanera/fast/tutoriales/repaMant/5/index.html) — guia-bf186d4889546cbd5da6; index-only; referencia; sin-determinar; histórico.
+- [Manual - Registrar Reingreso Reparación - Mantenimiento](https://www.sunat.gob.pe/operatividadaduanera/fast/tutoriales/repaMant/4/index.html) — guia-9fdcdd6f717e2421ade2; index-only; referencia; sin-determinar; histórico.
+- [Manual - Registrar Salida de Rancho de Nave](https://www.sunat.gob.pe/operatividadaduanera/fast/tutoriales/ranNave/5/index.html) — guia-7a8e790e94d2a58a47b0; index-only; referencia; sin-determinar; histórico.
+- [Manual - Registrar Salida de Reparación - Mantenimiento](https://www.sunat.gob.pe/operatividadaduanera/fast/tutoriales/repaMant/3/index.html) — guia-340b7ea90dccb7839075; index-only; referencia; sin-determinar; histórico.
+- [Manual - Registro de Embarque Rancho de Nave](https://www.sunat.gob.pe/operatividadaduanera/fast/tutoriales/ranNave/8/index.html) — guia-a94b0bde1454af62e542; index-only; referencia; sin-determinar; histórico.
+- [Manual - Registro de Embarque Reparación - Mantenimiento](https://www.sunat.gob.pe/operatividadaduanera/fast/tutoriales/repaMant/7/index.html) — guia-0ee1f2eb598945ae29f1; index-only; referencia; sin-determinar; histórico.
+- [Manual de Fiscalización Parcial Electrónica - Informes y publicaciones - Superintendencia Nacional de Aduanas y de Administración Tributaria - Plataforma del Estado Peruano](https://www.gob.pe/institucion/sunat/informes-publicaciones/2725612-manual-de-fiscalizacion-parcial-electronica) — guia-5cb3f27aeae16148a347; index-only; referencia; sin-determinar.
+- [Manual de Usuario de Manifiesto Terrestre Web](https://www.sunat.gob.pe/operatividadaduanera/manuales/manifiesto/Manual_TerrestreWeb.htm) — guia-86eab9550c890efc1f9e; index-only; referencia; sin-determinar.
+- [Manuales Tutoriales FAST](https://www.sunat.gob.pe/operatividadaduanera/fast/tutoriales/tutoriales_fast.html) — guia-125e1cc16d1096be2d34; index-only; referencia; sin-determinar; histórico.
+- [Me formalizo \| Emprender](https://emprender.sunat.gob.pe/acciones-contribuyente/formalizacion/me-formalizo) — guia-f07f41178c90fe17801f; index-only; referencia; sin-determinar.
+- [Medidas en Estado de Emergencia Nacional -COVID 19](https://orientacion.sunat.gob.pe/medidas-en-estado-de-emergencia-nacional-covid-19) — guia-fd5ef790afef6d654ddb; index-only; referencia; sin-determinar.
+- [Medios de Pago Electrónico \| Emprender](https://emprender.sunat.gob.pe/declaracion-pagos/pagos/medios-pago-electronico) — guia-3a0d7c6ac83137683cee; index-only; referencia; sin-determinar.
+- [Mercancías Restringidas y Prohibidas](https://www.sunat.gob.pe/orientacionaduanera/mercanciasrestringidas/index.html) — guia-83c8fe0842905ff13b4a; index-only; referencia; sin-determinar.
+- [Mesa de Partes virtual](https://centrovirtual.sunat.gob.pe/tramites/mpv-sunat) — guia-f356b1392c7ea00ad92f; index-only; referencia; sin-determinar.
+- [Mi RUC \| Emprender](https://emprender.sunat.gob.pe/ruc/mi-ruc) — guia-ff6d73823b32dab733ec; index-only; referencia; sin-determinar.
+- [Mis colaboradores \| Emprender](https://emprender.sunat.gob.pe/principales-impuestos/planilla/mis-colaboradores) — guia-f65a0c4af0dad114e057; index-only; referencia; sin-determinar.
+- [Mis declaraciones y pagos - Declara Fácil](https://orientacion.sunat.gob.pe/mis-declaraciones-y-pagos-declara-facil) — guia-b415a69d8e83514ede1d; index-only; referencia; sol-web.
+- [Modificación Datos RUC](https://orientacion.sunat.gob.pe/modificacion-datos-ruc) — guia-59747ea45a86cb097fa9; index-only; referencia; sin-determinar.
+- [Modificación de Datos RUC - Empresas](https://orientacion.sunat.gob.pe/modificacion-de-datos-ruc-empresas-0) — guia-2679a6549916098befca; index-only; referencia; sin-determinar.
+- [MÓDULO DE OPERACIONES ASOCIADAS AL MANIFIESTO DE INGRESO](https://www.sunat.gob.pe/operatividadaduanera/fast/tutoriales/regOperacionesUsuales/operaciones-usuales.html) — guia-fa0352a3f8527568800a; index-only; referencia; sin-determinar; histórico.
+- [Motivos de Traslado](https://cpe.sunat.gob.pe/node/171) — guia-fa4916143bf3adc74c1c; index-only; referencia; sin-determinar.
+- [Mutual Administrative Assistance \| International Taxation](https://nodomiciliados.sunat.gob.pe/index%2Ephp/en/fiscalizacion-internacional/mutual-administrative-assistance) — guia-69f2fb499af24860175f; index-only; referencia; sin-determinar.
+- [No conformidad y baja de una GRE](https://cpe.sunat.gob.pe/node/118) — guia-462042303232ce43b927; index-only; referencia; sin-determinar.
+- [Normas legales](https://cpe.sunat.gob.pe/node/98) — guia-8ccc6b86a302136d8913; index-only; referencia; sin-determinar.
+- [Normas Legales](https://cpe.sunat.gob.pe/node/141) — guia-3872f65fe8f541d8a041; index-only; referencia; sin-determinar.
+- [Normas Legales](https://cpe.sunat.gob.pe/node/115) — guia-7b954636887b0b80a535; index-only; referencia; sin-determinar.
+- [Normas Legales - Declaración y Pago - Personas](https://orientacion.sunat.gob.pe/normas-legales-declaracion-y-pago-personas-0) — guia-3e4609aff59559e9219f; index-only; referencia; sin-determinar.
+- [Normas legales - Detracciones - Empresas](https://orientacion.sunat.gob.pe/normas-legales-detracciones-empresas-0) — guia-6f76715a923ee772f054; index-only; referencia; sin-determinar.
+- [Normas Legales - Planilla Electrónica](https://orientacion.sunat.gob.pe/normas-legales-planilla-electronica-0) — guia-bab1f75eac20333d1988; index-only; referencia; sin-determinar.
+- [Normas Legales - Planilla Electrónica](https://orientacion.sunat.gob.pe/normas-legales-planilla-electronica) — guia-eacffd0babf90c599bce; index-only; referencia; sin-determinar.
+- [Normas legales - RUC](https://orientacion.sunat.gob.pe/normas-legales-ruc) — guia-dfaf9f43e9f828e7607a; index-only; referencia; sin-determinar.
+- [Normas legales - RUC - Empresas](https://orientacion.sunat.gob.pe/normas-legales-ruc-empresas-0) — guia-b5dc1655efcfceaba093; index-only; referencia; sin-determinar.
+- [Normas legales – Acciones de Cobranza](https://orientacion.sunat.gob.pe/normas-legales-acciones-de-cobranza) — guia-cfd37687849043e8e9bb; index-only; referencia; sin-determinar.
+- [Normas Legales \| Emprender](https://emprender.sunat.gob.pe/node/3) — guia-4bd852c2261051931c2a; index-only; referencia; sin-determinar.
+- [Normativa](https://cpe.sunat.gob.pe/informacion_general/normas_legales) — guia-91ef5b8c06895fa6aa6d; index-only; normativa; sin-determinar.
+- [Nota de Crédito Electrónica](https://cpe.sunat.gob.pe/tipos_de_comprobantes/nota_de_credito) — guia-64507ade309821a0ac4e; index-only; referencia; sin-determinar.
+- [Nota de Débito Electrónica](https://cpe.sunat.gob.pe/tipos_de_comprobantes/nota_de_debito) — guia-5ac16dad000806d90cd5; index-only; referencia; sin-determinar.
+- [Notas de crédito electrónicas](https://cpe.sunat.gob.pe/videos/notas-de-credito-electronicas) — guia-47b81976a1664f01cabd; index-only; referencia; sin-determinar.
+- [Noticias](https://cpe.sunat.gob.pe/noticias) — guia-38b0ccb348501b7609c6; index-only; referencia; sin-determinar.
+- [Notificaciones SUNAT \| Emprender](https://emprender.sunat.gob.pe/acciones-sunat/facultad-fiscalizacion/notificaciones-sunat) — guia-5797e302970f93699e09; index-only; referencia; sin-determinar.
+- [NPS - Número de Pago Sunat - Empresas](https://orientacion.sunat.gob.pe/nps-numero-de-pago-sunat-empresas) — guia-6357dac30de14c633d14; index-only; referencia; sin-determinar.
+- [NPS - Número de Pago Sunat - Personas](https://orientacion.sunat.gob.pe/nps-numero-de-pago-sunat-personas-0) — guia-8cf6a902f8fb14ded254; index-only; referencia; sin-determinar.
+- [Nuestros videos](https://orientacion.sunat.gob.pe/05-videos-tutoriales) — guia-12c142e8a47704a3a7e6; index-only; referencia; sin-determinar.
+- [Nuestros videos](https://orientacion.sunat.gob.pe/04-manuales) — guia-4f8ec00c5b5e256cec6e; index-only; referencia; sin-determinar.
+- [Nuestros videos](https://centrovirtual.sunat.gob.pe/nuestros-videos) — guia-f7c77ecd84167fa68299; index-only; referencia; sin-determinar.
+- [Nuevas obligaciones a partir de enero 2023](https://cpe.sunat.gob.pe/noticias/nuevas-obligaciones-partir-de-enero-2023) — guia-4f3fc695aad26a736572; index-only; referencia; sin-determinar.
+- [Nuevo plazo máximo de atraso de registro de libros vinculados al PDT - Formulario Virtual N° 0625](https://orientacion.sunat.gob.pe/nuevo-plazo-maximo-de-atraso-de-registro-de-libros-vinculados-al-pdt-formulario-virtual-ndeg-0625) — guia-638d7cd4f3ade19fc524; index-only; referencia; sin-determinar.
+- [Nuevo Portal](https://orientacion.sunat.gob.pe/nuevo-portal-0) — guia-3a746bbbc2a16263d28a; index-only; referencia; sin-determinar.
+- [Nuevo Régimen Único Simplificado (Nuevo RUS) \| Emprender](https://emprender.sunat.gob.pe/ruc/regimenes-tributarios-mype/nuevo-regimen-unico-simplificado-nuevo-rus) — guia-f04b50dc169f5ba7e544; index-only; referencia; sin-determinar.
+- [Obligaciones con mis trabajadores \| Emprender](https://emprender.sunat.gob.pe/principales-impuestos/planilla/obligaciones-con-mis-trabajadores) — guia-6e988922c1914e5a9797; index-only; referencia; sin-determinar.
+- [Obligaciones si vendo o presto servicios por Internet \| Emprender](https://emprender.sunat.gob.pe/principales-impuestos/otros/obligaciones-si-vendo-o-presto-servicios-por-internet) — guia-2ea25535fa7b2bab47dc; index-only; referencia; sin-determinar.
+- [Obligados a la emisión de la GRE](https://cpe.sunat.gob.pe/node/119) — guia-902efdc8a1a0a5dcdf7f; index-only; referencia; sin-determinar.
+- [ONP - Sistema Nacional de Pensiones - Personas](https://orientacion.sunat.gob.pe/onp-sistema-nacional-de-pensiones-personas) — guia-f81daab93e7aaabf0cd0; index-only; referencia; sin-determinar.
+- [Operaciones no reales en el crédito fiscal \| Emprender](https://emprender.sunat.gob.pe/acciones-sunat/facultad-fiscalizacion/operaciones-no-reales-credito-fiscal) — guia-a13ab7c701cf510380b0; index-only; referencia; sin-determinar.
+- [Operador de Servicio Electrónico - OSE](https://cpe.sunat.gob.pe/aliados/ose) — guia-dbb87c81d7dcbd3a587e; index-only; referencia; sin-determinar.
+- [Operatividad - Cobranza -Empresas](https://orientacion.sunat.gob.pe/operatividad-cobranza-empresas-0) — guia-a21dadd9a88ea2d7d411; index-only; referencia; sin-determinar.
+- [Operatividad - Detracciones - Empresas](https://orientacion.sunat.gob.pe/operatividad-detracciones-empresas) — guia-4f7240c30804e6d3b678; index-only; referencia; sin-determinar.
+- [Orientación](https://centrovirtual.sunat.gob.pe/orientacion) — guia-0f2e76e21a9f74e2af62; index-only; referencia; sin-determinar.
+- [Otros \| Emprender](https://emprender.sunat.gob.pe/principales-impuestos/otros) — guia-4b9e70bb4ed83eac7c17; index-only; referencia; sin-determinar.
+- [Otros \| Emprender](https://emprender.sunat.gob.pe/ruc/otros) — guia-56975bba268835c56740; index-only; referencia; sin-determinar.
+- [Otros comprobantes de pago \| Emprender](https://emprender.sunat.gob.pe/comprobantes-libros/comprobantes-pago/otros-comprobantes-pago) — guia-0c6998292df170e8ad0d; index-only; referencia; sin-determinar.
+- [Otros documentos \| Emprender](https://emprender.sunat.gob.pe/comprobantes-libros/otros-documentos) — guia-753fd72d5b04f57f1707; index-only; referencia; sin-determinar.
+- [Otros libros \| Emprender](https://emprender.sunat.gob.pe/comprobantes-libros/registros-libros-electronicos/otros-libros) — guia-7da3c30be6952e271a48; index-only; referencia; sin-determinar.
+- [Otros Procedimientos y Trámites - Empresas](https://orientacion.sunat.gob.pe/otros-procedimientos-y-tramites---empresas) — guia-0d73ee1dfd97ea9a25e1; index-only; referencia; sin-determinar.
+- [Otros Procedimientos y Trámites - Personas](https://orientacion.sunat.gob.pe/otros-procedimientos-y-tramites-personas) — guia-866716bc66f926148a0d; index-only; referencia; sin-determinar.
+- [Padrón reducido del RUC](https://orientacion.sunat.gob.pe/padron-reducido-del-ruc) — guia-7fbb2456ec728ac00d3b; index-only; referencia; sin-determinar.
+- [Pago con CIPRL y CIPGN](https://orientacion.sunat.gob.pe/pago-con-ciprl-y-cipgn-0) — guia-a385f03b08e84b75272c; index-only; referencia; sin-determinar.
+- [Pago de detracciones \| Emprender](https://emprender.sunat.gob.pe/principales-impuestos/impuesto-general-las-ventas-igv/pago-detracciones) — guia-bc6631b87e9db4cf835b; index-only; referencia; sin-determinar.
+- [Pago de Valor](https://orientacion.sunat.gob.pe/pago-de-valor) — guia-1e0205908a70f6978079; index-only; referencia; sin-determinar.
+- [Pago Electrónico - Empresas](https://orientacion.sunat.gob.pe/pago-electronico-empresas-0) — guia-1edcc80cfe62e88ca1de; index-only; referencia; sin-determinar.
+- [Pago Electrónico - Personas](https://orientacion.sunat.gob.pe/pago-electronico-personas-0) — guia-277c8e672df4495b7b56; index-only; referencia; sin-determinar.
+- [Pago en Red Bancaria - Personas](https://orientacion.sunat.gob.pe/pago-en-red-bancaria-personas-0) — guia-29e71b8b5b1a3ec5008c; index-only; referencia; banco.
+- [Pago en Red Bancaria- Empresas](https://orientacion.sunat.gob.pe/pago-en-red-bancaria-empresas-0) — guia-f33d99a1f69ed12cc027; index-only; referencia; banco.
+- [Pagos \| Emprender](https://emprender.sunat.gob.pe/declaracion-pagos/pagos) — guia-95fc721f3eae372820d9; index-only; referencia; sin-determinar.
+- [Pagos a Cuenta - Empresas \| Emprender](https://emprender.sunat.gob.pe/principales-impuestos/renta/pagos-cuenta-empresas) — guia-4b66f7a8aa61bdd203e3; index-only; referencia; sin-determinar.
+- [Pasar al contenido principal](https://orientacion.sunat.gob.pe/queja-ante-el-tribunal-fiscal-empresas) — guia-4b34a3679b1902fb5b60; index-only; referencia; sin-determinar.
+- [Pasar al contenido principal](https://orientacion.sunat.gob.pe/fraes) — guia-56222904b41749c37093; index-only; referencia; sin-determinar.
+- [Pasar al contenido principal](https://cpe.sunat.gob.pe/videos) — guia-be99f49fd363a523f849; index-only; referencia; sin-determinar.
+- [Pasar al contenido principal](https://orientacion.sunat.gob.pe/7319-06-verificacion-de-entrega-de-comprobantes-de-pago) — guia-c92bd89759a437d74f84; index-only; referencia; sin-determinar.
+- [Pasar al contenido principal](https://orientacion.sunat.gob.pe/6729-04-descarga-e-instalacion-del-pvs) — guia-dec86647b41a118638a3; index-only; referencia; escritorio.
+- [Pasar al contenido principal](https://orientacion.sunat.gob.pe/ivap-0) — guia-f534ab051cfa24004faf; index-only; referencia; sin-determinar.
+- [Paso a paso para descargar tu Certificado Digital Tributario](https://cpe.sunat.gob.pe/videos/paso-paso-para-descargar-tu-certificado-digital-tributario) — guia-3f137fbdcfe106c4961e; index-only; referencia; sin-determinar.
+- [Pasos para emitir facturas electrónicas](https://cpe.sunat.gob.pe/videos/pasos-para-emitir-facturas-electronicas) — guia-09b621d6b787c43e0108; index-only; referencia; sin-determinar.
+- [PDT - Descarga - Empresas](https://orientacion.sunat.gob.pe/pdt-descarga-empresas-0) — guia-eed3c785de68033eada4; index-only; referencia; sin-determinar.
+- [PDT - Descarga - Personas](https://orientacion.sunat.gob.pe/pdt-descarga-personas-0) — guia-ddccbd4f16dbdf508746; index-only; referencia; sin-determinar.
+- [PDT - PLAME](https://orientacion.sunat.gob.pe/pdt-plame-0) — guia-094de11e8c84989f768b; index-only; referencia; sin-determinar.
+- [Perfil de Cumplimiento \| Emprender](https://emprender.sunat.gob.pe/ruc/otros/perfil-cumplimiento) — guia-e6f0fa07fe1271423e32; index-only; referencia; sin-determinar.
+- [Planilla \| Emprender](https://emprender.sunat.gob.pe/principales-impuestos/planilla) — guia-81fe7e60fb66863e99ce; index-only; referencia; sin-determinar.
+- [Planilla Electrónica](https://orientacion.sunat.gob.pe/planilla-electronica) — guia-f56544ded22692b6582e; index-only; referencia; sin-determinar.
+- [Planilla Electrónica \| Emprender](https://emprender.sunat.gob.pe/principales-impuestos/planilla/planilla-electronica) — guia-9e68403b2c0565e44651; index-only; referencia; sin-determinar.
+- [Plataforma de Confirmación (Factoring)](https://cpe.sunat.gob.pe/plataforma-de-confirmacion-factoring) — guia-d26552b2b2e693f9921b; index-only; referencia; sin-determinar.
+- [Preguntas Frecuentes](https://cpe.sunat.gob.pe/node/131) — guia-46eb375ce8e788d32fd0; index-only; referencia; sin-determinar.
+- [Preguntas Frecuentes](https://cpe.sunat.gob.pe/node/122) — guia-ad002c2ad6f03301ffed; index-only; referencia; sin-determinar.
+- [Preguntas Frecuentes](https://orientacion.sunat.gob.pe/7092-preguntas-frecuentes) — guia-c66b7b01e80335cae8e2; index-only; referencia; sin-determinar.
+- [Preguntas Frecuentes](https://cpe.sunat.gob.pe/node/134) — guia-f97f0fa03ab4662b4e09; index-only; referencia; sin-determinar.
+- [PREGUNTAS FRECUENTES](https://cpe.sunat.gob.pe/informacion_general/preguntas_frecuentes) — guia-553c7d3bda231a971bd2; index-only; referencia; sin-determinar.
+- [Preguntas Frecuentes - Cobranza Coactiva- Empresas](https://orientacion.sunat.gob.pe/preguntas-frecuentes-cobranza-coactiva-empresas) — guia-7e5e3fc1b1dd3fb5040a; index-only; referencia; sin-determinar.
+- [Preguntas Frecuentes - Comprobante de Pago - Empresas](https://orientacion.sunat.gob.pe/preguntas-frecuentes-comprobante-de-pago-empresas-0) — guia-623e3a9ea6346ae29e3b; index-only; referencia; sin-determinar.
+- [Preguntas frecuentes - Declaración y Pago - Personas](https://orientacion.sunat.gob.pe/preguntas-frecuentes-declaracion-y-pago-personas-0) — guia-8f763c4c3f36805219ae; index-only; referencia; sin-determinar.
+- [Preguntas frecuentes - Detracciones](https://orientacion.sunat.gob.pe/preguntas-frecuentes-detracciones) — guia-16ef8b213679fd885907; index-only; referencia; sin-determinar.
+- [Preguntas frecuentes - Detracciones - Empresas](https://orientacion.sunat.gob.pe/preguntas-frecuentes-detracciones-empresas-0) — guia-e1649fde57c39a1205e7; index-only; referencia; sin-determinar.
+- [Preguntas Frecuentes - Planilla Electrónica](https://orientacion.sunat.gob.pe/preguntas-frecuentes-planilla-electronica-0) — guia-e75c396fdee80a5eaf31; index-only; referencia; sin-determinar.
+- [Preguntas Frecuentes - RUC](https://orientacion.sunat.gob.pe/preguntas-frecuentes-ruc-0) — guia-3707cefc1ab0d40c8db8; index-only; referencia; sin-determinar.
+- [Preguntas Frecuentes - RUC Empresas](https://orientacion.sunat.gob.pe/preguntas-frecuentes-ruc-empresas) — guia-d297b8974c4bf9e67955; index-only; referencia; sin-determinar.
+- [Preguntas Frecuentes sobre Libros Electrónicos \| Emprender](https://emprender.sunat.gob.pe/node/151) — guia-17fd0e092df445694a19; index-only; referencia; sin-determinar.
+- [Preguntas Frecuentes- Impuesto a la Renta - Empresas](https://orientacion.sunat.gob.pe/preguntas-frecuentes-impuesto-la-renta-empresas) — guia-d9040de37490d03b5ec6; index-only; referencia; sin-determinar.
+- [Principales impuestos \| Emprender](https://emprender.sunat.gob.pe/principales-impuestos) — guia-ba2e2c74364ea1bcd7fd; index-only; referencia; sin-determinar.
+- [Procedimiento de Cobranza Coactiva](https://orientacion.sunat.gob.pe/procedimiento-de-cobranza-coactiva-0) — guia-b8f282aad53af145e905; index-only; referencia; sin-determinar.
+- [Procedimiento de devolución \| Emprender](https://emprender.sunat.gob.pe/acciones-contribuyente/procedimiento-devolucion) — guia-b4094c0ec5a1cc8447f5; index-only; referencia; sin-determinar.
+- [Procedimientos - CETICOS](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/instructivos/ctrlCambios/it-00.04/cc-it.00.04-03-23-01-2018.htm) — guia-288fbab155e1a6b9ee00; index-only; referencia; sin-determinar.
+- [Procedimientos - CETICOS](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/instructivos/ctrlCambios/it-00.04/cc-it.00.04-0191-2011.htm) — guia-44bcc02bdd5fed9c2bc5; index-only; referencia; sin-determinar.
+- [Procedimientos - CETICOS](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/instructivos/ctrlCambios/it-00.04/cc-it.00.04-14-30-05-2018.htm) — guia-63c757a040b5d2c8d383; index-only; referencia; sin-determinar.
+- [Procedimientos - CETICOS](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/instructivos/ctrlCambios/it-00.04/cc-it.00.04-18-26-11-2017.htm) — guia-9cfe2851a01920cced2b; index-only; referencia; sin-determinar.
+- [Procedimientos - CETICOS](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/instructivos/ctrlCambios/it-00.04/cc-it.00.04-02-16-07-2015.htm) — guia-a8ce4a7dcc2b8160464f; index-only; referencia; sin-determinar.
+- [Procedimientos - CETICOS](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/instructivos/ctrlCambios/it-00.04/cc-it.00.04-10-18-09-2014.htm) — guia-c8f0caf656def995a15c; index-only; referencia; sin-determinar.
+- [Procedimientos - IMPORTACION DEFINITIVA](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/despa-it-01-15.htm) — guia-0119c4aaab58a1df52db; index-only; referencia; sin-determinar.
+- [Procedimientos - IMPORTACION DEFINITIVA](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/ctrlCambios/it-01.08/index.htm) — guia-0a9133f049e3198f93e9; index-only; referencia; sin-determinar.
+- [Procedimientos - IMPORTACION DEFINITIVA](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/ctrlCambios/it.01.14/cc-it.01.14-198-2020-17.11.2020.htm) — guia-17dcbb3c84062d9c5cb3; index-only; referencia; sin-determinar.
+- [Procedimientos - IMPORTACION DEFINITIVA](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/ctrlCambios/it-01.08/cc-it.01.08-0341-07.07.09.htm) — guia-2cf5726c521869698682; index-only; referencia; sin-determinar.
+- [Procedimientos - IMPORTACION DEFINITIVA](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/ctrlCambios/it.01.12/index.htm) — guia-4413564e108c2d2c422b; index-only; referencia; sin-determinar.
+- [Procedimientos - IMPORTACION DEFINITIVA](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/ctrlCambios/it.01.15/cc-it.01.15-198-2020-17.11.2020.htm) — guia-4b62a30b831ef3b3099a; index-only; referencia; sin-determinar.
+- [Procedimientos - IMPORTACION DEFINITIVA](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/ctrlCambios/it.01.14/index.htm) — guia-70a8cc6f432688ec6bce; index-only; referencia; sin-determinar.
+- [Procedimientos - IMPORTACION DEFINITIVA](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/despa-it-01-14.htm) — guia-78774ba9efc367edb62a; index-only; referencia; sin-determinar.
+- [Procedimientos - IMPORTACION DEFINITIVA](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/ctrlCambios/it-01.11/index.htm) — guia-7ccad26c11e973cdc2b8; index-only; referencia; sin-determinar.
+- [Procedimientos - IMPORTACION DEFINITIVA](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/despa-it-01-12.htm) — guia-7f417cd7ab24c83ac352; index-only; referencia; sin-determinar.
+- [Procedimientos - IMPORTACION DEFINITIVA](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/ctrlCambios/it-01.18/index.htm) — guia-811d35b7f7ca25d40f92; index-only; referencia; sin-determinar.
+- [Procedimientos - IMPORTACION DEFINITIVA](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/ctrlCambios/it.01.13/index.htm) — guia-85a85767ac48e62385ae; index-only; referencia; sin-determinar.
+- [Procedimientos - IMPORTACION DEFINITIVA](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/ctrlCambios/it-01.11/cc-it.01.11-004-25.04.2017.htm) — guia-8a09a459f4846f2ec3c9; index-only; referencia; sin-determinar.
+- [Procedimientos - IMPORTACION DEFINITIVA](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/ctrlCambios/it-01.17/index.htm) — guia-911e92cbcec1dccdc144; index-only; referencia; sin-determinar.
+- [Procedimientos - IMPORTACION DEFINITIVA](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/despa-it-01-08.htm) — guia-9dbc69fea70773c5666e; index-only; referencia; sin-determinar.
+- [Procedimientos - IMPORTACION DEFINITIVA](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/despa-it-01-13.htm) — guia-a415d6dd3492fb1e6d5d; index-only; referencia; sin-determinar.
+- [Procedimientos - IMPORTACION DEFINITIVA](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/despa-it-01-17.htm) — guia-bb98d44ee68ef802f36c; index-only; referencia; sin-determinar.
+- [Procedimientos - IMPORTACION DEFINITIVA](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/ctrlCambios/it.01.12/cc-it.01.12-198-17.11.2020.htm) — guia-cd35dbb7a7e5935a4d9f; index-only; referencia; sin-determinar.
+- [Procedimientos - IMPORTACION DEFINITIVA](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/ctrlCambios/it.01.14/cc-it.01.14-216-2023-30.11.2023.htm) — guia-d3845fe56a5c638cfc55; index-only; referencia; sin-determinar.
+- [Procedimientos - IMPORTACION DEFINITIVA](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/ctrlCambios/it-01.08/cc-it.01.08-07-10.05.2017.htm) — guia-dc2619d8e9075ccfbde0; index-only; referencia; sin-determinar.
+- [Procedimientos - IMPORTACION DEFINITIVA](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/despa-it-01-11.htm) — guia-e4d9be1efa711a6e85d1; index-only; referencia; sin-determinar.
+- [Procedimientos - IMPORTACION DEFINITIVA](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/ctrlCambios/it-01.18/cc-it.01.18-08-2015-16-04-2015.htm) — guia-ec435c0f12cebaf57861; index-only; referencia; sin-determinar.
+- [Procedimientos - IMPORTACION DEFINITIVA](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/despa-it-01-18.htm) — guia-f56b4a92806235a4adbc; index-only; referencia; sin-determinar.
+- [Procedimientos - PROCEDIMIENTOS ASOCIADOS](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/instructivos/despa-it.00.07.htm) — guia-23ef25ea8a5bee706539; index-only; referencia; sin-determinar.
+- [Procedimientos - PROCEDIMIENTOS ASOCIADOS](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/instructivos/crAnexos/cr-despa-it.00.07.htm) — guia-2cab9ccdb11ebd1d7a00; index-only; referencia; sin-determinar.
+- [Procedimientos - PROCEDIMIENTOS ASOCIADOS](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/instructivos/crAnexos/cr-inta-it.00.08.htm) — guia-2d164475d75141110be0; index-only; referencia; sin-determinar.
+- [Procedimientos - PROCEDIMIENTOS ASOCIADOS](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/instructivos/despa-it.00.01.htm) — guia-337866968e1122ff09da; index-only; referencia; sin-determinar.
+- [Procedimientos - PROCEDIMIENTOS ASOCIADOS](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/instructivos/despa-it.00.04.htm) — guia-375d5039b4d54ac6a628; index-only; referencia; sin-determinar.
+- [Procedimientos - PROCEDIMIENTOS ASOCIADOS](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/instructivos/ctrlCambios/it-00.04/cc-it.00.04-198-17.11.2020.htm) — guia-4abb4c529e86bf12b620; index-only; referencia; sin-determinar.
+- [Procedimientos - PROCEDIMIENTOS ASOCIADOS](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/instructivos/ctrlCambios/it-00.04/cc-it.00.04-024-31.01.2020.htm) — guia-6a84ced17e7e5f58f565; index-only; referencia; sin-determinar.
+- [Procedimientos - PROCEDIMIENTOS ASOCIADOS](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/instructivos/ctrlCambios/it-00.04/cc-it.00.04-81-22.04.2019.htm) — guia-6a858c16b724892a613b; index-only; referencia; sin-determinar.
+- [Procedimientos - PROCEDIMIENTOS ASOCIADOS](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/instructivos/crAnexos/cr-inta-it.00.04.htm) — guia-94c97d5954213ae31bc4; index-only; referencia; sin-determinar.
+- [Procedimientos - PROCEDIMIENTOS ASOCIADOS](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/ctrlCambios/it.01.15/index.htm) — guia-a75bbae2f327baf5656f; index-only; referencia; sin-determinar.
+- [Procedimientos - PROCEDIMIENTOS ASOCIADOS](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/instructivos/despa-it.00.08.htm) — guia-a907b2d5ab2c1d43b141; index-only; referencia; sin-determinar.
+- [Procedimientos - PROCEDIMIENTOS ASOCIADOS](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/instructivos/ctrlCambios/it-00.04/index.htm) — guia-abf07ab1c78348353d60; index-only; referencia; sin-determinar.
+- [Procedimientos - PROCEDIMIENTOS ASOCIADOS](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/instructivos/ctrlCambios/it-00.04/cc-it.00.04-00349-31.12.2025.htm) — guia-bf7c52155fb2ccf2d0c6; index-only; referencia; sin-determinar.
+- [Procedimientos - PROCEDIMIENTOS ASOCIADOS](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/instructivos/ctrlCambios/it-00.07/index.htm) — guia-c21ec56ae6e0016ce21d; index-only; referencia; sin-determinar.
+- [Procedimientos - PROCEDIMIENTOS ASOCIADOS](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/instructivos/crAnexos/cr-inta-it.00.01.htm) — guia-cd8f67f946176213cbb2; index-only; referencia; sin-determinar.
+- [Procedimientos - PROCEDIMIENTOS ASOCIADOS](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/instructivos/ctrlCambios/it-00.01/index.htm) — guia-d144100bce2e7bc9d17b; index-only; referencia; sin-determinar.
+- [Procedimientos - PROCEDIMIENTOS ASOCIADOS](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/instructivos/ctrlCambios/it-00.04/cc-it.00.04-80-16.04.2019.htm) — guia-dcfb7c4884bedf32bf11; index-only; referencia; sin-determinar.
+- [Procedimientos - PROCEDIMIENTOS ASOCIADOS](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/instructivos/ctrlCambios/it-00.08/index.htm) — guia-f0c3288c146dd6a410df; index-only; referencia; sin-determinar.
+- [Procedimientos - PROCEDIMIENTOS ASOCIADOS](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/instructivos/ctrlCambios/it-00.04/cc-it.00.04-129-05.10.2026.htm) — guia-f283460d8d2bc4c124d8; index-only; referencia; sin-determinar.
+- [Programa de envío de información - PEI](https://cpe.sunat.gob.pe/informacion_general/pei) — guia-30fb58eb744c52289125; index-only; referencia; sin-determinar.
+- [Programa de Libros Electronicos (PLE) \| Emprender](https://emprender.sunat.gob.pe/comprobantes-libros/registros-libros-electronicos/programa-libros-electronicos-ple) — guia-8aa89b45c386524087c9; index-only; referencia; sin-determinar.
+- [Programa Validador SIRE (PVSIRE)](https://cpe.sunat.gob.pe/programa-validador-sire-pvsire) — guia-7b5f8e239cd9c5700f75; index-only; referencia; escritorio.
+- [Prorrata del Crédito Fiscal \| Emprender](https://emprender.sunat.gob.pe/principales-impuestos/impuesto-general-las-ventas-igv/prorrata-credito-fiscal) — guia-b796984057819e852d6a; index-only; referencia; sin-determinar.
+- [Prorroga de vencimientos por estado de emergencia a consecuencia de las lluvias](https://orientacion.sunat.gob.pe/prorroga-de-vencimientos-por-estado-de-emergencia-consecuencia-de-las-lluvias) — guia-62bd006aa129e58bc1f4; index-only; referencia; sin-determinar.
+- [Protocolos de Atención del Agente Fiscalizador](https://orientacion.sunat.gob.pe/protocolos-de-atencion-del-agente-fiscalizador) — guia-75b086bf9b12d6459a57; index-only; referencia; sin-determinar.
+- [Proveedor de Servicios Electrónicos - PSE](https://cpe.sunat.gob.pe/aliados/pse) — guia-1054b0d8eeadfeeb4280; index-only; referencia; sin-determinar.
+- [Queja ante el Tribunal Fiscal - Personas](https://orientacion.sunat.gob.pe/queja-ante-el-tribunal-fiscal-personas-0) — guia-19dbfcb304d58bb6539c; index-only; referencia; sin-determinar.
+- [RCE - OPERACIONES CON SUJETOS NO DOMICILIADOS](https://cpe.sunat.gob.pe/node/148) — guia-d2eb5e61ca9fda4f0f82; index-only; referencia; sin-determinar.
+- [Reactivación de número de RUC - Empresas](https://orientacion.sunat.gob.pe/reactivacion-de-numero-de-ruc-empresas) — guia-11fb2c800359c5f5d3e7; index-only; referencia; sin-determinar.
+- [Reactivación del número de RUC - Personas](https://orientacion.sunat.gob.pe/reactivacion-del-numero-de-ruc-personas-0) — guia-80b69c4fc099737e8cd7; index-only; referencia; sin-determinar.
+- [Recibo de Servicios Públicos](https://cpe.sunat.gob.pe/tipos_de_comprobantes/recibo_de_servicio_publico) — guia-250f4b4f0068358e98db; index-only; referencia; sin-determinar.
+- [Recibo por Arrendamiento - F. 1683](https://orientacion.sunat.gob.pe/recibo-por-arrendamiento-f-1683-0) — guia-c9511ea034f1b12ce5af; index-only; referencia; sin-determinar.
+- [Recibos por Honorarios Electrónicos](https://orientacion.sunat.gob.pe/recibos-por-honorarios-electronicos-0) — guia-334f60d81c9a6ef67889; index-only; referencia; sin-determinar.
+- [Reclamacion - Empresas](https://orientacion.sunat.gob.pe/reclamacion-empresas-0) — guia-300cd79dbbd0ec8b8cb5; index-only; referencia; sin-determinar.
+- [Reclamación - Personas](https://orientacion.sunat.gob.pe/reclamacion-personas-0) — guia-88d53f1f8a930c76176e; index-only; referencia; sin-determinar.
+- [Reconocimiento de pago con error \| Emprender](https://emprender.sunat.gob.pe/declaracion-pagos/pagos/reconocimiento-pago-con-error) — guia-7e83cd50f09c4279d481; index-only; referencia; sin-determinar.
+- [Recurso de Apelación \| Emprender](https://emprender.sunat.gob.pe/acciones-contribuyente/recursos-impugnatorios/recurso-apelacion) — guia-9580d0ba221914b494ef; index-only; referencia; sin-determinar.
+- [Recurso de Reclamación \| Emprender](https://emprender.sunat.gob.pe/acciones-contribuyente/recursos-impugnatorios/recurso-reclamacion) — guia-43be846c784019f6cc78; index-only; referencia; sin-determinar.
+- [Recursos Hidrobiológicos - Listados Detracciones](https://orientacion.sunat.gob.pe/recursos-hidrobiologicos-detracciones) — guia-126174646ce5d9db93e6; index-only; referencia; sin-determinar.
+- [Recursos impugnatorios \| Emprender](https://emprender.sunat.gob.pe/acciones-contribuyente/recursos-impugnatorios) — guia-fe7e617ce786868776be; index-only; referencia; sin-determinar.
+- [Reducción del IGV para restaurantes y hoteles \| Emprender](https://emprender.sunat.gob.pe/principales-impuestos/imp-general-las-ventas-igv/reduccion-igv-para-restaurantes-hoteles) — guia-1e009d8faa796d9bf0ad; index-only; referencia; sin-determinar.
+- [Refinanciamiento - Empresas](https://orientacion.sunat.gob.pe/refinanciamiento-empresas-0) — guia-ac6de3291ad2505de29f; index-only; referencia; sin-determinar.
+- [Refinanciamiento - Personas](https://orientacion.sunat.gob.pe/refinanciamiento-personas-0) — guia-41116e39e91c10a3cc3d; index-only; referencia; sin-determinar.
+- [Reforma Tributaria](https://orientacion.sunat.gob.pe/reforma-tributaria) — guia-dbab3e01686f747aea5f; index-only; referencia; sin-determinar.
+- [Régimen de Establecimientos de Hospedaje](https://orientacion.sunat.gob.pe/regimen-de-establecimientos-de-hospedaje-0) — guia-b63c6c960680bbef88c2; index-only; referencia; sin-determinar.
+- [Régimen de Gradualidad \| Emprender](https://emprender.sunat.gob.pe/acciones-sunat/facultad-sancionadora/regimen-gradualidad) — guia-3c7cfd4c0bd7926e90ea; index-only; referencia; sin-determinar.
+- [Régimen de percepciones del IGV \| Emprender](https://emprender.sunat.gob.pe/principales-impuestos/impuesto-general-las-ventas-igv/regimen-percepciones-igv) — guia-4fadcdd72420dfdc8f7a; index-only; referencia; sin-determinar.
+- [Régimen de retención del IGV \| Emprender](https://emprender.sunat.gob.pe/principales-impuestos/impuesto-general-las-ventas-igv/regimen-retencion-igv) — guia-aa6af83871aa3b6e050c; index-only; referencia; sin-determinar.
+- [Régimen de Sinceramiento de Deudas por ONP y ESSALUD de Gobiernos Regionales y Locales](https://orientacion.sunat.gob.pe/regimen-de-sinceramiento-de-deudas-por-onp-y-essalud-de-gobiernos-regionales-y-locales-0) — guia-cf546047aba18ea4ba97; index-only; referencia; sin-determinar.
+- [Régimen Especial de Recuperación Anticipada del IGV – D.L. 973 \| Emprender](https://emprender.sunat.gob.pe/acciones-contribuyente/procedimiento-devolucion/regimen-especial-recuperacion-anticipada-igv-dl-973) — guia-6e0a8d4eb17f457906eb; index-only; referencia; sin-determinar.
+- [Régimen Especial de Renta (RER) \| Emprender](https://emprender.sunat.gob.pe/ruc/regimenes-tributarios-mype/regimen-especial-renta-rer) — guia-ec7607c75179f1af5e1c; index-only; referencia; sin-determinar.
+- [Régimen General de Renta (RG) \| Emprender](https://emprender.sunat.gob.pe/ruc/regimenes-tributarios-mype/regimen-general-renta-rg) — guia-33114ae0b197e964b4fb; index-only; referencia; sin-determinar.
+- [Régimen MYPE Tributario \| Emprender](https://emprender.sunat.gob.pe/ruc/regimenes-tributarios-mype/regimen-mype-tributario) — guia-552c6504f76f02f7e02c; index-only; referencia; sin-determinar.
+- [Régimen Tributario Especial para la recuperación del Centro Histórico de Lima \| Emprender](https://emprender.sunat.gob.pe/principales-impuestos/otros/regimen-tributario-especial-para-recuperacion-centro-historico-lima) — guia-29f8714cddfba355d01c; index-only; referencia; sin-determinar; histórico.
+- [Regímenes tributarios MYPE \| Emprender](https://emprender.sunat.gob.pe/ruc/regimenes-tributarios-mype) — guia-52eb24f7dbb3eba4cf97; index-only; referencia; sin-determinar.
+- [Registration in the RUC of Non-domiciled](https://orientacion.sunat.gob.pe/inscripcion-en-el-ruc-de-sujetos-no-domiciliados) — guia-33c4885d1e43cda6a888; index-only; referencia; sin-determinar.
+- [Registro de Compras Electrónico - RCE](https://cpe.sunat.gob.pe/node/130) — guia-08019f6a2922cc03f146; index-only; referencia; sin-determinar.
+- [Registro de Compras Electrónico – RCE](https://cpe.sunat.gob.pe/node/160) — guia-a6d09252f6a3c9ad91d3; index-only; referencia; sin-determinar.
+- [Registro de Compras Electrónico (RCE) \| Emprender](https://emprender.sunat.gob.pe/comprobantes-libros/registros-libros-electronicos/registro-compras-electronico-rce) — guia-91d527b9068851fdaad1; index-only; referencia; sin-determinar.
+- [Registro de Ventas e Ingresos Electrónico - RVIE](https://cpe.sunat.gob.pe/node/129) — guia-20093a73a2af9de23a7e; index-only; referencia; sin-determinar.
+- [Registro de Ventas e Ingresos Electrónico (RVIE) \| Emprender](https://emprender.sunat.gob.pe/comprobantes-libros/registros-libros-electronicos/registro-ventas-e-ingresos-electronico-rvie) — guia-5aea8832af489c0fc4c6; index-only; referencia; sin-determinar.
+- [Registro de ventas e ingresos electrónicos – RVIE](https://cpe.sunat.gob.pe/node/159) — guia-948ee0a39ebdb7d9fe28; index-only; referencia; sin-determinar.
+- [Registro del Catálogo de Productos](https://cpe.sunat.gob.pe/videos/registro-del-catalogo-de-productos) — guia-989d443ec062ca75848f; index-only; referencia; sin-determinar.
+- [Registros de Productores Mineros y Fabricantes Nacionales de Joyas \| Emprender](https://emprender.sunat.gob.pe/principales-impuestos/otros/registros-productores-mineros-fabricantes-nacionales-joyas) — guia-b2b0fa2780b07769f3da; index-only; referencia; sin-determinar.
+- [Registros Electronicos](https://cpe.sunat.gob.pe/node/142) — guia-9952d4481f25ce21be98; index-only; referencia; sin-determinar.
+- [Registros Electrónicos](https://cpe.sunat.gob.pe/node/128) — guia-e82a4584e318bdc53963; index-only; referencia; sin-determinar.
+- [Registros y libros electrónicos \| Emprender](https://emprender.sunat.gob.pe/comprobantes-libros/registros-y-libros-electronicos) — guia-9a423c878c8678361edd; index-only; referencia; sin-determinar.
+- [Reintegro de IGV para Pequeños Productores Agrarios (PPA)](https://orientacion.sunat.gob.pe/reintegro-de-igv-para-pequenos-productores-agrarios-ppa) — guia-626935e15d51e7e5dd73; index-only; referencia; sin-determinar.
+- [Reintegro Tributario de la Región Selva](https://orientacion.sunat.gob.pe/reintegro-tributario-de-la-region-selva) — guia-8a37496e4cf05b841d48; index-only; referencia; sin-determinar.
+- [Renta \| Emprender](https://emprender.sunat.gob.pe/principales-impuestos/renta) — guia-9fdc5324e1f5c4b09b66; index-only; referencia; sin-determinar.
+- [Rentas de Quinta Categoría - Trabajo Dependiente](https://orientacion.sunat.gob.pe/rentas-de-quinta-categoria-trabajo-dependiente) — guia-f05ec3d78f5d71604c04; index-only; referencia; sin-determinar.
+- [Reportes Electrónicos](https://centrovirtual.sunat.gob.pe/tramites/reportes-electronicos) — guia-52c8a419eac6c203737a; index-only; referencia; sin-determinar.
+- [Requisitos Mínimos de Calidad](https://www.sunat.gob.pe/orientacionaduanera/importacionvehiculos/index.html) — guia-847bf1065a79437d865f; index-only; referencia; sin-determinar.
+- [Requisitos y procedimientos para seguir para la contratación de artistas no domiciliados \| Emprender](https://emprender.sunat.gob.pe/landing/requisitos-procedimientos-para-seguir-para-contratacion-artistas-no-domiciliados) — guia-b0c35dc585d9e0062cb0; index-only; referencia; sin-determinar.
+- [RESICSSS - REFACSSS](https://orientacion.sunat.gob.pe/resicsss-refacsss) — guia-a4624bc7dbe4b8ad1b48; index-only; referencia; sin-determinar.
+- [Resolución de Superintendencia N.° 000075-2026/SUNAT](https://cpe.sunat.gob.pe/normas/resolucion-de-superintendencia-ndeg-000075-2026sunat) — guia-731fa573c8eb0b66277a; index-only; normativa; sin-determinar.
+- [RESOLUCIÓN DE SUPERINTENDENCIA N.° 276 -2017/SUNAT](https://cpe.sunat.gob.pe/normas/resolucion-de-superintendencia-ndeg-276-2017sunat) — guia-c3d857247fb2165025e2; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 044-2019/SUNAT](https://cpe.sunat.gob.pe/node/89) — guia-e1e1fb1777020e4a54af; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 097-2012/SUNAT](https://cpe.sunat.gob.pe/normas/resolucion-de-superintendencia-ndeg-097-2012sunat-0) — guia-eaa021466bbe5bfa03b2; index-only; normativa; sin-determinar.
+- [Resoluciones de Observancia Obligatoria](https://orientacion.sunat.gob.pe/resoluciones-de-observancia-obligatoria-0) — guia-c4d311209fb6b476df32; index-only; normativa; sin-determinar.
+- [Resoluciones de observancia obligatoria - Personas](https://orientacion.sunat.gob.pe/resoluciones-de-observancia-obligatoria-personas-0) — guia-6f13a711e1c0266b227a; index-only; normativa; sin-determinar.
+- [Revisa tu Buzón SOL](https://centrovirtual.sunat.gob.pe/tramites/buzon-electronico) — guia-b74f54b9d3ced4ed5d42; index-only; referencia; sol-web.
+- [RUC \| Emprender](https://emprender.sunat.gob.pe/ruc) — guia-f668f6122796b86b112c; index-only; referencia; sin-determinar.
+- [SEE - SOL](https://orientacion.sunat.gob.pe/see-sol) — guia-830471ad84966c0d58ee; index-only; referencia; sol-web.
+- [SEE – CONSUMIDOR FINAL](https://cpe.sunat.gob.pe/node/126) — guia-094b1a67a2ff3d92673e; index-only; referencia; sin-determinar.
+- [SEE – MONEDERO ELECTRONICO](https://cpe.sunat.gob.pe/node/127) — guia-4dda6edae21aaa7c87a7; index-only; referencia; sin-determinar.
+- [SEE desde los Sistemas del Contribuyente](https://orientacion.sunat.gob.pe/see-desde-los-sistemas-del-contribuyente) — guia-01eed741aa79b5cfc941; index-only; referencia; sin-determinar.
+- [SEE- Operador de Servicios Electrónicos](https://orientacion.sunat.gob.pe/see-operador-de-servicios-electronicos-0) — guia-d4c5394d8205c9397bcf; index-only; referencia; sin-determinar.
+- [SEE-Empresas Supervisadas](https://cpe.sunat.gob.pe/sistema_emision/see_empresas_supervisadas) — guia-d0e02d30e7e0fd301365; index-only; referencia; sin-determinar.
+- [Servicio Beta para realizar pruebas UBL 2.1](https://cpe.sunat.gob.pe/noticias/servicio-beta-para-realizar-pruebas-ubl-21) — guia-514081aac75940988ae4; index-only; tecnico; sin-determinar.
+- [Sistema de detracciones del IGV \| Emprender](https://emprender.sunat.gob.pe/principales-impuestos/impuesto-general-las-ventas-igv/sistema-detracciones-igv) — guia-1951324a8cb281837b07; index-only; referencia; sin-determinar.
+- [Sistema de embargo por medios telemáticos](https://orientacion.sunat.gob.pe/sistema-de-embargo-por-medios-telematicos) — guia-9d85a172565f07826f34; index-only; referencia; sin-determinar.
+- [Sistema de Emisión del Contribuyente](https://cpe.sunat.gob.pe/sistema_emision/see_contribuyente) — guia-146a8a94beeae5e3b8e1; index-only; referencia; sin-determinar.
+- [Sistema de Emisión Facturador SUNAT](https://cpe.sunat.gob.pe/sistema_emision/facturador_sunat) — guia-6ffa4486121cee907a01; index-only; referencia; sin-determinar.
+- [Sistema de Emisión Operador de Servicios Electrónicos](https://cpe.sunat.gob.pe/informacion_general/operador_servicios_electronicos) — guia-3968a7a721e3263b3df3; index-only; referencia; sin-determinar.
+- [Sistema de Emisión SOL](https://cpe.sunat.gob.pe/sistema_emision/see_sol) — guia-c7bbd7289c6878bc454e; index-only; referencia; sol-web.
+- [Sistema de Libros Electrónicos PLE \| Emprender](https://emprender.sunat.gob.pe/librosple) — guia-61bca972041aaae34978; index-only; referencia; sin-determinar.
+- [Sistema de Libros Electrónicos Portal \| Emprender](https://emprender.sunat.gob.pe/node/147) — guia-0a5674b1fa72dcafb770; index-only; referencia; sin-determinar.
+- [Sistema de Registros Electrónico - SIRE](https://cpe.sunat.gob.pe/videos/sistema-de-registros-electronico-sire) — guia-34a9335d6146651d9d85; index-only; referencia; sin-determinar.
+- [Sistema de Registros Electrónico - SIRE](https://cpe.sunat.gob.pe/videos/sistema-de-registros-electronico-sire-0) — guia-c89bad96cf5b8e8c49a9; index-only; referencia; sin-determinar.
+- [Sistema Integrado de Registros Electrónicos - SIRE](https://cpe.sunat.gob.pe/node/139) — guia-51592c181816432f4ed7; index-only; referencia; sin-determinar.
+- [Sistema Integrado de Registros Electrónicos - SIRE](https://cpe.sunat.gob.pe/node/170) — guia-77a2c84571e396877748; index-only; referencia; sin-determinar.
+- [Sistema Integrado de Registros Electrónicos - SIRE \| Emprender](https://emprender.sunat.gob.pe/comprobantes-libros/registros-libros-electronicos/sistema-integrado-registros-electronicos-sire) — guia-9fca54ccbf07910286e8; index-only; referencia; sin-determinar.
+- [Sistemas de emisión](https://cpe.sunat.gob.pe/node/116) — guia-f98a34c4d5978058803e; index-only; referencia; sin-determinar.
+- [Sujeto Sin Capacidad Operativa (SSCO) \| Emprender](https://emprender.sunat.gob.pe/ruc/otros/sujeto-sin-capacidad-operativa-ssco) — guia-ed6b21dc6b79fdd9b9dd; index-only; referencia; sin-determinar.
+- [Suspensión de Pagos a Cuenta - Excepcional por Estado de Emergencia - Abril/Julio 2020 Régimen General y MYPE Tributario \| Emprender](https://emprender.sunat.gob.pe/node/163) — guia-9ccfeb84aae8d4dc7623; index-only; referencia; sin-determinar.
+- [Suspensión y modificación de pagos a cuenta \| Emprender](https://emprender.sunat.gob.pe/principales-impuestos/renta/suspension-modificacion-pagos-cuenta) — guia-167bf758aec898f93dca; index-only; referencia; sin-determinar.
+- [T-Registro](https://orientacion.sunat.gob.pe/t-registro-0) — guia-2e56e341d7ae3930adb3; index-only; referencia; sin-determinar.
+- [Tax Filing and Payment (Declaración y Pago)](https://orientacion.sunat.gob.pe/tax-filing-and-payment-declaracion-y-pago-0) — guia-1a82456da7a5f4699688; index-only; referencia; sin-determinar.
+- [Tax Filing and Payment (Declaración y Pago)](https://orientacion.sunat.gob.pe/tax-filing-and-payment-declaracion-y-pago) — guia-87c3843687f6ce5c60ff; index-only; referencia; sin-determinar.
+- [Tax Free \| Emprender](https://emprender.sunat.gob.pe/principales-impuestos/imp-general-las-ventas-igv/tax-free) — guia-6faee51a23a896bc3b29; index-only; referencia; sin-determinar.
+- [Taxation of Non-Domiciled \| International Taxation](https://nodomiciliados.sunat.gob.pe/index%2Ephp/en/fiscalidad-internacional/taxation-non-domiciled) — guia-305b3c8544e06aadc8c3; index-only; referencia; sin-determinar.
+- [Testimonios de los beneficios de la Factura Electrónica](https://cpe.sunat.gob.pe/noticias/testimonios-de-los-beneficios-de-la-factura-electronica) — guia-751f5d37a93d36cc66e7; index-only; referencia; sin-determinar.
+- [Tipo de Contribuyente \| Emprender](https://emprender.sunat.gob.pe/ruc/tipo-contribuyente) — guia-b582be357b78dee66ecc; index-only; referencia; sin-determinar.
+- [Tipos de comprobantes de pago](https://cpe.sunat.gob.pe/tipos_de_comprobantes/factura) — guia-bd7c217a38876b664e68; index-only; referencia; sin-determinar.
+- [Tipos de Comprobantes de Pago Físicos - Empresas](https://orientacion.sunat.gob.pe/tipos-de-comprobantes-de-pago-fisicos-empresas) — guia-85e4a9bf3f31906f9b5b; index-only; referencia; sin-determinar.
+- [Tipos de guía de remisión](https://cpe.sunat.gob.pe/node/114) — guia-e77f8c1b051da0bf2d1e; index-only; referencia; sin-determinar.
+- [Tipos de Medidas Cautelares](https://orientacion.sunat.gob.pe/tipos-de-medidas-cautelares-0) — guia-a47123dedccf14986d05; index-only; referencia; sin-determinar.
+- [Trabajadores del Hogar](https://orientacion.sunat.gob.pe/trabajadores-del-hogar) — guia-bbc3a6cc670854166529; index-only; referencia; sin-determinar.
+- [Trámites](https://centrovirtual.sunat.gob.pe/tramites) — guia-66359b73f8ecb7acca82; index-only; referencia; sin-determinar.
+- [Trámites Virtuales - Personas](https://orientacion.sunat.gob.pe/tramites-virtuales-personas-0) — guia-8aae4123e82c064f415d; index-only; referencia; sin-determinar.
+- [Transfer Pricing \| International Taxation](https://nodomiciliados.sunat.gob.pe/index%2Ephp/en/fiscalidad-internacional/transfer-pricing) — guia-2987d3d09f032fa7caff; index-only; referencia; sin-determinar.
+- [Traslado de mercancía extranjera](https://cpe.sunat.gob.pe/node/117) — guia-4bcf87db709ac7dcb950; index-only; referencia; sin-determinar.
+- [Tributación Minera](https://orientacion.sunat.gob.pe/tributacion-minera) — guia-8882f4cfdd6799fb9b8b; index-only; referencia; sin-determinar.
+- [Tributos que gravan la Importación](https://www.sunat.gob.pe/orientacionaduanera/pagosgarantias/index.html) — guia-11318397a9c83f0b2125; index-only; referencia; sin-determinar.
+- [Última Versión del PLE y Descarga de Beta \| Emprender](https://emprender.sunat.gob.pe/node/149) — guia-5f206b0fbc494664cd2b; index-only; referencia; sin-determinar.
+- [VAT Digital Services](https://orientacion.sunat.gob.pe/igv-servicios-digitales) — guia-39821a9a19849e7ff43a; index-only; referencia; sin-determinar.
+- [Veedores del sector Privado y Gubernamental](https://www.sunat.gob.pe/orientacionaduanera/veedores/index.html) — guia-e4606b0dd9cf7492919c; index-only; referencia; sin-determinar.
+- [Vehículos para Turismo - Ingreso y Salida Temporal](https://www.sunat.gob.pe/orientacionaduanera/internamientovehiculos/index.html) — guia-5802e6a484dc8c2113ba; index-only; referencia; sin-determinar.
+- [Venderle al Estado \| Emprender](https://emprender.sunat.gob.pe/acciones-contribuyente/formalizacion/venderle-estado) — guia-8dfc06db1565dee26a8a; index-only; referencia; sin-determinar.
+- [Ventajas de la emisión de comprobantes de pago electrónicos](https://cpe.sunat.gob.pe/videos/ventajas-de-la-emision-de-comprobantes-de-pago-electronicos) — guia-40f64caf1da04c166d00; index-only; referencia; sin-determinar.
+- [Ventajas del Comprobante de Pago Electrónico](https://cpe.sunat.gob.pe/noticias/ventajas-del-comprobante-de-pago-electronico) — guia-17229643bd393e5c777a; index-only; referencia; sin-determinar.
+- [Viajeros - Equipaje y Menaje](https://www.sunat.gob.pe/orientacionaduanera/viajeros/index.html) — guia-95dc2dbebd5c4cab8bc5; index-only; referencia; sin-determinar.
+- [Video Charla](https://cpe.sunat.gob.pe/node/149) — guia-d9d77c5641d3dbf20044; index-only; referencia; sin-determinar.
+- [Video de exposición](https://cpe.sunat.gob.pe/node/147) — guia-792200ce94904905420d; index-only; referencia; sin-determinar.
+- [Video Tutorial](https://cpe.sunat.gob.pe/videos/video-tutorial) — guia-fbb96c714e6a67316c21; index-only; referencia; sin-determinar.
+- [Video y audio](https://cpe.sunat.gob.pe/node/150) — guia-256b181c4787e4dbb5c3; index-only; referencia; sin-determinar.
+- [Webinar: Mecanismo para comunicar hechos vinculados a riesgos de integridad de la carga: Procedimiento específico “Uso y Control de Precintos Aduaneros y Otras Medidas de Seguridad de la Carga” (CONTROL-PE.00.08), versión 4](https://www.sunat.gob.pe/operatividadaduanera/) — guia-6e2d7670578ba4aa1a39; index-only; referencia; sin-determinar.
+- [Ya no realizo actividad comercial \| Emprender](https://emprender.sunat.gob.pe/ruc/mi-ruc/ya-no-realizo-actividad-comercial) — guia-83e9af1d10a789fba189; index-only; referencia; sin-determinar.
+
+## pdf
+
+- [_Artículos 25 al 41 que regulan la Autorización y control aplicable a los insumos químicos fiscalizados en el caso de comercio internacional_](https://cdn.www.gob.pe/uploads/document/file/10212932/8303432-ds-117-2026-ef.pdf?v=1782484340) — guia-e3de495c3f307a7cd4fa; index-only; referencia; sin-determinar.
+- [_Resolución de Superintendencia N.º 000135-2026/SUNAT_](https://www.sunat.gob.pe/legislacion/superin/2026/000135-2026.pdf) — guia-408f03c57e5439859ec3; index-only; normativa; sin-determinar.
+- [- Manual de Usuario](https://www.sunat.gob.pe/operatividadaduanera/manuales/equipostripulantes/ManualUsuario-EquiposTripulantesCiaAerea.pdf) — guia-cd288fb98c38405ec8fe; content-reviewed; procedimiento; web-sunat.
+- [¿Cómo llenar el formulario 1052?](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/instruccionespequeos_1.pdf) — guia-1c9298f1f5e3bdd61f5d; index-only; referencia; sin-determinar.
+- ["Comunicación de otras medidas de seguridad de la carga adoptadas por el usuario".](https://www.sunat.gob.pe/operatividadaduanera/PrecintoAd/2022/comunicacionOtrasmedidasSeguridadCarga.pdf) — guia-db825ba95de3781426f0; index-only; referencia; sin-determinar.
+- [“Formato de la Persona Natural que califica como Beneficiario final”](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Formato-BF-Reglamento-DS-003_2019_EF_vf.pdf) — guia-4e5423a3dac2242f99b5; index-only; referencia; sin-determinar.
+- [“Manual de Usuario Aplicación ClienteSserif”](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Manual_Usuario%20Aplicaci%C3%B3n%20ClienteSserif_0.pdf) — guia-02b34d5fa86d9f0bb362; index-only; referencia; sin-determinar.
+- ["Solicitud de Acceso"](https://www.sunat.gob.pe/legislacion/superin/2016/anexo-208-2016.pdf) — guia-acababbba8b9d832e029; index-only; referencia; sin-determinar.
+- [(Modificado por RIN-17-2014/SUNAT/5C0000--12.01.2015 )](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/ctrlCambios/it.01.12/RIN%20N%2017-2014-SUNAT-5C0000.pdf) — guia-1c0bc1a026bb7c607e46; index-only; referencia; sin-determinar.
+- [(Ver anexo 1)](https://cpe.sunat.gob.pe/sites/default/files/inline-files/pei%201.pdf) — guia-b67a2d033a58dea352e8; index-only; referencia; sin-determinar.
+- [(Ver anexo 2)](https://cpe.sunat.gob.pe/sites/default/files/inline-files/anexo%202%20.%20PEI-ESTRUCTURAS_0.pdf) — guia-5dc8c2d1cdc4cce3547b; index-only; referencia; sin-determinar.
+- [(Ver anexo 3)](https://cpe.sunat.gob.pe/sites/default/files/inline-files/anexo%203%20.%20PEI-ESTRUCTURAS_1.pdf) — guia-c2b2afd299070e9c52b1; index-only; referencia; sin-determinar.
+- [(Ver anexo 4)](https://cpe.sunat.gob.pe/sites/default/files/inline-files/anexo%204%20.%20PEI-ESTRUCTURAS_2.pdf) — guia-e7e7f39586c494c444ea; index-only; referencia; sin-determinar.
+- [(Ver anexo 5)](https://cpe.sunat.gob.pe/sites/default/files/inline-files/anexo%205%20.%20PEI-ESTRUCTURAS_3.pdf) — guia-83c6964f2c409a3eb294; index-only; referencia; sin-determinar.
+- [**📄 ¿Cómo realizar el alta o baja de tributos?**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/alta_tributos.pdf) — guia-19174e7970cd6e7caac2; index-only; referencia; sin-determinar.
+- [**📄 Paso a paso de cómo hacerlo**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Modifica_datos_Ruc%20%28003%29.pdf) — guia-34163e207e6a64495eb1; content-reviewed; procedimiento; sol-web.
+- [**1610**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/tef1610_1.pdf) — guia-acb2f406e7d87929acfc; index-only; referencia; sin-determinar.
+- [**1611**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/guia-nuevo-rus-30ene2017_4.pdf) — guia-6253841b7e4184cc733e; content-reviewed; informativo; sol-web, banco, presencial.
+- [**Anexo**](https://emprender.sunat.gob.pe/sites/default/files/inline-files/anexo-rsnati-000039-2023.pdf) — guia-1196077c8649a8b447d8; index-only; referencia; sin-determinar.
+- [**Anexo**](https://emprender.sunat.gob.pe/sites/default/files/inline-files/anexo-rsnao-039-2016.pdf) — guia-489aa12a8937cd9daa4a; index-only; referencia; sin-determinar.
+- [**Aqui**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/inscripcion%20en%20el%20ruc%20de%20sujetos%20no%20domiciliados.pdf) — guia-f13e5167da0c1809ae04; index-only; referencia; sin-determinar.
+- [**Decreto de Urgencia N° 025-2019**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/DECRETO_DE_URGENCIA_25-2019_0.pdf) — guia-334dab0a7a56e8f743c1; index-only; normativa; sin-determinar.
+- [**Decreto Legislativo N.° 1372**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/DL1372_BENEFICIARIO_FINAL_0_1.pdf) — guia-226ad722cf32a9ecedbf; index-only; normativa; sin-determinar.
+- [**Decreto Supremo Nº 003-2019-EF**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/DS003_2019EF_0.pdf) — guia-1dfc31f33ce57964f413; index-only; normativa; sin-determinar.
+- [**F-104**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Formulario%20Virtual%20F-104.pdf) — guia-0d167cf8cff106da3066; index-only; referencia; sin-determinar.
+- [**Formato**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/formato-de-solicitud-de-inscripcin-excepcional_fen_0_0_0.pdf) — guia-9b924f520f46e17ca81f; index-only; referencia; sin-determinar.
+- [**Guía para Comprobante de Percepción Electrónico**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Guia_XML_Percepcion_v1_2_0.pdf) — guia-74d983f16ec26f95e1ad; index-only; referencia; sin-determinar.
+- [**GUIA PARA LA DECLARACIÓN Y PAGO**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/DJ%20Domiciliados.pdf) — guia-77c0f717f6e877f4042c; content-reviewed; procedimiento; sol-web.
+- [**GUIA PARA LA DECLARACIÓN Y PAGO**:](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Gu%C3%ADa%20para%20declaraci%C3%B3n%20y%20pago_4.pdf) — guia-88d70bddd38c956c1fe7; content-reviewed; procedimiento; sol-web, banco.
+- [**GUIA PARA LA DECLARACIÓN Y PAGO**:](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/declaracion%20y%20pago%20para%20empresas%20no%20domiciliadas.pdf) — guia-8a357a46c97abe812001; content-reviewed; procedimiento; sol-web, banco.
+- [**Guía para pagos de periodo 12-2016 y anteriores**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Guia_1611_Nuevo_RUS_set2012_2.pdf) — guia-9af453a319aa6a9f8df1; content-reviewed; formulario; sin-determinar.
+- [**Guía**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/guia-pago-facil-1673_1.pdf) — guia-00df02d4c145b4c8bc33; content-reviewed; formulario; sin-determinar.
+- [**Ingrese aquí**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Procedimientos_de_inscripcion_IQBF_V03.09.24%20%281%29.pdf) — guia-99163be492bf1283c573; index-only; referencia; sin-determinar.
+- [**Manual de Consulta Integrada de Validez de Comprobante de Pago**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Manual-de-Consulta-Integrada-de-Comprobante-de-Pago-por-ServicioWEB_v2.pdf) — guia-bf7f6d36d46bc05b71f2; index-only; referencia; sin-determinar.
+- [**Para pagos de periodo 01-2017 y posteriores**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/guia-nuevo-rus-30ene2017_5.pdf) — guia-29f06acfb811e1c88123; content-reviewed; informativo; sol-web, banco, presencial.
+- [**PROCEDUREGUIDANCE**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/RUC%20Registration%20of%20non-residents_1.pdf) — guia-ffc7755f811eed278dff; index-only; referencia; sin-determinar.
+- [**Q-201**](https://contenido.app.sunat.gob.pe/insc/Insumos+Quimicos+Inscrip+Registro/FORMULARIO+F103.pdf) — guia-255bfe2eb9f7750e91ed; index-only; referencia; sin-determinar.
+- [**Resolución de Superintendencia N.° 000168-2025/SUNAT**](https://www.sunat.gob.pe/legislacion/superin/2025/000168-2025.pdf) — guia-685d8c91940804b6cd0b; index-only; normativa; sin-determinar.
+- [**Resolución de Superintendencia N.° 000281-2022/SUNAT**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/RS%20281-2022-SUNAT_0.pdf) — guia-cb01225545420a62d07d; index-only; normativa; sin-determinar.
+- [**Resolución de Superintendencia N.º 000201-2021/SUNAT**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Resoluci%C3%B3n%20de%20Superintendencia%20N.%C2%BA%20000201-2021-SUNAT_0.pdf) — guia-88fa8af3055fa8689373; index-only; normativa; sin-determinar.
+- [**Resolución de Superintendencia N.º 000278-2022/SUNAT**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/RS%20278-2022%20%28Postergaci%C3%B3n%20de%20entes%20jur%C3%ADdicos%29_0.pdf) — guia-4642b052c6956262f700; index-only; normativa; sin-determinar.
+- [**Resolución de Superintendencia N° 000041-2022/SUNAT**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/RS_041-2022_Sujetos%20obligados%20a%20presentar%20DJ%20BF%20en%202022%20y%202023_0_0.pdf) — guia-bbb25369bb8f912eed02; index-only; normativa; sin-determinar.
+- [**Resolución de Superintendencia N° 185-2019/SUNAT**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/RS_185-2019-SUNAT_Forma%20plazo%20y%20condiciones%20para%20la%20ptacion%20DDJJ%20del%20Beneficiario%20Final_0_0.pdf) — guia-f02c318c6127554221a9; index-only; normativa; sin-determinar.
+- [**Resolución de Superintendencia N° 295-2018/SUNAT**](https://cpe.sunat.gob.pe/sites/default/files/inline-files/295-2018.pdf) — guia-43c4164dbee18542ff79; index-only; normativa; sin-determinar.
+- [**RSNAO N° 006-2016/SUNAT/600000**](https://emprender.sunat.gob.pe/sites/default/files/inline-files/rsnao-006-2016.pdf) — guia-17f82dd3a6e0a7c1b69e; index-only; referencia; sin-determinar.
+- [**RSNAO N° 039-2016/SUNAT/600000**](https://emprender.sunat.gob.pe/sites/default/files/inline-files/rsnao-039-2016.pdf) — guia-5fc94132e37534b04dbb; index-only; referencia; sin-determinar.
+- [**RSNAO N° 062-2015/SUNAT/600000**](https://emprender.sunat.gob.pe/sites/default/files/inline-files/rsnao-062-2015.pdf) — guia-4ae298e8413ecb6f5530; index-only; referencia; sin-determinar.
+- [**RSNATI N° 000039-2023-SUNAT/700000**](https://emprender.sunat.gob.pe/sites/default/files/inline-files/rsnati-000039-2023_0.pdf) — guia-866d5de2fc78ccf8d825; index-only; referencia; sin-determinar.
+- [**RSNATI N° 012-2021-SUNAT/700000**](https://emprender.sunat.gob.pe/sites/default/files/inline-files/rsnati-012-2021.pdf) — guia-a194bbc92649c836aad0; index-only; referencia; sin-determinar.
+- [**RSNATI N° 013-2017-SUNAT/700000**](https://emprender.sunat.gob.pe/sites/default/files/inline-files/rsnati-013-2017_0.pdf) — guia-93a7c98482324897676a; index-only; referencia; sin-determinar.
+- [📄 Revisa el paso a paso visual](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Ficha%20RUC_0.pdf) — guia-0ee330478953023f0230; content-reviewed; procedimiento; app-movil, sol-web.
+- [📄 Revisa el paso a paso visual](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/reporte_declaraciones_pago.pdf) — guia-fe1d7e07fdca6e95427b; content-reviewed; procedimiento; sol-web.
+- [000175 2025.pdf](https://www.sunat.gob.pe/legislacion/superin/2025/000175-2025.pdf) — guia-4f2c3c8c2b95c76749cf; index-only; referencia; sin-determinar.
+- [000216 2023.pdf](https://www.sunat.gob.pe/legislacion/superin/2023/000216-2023.pdf) — guia-97babc4dd75c6a2cef1e; index-only; referencia; sin-determinar.
+- [000267 2024.pdf](https://www.sunat.gob.pe/legislacion/superin/2024/000267-2024.pdf) — guia-9020a5508a2411beb3d4; index-only; referencia; sin-determinar.
+- [000293 2024.pdf](https://www.sunat.gob.pe/legislacion/superin/2024/000293-2024.pdf) — guia-74fab95faa8dea2e6687; index-only; referencia; sin-determinar.
+- [000349 2025.pdf](https://www.sunat.gob.pe/legislacion/superin/2025/000349-2025.pdf) — guia-1d11d965a350205f197e; index-only; referencia; sin-determinar.
+- [01 DL 1623 (IN).pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/01_DL%201623%20%28IN%29.pdf) — guia-b52eb30896150f48fc33; index-only; referencia; sin-determinar.
+- [02 DS157 2024 EF(ES).pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/02_DS157-2024-EF%28ES%29.pdf) — guia-f6a4c0c318f2e0e8459b; index-only; referencia; sin-determinar.
+- [02 DS157 2024 EF(IN).pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/02_DS157-2024-EF%28IN%29.pdf) — guia-1a792692f46363c568fe; index-only; referencia; sin-determinar.
+- [020-2007-SUNAT/2B0000](https://www.sunat.gob.pe/legislacion/oficios/2007/oficios/i020-2007.pdf) — guia-5c2e669d28b685c756ed; index-only; referencia; sin-determinar.
+- [03 Resolution 0173 2024 0(IN).pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/03_Resolution-0173-2024_0%28IN%29.pdf) — guia-b3d3c6c1e2e0cf639456; index-only; referencia; sin-determinar.
+- [033-2014-SUNAT/4B0000](https://www.sunat.gob.pe/legislacion/oficios/2014/informe-oficios/i033-2014.pdf) — guia-3c3461cedba0c9a8454a; index-only; referencia; sin-determinar.
+- [034-2013-SUNAT/4B0000](https://www.sunat.gob.pe/legislacion/oficios/2013/informe-oficios/i034-2013.pdf) — guia-115789f553fb5e271e03; index-only; referencia; sin-determinar.
+- [039-2010](https://www.sunat.gob.pe/legislacion/oficios/2010/informe-oficios/i039-2010.pdf) — guia-8f5389a3166d12242c60; index-only; referencia; sin-determinar.
+- [053-2014-SUNAT/4B0000](https://www.sunat.gob.pe/legislacion/oficios/2014/informe-oficios/i053-2014.pdf) — guia-3695811bdb5dd069404a; index-only; referencia; sin-determinar.
+- [084-2010-SUNAT/2B0000](https://www.sunat.gob.pe/legislacion/oficios/2010/informe-oficios/i084-2010.pdf) — guia-5e13fc508749ebb0ab23; index-only; referencia; sin-determinar.
+- [10 Manual de servicios Rest.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/10_Manual%20de%20servicios%20Rest.pdf) — guia-998792eed7c203eb12d0; content-reviewed; tecnico; api.
+- [112 2021.pdf](https://www.sunat.gob.pe/legislacion/superin/2021/112-2021.pdf) — guia-c440a305bf0c029a98b1; index-only; referencia; sin-determinar.
+- [129-2013](https://www.sunat.gob.pe/legislacion/oficios/2013/informe-oficios/o129-2013.pdf) — guia-e7e0eaae517bf9904cf5; index-only; referencia; sin-determinar.
+- [13 Casuistica de Suministro de Información Financiera v2 1.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/13_Casuistica%20de%20Suministro%20de%20Informaci%C3%B3n%20Financiera%20v2_1.pdf) — guia-40c74777349577801341; index-only; referencia; sin-determinar.
+- [148-2013-SUNAT/2B0000](https://www.sunat.gob.pe/legislacion/oficios/2013/informe-oficios/i148-2013.pdf) — guia-673faecd145c77b9c178; index-only; referencia; sin-determinar.
+- [153-2013-SUNAT/4B0000](https://www.sunat.gob.pe/legislacion/oficios/2013/informe-oficios/i153-2013.pdf) — guia-e6d15a5b83fe6055c816; index-only; referencia; sin-determinar.
+- [167-2010-SUNAT/2B0000](https://www.sunat.gob.pe/legislacion/oficios/2010/informe-oficios/i167-2010.pdf) — guia-2245fff5515d7fe534c1; index-only; referencia; sin-determinar.
+- [2 Esquemas Riesgo v4.0   COMPLETO 1.pdf](https://nodomiciliados.sunat.gob.pe/sites/default/files/inline-files/2%20Esquemas_Riesgo%20v4.0%20-%20COMPLETO_1.pdf) — guia-7d63474c156435cc0d82; index-only; referencia; sin-determinar.
+- [242-2009](https://www.sunat.gob.pe/legislacion/oficios/2009/oficios/i242-2009.pdf) — guia-e258e4fe26aefd34b921; index-only; referencia; sin-determinar.
+- [2423571 1.PDF](https://cpe.sunat.gob.pe/sites/default/files/inline-files/2423571-1.PDF) — guia-371201055a089b96a03b; index-only; referencia; sin-determinar.
+- [2441665 guia black friday.pdf](https://cdn.www.gob.pe/uploads/document/file/5433231/2441665-guia-black-friday.pdf?v=1700167835) — guia-a9e6fb76c8c950ef6555; index-only; referencia; sin-determinar.
+- [2519555 guia de compras en el extranjero equipaje.pdf](https://cdn.www.gob.pe/uploads/document/file/6675547/2519555-guia-de-compras-en-el-extranjero-equipaje.pdf?v=1721413699) — guia-9737b29328f249d11e19; index-only; referencia; sin-determinar.
+- [254 2013.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/254-2013.pdf) — guia-c029edf96fd7b60629a5; index-only; referencia; sin-determinar.
+- [2725612 manual fpe final.pdf](https://cdn.www.gob.pe/uploads/document/file/2796733/2725612-manual-fpe-final.pdf?v=1728656368) — guia-61c3e7b466927ed82352; index-only; referencia; sin-determinar.
+- [340-2009-SUNAT-SUNAT/2B0000](https://www.sunat.gob.pe/legislacion/oficios/2009/oficios/i340-2009.pdf) — guia-41e4d24c986c3308a0cf; index-only; referencia; sin-determinar.
+- [4445314 sire.pdf](https://cdn.www.gob.pe/uploads/document/file/5791832/4445314-sire.pdf?v=1782943128) — guia-b171022f922790d69b29; index-only; referencia; sin-determinar.
+- [4743535 ds n 005 publicar el peruano.pdf](https://cdn.www.gob.pe/uploads/document/file/5278891/4743535-ds-n-005-publicar-el-peruano.pdf?v=1697229745) — guia-a46dce868fd0a123e769; index-only; referencia; sin-determinar.
+- [4986143 anexo i metologia para la asignacion del perfil de cumplimiento y ponderacion de las variables.pdf](https://cdn.www.gob.pe/uploads/document/file/5632817/4986143-anexo-i-metologia-para-la-asignacion-del-perfil-de-cumplimiento-y-ponderacion-de-las-variables.pdf?v=1704319268) — guia-f3b7d958cf5b19d2fd3a; index-only; referencia; sin-determinar.
+- [6395968 ds008 2025ef.pdf](https://cdn.www.gob.pe/uploads/document/file/7522773/6395968-ds008_2025ef.pdf?v=1737552882) — guia-9bb1a35fbcd27b2624e3; index-only; referencia; sin-determinar.
+- [6913732 pasos para el pago de fraccionamiento(2).pdf](https://cdn.www.gob.pe/uploads/document/file/8289742/6913732-pasos-para-el-pago-de-fraccionamiento%282%29.pdf?v=1764339752) — guia-0e3036765c2752c1353f; content-reviewed; procedimiento; sol-web.
+- [8199572 transacciones mas seguras.pdf](https://cdn.www.gob.pe/uploads/document/file/10063942/8199572-transacciones-mas-seguras.pdf?v=1780674514) — guia-e0f13fdfb55b55ba784f; index-only; referencia; sin-determinar.
+- [A partir del 01.01.2014 mil quinientos y 00/100 Nuevos Soles (S/. 1500.00)](https://contenido.app.sunat.gob.pe/insc/Percepciones+IGV/D.S.+293-2013-EF.pdf) — guia-5746fa6a69ccc5ca951b; index-only; referencia; sin-determinar.
+- [abonos.pdf](https://www.sunat.gob.pe/orientacionaduanera/nomenclaturaarancelaria/guias/abonos.pdf) — guia-b8f1407fc1e3e3917406; index-only; referencia; sin-determinar.
+- [actualiza RCBF 0.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/actualiza%20RCBF_0.pdf) — guia-841b03aee1a2494af730; index-only; referencia; sin-determinar.
+- [anexo 040 2022.pdf](https://www.sunat.gob.pe/legislacion/superin/2022/anexo-040-2022.pdf) — guia-a3caa30ddf5572e2c8b8; index-only; referencia; sin-determinar.
+- [anexo 086 2015.pdf](https://www.sunat.gob.pe/legislacion/superin/2015/anexo-086-2015.pdf) — guia-26a8a884a0250f7b5ff7; index-only; referencia; sin-determinar.
+- [ANEXO 1 RS 139 2015 AGENTES DE RETENCION.pdf](https://contenido.app.sunat.gob.pe/insc/NormasLegales/Res+Superintend/ANEXO_1_RS_139_2015_AGENTES+DE+RETENCION.pdf) — guia-097fc1d924f6da72ac81; index-only; normativa; sin-determinar.
+- [Anexo 1-2-3-4](https://www.sunat.gob.pe/legislacion/superin/2014/anexo1-2-3-4-300-2014.pdf) — guia-de78ea2c9f368c1ebb6c; index-only; referencia; sin-determinar.
+- [Anexo 11 y I](https://www.sunat.gob.pe/legislacion/superin/2014/anexo11-I-300-2014.pdf) — guia-d250c59f2e64bfed0257; index-only; referencia; sin-determinar.
+- [anexo 123 2022.pdf](https://www.sunat.gob.pe/legislacion/superin/2022/anexo-123-2022.pdf) — guia-dc705b584c32a582d5a8; index-only; referencia; sin-determinar.
+- [anexo 159 2017.pdf](https://www.sunat.gob.pe/legislacion/superin/2017/anexo-159-2017.pdf) — guia-fd3e30d12b03e4af1565; index-only; referencia; sin-determinar.
+- [ANEXO 2 RS 139 2015 AGENTES DE RETENCION.pdf](https://contenido.app.sunat.gob.pe/insc/NormasLegales/Res+Superintend/ANEXO_2_RS_139_2015_AGENTES+DE+RETENCION.pdf) — guia-52a24ae60e78a9d8a603; index-only; normativa; sin-determinar.
+- [Anexo 228 2012 1.pdf](https://www.sunat.gob.pe/legislacion/superin/2012/Anexo-228-2012-1.pdf) — guia-646be81cb3d756a2035f; index-only; referencia; sin-determinar.
+- [Anexo 228 2012 2.pdf](https://www.sunat.gob.pe/legislacion/superin/2012/Anexo-228-2012-2.pdf) — guia-ac273c165a69f0fd0f73; index-only; referencia; sin-determinar.
+- [Anexo 3 1.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Anexo_3_1.pdf) — guia-a916e4423240b8987652; index-only; referencia; sin-determinar.
+- [anexo 374 2013.pdf](https://www.sunat.gob.pe/legislacion/superin/2013/anexo-374-2013.pdf) — guia-32b95067c665609c3a0f; index-only; referencia; sin-determinar.
+- [Anexo A a D](https://www.sunat.gob.pe/legislacion/superin/2017/anexoA-117-2017.pdf) — guia-201232fa04b1ac8f5493; index-only; referencia; sin-determinar.
+- [Anexo A,B,C,D,E,F](https://www.sunat.gob.pe/legislacion/superin/2015/anexoA,B,C,D,E,F-274-2015.pdf) — guia-d6f8306e2a2386548ca2; index-only; referencia; sin-determinar.
+- [Anexo II](https://www.sunat.gob.pe/legislacion/superin/2017/anexoII-117-2017.pdf) — guia-01f3a6de423367653ced; index-only; referencia; sin-determinar.
+- [Anexo II](https://www.sunat.gob.pe/legislacion/superin/2022/anexo2-281-2022.pdf) — guia-a911b10a1b4bd004e76f; index-only; referencia; sin-determinar.
+- [Anexo II](https://cdn.www.gob.pe/uploads/document/file/5632818/4986143-anexo-ii-metologia-para-la-asignacion-del-perfil-de-cumplimiento-y-ponderacion-de-las-variables.pdf?v=1704319597) — guia-bb9bcccd80ffdb1dcf1c; index-only; referencia; sin-determinar.
+- [Anexo II](https://www.sunat.gob.pe/legislacion/superin/2018/anexoII-254-2018.pdf) — guia-bd73be87e4df97db5195; index-only; referencia; sin-determinar.
+- [Anexo II](https://www.sunat.gob.pe/legislacion/superin/2017/anexoII-155-2017.pdf) — guia-c37263c7d3dd512fa6a3; index-only; referencia; sin-determinar.
+- [Anexo II](https://www.sunat.gob.pe/legislacion/superin/2023/anexoII-000138-2023.pdf) — guia-ce56a6a327b220c354ab; index-only; referencia; sin-determinar.
+- [Anexo III](https://www.sunat.gob.pe/legislacion/superin/2023/anexoIII-000138-2023.pdf) — guia-5b426c5198ae6fe65f0b; index-only; referencia; sin-determinar.
+- [Anexo III](https://www.sunat.gob.pe/legislacion/superin/2017/anexoIII-155-2017.pdf) — guia-6b0811632816045cd8c1; index-only; referencia; sin-determinar.
+- [Anexo III](https://www.sunat.gob.pe/legislacion/superin/2017/anexoIII-117-2017.pdf) — guia-7c16a05c6426bd1af52b; index-only; referencia; sin-determinar.
+- [Anexo IV](https://www.sunat.gob.pe/legislacion/superin/2023/anexoIV-000138-2023.pdf) — guia-3ac406d72ff531e65887; index-only; referencia; sin-determinar.
+- [Anexo IV](https://www.sunat.gob.pe/legislacion/superin/2017/anexoIV-117-2017.pdf) — guia-d32606250dfe2105c115; index-only; referencia; sin-determinar.
+- [Anexo IV](https://www.sunat.gob.pe/legislacion/superin/2017/anexoIV-155-2017.pdf) — guia-e4ba9a6e0bc441b7d8ce; index-only; referencia; sin-determinar.
+- [Anexo IX](https://www.sunat.gob.pe/legislacion/superin/2023/anexoIX-000138-2023.pdf) — guia-8575dfa297d903557dd9; index-only; referencia; sin-determinar.
+- [Anexo IX](https://www.sunat.gob.pe/legislacion/superin/2017/anexoIX-117-2017.pdf) — guia-a173125819d5aece3cff; index-only; referencia; sin-determinar.
+- [Anexo J,](https://www.sunat.gob.pe/legislacion/superin/2014/anexoJ-300-2014.pdf) — guia-f995512c004b6f810b15; index-only; referencia; sin-determinar.
+- [anexo N.° 1](https://www.sunat.gob.pe/legislacion/superin/2017/anexo1y2-276-2017.pdf) — guia-4927a05fff2bda2d54ab; index-only; referencia; sin-determinar.
+- [Anexo N.° 1](https://www.sunat.gob.pe/legislacion/superin/2017/anexo1-141-2017.pdf) — guia-911e0e6fd13046e5f35d; index-only; referencia; sin-determinar.
+- [anexo N° 7](https://www.sunat.gob.pe/legislacion/superin/2021/anexo-112-2021.pdf) — guia-be2f58c24b23b58a1f6e; index-only; referencia; sin-determinar.
+- [Anexo VI](https://www.sunat.gob.pe/legislacion/superin/2023/anexoVI-000138-2023.pdf) — guia-0b8c701bb994c15eece2; index-only; referencia; sin-determinar.
+- [Anexo VI](https://www.sunat.gob.pe/legislacion/superin/2017/anexoVI-117-2017.pdf) — guia-a2988214ae532571f551; index-only; referencia; sin-determinar.
+- [Anexo VII](https://www.sunat.gob.pe/legislacion/superin/2017/anexoVII-117-2017.pdf) — guia-320dfcdcabf20bb19e53; index-only; referencia; sin-determinar.
+- [Anexo VII](https://www.sunat.gob.pe/legislacion/superin/2023/anexoVII-000138-2023.pdf) — guia-c4f3ec0d486311e4916a; index-only; referencia; sin-determinar.
+- [Anexo VIII](https://www.sunat.gob.pe/legislacion/superin/2023/anexoVIII-000138-2023.pdf) — guia-49833727d92e5f2bf26a; index-only; referencia; sin-determinar.
+- [Anexo VIII](https://www.sunat.gob.pe/legislacion/superin/2017/anexoVIII-117-2017.pdf) — guia-c5878068f3f8b8122e53; index-only; referencia; sin-determinar.
+- [Anexo XI](https://www.sunat.gob.pe/legislacion/superin/2017/anexoXI-117-2017.pdf) — guia-ca5eba87082dd1d16e7c; index-only; referencia; sin-determinar.
+- [Anexo XII](https://www.sunat.gob.pe/legislacion/superin/2017/anexoXII-117-2017.pdf) — guia-24100f8d9a191b5fe9aa; index-only; referencia; sin-determinar.
+- [Anexo XIII](https://www.sunat.gob.pe/legislacion/superin/2017/anexoXIII-117-2017.pdf) — guia-5abd4894501d67fd0557; index-only; referencia; sin-determinar.
+- [Anexo XIV](https://www.sunat.gob.pe/legislacion/superin/2017/anexoXIV-117-2017.pdf) — guia-01b5e0845eb559d867d0; index-only; referencia; sin-determinar.
+- [Anexo XV](https://www.sunat.gob.pe/legislacion/superin/2017/anexoXV-117-2017.pdf) — guia-71454aeeb4548982f4cb; index-only; referencia; sin-determinar.
+- [Anexo XVI](https://www.sunat.gob.pe/legislacion/superin/2017/anexoXVI-117-2017.pdf) — guia-37c5d16c2747fa7fa422; index-only; referencia; sin-determinar.
+- [Anexo XVII.](https://www.sunat.gob.pe/legislacion/superin/2017/anexoXVII-117-2017.pdf) — guia-fd5f18999a1ac2cadd25; index-only; referencia; sin-determinar.
+- [Anexo-RIN-17-2014/SUNAT-5C0000](https://www.sunat.gob.pe/legislacion/procedim/despacho/resoluciones/2014/Anexo-RIN-17-2014.pdf) — guia-f18964379ad0479005eb; index-only; normativa; sin-determinar.
+- [Anexo.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Anexo.pdf) — guia-3bb1f616803c781664d2; index-only; referencia; sin-determinar.
+- [Anexo02u.pdf](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/DESPA-IT.01.11/Anexo02u.pdf) — guia-830107a9668f3847a2b1; index-only; referencia; sin-determinar.
+- [anexo1 096 2012.pdf](https://www.sunat.gob.pe/legislacion/superin/2012/anexo1-096-2012.pdf) — guia-ff6bde3a9826e4f9b75c; index-only; referencia; sin-determinar.
+- [anexo1 182 2016.pdf](https://www.sunat.gob.pe/legislacion/superin/2016/anexo1-182-2016.pdf) — guia-789ca91e3f0ebca1725c; index-only; referencia; sin-determinar.
+- [anexo1 378 2013.pdf](https://www.sunat.gob.pe/legislacion/superin/2013/anexo1-378-2013.pdf) — guia-8136e178e52b52150ce4; index-only; referencia; sin-determinar.
+- [Anexo1SDA](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.11/Anexo01_SDA.pdf) — guia-a59eb90e3796704ad687; index-only; referencia; sin-determinar.
+- [anexo2 000240 2024.pdf](https://cpe.sunat.gob.pe/sites/default/files/inline-files/anexo2-000240-2024.pdf) — guia-12ec964b0cef1a169dea; index-only; referencia; sin-determinar.
+- [anexo2 096 2012.pdf](https://www.sunat.gob.pe/legislacion/superin/2012/anexo2-096-2012.pdf) — guia-0ead8355160e1e1a3513; index-only; referencia; sin-determinar.
+- [anexo2 182 2016.pdf](https://www.sunat.gob.pe/legislacion/superin/2016/anexo2-182-2016.pdf) — guia-aa9bd4cd9a4dbc56b5e9; index-only; referencia; sin-determinar.
+- [anexo2 378 2013.pdf](https://www.sunat.gob.pe/legislacion/superin/2013/anexo2-378-2013.pdf) — guia-e1722179f6301923a754; index-only; referencia; sin-determinar.
+- [anexo2.pdf](https://www.sunat.gob.pe/orientacionaduanera/pagosgarantias/anexos/anexo2.pdf) — guia-afa5e0b895b655c05406; index-only; referencia; sin-determinar.
+- [anexo3 023 2014.pdf](https://www.sunat.gob.pe/legislacion/superin/2014/anexo3-023-2014.pdf) — guia-bbdb29cddfff62c39af4; index-only; referencia; sin-determinar.
+- [anexo3 182 2016.pdf](https://www.sunat.gob.pe/legislacion/superin/2016/anexo3-182-2016.pdf) — guia-b1f9b23ffd0f44e88466; index-only; referencia; sin-determinar.
+- [anexo3.pdf](https://www.sunat.gob.pe/orientacionaduanera/pagosgarantias/anexos/anexo3.pdf) — guia-d03ff9e2437ca543e2f5; index-only; referencia; sin-determinar.
+- [anexo6 300 2014.pdf](https://www.sunat.gob.pe/legislacion/superin/2014/anexo6-300-2014.pdf) — guia-5a00a309459503809a0a; index-only; referencia; sin-determinar.
+- [anexo8 300 2014.pdf](https://www.sunat.gob.pe/legislacion/superin/2014/anexo8-300-2014.pdf) — guia-0f3767e2c10e6d78f5a2; index-only; referencia; sin-determinar.
+- [anexo9 300 2014.pdf](https://www.sunat.gob.pe/legislacion/superin/2014/anexo9-300-2014.pdf) — guia-b74bf3b45984cb3f52f1; index-only; referencia; sin-determinar.
+- [anexoA 113 2018.pdf](https://www.sunat.gob.pe/legislacion/superin/2018/anexoA-113-2018.pdf) — guia-682d792ec319612547a9; index-only; referencia; sin-determinar.
+- [anexoA 199 2015.pdf](https://www.sunat.gob.pe/legislacion/superin/2015/anexoA-199-2015.pdf) — guia-dad69f8bc5359bf07171; index-only; referencia; sin-determinar.
+- [anexoA 245 2017.pdf](https://www.sunat.gob.pe/legislacion/superin/2017/anexoA-245-2017.pdf) — guia-26f7e4903e1fd40392de; index-only; referencia; sin-determinar.
+- [anexoA 255 2015.pdf](https://www.sunat.gob.pe/legislacion/superin/2015/anexoA-255-2015.pdf) — guia-9f4664e83fa5c4fc1852; index-only; referencia; sin-determinar.
+- [anexoA 357 2015.pdf](https://www.sunat.gob.pe/legislacion/superin/2015/anexoA-357-2015.pdf) — guia-c1079df50bdd4d6de237; index-only; referencia; sin-determinar.
+- [anexoB 113 2018.pdf](https://www.sunat.gob.pe/legislacion/superin/2018/anexoB-113-2018.pdf) — guia-c735ebe134ee35a02dca; index-only; referencia; sin-determinar.
+- [anexoB 199 2015.pdf](https://www.sunat.gob.pe/legislacion/superin/2015/anexoB-199-2015.pdf) — guia-7ecf3a0939b35029d25c; index-only; referencia; sin-determinar.
+- [anexoB 255 2015.pdf](https://www.sunat.gob.pe/legislacion/superin/2015/anexoB-255-2015.pdf) — guia-961074eb1fbba3918d5b; index-only; referencia; sin-determinar.
+- [anexoB 357 2015.pdf](https://www.sunat.gob.pe/legislacion/superin/2015/anexoB-357-2015.pdf) — guia-986edd161271db43133c; index-only; referencia; sin-determinar.
+- [AnexoB,C,D](https://www.sunat.gob.pe/legislacion/superin/2017/anexoB,C,D-245-2017.pdf) — guia-667c6ef66fc71742e27c; index-only; referencia; sin-determinar.
+- [anexoC 113 2018.pdf](https://www.sunat.gob.pe/legislacion/superin/2018/anexoC-113-2018.pdf) — guia-01e8a586e1bdb82d9407; index-only; referencia; sin-determinar.
+- [anexoC 199 2015.pdf](https://www.sunat.gob.pe/legislacion/superin/2015/anexoC-199-2015.pdf) — guia-412d99d1b52b7c0b6f16; index-only; referencia; sin-determinar.
+- [anexoC 255 2015.pdf](https://www.sunat.gob.pe/legislacion/superin/2015/anexoC-255-2015.pdf) — guia-70d63da1db1dd1dc01d8; index-only; referencia; sin-determinar.
+- [anexoC 357 2015.pdf](https://www.sunat.gob.pe/legislacion/superin/2015/anexoC-357-2015.pdf) — guia-2dbff56e2232b6ae2ce3; index-only; referencia; sin-determinar.
+- [anexoD 199 2015.pdf](https://www.sunat.gob.pe/legislacion/superin/2015/anexoD-199-2015.pdf) — guia-5e0dbf5a151eef2dab28; index-only; referencia; sin-determinar.
+- [anexoD 255 2015.pdf](https://www.sunat.gob.pe/legislacion/superin/2015/anexoD-255-2015.pdf) — guia-286cf81ab92a3e25c9ec; index-only; referencia; sin-determinar.
+- [anexoD 357 2015.pdf](https://www.sunat.gob.pe/legislacion/superin/2015/anexoD-357-2015.pdf) — guia-38b5aa1b3ceab0b0c73d; index-only; referencia; sin-determinar.
+- [anexoE 245 2017.pdf](https://www.sunat.gob.pe/legislacion/superin/2017/anexoE-245-2017.pdf) — guia-3e803d79229be517249b; index-only; referencia; sin-determinar.
+- [anexoE 255 2015.pdf](https://www.sunat.gob.pe/legislacion/superin/2015/anexoE-255-2015.pdf) — guia-b177cc06672a51e0b888; index-only; referencia; sin-determinar.
+- [anexoE 357 2015.pdf](https://www.sunat.gob.pe/legislacion/superin/2015/anexoE-357-2015.pdf) — guia-f80e7c4bf9c06a904a45; index-only; referencia; sin-determinar.
+- [anexoF 255 2015.pdf](https://www.sunat.gob.pe/legislacion/superin/2015/anexoF-255-2015.pdf) — guia-c1d4c36a02cdb36e4a94; index-only; referencia; sin-determinar.
+- [anexoF 357 2015.pdf](https://www.sunat.gob.pe/legislacion/superin/2015/anexoF-357-2015.pdf) — guia-f1917057d7db9f09080d; index-only; referencia; sin-determinar.
+- [AnexoF,G,H](https://www.sunat.gob.pe/legislacion/superin/2017/anexoF,G,H-245-2017.pdf) — guia-cc7d5c889d6e423d532e; index-only; referencia; sin-determinar.
+- [anexoG 274 2015.pdf](https://www.sunat.gob.pe/legislacion/superin/2015/anexoG-274-2015.pdf) — guia-bed6eb488b9d3d1c781f; index-only; referencia; sin-determinar.
+- [anexoG 357 2015.pdf](https://www.sunat.gob.pe/legislacion/superin/2015/anexoG-357-2015.pdf) — guia-077a0a4fb1bff7e1f031; index-only; referencia; sin-determinar.
+- [anexoH 274 2015.pdf](https://www.sunat.gob.pe/legislacion/superin/2015/anexoH-274-2015.pdf) — guia-b4001f945206c45b345b; index-only; referencia; sin-determinar.
+- [anexoH 357 2015.pdf](https://www.sunat.gob.pe/legislacion/superin/2015/anexoH-357-2015.pdf) — guia-3eaf2a96ed43cfa219a6; index-only; referencia; sin-determinar.
+- [anexoI 000138 2023.pdf](https://www.sunat.gob.pe/legislacion/superin/2023/anexoI-000138-2023.pdf) — guia-d0cf9ef7bebc3c44029e; index-only; referencia; sin-determinar.
+- [anexoI 114 2019.pdf](https://www.sunat.gob.pe/legislacion/superin/2019/anexoI-114-2019.pdf) — guia-7e5978054b946dc5353e; index-only; referencia; sin-determinar.
+- [anexoI 117 2017.pdf](https://www.sunat.gob.pe/legislacion/superin/2017/anexoI-117-2017.pdf) — guia-f941552ffca7996ed22b; index-only; referencia; sin-determinar.
+- [anexoI 155 2017.pdf](https://www.sunat.gob.pe/legislacion/superin/2017/anexoI-155-2017.pdf) — guia-0ce6aad1f3bbf29e8199; index-only; referencia; sin-determinar.
+- [anexoI 254 2018.pdf](https://www.sunat.gob.pe/legislacion/superin/2018/anexoI-254-2018.pdf) — guia-00cffbce58b8e43204c7; index-only; referencia; sin-determinar.
+- [anexoI 274 2015.pdf](https://www.sunat.gob.pe/legislacion/superin/2015/anexoI-274-2015.pdf) — guia-f888cf2cbfeb5e804b3e; index-only; referencia; sin-determinar.
+- [AnexoI,J,K](https://www.sunat.gob.pe/legislacion/superin/2017/anexoI,J,K-245-2017.pdf) — guia-121ec97e5e0841297ad0; index-only; referencia; sin-determinar.
+- [anexoII 114 2019.pdf](https://www.sunat.gob.pe/legislacion/superin/2019/anexoII-114-2019.pdf) — guia-eb73453d6b3fb1a92729; index-only; referencia; sin-determinar.
+- [AnexoIII](https://www.sunat.gob.pe/legislacion/superin/2019/anexoIII-114-2019.pdf) — guia-b765136f078e30bb203d; index-only; referencia; sin-determinar.
+- [anexoIV 114 2019.pdf](https://www.sunat.gob.pe/legislacion/superin/2019/anexoIV-114-2019.pdf) — guia-d6161c54489416b48649; index-only; referencia; sin-determinar.
+- [anexoIX 114 2019.pdf](https://www.sunat.gob.pe/legislacion/superin/2019/anexoIX-114-2019.pdf) — guia-4edfcba0685fbf913fe2; index-only; referencia; sin-determinar.
+- [AnexoRS0822011.pdf](https://www.sunat.gob.pe/legislacion/superin/2011/AnexoRS0822011.pdf) — guia-b451a6e7cff8dd6986c4; index-only; referencia; sin-determinar.
+- [Anexos 1 y 2](https://www.sunat.gob.pe/legislacion/superin/2011/Anexo-257-2011.pdf) — guia-bb8641566d58777a5dcd; index-only; referencia; sin-determinar.
+- [anexos 123 2017.pdf](https://www.sunat.gob.pe/legislacion/superin/2017/anexos-123-2017.pdf) — guia-80675e612a9c388ba5f9; index-only; referencia; sin-determinar.
+- [anexos 150 2019.pdf](https://www.sunat.gob.pe/legislacion/superin/2019/anexos-150-2019.pdf) — guia-3dd647251703e943b544; index-only; referencia; sin-determinar.
+- [ANEXOS DEL PEI](https://cpe.sunat.gob.pe/sites/default/files/inline-files/pei%209.pdf) — guia-9d06cbb301bd32cd8773; index-only; referencia; sin-determinar.
+- [Anexos I-II-III-IV](https://www.sunat.gob.pe/legislacion/superin/2017/anexosI-II-III-IV-318-2017.pdf) — guia-7d67f7272af85f1e5492; index-only; referencia; sin-determinar.
+- [Anexos V](https://www.sunat.gob.pe/legislacion/superin/2017/anexosV-318-2017.pdf) — guia-7e3c03e881852042c3d4; index-only; referencia; sin-determinar.
+- [Anexos VI](https://www.sunat.gob.pe/legislacion/superin/2017/anexosVI-318-2017.pdf) — guia-97b8a50bea0bb6832db4; index-only; referencia; sin-determinar.
+- [anexoV 000138 2023.pdf](https://www.sunat.gob.pe/legislacion/superin/2023/anexoV-000138-2023.pdf) — guia-b3f262790e8129796d56; index-only; referencia; sin-determinar.
+- [anexoV 114 2019.pdf](https://www.sunat.gob.pe/legislacion/superin/2019/anexoV-114-2019.pdf) — guia-a51a329a6c88a01f92ad; index-only; referencia; sin-determinar.
+- [anexoV 117 2017.pdf](https://www.sunat.gob.pe/legislacion/superin/2017/anexoV-117-2017.pdf) — guia-da051b522854dc49a539; index-only; referencia; sin-determinar.
+- [anexoVI 114 2019.pdf](https://www.sunat.gob.pe/legislacion/superin/2019/anexoVI-114-2019.pdf) — guia-618e1408002550701aa9; index-only; referencia; sin-determinar.
+- [AnexoVII](https://www.sunat.gob.pe/legislacion/superin/2019/anexoVII-114-2019.pdf) — guia-40edc0371b9f9fdbdf99; index-only; referencia; sin-determinar.
+- [AnexoVIII](https://www.sunat.gob.pe/legislacion/superin/2019/anexoVIII-114-2019.pdf) — guia-932edc704894a220092a; index-only; referencia; sin-determinar.
+- [anexoX 114 2019.pdf](https://www.sunat.gob.pe/legislacion/superin/2019/anexoX-114-2019.pdf) — guia-a2a36ce7a49589a74393; index-only; referencia; sin-determinar.
+- [anexoX 117 2017.pdf](https://www.sunat.gob.pe/legislacion/superin/2017/anexoX-117-2017.pdf) — guia-ba1b9b7407d22ea39342; index-only; referencia; sin-determinar.
+- [anexoXI 114 2019.pdf](https://www.sunat.gob.pe/legislacion/superin/2019/anexoXI-114-2019.pdf) — guia-93398c957aef05f13cce; index-only; referencia; sin-determinar.
+- [AnexoXII](https://www.sunat.gob.pe/legislacion/superin/2019/anexoXII-114-2019.pdf) — guia-e818b424068b68b5f159; index-only; referencia; sin-determinar.
+- [AnexoXIII-1B](https://www.sunat.gob.pe/legislacion/superin/2019/anexoXIII-1-B-114-2019.pdf) — guia-1dc65ad8329bb973dd30; index-only; referencia; sin-determinar.
+- [AnexoXIII-2C](https://www.sunat.gob.pe/legislacion/superin/2019/anexoXIII-2-C-114-2019.pdf) — guia-e812b7efe3717a6f2ded; index-only; referencia; sin-determinar.
+- [Apéndice 1](https://contenido.app.sunat.gob.pe/insc/Percepciones+IGV/Apendice+1-Percepcion.pdf) — guia-183a172862800f0ec7be; index-only; referencia; sin-determinar.
+- [Apéndice 2 (link is external)](https://contenido.app.sunat.gob.pe/insc/Percepciones+IGV/Apendice+2-Percepciones.pdf) — guia-dd090a6b40e62c005951; index-only; referencia; sin-determinar.
+- [APP Personas](https://personas.sunat.gob.pe/sites/default/files/inline-files/Emisi%C3%B3n%20RHE%20APP%20Personas_0.pdf) — guia-23cb70211333917fedbb; index-only; referencia; app-movil.
+- [aquí(link is external)](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Generaci%C3%B3n%20Clave%20SOL.pdf) — guia-95c868007d22cb286f5c; index-only; referencia; sol-web.
+- [Art. 44 del TUO de la Ley del Impuesto a la Renta](https://www.sunat.gob.pe/legislacion/renta/ley/capvi.pdf) — guia-3034ee4381692a728948; index-only; referencia; sin-determinar.
+- [artículo 62-C del Código Tributario](https://www.sunat.gob.pe/legislacion/codigo/libro2/libro.pdf) — guia-a8ba95d061ff16801c27; index-only; referencia; sin-determinar.
+- [ARTICULO RS 106 2018.pdf](https://orientacion.sunat.gob.pe/images/stories/librosyregistros/ARTICULO_RS_106_2018.pdf) — guia-d0ad6f9d0483b5e32fee; index-only; normativa; sin-determinar.
+- [ASPECTOS TÉCNICOS - EMISOR ELECTRÓNICO](https://cpe.sunat.gob.pe/sites/default/files/inline-files/anexoXIII-1-B-114-2019%20%281%29.pdf) — guia-b1b809e87ff4a380375b; index-only; referencia; sin-determinar.
+- [ASPECTOS TÉCNICOS - OSE](https://cpe.sunat.gob.pe/sites/default/files/inline-files/anexoXIII-2-C-114-2019%20%281%29.pdf) — guia-27b38c5d7f97a27cb747; index-only; referencia; sin-determinar.
+- [Ayuda del PEI](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Ayuda%20del%20PEI%20PEI-Ayuda_0.pdf) — guia-56c50ede30a89ae5317f; index-only; referencia; sin-determinar.
+- [Baja de comprobante de pago, serie y cancelación de autorización (Form.855) desde SOL.pdf.pdf](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Baja%20de%20comprobante%20de%20pago%2C%20serie%20y%20cancelaci%C3%B3n%20de%20autorizaci%C3%B3n%20%28Form.855%29%20desde%20SOL.pdf.pdf) — guia-786ce96bc19cc6b711c4; index-only; referencia; sol-web.
+- [BAJA DERECHOHABIENTE 1.pdf](https://personas.sunat.gob.pe/sites/default/files/inline-files/BAJA%20DERECHOHABIENTE_1.pdf) — guia-55bcadb34eaf70d9ddb9; index-only; referencia; sin-determinar.
+- [beneficiario final encarte compressed.pdf](https://emprender.sunat.gob.pe/sites/default/files/inline-files/beneficiario%20final%20encarte_compressed.pdf) — guia-21b478fbd1a419ab9e9b; index-only; referencia; sin-determinar.
+- [bienes sujetos al régimen de percepciones del IGV](https://contenido.app.sunat.gob.pe/insc/Percepciones+IGV/Porcentaje+de+Percepciones+2014.pdf) — guia-8b21f97440f667a83eb9; index-only; referencia; sin-determinar.
+- [Boleta de Venta Electrónica 2.0](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Gu%C3%ADa%20XML%20para%20boleta%20de%20venta%20electr%C3%B3nica%20%28UBL%202.0%29_0.pdf) — guia-4f5f4a1f1dcaaf27693b; index-only; tecnico; sin-determinar.
+- [Boleta de Venta Electrónica 2.1](https://cpe.sunat.gob.pe/sites/default/files/inline-files/guia%2Bxml%2Bboleta%2Bversion%202-1%2B1%2B0_0_0%20%282%29.pdf) — guia-3420b594136b49712d07; index-only; tecnico; sin-determinar.
+- [Boletín Aduanero](https://www.sunat.gob.pe/boletinAduanero/2019/boletin-aduanero-octubre.pdf) — guia-4662b90c9b2f9b83d44d; index-only; referencia; sin-determinar.
+- [Buzón Electrónico compressed.pdf](https://emprender.sunat.gob.pe/sites/default/files/inline-files/Buz%C3%B3n%20Electr%C3%B3nico_compressed.pdf) — guia-27ecba0b542f050c2b00; index-only; referencia; sin-determinar.
+- [Buzón Electrónico.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Buz%C3%B3n%20Electr%C3%B3nico.pdf) — guia-960e0aea7cec0c3b9d0e; index-only; referencia; sin-determinar.
+- [Cambio negocio a trabajador independiente.pdf](https://emprender.sunat.gob.pe/sites/default/files/archivos/Cambio%20negocio%20a%20trabajador%20independiente.pdf) — guia-2b3a38440f294ca20f25; index-only; referencia; sin-determinar.
+- [Cambio trabajador independiente a negocio.pdf](https://emprender.sunat.gob.pe/sites/default/files/archivos/Cambio%20trabajador%20independiente%20a%20negocio.pdf) — guia-2f714c7533836dd6fd2d; index-only; referencia; sin-determinar.
+- [Carga Masiva](https://orientacion.sunat.gob.pe/sites/default/files/2026-07/CARGA_MASIVA_ND.pdf) — guia-6101df2c3b7fd92dc3a4; index-only; referencia; sin-determinar.
+- [Carta de Servicios](https://www.sunat.gob.pe/institucional/quienessomos/servicios/cartaServicios.pdf) — guia-5c8759f000986c3646a9; index-only; referencia; sin-determinar.
+- [Carta N.° 155-2013-SUNAT/200000](https://www.sunat.gob.pe/legislacion/oficios/2013/informe-oficios/c155-2013.pdf) — guia-dd884c55caf64970c2c1; index-only; referencia; sin-determinar.
+- [cartafianzaprimero 0.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/cartafianzaprimero_0.pdf) — guia-a2e725dd020ee0e42e4a; index-only; referencia; sin-determinar.
+- [Cartilla Usuario " Mandato Electrónico](https://www.sunat.gob.pe/operatividadaduanera/sda/tutoriales/2020/cartillaUsuarioMandato.pdf) — guia-d8e579baf704717e2f84; content-reviewed; procedimiento; sol-web.
+- [casillasSujetasModif.pdf](https://emprender.sunat.gob.pe/sites/default/files/inline-files/casillasSujetasModif.pdf) — guia-bad695e3e8d0c8bd2ef8; index-only; referencia; sin-determinar.
+- [Caso práctico de tercera categoría - PDT Nº 684](https://contenido.app.sunat.gob.pe/insc/Renta+Anual+2013/Caso+Practico+Tercera+2013+.pdf) — guia-8f6b5985457b612173c6; index-only; referencia; sin-determinar.
+- [Casos practicos BF DIC2019 1 0.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Casos_practicos_BF_DIC2019_1_0.pdf) — guia-5a281feeb62cb2f4f2d6; index-only; referencia; sin-determinar.
+- [Catálogo de Esquemas de Alto Riesgo Fiscal Versión 1.0](https://nodomiciliados.sunat.gob.pe/sites/default/files/inline-files/Esquemas_Alto_Riesgo_2020_0%20V1_0.pdf) — guia-af2d6825d5a9fe1b70cd; index-only; referencia; sin-determinar.
+- [Catálogo de Esquemas de Alto Riesgo Fiscal Versión 2.0](https://nodomiciliados.sunat.gob.pe/sites/default/files/inline-files/Esquemas%20Alto%20Riesgo%20v2%202022_2_0.pdf) — guia-0b3b26f8c25f00eaad8c; index-only; referencia; sin-determinar.
+- [Catálogo de Esquemas de Alto Riesgo Fiscal Versión 3.0](https://nodomiciliados.sunat.gob.pe/sites/default/files/inline-files/Esquemas_Riesgo%202024_v.3Completa_3.pdf) — guia-3b5f9ea69a32b54f6ff1; index-only; referencia; sin-determinar.
+- [co180626 2.pdf](https://www.sunat.gob.pe/operatividadaduanera/novedades/aduanas/comunicados/2026/junio/co180626-2.pdf) — guia-84ca130b97211057f4f0; index-only; referencia; sin-determinar.
+- [Cómo declarar y pagar: Guía básica](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/cuadroparaelportalcampaaGeneralDeclaracionypago_3.pdf) — guia-48ae91f2a60b56dd8b01; index-only; referencia; sin-determinar.
+- [Cómo declarar y pagar: Guía básica](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/cuadroparaelportalcampaaGeneralDeclaracionypago_2.pdf) — guia-5b90f1f37962ac0a0fa7; index-only; referencia; sin-determinar.
+- [Comprobante de Percepción – Venta Interna](https://contenido.app.sunat.gob.pe/insc/Modelos/Comprobante_percepcion_venta+interna+cod+41.pdf) — guia-63bdca8da92cf8c60c48; index-only; referencia; sin-determinar.
+- [Comunicación de Avisos de riesgo de integridad de la carga y correos electrónicos de contacto](https://www.sunat.gob.pe/operatividadaduanera/PrecintoAd/2024/avisoRiesgoIntegridadCarga.pdf) — guia-2bf8620a2e8767d4d007; index-only; referencia; sin-determinar.
+- [Considerar solo el ANEXO A Requerimientos básicos en la gestión de la seguridad de la información](https://cpe.sunat.gob.pe/sites/default/files/inline-files/anexoA-117-2017%20%281%29.pdf) — guia-7692febae1a784c970f2; index-only; referencia; sin-determinar.
+- [Consulta de devolución del SFMB compressed.pdf](https://emprender.sunat.gob.pe/sites/default/files/inline-files/Consulta%20de%20devoluci%C3%B3n%20del%20SFMB_compressed.pdf) — guia-680b691c99af3db04e52; index-only; referencia; sin-determinar.
+- [CONSULTA DE VALIDEZ DE COMPROBANTES ELECTRÓNICOS](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Otros_Aspectos_Interes_OSE%20%281%29.pdf) — guia-31572cfcc53eab9139d4; index-only; referencia; sin-determinar.
+- [Control de versiones del PLE 0.pdf](https://emprender.sunat.gob.pe/sites/default/files/inline-files/Control%20de%20versiones%20del%20PLE_0.pdf) — guia-bc0b963d2bf4e70c14b1; index-only; referencia; sin-determinar.
+- [cooperativas agrarias (002) compressed (1).pdf](https://emprender.sunat.gob.pe/sites/default/files/inline-files/cooperativas%20agrarias%20%28002%29_compressed%20%281%29.pdf) — guia-067b8a277128ed5561c9; index-only; referencia; sin-determinar.
+- [Cronograma de actividades](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Cronograma%2018072025.pdf) — guia-8a8fc381f67614b1172e; index-only; referencia; sin-determinar.
+- [cuadroparaelportalcampaaGeneralDeclaracionypago 3 0.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/cuadroparaelportalcampaaGeneralDeclaracionypago_3_0.pdf) — guia-42624a60bd3d59c2eace; index-only; referencia; sin-determinar.
+- [Cuchillos](https://www.sunat.gob.pe/orientacionaduanera/nomenclaturaarancelaria/guias/cuchillos.pdf) — guia-c53ba828fd7b693a22ee; index-only; referencia; sin-determinar.
+- [D.S. Nº 015-2026-EF(link is external)](https://cdn.www.gob.pe/uploads/document/file/9437490/7730417-decreto-supremo-n-015-2026-ef.pdf?v=1770915573) — guia-9e325a6dc3226ef92b84; index-only; normativa; sin-determinar.
+- [Datos de Contacto (teléfono y correo)   Actualización y Validación.pdf](https://cdn.www.gob.pe/uploads/document/file/1960946/Datos%20de%20Contacto%20%28tel%C3%A9fono%20y%20correo%29%20-%20Actualizaci%C3%B3n%20y%20Validaci%C3%B3n.pdf) — guia-0d7c6fae128174ba86c2; index-only; referencia; sin-determinar.
+- [Declaración Jurada Ley 31279.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Declaraci%C3%B3n%20Jurada%20Ley%2031279.pdf) — guia-c4535a74d9ced7f9b684; index-only; referencia; sin-determinar.
+- [Declaración jurada sobre el alcance del servicio de comprobación informática](https://www.sunat.gob.pe/legislacion/superin/2018/anexo-092-2018.pdf) — guia-3dde1ea721dec7709e68; index-only; referencia; sin-determinar.
+- [Decreto Legislativo N.° 1422](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/decreto-legislativo-1422.pdf) — guia-830da0f4d3aa071db8d6; index-only; normativa; sin-determinar.
+- [Decreto Legislativo N° 1269](https://cdn.www.gob.pe/uploads/document/file/251475/226840_file20181218-16260-158vyxm.pdf?v=1545176710) — guia-7ff40f09e1c41478adbe; index-only; normativa; sin-determinar.
+- [Decreto Legislativo N° 1370 Decreto Legislativo que modifica la Ley Nº 27269, Ley de firmas y certificados digitales y el Decreto Ley Nº 25632, Ley marco de comprobantes de pago](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Decreto%20Legislativo%20N%C2%B0%201370.pdf) — guia-57d271e35d3f1e966ff7; index-only; normativa; sin-determinar.
+- [Decreto Legislativo N° 937](https://www.sunat.gob.pe/legislacion/rus/rus.pdf) — guia-d4f2b2079f7697959c2a; index-only; normativa; sin-determinar.
+- [Decreto Ley N.° 25632](https://www.sunat.gob.pe/legislacion/superin/1992/ley_25632.pdf) — guia-b0d54046987c9953d587; index-only; normativa; sin-determinar.
+- [Decreto Supremo N.° 145-2019-EF](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/ds-145-2019-EF-parametros-fondo-y-forma-aplicacin-norma-anti-elusiva-general.pdf) — guia-13b61e4dbf01ce4216b9; index-only; normativa; sin-determinar.
+- [Decreto Supremo N.° 182-2022-EF](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Decreto%20Supremo%20182-2022-EF_0.pdf) — guia-11510b50b09f27522430; index-only; normativa; sin-determinar.
+- [Decreto Supremo N.° 268-2019-EF](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/DS_268-2019-EF.pdf) — guia-a15673129f11a9ee82b1; index-only; normativa; sin-determinar.
+- [Decreto Supremo N.° 268-2019-EF](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/DS_268-2019-EF_0.pdf) — guia-a4290a01aaa019bf42be; index-only; normativa; sin-determinar.
+- [Decreto Supremo N.° 268-2019-EF](https://orientacion.sunat.gob.pe/images/imagenes/contenido/Insumos_quimicos_iqpf_iqbf/2019/octubre/DS_268-2019-EF.pdf) — guia-ac7e8344aa833cd986da; index-only; normativa; sin-determinar.
+- [Decreto Supremo N.° 287-2018-EF](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Decreto%20Supremo%20287-2018-EF.pdf) — guia-fc9166eaea202d0df968; index-only; normativa; sin-determinar.
+- [Decreto Supremo N° 003-2019-EF](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Fe%20de%20erratas_DS%20003-2019-EF_0.pdf) — guia-86edccd45582e259368e; index-only; normativa; sin-determinar.
+- [Decreto Supremo N° 164-2023-EF](https://cdn.www.gob.pe/uploads/document/file/4933345/DS164_2023EF.pdf?v=1691019513) — guia-a0aef3bcedcbf07d3892; index-only; normativa; sin-determinar.
+- [Decreto Supremo N° 179-2004](https://www.sunat.gob.pe/legislacion/renta/ley/capxv.pdf) — guia-00c1112604fbf9bcfc26; index-only; normativa; sin-determinar.
+- [Decreto Supremo N° 214-2023-EF](https://cdn.www.gob.pe/uploads/document/file/5224583/DS214_2023EF.pdf?v=1696425245) — guia-70fbf6fcd64398fbe742; index-only; normativa; sin-determinar.
+- [Decreto Supremo N° 314-2014](https://contenido.app.sunat.gob.pe/insc/Percepciones+IGV/DS+317-2014-Percepciones.pdf) — guia-3697f51b0b45f764b76b; index-only; normativa; sin-determinar.
+- [Decreto Supremo N° 321-2014-EF](https://contenido.app.sunat.gob.pe/insc/Beneficios+Tributarios/BUCS+DS321-2014.pdf) — guia-7b500638c01de25bc5fe; index-only; normativa; sin-determinar.
+- [Decreto Supremo N° 348-2015-EF](https://orientacion.sunat.gob.pe/images/iqbf/ds-348-2015-EF.pdf) — guia-ec96deeda91598d4a2aa; index-only; normativa; sin-determinar.
+- [Decreto Supremo N° 419-2019-EF](https://cdn.www.gob.pe/uploads/document/file/471502/DS419_2019EF.pdf) — guia-179dac0ef987dcf10fcb; index-only; normativa; sin-determinar.
+- [Descarga aquí el Manual de Afiliación al SEE Empresas Supervisadas.pdf](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Descarga%20aqu%C3%AD%20el%20Manual%20de%20Afiliaci%C3%B3n%20al%20SEE-Empresas%20Supervisadas.pdf) — guia-03225eab5ef8f93cbc87; index-only; referencia; sin-determinar.
+- [Descarga aquí el Manual de Usuario del SEE  Empresas Supervisadas.pdf](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Descarga%20aqu%C3%AD%20el%20Manual%20de%20Usuario%20del%20SEE-%20Empresas%20Supervisadas.pdf) — guia-523b02f2e171bd85886e; index-only; referencia; sin-determinar.
+- [Descarga aquí los Servicios WEB Disponibles   Incluye DDJJ de Boletos aéreos.pdf](https://cpe.sunat.gob.pe/sites/default/files/2026-05/Descarga%20aqu%C3%AD%20los%20Servicios%20WEB%20Disponibles%20-%20Incluye%20DDJJ%20de%20Boletos%20a%C3%A9reos.pdf) — guia-ac2493e3abe588ca1a23; index-only; tecnico; api.
+- [detalle declaraciones juradas 1.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/detalle_declaraciones_juradas_1.pdf) — guia-f04fd754bf5f8f602e70; index-only; referencia; sin-determinar.
+- [detracciones masivo.pdf](https://emprender.sunat.gob.pe/sites/default/files/inline-files/detracciones_masivo.pdf) — guia-e07992da2beb0874eb0d; index-only; referencia; sin-determinar.
+- [Devolución del SFMB y y el registro del CCI compressed.pdf](https://emprender.sunat.gob.pe/sites/default/files/inline-files/Devoluci%C3%B3n%20del%20SFMB%20y%20y%20el%20registro%20del%20CCI_compressed.pdf) — guia-805411f51ede1edd9d5b; index-only; referencia; sin-determinar.
+- [Devolución FV1649.pdf](https://emprender.sunat.gob.pe/sites/default/files/inline-files/Devoluci%C3%B3n%20FV1649.pdf) — guia-fd6c88ef45edbc9b0a58; index-only; referencia; sin-determinar.
+- [DiapositivasNuevoSistemaInscripción.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/DiapositivasNuevoSistemaInscripci%C3%B3n.pdf) — guia-86fdc1be51f17b26d23a; index-only; referencia; sin-determinar.
+- [DiapositivasNuevoSistemaRenovación.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/DiapositivasNuevoSistemaRenovaci%C3%B3n.pdf) — guia-f8e8eefbaefee5b9dbaf; index-only; referencia; sin-determinar.
+- [Disposición Complementaria Modificatoria](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/ds-145-2019-EF-parametros-fondo-y-forma-aplicacin-norma-anti-elusiva-general_0.pdf) — guia-2b4846b65afacafeeae8; index-only; referencia; sin-determinar.
+- [DJ Domiciliado juegos y apuesta deportivas.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/DJ%20Domiciliado_juegos%20y%20apuesta%20deportivas.pdf) — guia-def2dddfe77e4c4e9631; index-only; referencia; sin-determinar.
+- [Emergency Decree 025-2019](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Emergency%20Decree%20025-2019.pdf) — guia-8b613425fcd3b227f1d2; index-only; referencia; sin-determinar.
+- [encarte 1 juegos y apuesta deportivas no domiciliadas compressed 0.pdf](https://emprender.sunat.gob.pe/sites/default/files/inline-files/encarte%201_juegos%20y%20apuesta%20deportivas%20no%20domiciliadas_compressed_0.pdf) — guia-7a644b07bb83f9dddbdd; index-only; referencia; sin-determinar.
+- [encarte 1 juegos y apuesta deportivas no domiciliadas compressed.pdf](https://emprender.sunat.gob.pe/sites/default/files/inline-files/encarte%201_juegos%20y%20apuesta%20deportivas%20no%20domiciliadas_compressed.pdf) — guia-5991840abbb9c646bffe; index-only; referencia; sin-determinar.
+- [encarte 2 juegos y apuesta deportiva domiciliados compressed 0.pdf](https://emprender.sunat.gob.pe/sites/default/files/inline-files/encarte%202_juegos%20y%20apuesta%20deportiva_domiciliados_compressed_0.pdf) — guia-7a4511c7fc24baafc662; index-only; referencia; sin-determinar.
+- [encarte 2 juegos y apuesta deportiva domiciliados compressed.pdf](https://emprender.sunat.gob.pe/sites/default/files/inline-files/encarte%202_juegos%20y%20apuesta%20deportiva_domiciliados_compressed.pdf) — guia-3ea12b4598a590021eab; index-only; referencia; sin-determinar.
+- [Encarte FE.pdf](https://emprender.sunat.gob.pe/sites/default/files/inline-files/Encarte%20FE.pdf) — guia-1775118b6223d0fe66ea; index-only; referencia; sin-determinar.
+- [Encarte influencers 0.pdf](https://emprender.sunat.gob.pe/sites/default/files/inline-files/Encarte%20influencers_0.pdf) — guia-93798cf08e8820655d90; index-only; referencia; sin-determinar.
+- [encarte PDB compressed.pdf](https://emprender.sunat.gob.pe/sites/default/files/inline-files/encarte%20PDB_compressed.pdf) — guia-2d2abe13d0b2b6a8d528; index-only; referencia; sin-determinar.
+- [encarte1.pdf](https://emprender.sunat.gob.pe/sites/default/files/inline-files/encarte1.pdf) — guia-e08a0c59ba9fb6692f87; index-only; referencia; sin-determinar.
+- [ENG RS 294 APROB. FV.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/ENG-RS-294-APROB.%20FV.pdf) — guia-a08d24b2fd1d01d8f81a; index-only; normativa; sin-determinar.
+- [Especificaciones Técnicas de Instalación](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Especificaciones%20T%C3%A9cnicas%20de%20Instalaci%C3%B3n%20%281%29.pdf) — guia-9bb5a56a2408d79c1acc; index-only; tecnico; escritorio.
+- [Estructura del Archivo Plano](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Estructura%20del%20Archivo%20Plano%20-%20Facturador%20SUNAT%20%281%29.pdf) — guia-fa09fcbfd95d3ecddcd7; index-only; referencia; sin-determinar.
+- [f 2054 Anexo.pdf](https://orientacion.sunat.gob.pe/images/imagenes/formularios/f-2054-Anexo.pdf) — guia-0b277572b53c4d12b3b2; index-only; referencia; sin-determinar.
+- [f 804 2.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/f-804_2.pdf) — guia-d4e7ce8a99f9918e853b; index-only; referencia; sin-determinar.
+- [FACTURA CON DETRACCION : SERVICIO DE TRANSPORTE SIN TRAMOS](https://cpe.sunat.gob.pe/sites/default/files/inline-files/ejemplo%201.pdf) — guia-bba7ce5def6dc72698c5; index-only; referencia; sin-determinar.
+- [Factura con detracción: Servicio de transporte sin tramos](https://cpe.sunat.gob.pe/sites/default/files/inline-files/ejemplo%201_0.pdf) — guia-75cb80d7e6749df8a6fe; index-only; referencia; sin-determinar.
+- [Factura Electrónica 2.0](https://cpe.sunat.gob.pe/sites/default/files/inline-files/gu%C3%ADa%20xml%20para%20factura%20electr%C3%B3nica%20%28ubl%202.0%29_0.pdf) — guia-049c24194e314f86de2b; index-only; tecnico; sin-determinar.
+- [Factura Electrónica 2.1](https://cpe.sunat.gob.pe/sites/default/files/inline-files/guia%2Bxml%2Bfactura%2Bversion%202-1%2B1%2B0%20%282%29_0%20%282%29.pdf) — guia-551a63cd6fe78816e1be; index-only; tecnico; sin-determinar.
+- [Facturador Sunat   Instructivo.pdf](https://cdn.www.gob.pe/uploads/document/file/1864219/Facturador%20Sunat%20-%20Instructivo.pdf?v=1620069593) — guia-cce440358af6258bfd98; index-only; referencia; sin-determinar.
+- [Fe de Erratas](https://www.sunat.gob.pe/legislacion/superin/2014/FeErratas-300-2014.pdf) — guia-3667628f31bf3b4153bd; index-only; referencia; sin-determinar.
+- [Fe de Erratas](https://www.sunat.gob.pe/legislacion/superin/2019/feErratas-114-2019.pdf) — guia-6b164ef795ac13f3b0b6; index-only; referencia; sin-determinar.
+- [Fe de Erratas](https://www.sunat.gob.pe/legislacion/superin/2018/fe-erratas-254-2018.pdf) — guia-a054b1a56af7e10bb13f; index-only; referencia; sin-determinar.
+- [Fe de Erratas](https://www.sunat.gob.pe/legislacion/superin/2018/FeErratas-113-2018.pdf) — guia-a80fd0d1a41a2ace4655; index-only; referencia; sin-determinar.
+- [FE DE ERRATAS](https://www.sunat.gob.pe/legislacion/superin/2013/FE-DE-ERRATAS-RS-065-2013.pdf) — guia-bd60f3546b529cc9f33e; index-only; normativa; sin-determinar.
+- [Fe Erratas](https://www.sunat.gob.pe/legislacion/superin/2017/feErratas-117-2017.pdf) — guia-d4158d55419a7c83a4d0; index-only; referencia; sin-determinar.
+- [Flexibilizan disposiciones en la normativa sobre emisión electrónica](https://www.sunat.gob.pe/legislacion/superin/2020/221-2020.pdf) — guia-4b3ba6ca84c65943a789; index-only; normativa; sin-determinar.
+- [Fomulario 0880 Acta de Reconocimiento actualizada 0.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Fomulario_0880_Acta_de_Reconocimiento_actualizada_0.pdf) — guia-a568f1ae71f8a95465db; index-only; referencia; sin-determinar.
+- [formulario](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/prescripcion-formulario.pdf) — guia-f47db43797a0d4f06e52; index-only; referencia; sin-determinar.
+- [Formulario](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/f-1052_0.pdf) — guia-6ac47decac293a93fe3d; index-only; referencia; sin-determinar.
+- [Formulario](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Form1073.pdf) — guia-b8d71d952f35bac2e8e1; index-only; referencia; sin-determinar.
+- [Formulario](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/f-1252_0.pdf) — guia-fa9b4c9338dcf0086c5a; index-only; referencia; sin-determinar.
+- [formulario 2135](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/formlurarioparabajadeinscripcion.pdf) — guia-8f4702a36a6a7427bc3a; index-only; referencia; sin-determinar.
+- [Formulario F 105 0 0.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Formulario%20F-105_0_0.pdf) — guia-4315ce1d0c632ddd2cb5; index-only; referencia; sin-determinar.
+- [FORMULARIO VIRTUAL N° 621 – IGV RENTA MENSUAL](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/ayuda_621_igv_renta_mensual_ccv.pdf) — guia-4bda9e71d82f3aeeac3c; index-only; referencia; sin-determinar.
+- [FORMULARIO VIRTUAL N° 626 – AGENTES DE RETENCIÓN](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/ayuda_626_agente_retencion_6_ccv.pdf) — guia-2c29d851bfdd65f68aac; index-only; referencia; sin-determinar.
+- [FORMULARIO VIRTUAL N° 633 – AGENTES DE PERCEPCIÓN](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/ayuda_FV_633_Agente_de_Percepcion_0_ccv.pdf) — guia-8a33e631f123f0fd6e87; index-only; referencia; sin-determinar.
+- [guia pago electronico1220.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/guia_pago_electronico1220.pdf) — guia-f4eb936cd32a998b49ec; index-only; referencia; sin-determinar.
+- [guia pago facil 1675 1.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/guia-pago-facil-1675_1.pdf) — guia-26c251a3599968eff152; content-reviewed; formulario; sin-determinar.
+- [guia pago facil 1675.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/guia-pago-facil-1675.pdf) — guia-20d68da470d6d4b1c779; content-reviewed; formulario; sin-determinar.
+- [Guía para Comprobante de Retención Electrónico](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Guia_XML_Retencion_v1_2_1.pdf) — guia-54249651c74d633d1002; index-only; referencia; sin-determinar.
+- [Guía para declaración y pago 3.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Gu%C3%ADa%20para%20declaraci%C3%B3n%20y%20pago_3.pdf) — guia-a008d02598087a9001fc; index-only; referencia; sin-determinar.
+- [Guía para el resumen de comprobantes impresos](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/guia_resumen_de_contingencia_0.pdf) — guia-4589c862d93e1d4bb534; index-only; referencia; sin-determinar.
+- [Guía para el resumen de comprobantes impresos](https://cpe.sunat.gob.pe/sites/default/files/inline-files/guia_resumen_de_contingencia_0.pdf) — guia-6d79fbc99624580469e9; index-only; referencia; sin-determinar.
+- [Guía para Medianos y Pequeños Contribuyentes](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Guia_1662_pagos_varios_MEPECO_1.pdf) — guia-065f1dd0c9421f92841e; content-reviewed; formulario; sin-determinar; histórico.
+- [Guía para Principales Contribuyentes](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Guia_pagos_varios_PRICO_2.pdf) — guia-35b35421929f26936130; content-reviewed; formulario; sin-determinar.
+- [Guía para Principales Contribuyentes](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Guia_pagos_varios_PRICO_1.pdf) — guia-753c789b1e147aa70712; content-reviewed; formulario; sin-determinar.
+- [Guía para Principales Contribuyentes](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Guia_pagos_varios_PRICO_0.pdf) — guia-916f8037349711c01b39; content-reviewed; procedimiento; sin-determinar.
+- [Guía para Principales Contribuyentes](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Guia_pagos_varios_PRICO_7.pdf) — guia-d8747ade2a1c896bef00; content-reviewed; procedimiento; sin-determinar.
+- [Guía Trabajadores del Hogar](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Guia_1676_Trabajadores_del_Hogar_2.pdf) — guia-3df0ea18b68abe0383ed; content-reviewed; formulario; sin-determinar.
+- [Guía-Trabajadores del Hogar](https://cdn.www.gob.pe/uploads/document/file/1476043/Formulario%201676%20-%20Trabajadores%20del%20Hogar.pdf) — guia-add9e07ff4ee168fa00c; index-only; referencia; sin-determinar.
+- [guia1683.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/guia1683.pdf) — guia-ab5081ab3726f84559f9; content-reviewed; formulario; sin-determinar.
+- [Haz clic aquí](https://renta.sunat.gob.pe/sites/default/files/inline-files/cartilla%20Instrucciones%20Empresa%202024.pdf) — guia-023ebc37b58629776155; index-only; referencia; sin-determinar.
+- [Haz clic aquí](https://renta.sunat.gob.pe/sites/default/files/inline-files/cartilla%20Instrucciones%20Empresa%202023.pdf) — guia-19bf5b5de2749befa7f6; index-only; referencia; sin-determinar.
+- [http://www.sunat.gob.pe/legislacion/aduanera/valoracionadua/cartillaValores](https://www.sunat.gob.pe/legislacion/aduanera/valoracionadua/cartilla/CartillaReferenciaValoresInstrucciones2016.pdf) — guia-8075cf6c89567df57cb9; content-reviewed; procedimiento; sin-determinar.
+- [http://www.sunat.gob.pe/orientacionaduanera/viajeros/formatos/DDJJ-Espanol.pdf](https://www.sunat.gob.pe/orientacionaduanera/viajeros/formatos/DDJJ-Espanol.pdf) — guia-587715dd4ff998817c2a; index-only; referencia; sin-determinar.
+- [https://orientacion.sunat.gob.pe/sites/default/files/inline-files/inscripci%C3%B3n%20en%20el%20RUC%20de%20Sujetos%20No%20Domiciliados.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/inscripci%C3%B3n%20en%20el%20RUC%20de%20Sujetos%20No%20Domiciliados.pdf) — guia-69556d258eaa152cc44f; content-reviewed; procedimiento; web-sunat.
+- [i078 2011.pdf](https://www.sunat.gob.pe/legislacion/oficios/2011/informe-oficios/i078-2011.pdf) — guia-97a23714e7292df37b7e; index-only; referencia; sin-determinar.
+- [IM 013 Factura App Emprender.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/IM_013_Factura%20App%20Emprender.pdf) — guia-ad205604768ce7882017; index-only; referencia; app-movil.
+- [IM 021 Boleta Venta App Emprender.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/IM_021_Boleta%20Venta%20App%20Emprender.pdf) — guia-b4ef26ce95e5dc9bb6b4; index-only; referencia; app-movil.
+- [IM 028 RHE App Personas.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/IM_028_RHE%20App%20Personas.pdf) — guia-3ae0e3465bd681280e97; index-only; referencia; app-movil.
+- [IMPRIMIR CIR DERECHOHABIENTE 2.pdf](https://personas.sunat.gob.pe/sites/default/files/inline-files/IMPRIMIR%20CIR%20DERECHOHABIENTE_2.pdf) — guia-f057cd735e94d7277963; index-only; referencia; sin-determinar.
+- [Informe BM-Aduanas (CAT-R)](https://www.sunat.gob.pe/orientacion/deInteres/ReporteCATT-Peru2017.pdf) — guia-2a37dfcf3f6bae269632; index-only; referencia; sin-determinar.
+- [INFORME N.° 054-2011-SUNAT/2B0000](https://www.sunat.gob.pe/legislacion/oficios/2011/informe-oficios/i054-2011.pdf) — guia-a2b7145ed0acee2b30d1; index-only; referencia; sin-determinar.
+- [Informe N.º 000069-2025-SUNAT/7T0000](https://www.sunat.gob.pe/legislacion/oficios/2025/informe-oficios/i000069-2025-7T0000.pdf) — guia-66f1cb40ebaa91f67d66; index-only; referencia; sin-determinar.
+- [INFORME N.º 44-2022-SUNAT/7T0000](https://www.sunat.gob.pe/legislacion/oficios/2022/informe-oficios/i044-2022-7T0000.pdf) — guia-363df2009cc028dfa2b3; index-only; referencia; sin-determinar.
+- [Informe N° 004-2020-SUNAT/7T0000](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/i004-2020-7T0000_0.pdf) — guia-751ad02465918fa993a9; index-only; referencia; sin-determinar.
+- [INFORME N° 022-2010-SUNAT/2B0000](https://www.sunat.gob.pe/legislacion/oficios/2010/informe-oficios/i022-2010.pdf) — guia-5840a2d13fc8ffe09fd3; index-only; referencia; sin-determinar.
+- [Informe N° 022-2022-SUNAT/7T0000](https://www.sunat.gob.pe/legislacion/oficios/2022/informe-oficios/i022-2022-7T0000.pdf) — guia-267883a32bd328aa8c7c; index-only; referencia; sin-determinar.
+- [Informe N° 042-2020-SUNAT/7T0000](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/i042-2020-7T0000_0.pdf) — guia-d21708f329a5e12a4fd0; index-only; referencia; sin-determinar.
+- [Informe N° 046-2020-SUNAT/7T0000](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/i046-2020-7T0000_2.pdf) — guia-02aacbc03c8eb7fdbde0; index-only; referencia; sin-determinar.
+- [Informe N° 048-2020-SUNAT/7T0000](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/i048-2020-7T0000_2.pdf) — guia-53d1126a6ef69403cf64; index-only; referencia; sin-determinar.
+- [Informe N° 051-2021-SUNAT/7T0000](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/i051-2021-7T0000_1.pdf) — guia-ee91e34aeae0ad0ff82f; index-only; referencia; sin-determinar.
+- [Informe N° 060-2022-SUNAT/7T0000](https://www.sunat.gob.pe/legislacion/oficios/2022/informe-oficios/i060-2022-7T0000.pdf) — guia-46b7a22ef073a7a29d7d; index-only; referencia; sin-determinar.
+- [Informe N° 082-2018-SUNAT/7T0000](https://cpe.sunat.gob.pe/sites/default/files/inline-files/i082-2018-7T0000.pdf) — guia-1a08d16dcbd69edc1c87; index-only; referencia; sin-determinar.
+- [Informe N° 092-2021-SUNAT/7T0000](https://www.sunat.gob.pe/legislacion/oficios/2021/informe-oficios/i092-2021-7T0000.pdf) — guia-1f05ee6c1b9a812d7d49; index-only; referencia; sin-determinar.
+- [Informe N° 107- 2020-SUNAT/7T0000](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/i107-2020-7T0000_1.pdf) — guia-1d05c57b75e6ba5066a8; index-only; referencia; sin-determinar.
+- [Informe N° 110-2020-SUNAT/7T0000](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/i110-2020-7T0000_0.pdf) — guia-f3d06aa47174f5d9b262; index-only; referencia; sin-determinar.
+- [Informe N° 128-2020-SUNAT/7T0000](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/i128-2020-7T0000_2.pdf) — guia-4f2242e1ef659ad57955; index-only; referencia; sin-determinar.
+- [Informe N° 129-2020-SUNAT/7T0000](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/i129-2020-7T0000_0.pdf) — guia-0a92f97017303c84bf42; index-only; referencia; sin-determinar.
+- [Informe N° 130-2020-SUNAT/7T0000](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/i130-2020-7T0000_0.pdf) — guia-c42a9865857a18d900ca; index-only; referencia; sin-determinar.
+- [Informe N° 138-2020-SUNAT/7T0000](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/i138-2020-7T0000_0.pdf) — guia-9a19355e9e03e6ef5e7e; index-only; referencia; sin-determinar.
+- [Informe N° 141-2020-SUNAT/7T0000,](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/i141-2020-7T0000_1.pdf) — guia-65244ba379cfa0ecbba5; index-only; referencia; sin-determinar.
+- [Informe N° 80-2022-SUNAT/7T000](https://www.sunat.gob.pe/legislacion/oficios/2022/informe-oficios/i080-2022-7T0000.pdf) — guia-289dacaf33a9e0c5dd56; index-only; referencia; sin-determinar.
+- [inicio actividades Trab indepe.pdf](https://orientacion.sunat.gob.pe/sites/default/files/2026-07/inicio%20actividades%20Trab%20indepe.pdf) — guia-051d652e39e70339f76c; index-only; referencia; sin-determinar.
+- [inicio negocio.pdf](https://orientacion.sunat.gob.pe/sites/default/files/2026-07/inicio%20negocio.pdf) — guia-73295067e703f49b6c78; index-only; referencia; sin-determinar.
+- [Instalacion Configuracion JAVA v2 0 0 0.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Instalacion_Configuracion_JAVA_v2_0_0_0.pdf) — guia-a8dffe8bf425adebbfda; index-only; referencia; escritorio.
+- [Instalacion Configuracion JAVA v2 0.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Instalacion_Configuracion_JAVA_v2_0.pdf) — guia-ac2cd3d38be78747b718; index-only; referencia; escritorio.
+- [Instructivo](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/instructivo_ley_nuevo.pdf) — guia-461286a21fc45d3c2f24; index-only; referencia; sin-determinar.
+- [Instructivo 301   SDS v1.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Instructivo%20301%20-%20SDS%20v1.pdf) — guia-db8ffd25dc5bfd132585; content-reviewed; procedimiento; sol-web.
+- [Instructivo Cuarto Trimestre 202](https://www.sunat.gob.pe/orientacion/devolucion-isc/2025/InstructivoLlenadoMacro-ISC-4toTrim-2025.pdf) — guia-564995e2d730d3de40f3; content-reviewed; procedimiento; escritorio, sol-web, presencial.
+- [Instructivo Cuarto Trimestre 2022](https://www.sunat.gob.pe/orientacion/devolucion-isc/InstructivoLlenadoMacro-ISC-4toTrim-2022.pdf) — guia-7abc217dabbb54aeb261; content-reviewed; procedimiento; escritorio, sol-web, presencial.
+- [Instructivo Cuarto Trimestre 2023](https://www.sunat.gob.pe/orientacion/devolucion-isc/2023/InstructivoLlenadoMacro-ISC-4toTrim-2023.pdf) — guia-5f72a4779f82521fccb4; content-reviewed; tecnico; escritorio, sol-web, presencial.
+- [Instructivo Cuarto Trimestre 2024](https://www.sunat.gob.pe/orientacion/devolucion-isc/2024/InstructivoLlenadoMacro-ISC-4toTrim-2024.pdf) — guia-238ee3f0be6e174a8ce1; content-reviewed; procedimiento; escritorio, sol-web, presencial.
+- [Instructivo de Depósito Individual](https://www.sunat.gob.pe/orientacion/Detracciones/InstructivoDepositoIndividualnuevaversion.pdf) — guia-05f2951e2a2fb4099ad4; content-reviewed; procedimiento; sol-web, banco.
+- [Instructivo de depósito masivo](https://www.sunat.gob.pe/orientacion/Detracciones/InstructivoPagoMasivonuevaversionv3.pdf) — guia-787524ebdd3360eb2f53; content-reviewed; procedimiento; sol-web, banco.
+- [Instructivo Primer Trimestre 2022](https://www.sunat.gob.pe/orientacion/devolucion-isc/InstructivoLlenadoMacro-ISC-1erTrim-2022.pdf) — guia-0cd34d94b9689fadd276; content-reviewed; procedimiento; escritorio, sol-web, presencial.
+- [Instructivo Primer Trimestre 2023](https://www.sunat.gob.pe/orientacion/devolucion-isc/2023/InstructivoLlenadoMacro-ISC-1erTrim-2023.pdf) — guia-5a3d82848745c2836d3d; content-reviewed; procedimiento; escritorio, sol-web, presencial.
+- [Instructivo Primer Trimestre 2025](https://www.sunat.gob.pe/orientacion/devolucion-isc/2025/InstructivoLlenadoMacro-ISC-1erTrim-2025.pdf) — guia-12f3df72feb2a32fdbfd; content-reviewed; procedimiento; escritorio, sol-web, presencial.
+- [Instructivo Primer Trimestre 2026](https://www.sunat.gob.pe/orientacion/devolucion-isc/2026/InstructivoLlenadoMacro-ISC-1erTrim-2026.pdf) — guia-cfc6c4e7589df91d5e11; content-reviewed; procedimiento; escritorio, sol-web, presencial.
+- [Instructivo Segundo Trimestre 2022](https://www.sunat.gob.pe/orientacion/devolucion-isc/InstructivoLlenadoMacro-ISC-2doTrim-2022.pdf) — guia-48924ff972b33dbba6e5; content-reviewed; procedimiento; escritorio, sol-web, presencial.
+- [Instructivo Segundo Trimestre 2023](https://www.sunat.gob.pe/orientacion/devolucion-isc/2023/InstructivoLlenadoMacro-ISC-2doTrim-2023.pdf) — guia-a127be0d7c2245fd6009; content-reviewed; procedimiento; escritorio, sol-web, presencial.
+- [Instructivo Segundo Trimestre 2024](https://www.sunat.gob.pe/orientacion/devolucion-isc/2024/InstructivoLlenadoMacro-ISC-2doTrim-2024.pdf) — guia-412ea592e3b7632c5362; content-reviewed; tecnico; escritorio, sol-web, presencial.
+- [Instructivo Segundo Trimestre 2025](https://www.sunat.gob.pe/orientacion/devolucion-isc/2025/InstructivoLlenadoMacro-ISC-2doTrim-2025.pdf) — guia-97d855d4ba8ddbd0a2c7; content-reviewed; procedimiento; escritorio, sol-web, presencial.
+- [Instructivo Segundo Trimestre 2026](https://www.sunat.gob.pe/orientacion/devolucion-isc/2026/InstructivoLlenadoMacro-ISC-2doTrim-2026.pdf) — guia-5d92bb897288411f9db1; content-reviewed; procedimiento; escritorio, sol-web, presencial.
+- [Instructivo SEMT ATC v2 0.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Instructivo%20SEMT-ATC%20v2_0.pdf) — guia-bbfb0db46271bca8deca; content-reviewed; tecnico; sin-determinar.
+- [Instructivo Tercer Trimestre 2022](https://www.sunat.gob.pe/orientacion/devolucion-isc/InstructivoLlenadoMacro-ISC-3erTrim-2022.pdf) — guia-606cd1ddd54b604e76c8; content-reviewed; procedimiento; escritorio, sol-web, presencial.
+- [Instructivo Tercer Trimestre 2023](https://www.sunat.gob.pe/orientacion/devolucion-isc/2023/InstructivoLlenadoMacro-ISC-3erTrim-2023.pdf) — guia-09047137de4678cb0acc; content-reviewed; procedimiento; escritorio, sol-web, presencial.
+- [Instructivo Tercer Trimestre 2024](https://www.sunat.gob.pe/orientacion/devolucion-isc/2024/InstructivoLlenadoMacro-ISC-3erTrim-2024.pdf) — guia-ead147e6693fe98b02e1; content-reviewed; tecnico; escritorio, sol-web, presencial.
+- [Instructivo Tercer Trimestre 2025](https://www.sunat.gob.pe/orientacion/devolucion-isc/2025/InstructivoLlenadoMacro-ISC-3erTrim-2025.pdf) — guia-9fbb9f1fb479d87d39ee; content-reviewed; procedimiento; escritorio, sol-web, presencial.
+- [Instructivo Tercer Trimestre 2026](https://www.sunat.gob.pe/orientacion/devolucion-isc/2026/InstructivoLlenadoMacro-ISC-3erTrim-2026.pdf) — guia-a651f936ddfe47c1c5cd; content-reviewed; procedimiento; escritorio, sol-web, presencial.
+- [Laboratorios Acreditados por INACAL o con Solicitud en Trámite-Concentrados de Minerales Metalíferos](https://www.sunat.gob.pe/operatividadaduanera/inacal/relacionInacal.pdf) — guia-ed0a4465cd291f179180; index-only; referencia; sin-determinar.
+- [Legislative Decree 1372](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/legislative%20Decree%201372.pdf) — guia-b3834ffe5cb9052fbda5; index-only; referencia; sin-determinar.
+- [Ley 31647.pdf.pdf](https://cdn.www.gob.pe/uploads/document/file/3987466/Ley%2031647.pdf.pdf?v=1672097657) — guia-6e2a8987406d35707f1b; index-only; referencia; sin-determinar.
+- [Ley 31665](https://cpe.sunat.gob.pe/sites/default/files/inline-files/LEY%2031665%20-%20Ley%20que%20prorroga%20el%20plazo%20establecido%20en%20la%20cuarta%20disposici%C3%B3n%20complementaria%2C%20transitoria%20y%20final%20de%20la%20ley%2027269%2C%20ley%20de%20firmas%20y%20certificados%20digitales.pdf) — guia-12007702b87fced92de2; index-only; referencia; sin-determinar.
+- [Ley N.° 30230](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Ley30230.pdf) — guia-975d2fea677772d3aadc; index-only; referencia; sin-determinar.
+- [Ley N.° 30823](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Ley_30823.pdf) — guia-7547e62ce2bbf09a9e06; index-only; referencia; sin-determinar.
+- [Ley N° 27269 Ley de Firmas y Certificados Digitales](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Ley%20N%C2%B0%2027269.pdf) — guia-1959140165b2899b69ed; index-only; referencia; sin-determinar.
+- [Ley N° 29972](https://contenido.app.sunat.gob.pe/insc/NormasLegales/Ley/Ley+29972.pdf) — guia-08bafe989de196270bec; index-only; referencia; sin-determinar.
+- [Ley N° 3136 Ley de Presupuesto del sector publico para el año fiscal 2022](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Ley%20N%C2%B0%2031365%20-%20Octag%C3%A9sima%20Cuarta.pdf) — guia-377e7cfd5a1bb5a4ad41; index-only; referencia; sin-determinar.
+- [Ley N° 32540](https://cdn.www.gob.pe/uploads/document/file/9241862/7584375-ley-32540.pdf?v=1767635104) — guia-90d1e73a9a24f0963168; index-only; referencia; sin-determinar.
+- [Ley Nº 28053, Publicado el 08 de marzo de 2003](https://orientacion.sunat.gob.pe/images/imagenes/contenido/igv/Ley28053.pdf) — guia-21bb480e389cd034c6b0; index-only; referencia; sin-determinar.
+- [Ley Nº 29173](https://contenido.app.sunat.gob.pe/insc/ley_29173.pdf) — guia-ec7d8d0766b7fc6d4260; index-only; referencia; sin-determinar.
+- [Link de validez de comprobante electrónico - OSE](https://cpe.sunat.gob.pe/sites/default/files/inline-files/link%20de%20validez%20todas%20las%20OSE_1_01.2025.pdf) — guia-3d172487f88aa6fa231d; index-only; referencia; sin-determinar.
+- [link de validez todas las OSE 07 07.2025.pdf](https://cpe.sunat.gob.pe/sites/default/files/inline-files/link%20de%20validez%20todas%20las%20OSE_07_07.2025.pdf) — guia-e6f2d31e89da4c4be819; index-only; referencia; sin-determinar.
+- [Listado Arancel 2017](https://www.sunat.gob.pe/operatividadaduanera/covid/2022/ListaRCovid19-Minsa26082020.pdf) — guia-15a93756af78d4f80f00; index-only; referencia; sin-determinar.
+- [Listado Arancel 2017](https://www.sunat.gob.pe/operatividadaduanera/covid/2022/ListaRCovid19-oma-oms-12042021.pdf) — guia-7d9b4582789c8f857f7a; index-only; referencia; sin-determinar.
+- [Listados Arancel 2022](https://www.sunat.gob.pe/operatividadaduanera/covid/2022/oma-omsListaProductosCovid19-arancel2022.pdf) — guia-511284f50d020d36f5e8; index-only; referencia; sin-determinar.
+- [Listados Arancel 2022](https://www.sunat.gob.pe/operatividadaduanera/covid/2022/misaListaProductosCovid19-arancel2022.pdf) — guia-6cce58e177f115b45c6c; index-only; referencia; sin-determinar.
+- [listaMercanciaProhibida Exporta.pdf](https://www.sunat.gob.pe/orientacionaduanera/mercanciasrestringidas/listas/listaMercanciaProhibida-Exporta.pdf) — guia-a143d8c3da94e2ab8d05; index-only; referencia; sin-determinar.
+- [listaMercanciaProhibida Importa.pdf](https://www.sunat.gob.pe/orientacionaduanera/mercanciasrestringidas/listas/listaMercanciaProhibida-Importa.pdf) — guia-5c7e7b127b806d58691e; index-only; referencia; sin-determinar.
+- [listaSPN franjaPrecios.pdf](https://www.sunat.gob.pe/operatividadaduanera/sujetosFranjaPrecios/2025/listaSPN-franjaPrecios.pdf) — guia-96a7fc6f7809cd3b7640; index-only; referencia; sin-determinar.
+- [Manual de Consulta Intregrada de Validez de Comprobante de Pago](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Manual-de-Consulta-Integrada-de-Comprobante-de-Pago-por-ServicioWEB_v2_0.pdf) — guia-b2fc5739c9b0196309ff; index-only; referencia; sin-determinar.
+- [Manual de Homologación del OSE (Actualizado al 06/11/2017)](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Manual%20de%20homologaci%C3%B3n%20OSE%20noviembre_2017%20ajuste_0%20%281%29.pdf) — guia-79489b99decef560dd5e; index-only; tecnico; sin-determinar.
+- [Manual de Pruebas de los OSE calificados](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Manual%20de%20Pruebas%20OSE%20Calificados%20%20%281%29.pdf) — guia-30c32f0437fd28326a93; index-only; referencia; sin-determinar.
+- [Manual de Pruebas Pre-Postulante OSE](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Manual%20de%20Pruebas%20Pre-Postulante%20OSE%20%281%29.pdf) — guia-7a8d88366b99db0acd0b; index-only; referencia; sin-determinar.
+- [Manual de Servicios GRE (Actualizado 04/10/2022)](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Manual_Servicios_GRE%20%281%29_0.pdf) — guia-0af57131117f79e1292d; index-only; referencia; sin-determinar.
+- [Manual de servicios Web Api - SIRE_Compras v29.pdf](https://cpe.sunat.gob.pe/sites/default/files/2026-10/Manual%20de%20servicios%20Web%20Api%20-%20SIRE_Compras%20v29.pdf) — guia-1d15fb60e07d144dd239; index-only; tecnico; api.
+- [Manual de servicios Web Api - SIRE_Ventas v32.pdf](https://cpe.sunat.gob.pe/sites/default/files/2026-10/Manual%20de%20servicios%20Web%20Api%20-%20SIRE_Ventas%20v32.pdf) — guia-65816a15a40d14def503; index-only; tecnico; api.
+- [Manual de Usuario](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/mu-0441-pvs-T-Registro_RM_170_2023_TR_0.pdf) — guia-2bfa1180ca01612bb275; content-reviewed; procedimiento; escritorio, sol-web.
+- [Manual de Usuario "Registro y Consulta de Descarga Provisional de Mercancía Nacionalizada"](https://www.sunat.gob.pe/operatividadaduanera/sda/tutoriales/2022/Manual-SCCI-Cta-Cte.pdf) — guia-e6360950bbcaf5b6e96f; content-reviewed; procedimiento; sin-determinar.
+- [Manual del Programador](https://cpe.sunat.gob.pe/sites/default/files/inline-files/manual_programador%20%281%29.pdf) — guia-5b3336a7b3ee8a658017; index-only; referencia; sin-determinar.
+- [Manual del servicio API del Registro de Compras Electrónica](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Manual%20de%20servicios%20Web%20Api%20-%20SIRE_Compras%20v28_0.pdf) — guia-bb4e103a23c45fd7adee; index-only; tecnico; api.
+- [Manual del servicio API del Registro de Ventas e Información Electrónica. v31](https://cpe.sunat.gob.pe/sites/default/files/2026-09/Manual%20del%20servicio%20API%20del%20Registro%20de%20Ventas%20e%20Informaci%C3%B3n%20Electr%C3%B3nica.%20v31.pdf) — guia-0081a9eeff1f038327a3; index-only; tecnico; api.
+- [Manual DESISTIMIENTO IQBF 1012.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Manual_DESISTIMIENTO_IQBF_1012.pdf) — guia-04a692b7c29039a085ac; content-reviewed; procedimiento; sol-web.
+- [Manual Informático para SUNAT Operaciones en Línea](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Manual%20para%20el%20uso%20de%20la%20Clave%20SOL%20en%20Sunat%20Operaciones%20en%20L%C3%ADnea%20INGP%20-%2020082025_0.pdf) — guia-207c3b8ca98d8906c109; content-reviewed; procedimiento; sol-web.
+- [Manual Informático para SUNAT Operaciones en Línea](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Manual%20para%20el%20uso%20de%20la%20Clave%20SOL%20en%20Sunat%20Operaciones%20en%20L%C3%ADnea%20INGP%20-%2020082025.pdf) — guia-66a669bf4a89a71a10b7; content-reviewed; procedimiento; sol-web.
+- [Manual RENOVACIÓN IQBF 1012.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Manual_RENOVACI%C3%93N_IQBF_1012.pdf) — guia-91cfbeaec563bd95bf9c; content-reviewed; procedimiento; sol-web.
+- [Manual SInscripcionR IQBF 1012.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Manual_SInscripcionR_IQBF_1012.pdf) — guia-e2b6603ccfd5eb8aa542; content-reviewed; procedimiento; sol-web.
+- [Manual Usuario de Gestión de Proveedores en la Plataforma Confirmación RHE_FE – Factoring](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Manual%20Usuario_Gesti%C3%B3n%20Proveedores_Plataforma%20Confirmaci%C3%B3n%20RHE_FE%20V.2.pdf) — guia-77d1de53e367e0103f3b; index-only; referencia; sin-determinar.
+- [ManualUsuarioPVSIRE.pdf](https://cpe.sunat.gob.pe/sites/default/files/inline-files/ManualUsuarioPVSIRE.pdf) — guia-b906453e799711e71b38; index-only; referencia; escritorio.
+- [Mascarillas](https://www.sunat.gob.pe/orientacionaduanera/nomenclaturaarancelaria/guias/mascarillas.pdf) — guia-54e1c6cf04b8d4b33bfe; index-only; referencia; sin-determinar.
+- [Medianos y Pequeños Contribuyentes](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/instruccionespequeos_0_0.pdf) — guia-ae9110d5ec69ea67c14c; index-only; referencia; sin-determinar.
+- [Modifica datos Ruc.pdf](https://emprender.sunat.gob.pe/sites/default/files/inline-files/Modifica_datos_Ruc.pdf) — guia-986931ead12b15378a73; index-only; referencia; sin-determinar.
+- [modificacion datos error compressed.pdf](https://emprender.sunat.gob.pe/sites/default/files/inline-files/modificacion%20datos%20error_compressed.pdf) — guia-8a61cbd91981810f04b2; index-only; referencia; sin-determinar.
+- [MODIFICACION DERECHOHABIENTE 2.pdf](https://personas.sunat.gob.pe/sites/default/files/inline-files/MODIFICACION%20DERECHOHABIENTE_2.pdf) — guia-500a56cded533ea48c13; index-only; referencia; sin-determinar.
+- [Modificacion_datos.pdf](https://emprender.sunat.gob.pe/sites/default/files/inline-files/Modificacion_datos.pdf) — guia-6c62f798c9b0987b1227; index-only; referencia; sin-determinar.
+- [Módulo de Precintos: Manuales de Usuario](https://www.sunat.gob.pe/operatividadaduanera/PrecintoAd/manual/comunicado-manualUsuario.pdf) — guia-6b2981f7100487c359b3; content-reviewed; tecnico; sin-determinar.
+- [N° 224-2020/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2020/224-2020.pdf) — guia-d49dbd662e93a9fbaee7; index-only; referencia; sin-determinar.
+- [NoDomilicialdos PreguntasFrecuentes v1 .pdf](https://orientacion.sunat.gob.pe/sites/default/files/2026-09/NoDomilicialdos_PreguntasFrecuentes_v1%20.pdf) — guia-6ed6f1079f330b151d2f; index-only; referencia; sin-determinar.
+- [Nomenclatura de Libros Electrónicos](https://emprender.sunat.gob.pe/sites/default/files/inline-files/Nomenclatura%20de%20Libros%20Electr%C3%B3nicos.pdf) — guia-daf793cf5adc9f4f6162; index-only; referencia; sin-determinar.
+- [Norma D.S. N° 104-2026-EF - Anexo](https://www.sunat.gob.pe/orientacionaduanera/pagosgarantias/normas/ds104-2026-ef.pdf) — guia-1d172565943de19d0d22; index-only; referencia; sin-determinar.
+- [Nota de Crédito 2.0](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Gu%C3%ADa%20XML%20para%20nota%20de%20cr%C3%A9dito%20%28UBL%202.0%29_0.pdf) — guia-c8b86ac233b839f4fdd4; index-only; tecnico; sin-determinar.
+- [Nota de Crédito 2.1](https://cpe.sunat.gob.pe/sites/default/files/inline-files/guia%2Bxml%2Bnota%20de%20cr%C3%A9dito%2Bversion%202-1%2B1%2B0_0_0%20%282%29.pdf) — guia-def3b1cc06b921a5dc0a; index-only; tecnico; sin-determinar.
+- [Nota de debito 2.0](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Gu%C3%ADa%20XML%20para%20nota%20de%20d%C3%A9bito%20%28UBL%202.0%29_0.pdf) — guia-20613e7046fe2ab4b629; index-only; tecnico; sin-determinar.
+- [Nota de Débito 2.1](https://cpe.sunat.gob.pe/sites/default/files/inline-files/guia%2Bxml%2Bnota%20de%20d%C3%A9bito%2Bversion%202-1%2B1%2B0_0_0%20%282%29.pdf) — guia-9963308538ad360c4eac; index-only; tecnico; sin-determinar.
+- [NPS Entidades Bancarias.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/NPS-Entidades%20Bancarias.pdf) — guia-8821e3b277192683b33d; index-only; referencia; banco.
+- [Nuevo SEMT   TR.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Nuevo%20SEMT%20-%20TR.pdf) — guia-b74c936e93538cebe957; index-only; referencia; sin-determinar.
+- [NUEVO SEMT TR Preguntas frecuentes 2.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/NUEVO%20SEMT-TR%20Preguntas%20frecuentes_2.pdf) — guia-0493022a0ea3bcfae27e; index-only; referencia; sin-determinar.
+- [Nuevo SEMT.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Nuevo%20SEMT.pdf) — guia-2b924f1a24f48afd4e00; index-only; referencia; sin-determinar.
+- [OFICIO N 71929   2025   SBS ADJ.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/OFICIO%20N%2071929%20-%202025%20-%20SBS-ADJ.pdf) — guia-f96ac9b38c3e2294f21e; index-only; referencia; sin-determinar.
+- [Operación sujeta a detracción – Recursos Hidrobiológicos](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Servicio%20de%20Transporte%20de%20Carga_0_0.pdf) — guia-a1afd18a56d413fba495; index-only; referencia; sin-determinar.
+- [Operación sujeta a detracción – Servicio de Transporte de Carga](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Servicio%20de%20Transporte%20de%20Pasajeros_0.pdf) — guia-e5789cb6d8ad49985d77; index-only; referencia; sin-determinar.
+- [Operación sujeta a detracción – Servicio de Transporte de Pasajeros](https://cpe.sunat.gob.pe/sites/default/files/inline-files/factura%20con%20detraccion_Hidrobiol%C3%B3gicos_1_0.pdf) — guia-49b49b88cf59acc6d883; index-only; referencia; sin-determinar.
+- [Operación sujeta al Sistema de Operaciones Tributarias con el Gobierno Central](https://cpe.sunat.gob.pe/sites/default/files/inline-files/factura%20con%20detraccion_0.pdf) — guia-3028b1d80e658e92826e; index-only; referencia; sin-determinar.
+- [Padrón de Operadores de Servicios Electrónicos (OSE)](https://www.sunat.gob.pe/padronesnotificaciones/ose/ose-281217.pdf) — guia-ef7697e221ad57d129e7; index-only; referencia; sin-determinar.
+- [Padrón de Proveedores de Servicios Electrónicos (PSE)](https://www.sunat.gob.pe/orientacion/padrones/pse/ProveedoresServiciosElectronicos-PSE.pdf) — guia-a139ae780ecaeef73da5; index-only; referencia; sin-determinar.
+- [pago nuevorus compressed 0.pdf](https://emprender.sunat.gob.pe/sites/default/files/inline-files/pago_nuevorus_compressed_0.pdf) — guia-69d38d612f76a6b1acdb; index-only; referencia; sin-determinar.
+- [pago YAPE.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/pago%20YAPE.pdf) — guia-89940bd714402791a3b6; index-only; referencia; sin-determinar.
+- [Paso a Paso](https://orientacion.sunat.gob.pe/sites/default/files/2026-07/RegistroCPE_NoDomiciliados.pdf) — guia-26dbcc5593766cd825af; content-reviewed; procedimiento; sol-web.
+- [pasos ley 32201 1.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/pasos%20ley%2032201_1.pdf) — guia-15778214445f75fde1d0; content-reviewed; procedimiento; sol-web.
+- [Piso de madera](https://www.sunat.gob.pe/orientacionaduanera/nomenclaturaarancelaria/guias/piso-madera.pdf) — guia-d168f4dbb36d6ea8879b; index-only; referencia; sin-determinar.
+- [PLATAFORMA DE CONFIRMACIÓN DEL RHE Y DE LA FE.pdf](https://cpe.sunat.gob.pe/sites/default/files/inline-files/PLATAFORMA%20DE%20CONFIRMACI%C3%93N%20DEL%20RHE%20Y%20DE%20LA%20FE.pdf) — guia-696cd776c29f223a9983; index-only; referencia; sin-determinar.
+- [Política de Privacidad de la SUNAT](https://www.sunat.gob.pe/orientacion/deInteres/politicaPrivacidad-SUNAT.pdf) — guia-1170764ec3e1d571e782; index-only; referencia; sin-determinar.
+- [PPTT GRE .pdf](https://contenido.app.sunat.gob.pe/insc/Insumos+Quimicos+IQPF/PPTT+GRE+.pdf) — guia-2e7b659cccd466325f95; index-only; referencia; sin-determinar.
+- [Preguntas Frecuentes](https://www.sunat.gob.pe/orientacionaduanera/donaciones/pregFrec.pdf) — guia-4422545231ec187e2e9b; index-only; referencia; sin-determinar.
+- [Preguntas Frecuentes](https://www.sunat.gob.pe/orientacionaduanera/importaFacil/preguntasFrecuentes.pdf) — guia-cdf6bd34107875553896; index-only; referencia; sin-determinar.
+- [Preguntas Frecuentes](https://www.sunat.gob.pe/orientacionaduanera/exportafacil/faq.pdf) — guia-d2e2bc027b2a8668e607; index-only; referencia; sin-determinar.
+- [Preguntas Frecuentes CPE MARZO 2019 1.pdf](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Preguntas%20Frecuentes_CPE%20MARZO%202019_1.pdf) — guia-e5124dbfa96993c8096b; index-only; referencia; sin-determinar.
+- [Preguntas Frecuentes Inscripcin Registro Control Bienes Fiscalizados 1.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Preguntas_Frecuentes_Inscripcin_Registro_Control_Bienes_Fiscalizados_1.pdf) — guia-283e126243e1fd27e9cd; index-only; referencia; sin-determinar.
+- [Preguntas Frecuentes Regularización de Exportación](https://www.sunat.gob.pe/operatividadaduanera/despachoAduanero/preguntasFrecuentes.pdf) — guia-a89940f9a87a4ba41943; index-only; referencia; sin-determinar.
+- [preguntas frecuentes SEMT   TR 3.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/preguntas%20frecuentes%20SEMT%20-%20TR_3.pdf) — guia-06a0dc2cc3d64e81a450; index-only; referencia; sin-determinar.
+- [Preguntas Frecuentes Transmisión de documentos digitalizados en la importación](https://www.sunat.gob.pe/operatividadaduanera/despachoAduanero/preguntasFrecuentes-1.pdf) — guia-85fcefb1817f72f3e495; index-only; referencia; sin-determinar.
+- [Prescripcion.pdf](https://emprender.sunat.gob.pe/sites/default/files/inline-files/Prescripcion.pdf) — guia-1fb8eb7246894d22cb11; index-only; referencia; sin-determinar.
+- [PRESENTACION BF ABRIL2022 rv 0.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/PRESENTACION%20BF_ABRIL2022_rv_0.pdf) — guia-a1d5e1a85dacfba3491c; index-only; referencia; sin-determinar.
+- [Procedimiento para la Atención del Ejercicio de los Derechos ARCO' – versión 2](https://www.sunat.gob.pe/orientacion/deInteres/Proc-Derechos-ARCO.pdf) — guia-07d4361a29d3aa132f65; index-only; referencia; sin-determinar.
+- [Protocolo de Atención para el Agente Fiscalizador.](https://contenido.app.sunat.gob.pe/insc/Acciones+de+Fiscalizacion/PROTOCOLO+AGENTE+FISCALIZADOR+122014.pdf) — guia-fccd16757baf17b0cf50; index-only; referencia; sin-determinar.
+- [Proveedores de precinto registrados](https://www.sunat.gob.pe/operatividadaduanera/PrecintoAd/ProveedoresRegistrados.pdf) — guia-0906f81b7395cc871dbb; index-only; referencia; sin-determinar.
+- [R. de S. 152-2019-SUNAT](https://www.sunat.gob.pe/legislacion/superin/2019/152-2019.pdf) — guia-d8da4dc01c9bb21fd819; index-only; referencia; sin-determinar.
+- [R. Superintendencia N° 038-2013](https://www.sunat.gob.pe/legislacion/superin/2013/038-2013.pdf) — guia-71ee7920f24c2ece10e2; index-only; referencia; sin-determinar.
+- [R. Superintendencia N° 084-2013](https://www.sunat.gob.pe/legislacion/superin/2013/084-2013.pdf) — guia-d7b99070355b7f263060; index-only; referencia; sin-determinar.
+- [R. Superintendencia N° 173-2013](https://contenido.app.sunat.gob.pe/insc/NormasLegales/Res+Superintend/rs+173_2013_SUNAT+iqbf+.pdf) — guia-e7778b0943a7d745072c; index-only; referencia; sin-determinar.
+- [R. Superintendencia N° 196-2015](https://contenido.app.sunat.gob.pe/insc/NormasLegales/Res+Superintend/RS_196_2015_SUNAT_Declar_Info_protegida_ReservaIdentidad.pdf) — guia-47bf3e345f89c876553c; index-only; normativa; sin-determinar.
+- [R. Superintendencia N° 238-2008](https://www.sunat.gob.pe/legislacion/superin/2008/238.pdf) — guia-efd45c655323d0aa5447; index-only; referencia; sin-determinar.
+- [R. Superintendencia N° 322-2010](https://www.sunat.gob.pe/legislacion/superin/2010/322-2010.pdf) — guia-dd314598c80483ec7619; index-only; referencia; sin-determinar.
+- [R.S. N.º 160-2020](https://www.sunat.gob.pe/legislacion/superin/2020/160-2020.pdf) — guia-33f590021efa12c1892e; index-only; referencia; sin-determinar.
+- [R.S. N° 000002-2023/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2023/000002-2023.pdf) — guia-f74dfe3eb742e1c9a556; index-only; referencia; sin-determinar.
+- [R.S. N° 271-2019/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2019/015-2019.pdf) — guia-bbba6bfec09df7bc09ce; index-only; referencia; sin-determinar.
+- [R.S. Nº 184-2017/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2017/184-2017.pdf) — guia-e193e4e900d91e2dc7f7; index-only; referencia; sin-determinar.
+- [RCE - Aceptar propuesta](https://cpe.sunat.gob.pe/sites/default/files/inline-files/RCE-ManualPracticoSOL_Propuesta_0.pdf) — guia-65eaac6dfe1297b92d2d; index-only; referencia; sin-determinar.
+- [RCE - Complementar propuesta](https://cpe.sunat.gob.pe/sites/default/files/inline-files/RCE-ManualPracticoSOL_Complementar_1.pdf) — guia-f7dc3730a7229a57881d; index-only; referencia; sin-determinar.
+- [RCE - Reemplazar propuesta](https://cpe.sunat.gob.pe/sites/default/files/inline-files/RCE-ManualPracticoSOL_Reemplazo_0.pdf) — guia-b7c4ac472039046bf313; index-only; referencia; sin-determinar.
+- [REACTIVACIÓN DERECHOHABIENTE 1.pdf](https://personas.sunat.gob.pe/sites/default/files/inline-files/REACTIVACI%C3%93N%20DERECHOHABIENTE_1.pdf) — guia-b69f5818940718ee9cb9; index-only; referencia; sin-determinar.
+- [Recibo honorarios web.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Recibo_honorarios%20web.pdf) — guia-da9527b493da898995f0; index-only; referencia; sin-determinar.
+- [regimen gradualidad (003) compressed.pdf](https://emprender.sunat.gob.pe/sites/default/files/inline-files/regimen%20gradualidad%20%28003%29_compressed.pdf) — guia-ab31ce01b8e0d54a8eb0; index-only; referencia; sin-determinar.
+- [Régimen Laboral Especial](https://emprender.sunat.gob.pe/archivos/3%20Regimen%20Laboral%20MYPE.pdf) — guia-c63a9bacf3fb634ea501; index-only; referencia; sin-determinar.
+- [regimen temporal IR cartilla 1.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/regimen_temporal_IR_cartilla_1.pdf) — guia-f5ed7055546c11f2fadd; content-reviewed; procedimiento; sol-web.
+- [REGISTRO DE DERECHOHABIENTES 2.pdf](https://personas.sunat.gob.pe/sites/default/files/inline-files/REGISTRO%20DE%20DERECHOHABIENTES_2.pdf) — guia-34544926ef0c9acb9ef9; index-only; referencia; sin-determinar.
+- [Registro de proveedor de precinto y de actualización de datos](https://www.sunat.gob.pe/operatividadaduanera/PrecintoAd/2022/registroProveedorPrecinto.pdf) — guia-39bfae0ec47239174304; index-only; referencia; sin-determinar.
+- [REGISTRO DEL TIPO: 1001 – OPERACIÓN SUJETA A DETRACCIÓN](https://cpe.sunat.gob.pe/sites/default/files/inline-files/factura%20con%20detraccion.pdf) — guia-2f70ed69651e6e646e57; index-only; referencia; sin-determinar.
+- [REGISTRO DEL TIPO: 1001 – OPERACIÓN SUJETA A DETRACCIÓN](https://cpe.sunat.gob.pe/sites/default/files/inline-files/factura%20con%20detraccion-2-6.pdf) — guia-728134e7001bc05fab94; index-only; referencia; sin-determinar.
+- [REGISTRO DEL TIPO: 1002 – OPERACIÓN SUJETA A DETRACCIÓN – RECURSOS HIDROBIOLÓGICOS](https://cpe.sunat.gob.pe/sites/default/files/inline-files/factura%20con%20detraccion_Hidrobiol%C3%B3gicos_0.pdf) — guia-2e5037e2d06d39b5e1cd; index-only; referencia; sin-determinar.
+- [REGISTRO DEL TIPO: 1002 – OPERACIÓN SUJETA A DETRACCIÓN – RECURSOS HIDROBIOLÓGICOS](https://cpe.sunat.gob.pe/sites/default/files/inline-files/factura%20con%20detraccion_Hidrobiol%C3%B3gicos_0_0.pdf) — guia-7a3e0abc4c3cb0aa7281; index-only; referencia; sin-determinar.
+- [REGISTRO DEL TIPO: 1003 – OPERACIÓN SUJETA A DETRACCIÓN – SERVICIO DE TRANSPORTE PASAJEROS](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Servicio%20de%20Transporte%20de%20Pasajeros_1.pdf) — guia-09eed8a2e5e637a0f678; index-only; referencia; sin-determinar.
+- [REGISTRO DEL TIPO: 1003 – OPERACIÓN SUJETA A DETRACCIÓN – SERVICIO DE TRANSPORTE PASAJEROS](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Servicio%20de%20Transporte%20de%20Pasajeros.pdf) — guia-ab28b3d400696e07df9e; index-only; referencia; sin-determinar.
+- [REGISTRO DEL TIPO: 1004 – OPERACIÓN SUJETA A DETRACCIÓN – SERVICIO DE TRANSPORTE CARGA](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Servicio%20de%20Transporte%20de%20Carga_1.pdf) — guia-0aa8aef22c952f1d6cc7; index-only; referencia; sin-determinar.
+- [REGISTRO DEL TIPO: 1004 – OPERACIÓN SUJETA A DETRACCIÓN – SERVICIO DE TRANSPORTE CARGA](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Servicio%20de%20Transporte%20de%20Carga.pdf) — guia-89a77fe8ef45544bfefa; index-only; referencia; sin-determinar.
+- [registro RCBF 0.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/registro%20RCBF_0.pdf) — guia-59b04addb34e052893cc; index-only; referencia; sin-determinar.
+- [Renovacion CBF 0.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Renovacion%20CBF_0.pdf) — guia-9202f35618d5f0d79e03; index-only; referencia; sin-determinar.
+- [Report 004-2020-SUNAT/7T0000](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/i004-2020-7T0000.pdf) — guia-9d663877ae6ba8a97dc1; index-only; referencia; sin-determinar.
+- [Report 042-2020-SUNAT/7T0000](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/i042-2020-7T0000.pdf) — guia-bab05510d59deb55fca8; index-only; referencia; sin-determinar.
+- [Report 046-2020-SUNAT/7T0000](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/i046-2020-7T0000.pdf) — guia-c30989eb3de2f35efe99; index-only; referencia; sin-determinar.
+- [Report 048-2020-SUNAT/7T0000](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/i048-2020-7T0000.pdf) — guia-eb1c9702f5ab29b97fd5; index-only; referencia; sin-determinar.
+- [Report 051-2021-SUNAT/7T0000](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/i051-2021-7T0000.pdf) — guia-40fc53d180239728eee1; index-only; referencia; sin-determinar.
+- [Report 107-2020-SUNAT/7T0000](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/i107-2020-7T0000.pdf) — guia-4826e256d63c8865faf1; index-only; referencia; sin-determinar.
+- [Report 110-2020-SUNAT/7T0000](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/i110-2020-7T0000.pdf) — guia-adad5779a18c566396d9; index-only; referencia; sin-determinar.
+- [Report 128-2020-SUNAT/7T0000](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/i128-2020-7T0000.pdf) — guia-be808809ea9b8b5efd01; index-only; referencia; sin-determinar.
+- [Report 129-2020-SUNAT/7T0000](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/i129-2020-7T0000.pdf) — guia-ac9e2f2bb2edccf59f4c; index-only; referencia; sin-determinar.
+- [Report 130-2020-SUNAT/7T0000](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/i130-2020-7T0000.pdf) — guia-3192f3f74a1a917af435; index-only; referencia; sin-determinar.
+- [Report 138-2020-SUNAT/7T0000](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/i138-2020-7T0000.pdf) — guia-720a7a947dbb5d334532; index-only; referencia; sin-determinar.
+- [Report 141-2020-SUNAT/7T0000](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/i141-2020-7T0000.pdf) — guia-24701207e6e131799f07; index-only; referencia; sin-determinar.
+- [REPORTE DE GESTION 2022.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/REPORTE%20DE%20GESTION%202022.pdf) — guia-42ab94dfccb4faccb31a; index-only; referencia; sin-determinar.
+- [REPORTE DE GESTIÓN 2023](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/REPORTE%20DE%20GESTION%202023v5.pdf) — guia-3282ae7678ed0c1e9573; index-only; referencia; sin-determinar.
+- [Resolución de Superintendencia 108-2026](https://cpe.sunat.gob.pe/sites/default/files/2026-06/Resoluci%C3%B3n%20de%20Superintendencia%20108-2026.PDF) — guia-7f6c7db8947cf2ac420d; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia 108-2026](https://cpe.sunat.gob.pe/sites/default/files/2026-06/Resoluci%C3%B3n%20de%20Superintendencia%20108-2026_0.PDF) — guia-e670d44a95fd48a0bcad; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia 206-2024/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2024/000206-2024.pdf) — guia-b8d9e6ccf5d6c0a2654d; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Adjunta de Aduanas N° 415-2012-SUNAT/A.-](https://www.sunat.gob.pe/legislacion/superAdjunta/rsnata/2012/RSNAA-4152012.pdf) — guia-a95cd3185823d5d68845; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N.° 000075-2026/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2026/000075-2026.pdf) — guia-479d6e870fbdac1f576d; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N.° 021-2015/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2015/021-2015.pdf) — guia-147c08c2faeb6b146b0a; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N.° 023-2014/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2014/023-2014.pdf) — guia-32ca69259fa23b7bc24b; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N.° 026-2021/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2021/026-2021.pdf) — guia-a23d39d79d065e034205; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N.° 117-2017/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2017/117-2017.pdf) — guia-08f9d4313f9bcc7b4060; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N.° 123 -2017/SUNAT](https://cpe.sunat.gob.pe/sites/default/files/inline-images/Resolucion%20Superintendencia%20N%C2%BA%20123-2017%20SUNAT.pdf) — guia-d0517a968cf48f7f5a5a; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N.° 123-2022/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2022/123-2022.pdf) — guia-5063437e04218bdec311; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N.° 152-2019/SUNAT](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/rs-152-sunat-2019-forma-y-condiciones-declaracion-art62-c.pdf) — guia-f6679c85fe86894e59a0; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N.° 153-2019/SUNAT](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/rs-153-2019-SUNAT-norma-XVI-Comite-Revisor.pdf) — guia-ea08d4d68c4df0f6b4bb; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N.° 206-2019/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2019/206-2019.pdf) — guia-3baa5fa067f24070730f; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N.° 252-2019/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2019/252-2019.pdf) — guia-88b1f5275c205750aed2; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N.° 255-2015/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2015/255-2015.pdf) — guia-61ad4dfda41a8968e841; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N.° 307-2016/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2016/307-2016.pdf) — guia-590e8297572eefd4fe9b; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N.° 318 -2017/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2017/318-2017.pdf) — guia-4ccb53874344be656cc9; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N.° 379-2013/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2013/379-2013.pdf) — guia-122a5f47102dc0ab97be; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N.º 000070-2023/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2023/000070-2023.pdf) — guia-c60affe25216122275a1; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N.º 092-2018](https://www.sunat.gob.pe/legislacion/superin/2018/092-2018.pdf) — guia-553a7f1833c8ec2e9a17; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N.º 095-2019](https://www.sunat.gob.pe/legislacion/superin/2019/095-2019.pdf) — guia-3dfb536acd47849844d8; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N.º 239-2018/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2018/239-2018.pdf) — guia-fdfa57d6e061bf6dd5e2; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N.º 242-2018](https://www.sunat.gob.pe/legislacion/superin/2018/242-2018.pdf) — guia-634d0795ea96b2547ad0; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N.º 253-2018/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2018/253-2018.pdf) — guia-05b7f0b50db05aaa42bd; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N.º 254-2018/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2018/254-2018.pdf) — guia-42fc1225f87a1e657553; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N.º 295-2018/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2018/295-2018.pdf) — guia-06a29f6bb12cec8b07d8; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 000033-2021/SUNAT.](https://www.sunat.gob.pe/legislacion/superin/2021/033-2021.pdf) — guia-d2e49f46f2fd6f2a7149; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 000257-2025/SUNAT(link is external)](https://www.sunat.gob.pe/legislacion/superin/2025/000257-2025.pdf) — guia-11d18a043a9da2f43e79; index-only; normativa; sin-determinar.
+- [RESOLUCIÓN DE SUPERINTENDENCIA N° 000392 2025.pdf](https://cpe.sunat.gob.pe/sites/default/files/inline-files/RESOLUCI%C3%93N%20DE%20SUPERINTENDENCIA%20N%C2%B0%20000392-2025.pdf) — guia-62fe5544b8d7baa8547d; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 007-99/SUNAT](https://www.sunat.gob.pe/legislacion/superin/1999/007.pdf) — guia-fa480daa1e940de1874e; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 013-2019/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2019/013-2019.pdf) — guia-df3a0b7ce04b5bcb9ecf; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 015-2015/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2015/015-2015.pdf) — guia-e0172693b5bc9b142915; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 015-2026/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2026/000015-2026.pdf) — guia-7e0c2d8772b6bf07a36a; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 019-2012/SUNAT](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/RS_019_2012_Formulario_845_1.pdf) — guia-49079c471846c9f66051; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 028-2017/SUNAT](https://orientacion.sunat.gob.pe/images/normas/5ResoluciondeSuperintendencia/rs-028-2017-sunat-emisores-see-GRE-bienes-fiscalizados.pdf) — guia-027b90d7d0039bf6c245; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 028-2017/SUNAT](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/rs-028-2017-sunat-emisores-see-GRE-bienes-fiscalizados.pdf) — guia-391933474310c5668dd8; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 033-2014/SUNAT](https://contenido.app.sunat.gob.pe/insc/NormasLegales/Res+Superintend/RS+033_2014_SUNAT.pdf) — guia-311e897bb1899e3bf7d7; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 034-2010/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2010/034-10.pdf) — guia-60f1c78098c0963bcf94; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 038-2020/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2020/038-2020.pdf) — guia-553d4b1918b4cfc55c50; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 043-2019/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2019/043-2019.pdf) — guia-e3a9141305b1e2f69db0; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 044-2019/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2019/044-2019.pdf) — guia-870a85fd5cd0afb7ed02; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 048-2021/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2021/048-2021.pdf) — guia-5e176b39ce30c4c42dbb; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 052-2016/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2016/052-2016.pdf) — guia-77447a250bafddf0c770; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 082-2011/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2011/082-011.pdf) — guia-a8e4d8341154618a9979; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 086-2025/SUNAT](https://emprender.sunat.gob.pe/sites/default/files/inline-files/RS%2086-2025.pdf) — guia-10589fca9abcce1350b3; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 096-2012/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2012/096-2012.pdf) — guia-2f1c84d5c88daae6f240; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 097-2012/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2012/097-2012.pdf) — guia-27d1fb589960f603b8ee; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 102-2015-SUNAT](https://www.sunat.gob.pe/legislacion/superin/2015/102-2015.pdf) — guia-bffd0c76f78280b6311c; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 111-2023/SUNAT.](https://www.sunat.gob.pe/legislacion/superin/2023/000111-2023.pdf) — guia-7577fd5de6562f6eb466; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 113-2018/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2018/113-2018.pdf) — guia-715c5117a27e58088261; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 117-2022/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2022/117-2022.pdf) — guia-966d4a4a841ea07f1033; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 121-2025/SUNA](https://www.sunat.gob.pe/legislacion/superin/2025/000121-2025.pdf) — guia-dc35993e5fd8e21febd8; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 123 -2017/SUNAT](https://cpe.sunat.gob.pe/sites/default/files/inline-images/RS_123-2017_SUNAT.pdf) — guia-4da342df4c5d2219dcac; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 123-2017/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2017/123-2017.pdf) — guia-71e6cc4883567f262222; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 128-2021/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2021/128-2021.pdf) — guia-b75247c4e7a7defebc9e; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 139-2015/SUNAT](https://contenido.app.sunat.gob.pe/insc/NormasLegales/Res+Superintend/RS_139-2015_SUNAT_AgentesDeRetencion.pdf) — guia-1843435a0511302999b7; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 141-2017/SUNAT](https://cpe.sunat.gob.pe/sites/default/files/inline-images/RS%20141_2017_SUNAT.pdf) — guia-02c0804ff807167112da; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 142-2016/SUNAT](https://orientacion.sunat.gob.pe/images/normas/5ResoluciondeSuperintendencia/rs-142-2016-sunat-emisores-guia-remision-electronica-bf.pdf) — guia-a93fc755b8c0a60c7e02; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 150-2019/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2019/150-2019.pdf) — guia-9c05de33eb71a7db734d; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 152-2015-SUNAT](https://www.sunat.gob.pe/legislacion/superin/2015/152-2015.pdf) — guia-df0ca8d173ab2893f7c1; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 155-2017/SUNAT](https://cpe.sunat.gob.pe/sites/default/files/inline-images/RS%20155-2017-SUNAT%20sin%20anexos.pdf) — guia-6a097fdff2ee9c5b2eb9; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 155-2017/SUNAT](https://cpe.sunat.gob.pe/sites/default/files/inline-images/RS_155-2017-SUNAT_sin_anexos.pdf) — guia-c5054396c07ccaa9abf5; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 159-2017/SUNAT](https://cpe.sunat.gob.pe/sites/default/files/inline-images/RS%20159-2017-SUNAT_0.pdf) — guia-28f3a10ef36e59e48043; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 159-2017/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2017/159-2017.pdf) — guia-9e03d3c4e6da079799c1; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 173-2008/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2008/173.pdf) — guia-5744cdb90534157ee0a7; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 181-2018/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2018/181-2018.pdf) — guia-cccfed454e0446ed47d7; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 182-2010/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2010/182-10.pdf) — guia-e0edd1e893c21952b2b1; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 188-2010/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2010/188-10.pdf) — guia-0318c086c5d1397172f0; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 193-2020/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2020/193-2020.pdf) — guia-967fcac57c0a3a57172c; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 195-2012/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2012/195-2012.pdf) — guia-c07cafc37cc5c2967f43; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 198-2015/SUNAT.](https://www.sunat.gob.pe/legislacion/superin/2015/198-2015.pdf) — guia-bd264cddd8fdcfc5d11a; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 208-2016/SUNAT](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/rs-208-2016-sunat-simplificacion-tramites-ruc_0_0.pdf) — guia-ccc383911f1760737870; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 209-2010/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2010/209-10.pdf) — guia-b841c7e360203c3cb9cb; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 227-2012/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2012/227-2012.pdf) — guia-cab0b7620145cab2d4b4; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 228-2012/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2012/228-2012.pdf) — guia-e0ea34a3398fca0e7467; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 232-2023/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2023/000232-2023.pdf) — guia-4bf1f811732128bf94ae; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 233-2008/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2008/233.pdf) — guia-c1a358aedcb5215f84b8; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 240-2024/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2024/000240-2024.pdf) — guia-87acc2576dfbc14b5e7f; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 245-2013/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2013/245-2013.pdf) — guia-c2da931822daf4c17906; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 245-2017](https://www.sunat.gob.pe/legislacion/superin/2017/245-2017.pdf) — guia-4dc1fd17c5ae1f67c652; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 254-2013/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2013/254-2013.pdf) — guia-e32ab1bb5335fe3b3a05; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 257-2011/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2011/257-2011.pdf) — guia-ae9c175e315703e8c2c2; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 265-2009/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2009/265-09.pdf) — guia-1c81efbde81e5e9d4d88; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 271-2013/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2013/271-2013.pdf) — guia-1b51162534ddfeb8a308; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 279-2019/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2019/279-2019.pdf) — guia-05e92fc977cce6c80430; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 281-2022/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2022/281-2022.pdf) — guia-43eeb1f2fe642e4482b6; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 287-2017/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2017/287-2017.pdf) — guia-8602e26bdaae46267b9b; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 291-2010/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2010/291-2010.pdf) — guia-c718576b962bae01aae5; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 300-2014/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2014/300-2014.pdf) — guia-912be3de6f29545610f3; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 303-2018/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2018/303-2018.pdf) — guia-08393fdc655cdf055c6a; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 304-2024/SUNAT](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/RS%20195%202021%20SUNAT.pdf) — guia-c27e84581b80dfac2fc5; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 306-2012/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2012/306-2012.pdf) — guia-36e390d450b63725d55c; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 308-2018/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2018/308-2018.pdf) — guia-6a1d578f8e01086bbb33; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 309-2018/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2018/309-2018.pdf) — guia-5cec9e46923095238934; index-only; normativa; sin-determinar.
+- [RESOLUCIÓN DE SUPERINTENDENCIA N° 312-2017/SUNAT:](https://www.sunat.gob.pe/legislacion/superin/2017/312-2017.pdf) — guia-e826d71b2fbab1eec1f2; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 312-2018/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2018/312-2018.pdf) — guia-d51e1058a22fcabbeb60; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 315-2018/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2018/315-2018.pdf) — guia-8d4a1c73025dd4517208; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 317 -2017/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2017/317-2017.pdf) — guia-8885859f448856232718; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 335-2017/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2017/335-2017.pdf) — guia-ef49e23aee78f67a7edd; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 339-2017/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2017/339-2017.pdf) — guia-34da11484f910a693604; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 340-2017/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2017/340-2017.pdf) — guia-82cc82ef9f366869d971; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 347-2013/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2013/347-2013.pdf) — guia-35d1f581c34db3fcd2d8; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 362-2013/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2013/362-2013.pdf) — guia-cfb3b7d48eb31a28db8f; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 378-2013/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2013/378-2013.pdf) — guia-e531bcea7f70911783d4; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 386-2025/SUNAT](https://renta.sunat.gob.pe/sites/default/files/inline-files/RS%20386-2025-SUNAT.pdf) — guia-fc166eb68c36e3ac686b; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 395-2014/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2014/395-2014.pdf) — guia-a24c24abad268de73c55; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N° 40-2022/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2022/040-2022.pdf) — guia-f68eb3fc9025409702c4; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia N°155-2017/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2017/155-2017.pdf) — guia-a1af638084f6d5603788; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nª 073-2020/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2020/073-2020.pdf) — guia-ab57860df8906e6cbf2e; index-only; normativa; sin-determinar.
+- [RESOLUCIÓN DE SUPERINTENDENCIA NACIONAL ADJUNTA DE TRIBUTOS INTERNOS Nº 000025-2024-SUNAT/700000](https://cpe.sunat.gob.pe/sites/default/files/inline-files/RSNATI%20-%2025-2024-SUNAT.PDF) — guia-8ea90246437161298509; index-only; normativa; sin-determinar.
+- [RESOLUCIÓN DE SUPERINTENDENCIA NACIONAL ADJUNTA DE TRIBUTOS INTERNOS Nº 000026-2025-SUNAT/70000](https://cpe.sunat.gob.pe/sites/default/files/inline-files/RSNATI%20N.%2026-2025%20-%20El%20peruano.pdf) — guia-b4957994354631372e1f; index-only; normativa; sin-determinar.
+- [RESOLUCIÓN DE SUPERINTENDENCIA NACIONAL ADJUNTA DE TRIBUTOS INTERNOS Nº 000046-2024-SUNAT/700000](https://cpe.sunat.gob.pe/sites/default/files/inline-files/RSNATI%2046-2024.PDF) — guia-2787a7e27e39cb9cbf3e; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nº 020-2018/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2018/020-2018.pdf) — guia-1c3afce772394427d61e; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nº 052-2011/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2011/052-2011.pdf) — guia-e34fb34abbc966f05872; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nº 057-2020/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2020/057-2020.pdf) — guia-1c44937e609dbd674bd1; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nº 065-2013/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2013/065-2013.pdf) — guia-46c79a702832214df20f; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nº 068-2015-SUNAT](https://www.sunat.gob.pe/legislacion/superin/2015/068-2015.pdf) — guia-bca8b66a0786f5c6520e; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nº 086-2015/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2015/086-2015.pdf) — guia-aa16ad52210c68edda9c; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nº 11-2025/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2025/000011-2025.pdf) — guia-a377d746fc8d19c4f5df; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nº 114-2019/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2019/114-2019.pdf) — guia-803cc1bd03807332731d; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nº 117-2017/SUNAT](https://cpe.sunat.gob.pe/sites/default/files/inline-images/Resolucion%20de%20Superintendencia%20117-2017-SUNAT.pdf) — guia-8bb64506dbfa36848e43; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nº 127-2021/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2021/127-2021.pdf) — guia-fca406767a168ceb24eb; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nº 128-2025/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2025/000128-2025.pdf) — guia-cf40ad65badfc8d81e1f; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nº 132-2015/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2015/132-2015.pdf) — guia-0dcc14bd9ea3d5ab2c6f; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nº 137-2015/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2015/137-2015.pdf) — guia-36e45afe29a132765151; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nº 153-2016/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2016/153-2016.pdf) — guia-3b5443ca0647c5a9ee13; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nº 164-2018/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2018/164-2018.pdf) — guia-4f160f52a7f52f5ed21e; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nº 166-2018/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2018/166-2018.pdf) — guia-590f0bc25c4b3f458e49; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nº 182-2016](https://www.sunat.gob.pe/legislacion/superin/2016/182-2016.pdf) — guia-86716c7de4a5161c3200; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nº 185-2015/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2015/185-2015.pdf) — guia-aafba3e669b80b8c0271; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nº 192-2016/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2016/192-2016.pdf) — guia-ca726b77732d19db2d18; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nº 196-2010/SUNAT(link is external)](https://www.sunat.gob.pe/legislacion/superin/2010/196-10.pdf) — guia-928c6b5c0eb16d3a39eb; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nº 199-2015/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2015/199-2015.pdf) — guia-7521581276f6aafa159c; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nº 203-2015/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2015/203-2015.pdf) — guia-5e7e9b56fe2dbb21e584; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nº 242-2025/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2025/000242-2025.pdf) — guia-c83bff10d9e40a2f1a20; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nº 245-2013/SUNAT](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/RS%2B245_2013_SUNAT.pdf) — guia-d617f7fd77488a4f7ab2; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nº 246-2016/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2016/246-2016.pdf) — guia-8928a7cb6bd4996ea4f8; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nº 251-2012/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2012/251-2012.pdf) — guia-cad0b22a3dc3afe34fec; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nº 274-2015/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2015/274-2015.pdf) — guia-4a9c7f11c951ec27ea92; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nº 279-2012/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2012/279-2012.pdf) — guia-f0c8b36d7c22ee298a80; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nº 288-2013/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2013/288-2013.pdf) — guia-10e9eda30d52f8bba848; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nº 296-2018/SUNAT](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/296-2018.pdf) — guia-991094db2c33ff3bb16e; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nº 311-2016/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2016/311-2016.pdf) — guia-d90836a55b66126f1fbe; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nº 328-2016/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2016/328-2016.pdf) — guia-a08a6073551d76f1269b; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nº 357-2015/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2015/357-2015.pdf) — guia-75d0cbcb824f611a3e32; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nº 374-2013-SUNAT](https://www.sunat.gob.pe/legislacion/superin/2013/374-2013.pdf) — guia-cec39d0ad45a6b09209c; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nro 286-2009/SUNAT(link is external)](https://www.sunat.gob.pe/legislacion/superin/2009/286-09.pdf) — guia-afb6dd4b3128ec69bced; index-only; normativa; sin-determinar.
+- [Resolución de Superintendencia Nro. 133-2019/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2019/133-2019.pdf) — guia-d66ddeb67193d1b8ef54; index-only; normativa; sin-determinar.
+- [RESOLUCIÓN DE SUPERINTENDENCIA QUE CREA EL SISTEMA DE EMISIÓN ELECTRÓNICA MONED…](https://www.sunat.gob.pe/legislacion/superin/2017/276-2017.pdf) — guia-e8bffa3ffc6c7c51132c; index-only; normativa; sin-determinar.
+- [RESOLUCIÓN DE SUPERINTENDENDENCIA N° 097-2012/SUNAT](https://cpe.sunat.gob.pe/sites/default/files/inline-files/097-2012.pdf) — guia-a6000220429588396b19; index-only; normativa; sin-determinar.
+- [RESOLUCIÓN DE SUPERINTENDENDENCIA N° 108-2022/SUNAT](https://cpe.sunat.gob.pe/sites/default/files/inline-files/RS%20108.2022.pdf) — guia-b8fe39d0645451073d93; index-only; normativa; sin-determinar.
+- [RESOLUCIÓN DE SUPERINTENDENDENCIA N° 199-2015/SUNAT](https://cpe.sunat.gob.pe/sites/default/files/inline-files/RS%20199.2015.pdf) — guia-a7835be49bd42668970e; index-only; normativa; sin-determinar.
+- [Resolución deSuperintendencia N° 133-2017/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2017/133-2017.pdf) — guia-86a0383c4cb116bb8c88; index-only; normativa; sin-determinar.
+- [Resolución Ministerial N° 431- 2014-EF/15](https://contenido.app.sunat.gob.pe/insc/Percepciones+IGV/RM+431-2014-EF15.pdf) — guia-ef436be52a468657b53d; index-only; normativa; sin-determinar.
+- [Resolucion Super  341.pdf](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/ctrlCambios/it-01.08/Resolucion%20Super%20%20341.pdf) — guia-aebc0a2710d92d09a232; index-only; normativa; sin-determinar.
+- [Resolución: RIN-08-2015/SUNAT/5C0000](https://www.sunat.gob.pe/legislacion/procedim/despacho/resoluciones/2015/RIN-08-2015-5C0000.pdf) — guia-0d7fb0468a61be9eeef7; index-only; normativa; sin-determinar.
+- [Resumen Diario de Boletas de Venta Electrónicas y Notas Electrónicas 2.0](https://cpe.sunat.gob.pe/sites/default/files/inline-files/GUIA_Resumen_de_Boletas_11-01-2018%20%282%29_2_0%20%281%29_0.pdf) — guia-3d2aaa94612ee3e4e206; index-only; referencia; sin-determinar.
+- [RIN 02 2015 5F0000.pdf](https://www.sunat.gob.pe/legislacion/procedim/despacho/resoluciones/2015/RIN-02-2015-5F0000.pdf) — guia-a39013d8f557967763af; index-only; normativa; sin-determinar.
+- [RIN 03 2018 SUNAT 310000.pdf](https://www.sunat.gob.pe/legislacion/procedim/despacho/resoluciones/2018/RIN-03-2018-SUNAT-310000.pdf) — guia-6a0c36f372e1972c387b; index-only; normativa; sin-determinar.
+- [RIN 04 2017 SUNAT 5F0000.pdf](https://www.sunat.gob.pe/legislacion/procedim/despacho/resoluciones/2017/RIN-04-2017-SUNAT-5F0000.pdf) — guia-3df80ed8f1b021a48039; index-only; normativa; sin-determinar.
+- [RIN 10 2014 5C0000.pdf](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/instructivos/ctrlCambios/anexos/RIN-10-2014-5C0000.pdf) — guia-3e57fb3cc591285d2651; index-only; referencia; sin-determinar.
+- [RIN 14 2018 SUNAT 310000.pdf](https://www.sunat.gob.pe/legislacion/procedim/despacho/resoluciones/2018/RIN-14-2018-SUNAT-310000.pdf) — guia-0846dbde484c25010ca9; index-only; normativa; sin-determinar.
+- [RIN 18 2017 SUNAT 310000.pdf](https://www.sunat.gob.pe/legislacion/procedim/despacho/resoluciones/2017/RIN-18-2017-SUNAT-310000.pdf) — guia-c2dac5965aaf7986f524; index-only; normativa; sin-determinar.
+- [RIN 2014 SUNAT 5C0000.pdf](https://www.sunat.gob.pe/legislacion/procedim/despacho/resoluciones/2014/RIN-2014-SUNAT-5C0000.pdf) — guia-d77ef698aa31766354e9; index-only; normativa; sin-determinar.
+- [RIN N 17 2014 SUNAT 5C0000.pdf](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importacA/instructivos/ctrlCambios/it.01.12/RIN%20N%2017-2014-SUNAT-5C0000.pdf) — guia-c18af0ad6cfb46e5b340; index-only; referencia; sin-determinar.
+- [RIN-007-2017-SUNAT-5F0000](https://www.sunat.gob.pe/legislacion/procedim/despacho/resoluciones/2017/RIN-07-2017-SUNAT-5F0000.pdf) — guia-0647b5baaf962dd570ec; index-only; normativa; sin-determinar.
+- [RS 000033 2021 SUNAT 0.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/RS%20000033-2021-SUNAT_0.pdf) — guia-6c78f8e7c94d89cb88e8; index-only; normativa; sin-determinar.
+- [RS 000173 2024 ENGV.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/RS_000173-2024_ENGV.pdf) — guia-37a203ace2550d2aa2b4; index-only; normativa; sin-determinar.
+- [RS 024 2020 SUNAT.pdf](https://www.sunat.gob.pe/legislacion/procedim/despacho/resoluciones/2020/RS-024-2020-SUNAT.pdf) — guia-87944855ef781be23afe; index-only; normativa; sin-determinar.
+- [RS 080 2019 SUNAT.pdf](https://www.sunat.gob.pe/legislacion/procedim/despacho/resoluciones/2019/RS-080-2019-SUNAT.pdf) — guia-31010ee47374259f74c2; index-only; normativa; sin-determinar.
+- [RS 081 2019 SUNAT.pdf](https://www.sunat.gob.pe/legislacion/procedim/despacho/resoluciones/2019/RS-081-2019-SUNAT.pdf) — guia-7b70d9b1eed15fabddc6; index-only; normativa; sin-determinar.
+- [RS 129-2026/SUNAT](https://www.sunat.gob.pe/legislacion/superin/2026/000129-2026.pdf) — guia-bb505933dd297f2744ac; index-only; normativa; sin-determinar.
+- [RS 173 2024(ES).pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/RS%20173-2024%28ES%29.pdf) — guia-7a67b566b6e56eb0bbb4; index-only; normativa; sin-determinar.
+- [RS 294 2024 declracion compensacion IGV servicios digitales.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/RS%20294-2024%20declracion%20compensacion%20IGV%20servicios%20digitales.pdf) — guia-5bad853cff1dfa9d786b; index-only; normativa; sin-determinar.
+- [RS N. 217 2025   El Peruano.pdf](https://cpe.sunat.gob.pe/sites/default/files/inline-files/RS%20N.%20217-2025%20-%20El%20Peruano.pdf) — guia-b6c8f0725866b1bd915c; index-only; normativa; sin-determinar.
+- [RS N° 301-2018/SUNAT](https://www.sunat.gob.pe/legislacion/procedim/despacho/resoluciones/2018/RS-301-2018-SUNAT.pdf) — guia-fd6ecfc479ff103b2d2c; index-only; normativa; sin-determinar.
+- [RSN 198 2020 SUNAT.pdf](https://www.sunat.gob.pe/legislacion/procedim/despacho/resoluciones/2020/RSN-198-2020-SUNAT.pdf) — guia-5b9a7b54540466dc943e; index-only; normativa; sin-determinar.
+- [RSNAA 029 2010.pdf](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/anexos/RSNAA-029-2010.pdf) — guia-f41726ec2311b1f90929; index-only; referencia; sin-determinar.
+- [RSNAA 048 2011.pdf](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/ctrlCambios/anexos/RSNAA-048-2011.pdf) — guia-2563bc38e28d05c59926; index-only; referencia; sin-determinar.
+- [RSNAA 584 2010 SUNAT A.pdf](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/anexos/RSNAA%20584-2010-SUNAT-A.pdf) — guia-31e382e7c913e1ab2d0e; index-only; referencia; sin-determinar.
+- [RSNAA-191-2011](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/instructivos/ctrlCambios/anexos/INTA.IT.00.04/RSNAA-191-2011.pdf) — guia-cbf6213dbb2d7f8d93fa; index-only; referencia; sin-determinar.
+- [rsnati 000005 2024.pdf](https://www.sunat.gob.pe/legislacion/superAdjunta/rsnati/2024/rsnati-000005-2024.pdf) — guia-c0a0929ef58fee18e74e; index-only; referencia; sin-determinar.
+- [rsnati 000017 2024.pdf](https://www.sunat.gob.pe/legislacion/superAdjunta/rsnati/2024/rsnati-000017-2024.pdf) — guia-fdcc6b36cba3cd855765; index-only; referencia; sin-determinar.
+- [rsnati 000028 2024.pdf](https://www.sunat.gob.pe/legislacion/superAdjunta/rsnati/2024/rsnati-000028-2024.pdf) — guia-d66cde137b1a2d6a9632; index-only; referencia; sin-determinar.
+- [RSNATI 0005-2026 (1).pdf](https://cpe.sunat.gob.pe/sites/default/files/2026-04/RSNATI%200005-2026%20%281%29.pdf) — guia-7ea9ed65d3c737b25b7d; index-only; referencia; sin-determinar.
+- [RSNATI N. 0019-2026.pdf](https://cpe.sunat.gob.pe/sites/default/files/2026-04/RSNATI%20N.%200019-2026_2.pdf) — guia-b5aca686ce799e2c0afc; index-only; referencia; sin-determinar.
+- [RSNATI N° 000003-2025-SUNAT/700000](https://emprender.sunat.gob.pe/sites/default/files/inline-files/rsnati-000003-2025.pdf) — guia-538a7d61d2d56728b2df; index-only; referencia; sin-determinar.
+- [RSNATI N° 000028-2024-SUNAT/700000](https://emprender.sunat.gob.pe/sites/default/files/inline-files/rsnati-000028-2024_1.pdf) — guia-a2fb1659c840b2f6b293; index-only; referencia; sin-determinar.
+- [RSNATI N° 013-2017-SUNAT/700000](https://emprender.sunat.gob.pe/sites/default/files/inline-files/rsnati-013-2017.pdf) — guia-5d0339af5f525b26d7e2; index-only; referencia; sin-determinar.
+- [Rutas y Plazos](https://www.aduanet.gob.pe/operatividadAduana/trabajoLinea/tai/rutasPlazos.pdf) — guia-5d7dde0f2360fc7c5d94; index-only; referencia; sin-determinar.
+- [RVIE - Aceptar propuesta y consultas](https://cpe.sunat.gob.pe/sites/default/files/inline-files/RVIE_0.pdf) — guia-2146a732566dff0ed5f0; index-only; referencia; sin-determinar.
+- [SEMT   GC 0.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/SEMT%20-%20GC_0.pdf) — guia-6f94f9a0bde920dde504; index-only; referencia; sin-determinar.
+- [Servicio “Mis Declaraciones y Pagos” en SUNAT Virtual](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/ayudas_Funcionalidades_0_ccv.pdf) — guia-120cfec603b7c9b4275b; index-only; referencia; sol-web.
+- [SIRE - Aceptar propuesta](https://cpe.sunat.gob.pe/sites/default/files/inline-files/SIRE%20ManualPracticoSOL_Propuesta_1.pdf) — guia-4ce85e69d0f58f7fac13; index-only; referencia; sin-determinar.
+- [SIRE - Complementar propuesta](https://cpe.sunat.gob.pe/sites/default/files/inline-files/SIRE-ManualPracticoSOL_Complementar_0.pdf) — guia-176b0feb7d3150025316; index-only; referencia; sin-determinar.
+- [SIRE - Desktop](https://cpe.sunat.gob.pe/sites/default/files/2026-05/SIRE%20-%20Desktop.pdf) — guia-3d34a221645e197f2b48; index-only; referencia; escritorio.
+- [sistema de detracciones](https://contenido.app.sunat.gob.pe/insc/Detracciones/Sistema_Detracciones_Cambios_2014.pdf) — guia-f7a988eaa8cc93ecc88b; index-only; referencia; sin-determinar.
+- [Sistema de Embargos por medios telematicos.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Sistema%20de%20Embargos%20por%20medios%20telematicos.pdf) — guia-04af54ec32343ac719f1; index-only; referencia; sin-determinar.
+- [SISTEMA DE EMISIÓN ELECTRÓNICA CONSUMIDOR FINAL Y COMPROBANTE DE PAGO ELECTRÓNI…](https://www.sunat.gob.pe/legislacion/superin/2017/141-2017.pdf) — guia-aac27bdff888c2e2b303; index-only; referencia; sin-determinar.
+- [solicitud pago con error 2.pdf](https://emprender.sunat.gob.pe/sites/default/files/inline-files/solicitud_pago_con_error%202.pdf) — guia-97d2c1b6ff3f01d910ef; index-only; referencia; sin-determinar.
+- [SSCO ENCARTE final.pdf](https://emprender.sunat.gob.pe/sites/default/files/inline-files/SSCO-ENCARTE%20final.pdf) — guia-6afdcddfdd8e148709ca; index-only; referencia; sin-determinar.
+- [sujeto sincapacidad encarte2.pdf](https://emprender.sunat.gob.pe/sites/default/files/inline-files/sujeto_sincapacidad_encarte2.pdf) — guia-3f8f42898b50441700dd; index-only; referencia; sin-determinar.
+- [SunatPei.dmg](https://cpe.sunat.gob.pe/sites/default/files/inline-files/sunatpei.dmg_.PEI%20PARA%20MACOS.pdf) — guia-89f3217caa2b3485236d; index-only; referencia; sin-determinar.
+- [SunatPei.exe](https://cpe.sunat.gob.pe/sites/default/files/inline-files/sunatpei.exe_.PEI%20PARA%20WINDOWS_0.pdf) — guia-143f6a244e9bcc850b61; index-only; referencia; sin-determinar.
+- [Superintendence Resolution 000041-2022/SUNAT](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Superintendence%20Resolution%20%20041-2022.pdf) — guia-2d10deca5d2bcb1c600d; index-only; referencia; sin-determinar.
+- [Superintendence Resolution 000278-2022/SUNAT](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Superintendence%20Resolution%20278-2022.pdf) — guia-5ab7acd9aebfc7a784ee; index-only; referencia; sin-determinar.
+- [Superintendence Resolution 185-2019/SUNAT](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Superintendence%20Resolution%20185-2019.pdf) — guia-5977e2da9c03b8714f32; index-only; referencia; sin-determinar.
+- [Superintendency Resolution 00010-2025/SUNAT](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/RS%20000010-2025_ENG%20%281%29_0.pdf) — guia-8577da465cde111ae7f1; index-only; normativa; sin-determinar.
+- [Supreme Decree 003-2019-EF](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Supreme%20Decree%20003-2019-EF.pdf) — guia-2b27810207d723dceb94; index-only; referencia; sin-determinar.
+- [Supreme Decree 003-2019-EF](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Errata%20of%20Supreme%20Decree%20003-2019-EF.pdf) — guia-cd17e48b69398912a736; index-only; referencia; sin-determinar.
+- [Tabla 1.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Tabla%201.pdf) — guia-245d4b27c9c8a067859a; index-only; referencia; sin-determinar.
+- [Tabla 2.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Tabla%202.pdf) — guia-2ec8c90685b14b051ebb; index-only; referencia; sin-determinar.
+- [Tabla de Infracciones 0.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Tabla_de_Infracciones_0.pdf) — guia-2a5228afccacf14131de; index-only; referencia; sin-determinar.
+- [Tabla de Valores Referenciales 2025](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/RM%20021-2025-EF-15.pdf) — guia-e22735341d5904d3a61c; index-only; referencia; sin-determinar.
+- [TI 004 compressed.pdf](https://emprender.sunat.gob.pe/sites/default/files/inline-files/TI_004_compressed.pdf) — guia-1f1a863031be79f45ff4; index-only; referencia; sin-determinar.
+- [TP 009 (2) compressed.pdf](https://emprender.sunat.gob.pe/sites/default/files/inline-files/TP_009%20%282%29_compressed.pdf) — guia-d95d41db80662e06808e; index-only; referencia; sin-determinar.
+- [vencimiento.pdf](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/vencimiento.pdf) — guia-f6a580bc3dce87be0b49; index-only; referencia; sin-determinar.
+
+## documento
+
+- [_**Anexo 2**_](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/DESPA-IT.01.14/Anexo_2_Mod_216_2023u.doc) — guia-5140481efae5ac10e03b; index-only; referencia; sin-determinar.
+- [_**Tabla N°5**_](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/DESPA-IT.01.14/Anexo1Tabla5u.doc) — guia-1de2c5e8b37ad0f22a3c; index-only; referencia; sin-determinar.
+- [_Imágenes_](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTAIT0114/Anexo3.doc) — guia-c3197fac05f844d07931; index-only; referencia; sin-determinar.
+- [_Tabla N° 1 Nombre del Producto_](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importacA/instructivos/docAnexos/INTAIT0114/Anexo1Tablas%201,2,4,5,6modificadas.doc) — guia-eb97ee601837bcf48047; index-only; referencia; sin-determinar.
+- [_Tabla N°_](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/DESPA-IT.01.14/Anexo_1_TABLA_4_Mod_216_2023u.doc) — guia-598ded09a42820a8126e; index-only; referencia; sin-determinar.
+- [- De Ingreso](https://www.sunat.gob.pe/operatividadaduanera/sda/preguntas/faq-SDA-Importacion.xls) — guia-819c2114688f0101f573; index-only; referencia; sin-determinar.
+- [- De Manifiesto de Carga](https://www.sunat.gob.pe/operatividadaduanera/sda/preguntas/faq-SDA-ManifiestoCarga.xls) — guia-153e2a5c7067fb5a5cc1; index-only; referencia; sin-determinar.
+- [- Del Registro Electrónico del personal OCE](https://www.sunat.gob.pe/operatividadaduanera/sda/preguntas/faq-SDA-OCE.doc) — guia-03795124c0d521b5e51d; index-only; referencia; sin-determinar.
+- [- Estructura del DEP](https://www.sunat.gob.pe/operatividadaduanera/importaFacil/EstructuraDEP.xls) — guia-07be3e26848e85da0097; index-only; referencia; sin-determinar.
+- [- Solicitud de Fraccionamiento](https://www.sunat.gob.pe/operatividadaduanera/fraccionamiento/solicitudfraccart36CT_instrucciones.xls) — guia-aa6aab040bb8a06ab193; index-only; referencia; sin-determinar.
+- [“Anexo A Validaciones Aplicación Cliente”](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Anexo%20A_Validaciones%20Aplicaci%C3%B3n%20Cliente_0.xlsx) — guia-61ac7e50b5bee2aeca1a; index-only; referencia; sin-determinar.
+- [(ver Anexo 1)](https://www.sunat.gob.pe/orientacionaduanera/pagosgarantias/anexos/anexo1.doc) — guia-81913967a4e95991ec76; index-only; referencia; sin-determinar.
+- [**_Tabla N° 2_** _**Tipo**_](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/DESPA-IT.01.14/Anexo_1_TABLA_2_Mod_216_2023u.doc) — guia-05f70f2c3cfdaca604b2; index-only; referencia; sin-determinar.
+- [**_Tabla N° 4_**](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/DESPA-IT.01.14/Anexo_1_TABLA_4_Mod_216_2023u.docx) — guia-65852226e39a6aa4733d; index-only; referencia; sin-determinar.
+- [**_Tabla N° 6_** _**Consumo Agua**_](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/DESPA-IT.01.14/Anexo_1_TABLA_6_Mod_216_2023u.doc) — guia-4ca2e6c88e8814336a30; index-only; referencia; sin-determinar.
+- [**abla N° 10**](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.17/ANEXO1Tabla10Derogado.doc) — guia-82d34af908753d3e553f; index-only; referencia; sin-determinar.
+- [**Fuente de movimiento**.](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.17/ANEXO1Tabla9u.doc) — guia-bb1cd0efcdf22ce78658; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/01/2018 AL 31/01/2018**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/enero_2018_spot_hidrob_0_0.xls) — guia-5d842227485474c4c23f; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/01/2019 AL 31/01/2019**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Enero_2019_spot_hidrob_0_0.xls) — guia-4b31e6bd03d371bb4c4a; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/01/2020 AL 31/01/2020**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Enero_2020_spot_hidrob_0_0.xlsx) — guia-7e9e5783541f822fbcbc; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/01/2021 AL 31/01/2021**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Enero%202021_0.xlsx) — guia-a559f6c4cc9532ebc224; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/01/2022 AL 31/01/2022**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Enero_2022_0.xlsx) — guia-b98eaed545e92d9fd88e; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/01/2023 AL 31/01/2023**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Enero_2023_0.xlsx) — guia-9074299f50dad4ceef66; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/01/2024 AL 31/01/2024**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Ener_2024_0.xlsx) — guia-c99ca5337d6db4524ae1; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/01/2025 AL 31/01/2025**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Enero_2025_1.xlsx) — guia-21f7d5e6c99ffedb9090; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/01/2026 AL 31/01/2026**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Enero%202026.xlsx) — guia-74b65baa0d867b3dee6c; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/02/2018 AL 28/02/2018**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/febrero_2018_spot_hidrob_0_0.xls) — guia-befd14f6efc747e7d943; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/02/2019 AL 28/02/2019**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Febrero_2019_spot_hidrob_1.xls) — guia-0565ebd686d13a95b98c; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/02/2020 AL 29/02/2020**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Febrero2020_spot_hidrob_0_0.xlsx) — guia-62bae0edc1907d8f8eb3; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/02/2021 AL 28/02/2021**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Febrero%202021_0.xlsx) — guia-d952094ec4659c27d23d; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/02/2022 AL 28/02/2022**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Febrero_2022.xlsx) — guia-7c2151154b25f5209e68; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/02/2023 AL 28/02/2023**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Febrero%202023_0.xlsx) — guia-155109d4829da962d492; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/02/2024 AL 29/02/2024**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Feb_2024.xlsx) — guia-184f6e3372281cf840f2; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/02/2025 AL 28/02/2025**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Febrero_2025.xlsx) — guia-28c52a4e36db2c77fd53; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/02/2026 AL 28/02/2026**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Febrero2026.xlsx) — guia-149b7c5275dc5ddacb65; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/03/2018 AL 31/03/2018**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/marzo_2018_spot_hidrob_0_0.xls) — guia-933c8826987b38520f55; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/03/2019 AL 31/03/2019**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Marzo_2019_spot_hidrob_0_0.xls) — guia-4362908c62b42daa9473; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/03/2020 AL 31/03/2020**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Marzo_2020_spot_hidrob_0_0.xlsx) — guia-2dc94b7976227c028b14; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/03/2021 AL 31/03/2021**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Marzo%202021.xlsx) — guia-4063ce003f885e17613b; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/03/2022 AL 31/03/2022**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Marzo_2022_0.xlsx) — guia-6efee94f39cf1946711e; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/03/2023 AL 31/03/2023**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Marzo_2023.xlsx) — guia-52d1a40a8585a19aa12e; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/03/2024 AL 31/03/2024**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Marzo_2024.xlsx) — guia-ce92f4dfb0c6b2e2c7c8; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/03/2025 AL 31/03/2025**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Marzo%202025.xlsx) — guia-3e6b5833b3ca76df0872; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/03/2026 AL 31/03/2026**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Marzo2026.xlsx) — guia-871a2f6b5067a02dbaa8; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/04/2018 AL 30/04/2018**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/abril_2018_spot_hidrob_0_0.xls) — guia-31bb04e9602c4d135ee9; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/04/2019 AL 30/04/2019**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Abril_2019_spot_hidrob_0_0.xls) — guia-544fc80d21fdc636e0de; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/04/2020 AL 30/04/2020**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Mayo_2020_0_0.xlsx) — guia-f7bce27e5594f53cdd2b; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/04/2021 AL 30/04/2021**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Abril2021.xlsx) — guia-81bdd9fdf3dd4f262f53; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/04/2022 AL 30/04/2022**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Abril_2022_0.xlsx) — guia-5f485ccc531c768b2934; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/04/2023 AL 30/04/2023**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Abril_2023_0.xlsx) — guia-04d129c6e6bc24714b3c; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/04/2024 AL 30/04/2024**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Abril_2024_0.xlsx) — guia-ab9d9a23c313849df966; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/04/2025 AL 30/04/2025**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Abril2025.xlsx) — guia-3cd01d1aad8ce270a23e; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/04/2026 AL 30/04/2026**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Abril2026.xlsx) — guia-dd9dbabd245e21a65a91; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/05/2018 AL 31/05/2018**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/mayo_2018_spot_hidrob_0_0.xls) — guia-44ca8fb16b05265f5418; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/05/2019 AL 31/05/2019**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Mayo_2019_spot_hidrob_0_0.xls) — guia-5b05c24791f5b2398ab4; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/05/2020 AL 31/05/2020**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Mayo_2020_0_1.xlsx) — guia-226ae90540280966ad10; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/05/2022 AL 31/05/2022**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Mayo_2022_1.xlsx) — guia-1b8600e7c463508f0144; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/05/2023 AL 31/05/2023**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Mayo_2023.xlsx) — guia-12c5ecfffcd098a90d28; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/05/2024 AL 31/05/2024**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Mayo_2024.xlsx) — guia-465957110d03eba6310f; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/05/2025 AL 31/05/2025**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Mayo2025.xlsx) — guia-8d4b96638073379bc629; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/05/2026 AL 31/05/2026**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Mayo2026.xlsx) — guia-43abc028648f7148389f; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/06/2018 AL 30/06/2018**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/junio_2018_spot_hidrob_0_0.xls) — guia-5d9b026174931e80ffcb; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/06/2019 AL 30/06/2019**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Junio_2019_spot_hidrob_0_0.xls) — guia-f13da91c4a9f1bd33cc5; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/06/2020 AL 30/06/2020**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Junio_2020_0_0.xlsx) — guia-bebe3de1d57450a1819c; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/06/2021 AL 30/06/2021**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Junio2021.xlsx) — guia-f9caac52bd3091988c21; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/06/2022 AL 30/06/2022**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Junio_2022_1.xlsx) — guia-fd7ea595ae1569c41de7; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/06/2023 AL 30/06/2023**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Junio_2023.xlsx) — guia-ad8f36478984d6b6eb2f; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/06/2024 AL 30/06/2024**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Junio_2024.xlsx) — guia-79d13f4ed126c3374a98; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/06/2025 AL 30/06/2025**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Junio2025.xlsx) — guia-5e9e7c6518d8a172ba7c; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/06/2026 AL 30/06/2026.**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Junio_2026.xlsx) — guia-8ff8f5f5f41d267ece37; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/07/2018 AL 31/07/2018**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/julio_2018_spot_hidrob_0_0.xls) — guia-2afbb3d454f65d0453f8; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/07/2019 AL 31/07/2019**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Julio_2019_spot_hidrob_0_0.xls) — guia-cbd415944cd27f21dd6d; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/07/2021 AL 31/07/2021**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Julio2021_0.xlsx) — guia-c7b748d9eeb32b1c9208; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/07/2022 AL 31/07/2022**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Julio_2022_0.xlsx) — guia-da011b4b2ce12016b91e; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/07/2023 AL 31/07/2023**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Julio_2023_6.xlsx) — guia-b50cb72e2e9239d99e8e; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/07/2024 AL 31/07/2024**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Julio_2024.xlsx) — guia-ed1f2eeb1e89305f391c; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/07/2025 AL 31/07/2025**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Julio2025.xlsx) — guia-e9e99c91f77ef5a54b51; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/07/2026 AL 31/07/2026**](https://cdn.www.gob.pe/uploads/document/file/10244003/702986-lista-recursos-hidrobiologicos-julio2026.xlsx?v=1783029416) — guia-37581287c17e5eb0423c; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/08/2018 AL 31/08/2018**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/agosto_2018_spot_hidrob_0_0.xls) — guia-a5984939314d4b17817e; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/08/2019 AL 31/08/2019**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Agosto_2019_spot_hidrob_0_0.xls) — guia-32f4970621fb77543eae; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/08/2021 AL 31/08/2021**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Agosto2021_0.xlsx) — guia-ca84b93f15d9b23b72bf; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/08/2022 AL 31/08/2022**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Agosto_2022_1.xlsx) — guia-0d98f6499301938ad027; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/08/2023 AL 31/08/2023**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Agosto_2023_0.xlsx) — guia-2c74d84f2c2b1c6f1ebf; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/08/2024 AL 31/08/2024**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Agosto_2024.xlsx) — guia-0c03fd2bcbef1252f16e; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/08/2025 AL 31/08/2025**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Agosto2025.xlsx) — guia-4f6530815e89069ae8bd; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/08/2026 AL 31/08/2026**](https://orientacion.sunat.gob.pe/sites/default/files/2026-08/Agosto_2026.xlsx) — guia-168f67c2bb96c9da6929; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/09/2018 AL 30/09/2018**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Setiemb_2018_spot_hidrob_0_0.xls) — guia-f9db38016363e3d990a8; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/09/2019 AL 30/09/2019**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Setiembre_2019_spot_hidrob_0_0.xls) — guia-cb9264396333849db8f4; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/09/2021 AL 30/09/2021**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Setiembre2021_0.xlsx) — guia-f65b4264de2e9fa70d67; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/09/2022 AL 30/09/2022**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Setiembre_2022_1.xlsx) — guia-74bf7c67b69c427486f3; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/09/2023 AL 30/09/2023**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Setiembre_2023_1.xlsx) — guia-5433c05d7f156899aed1; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/09/2024 AL 30/09/2024**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Setiemb_2024.xlsx) — guia-a5c8a88a20afabc16394; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/09/2025 AL 30/09/2025**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Set2025.xlsx) — guia-d4e5cd43f5de4213a959; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/09/2026 AL 30/09/2026**](https://orientacion.sunat.gob.pe/sites/default/files/2026-08/Setiembre%202026.xlsx) — guia-a8ba73277d288fec5075; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/10/2018 AL 31/10/2018**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Octubre_2018_spot_hidrob_0_0.xls) — guia-a4c9b052dc4a02351afb; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/10/2019 AL 31/10/2019**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Octubre_2019_spot_hidrob_0_0.xls) — guia-de09f1ed5caaf283526e; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/10/2021 AL 31/10/2021**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Octubre2021_0.xlsx) — guia-647c6e61b34a32fae88b; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/10/2022 AL 31/10/2022**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Octubre%202022_2.xlsx) — guia-dc4aec72e75c09fd225c; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/10/2023 AL 31/10/2023**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Octubre_2023_0.xlsx) — guia-34567cfc7e0847c66030; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/10/2024 AL 31/10/2024**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Octubre_2024.xlsx) — guia-7546c06def25be2f83ac; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/10/2025 AL 31/10/2025**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Octub_2025.xlsx) — guia-4ca455c331cc24dda0ea; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/10/2026 AL 31/10/2026**](https://orientacion.sunat.gob.pe/sites/default/files/2026-10/Octubre2026.xls) — guia-31146176a946e2e6df9a; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/11/2018 AL 30/11/2018**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Noviembre_2018_spot_hidrob_0_0.xls) — guia-4c6b062110190832f496; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/11/2019 AL 30/11/2019**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Noviembre_2019_spot_hidrob_0_0.xls) — guia-58735b3818697ce34da8; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/11/2021 AL 30/11/2021**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Noviemb_2021_0.xlsx) — guia-b3893fe2169d59033ed1; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/11/2022 AL 30/11/2022**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Noviembre_2022_0.xlsx) — guia-bd088857c2ff7e6d1dfd; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/11/2023 AL 30/11/2023**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Noviembre_2023_1.xlsx) — guia-b8a757961bc37d63ca27; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/11/2024 AL 30/11/2024**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Noviemb_2024.xlsx) — guia-7102a08e7eefeab6cf89; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/11/2025 AL 30/11/2025**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Noviemb2025.xlsx) — guia-7911d14997761d128d2a; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/12/2018 AL 31/12/2018**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Diciembre_2018_spot_hidrob_0_0.xls) — guia-a9fd195cb4ea6bdc459d; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/12/2019 AL 31/12/2019**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Diciembre_2019_spot_hidrob_0_0.xls) — guia-adeb39689d5034ee60cc; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/12/2021 AL 31/12/2021**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Dic2021_0.xlsx) — guia-95136a27cbef3561b2bc; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/12/2022 AL 31/12/2022**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Diciembre_2022_1.xlsx) — guia-d5242a1eb25739ce836b; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/12/2023 AL 31/12/2023**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Diciembre_2023_0.xlsx) — guia-2ef4a7323613cfd2c307; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/12/2024 AL 31/12/2024**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Diciemb%202024.xlsx) — guia-16b9f5158048ae2c9302; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO 01/12/2025 AL 31/12/2025**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Diciembre%202025.xlsx) — guia-ac71e4ac27788dbad844; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/01/2012 AL 31/01/2012**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/enero_2012_spot_hidrob_0_0.xls) — guia-051016411caf3cef34c6; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/01/2013 AL 31/01/2013**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/enero_2013_spot_hidrob_0_0.xls) — guia-65d064b47aba06812c91; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/01/2014 AL 31/01/2014**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/enero_2014_spot_hidrob.xls) — guia-8e3e8ac45f792666e399; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/01/2015 AL 31/01/2015**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/enero_2015_spot_hidrob.xls) — guia-32450e10694a420b096b; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/01/2016 AL 31/01/2016**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/enero_2016_spot_hidrob_0_0.xls) — guia-a80388e491de6eec4477; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/01/2017 AL 31/01/2017**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/enero_2017_spot_hidrob_0_0.xls) — guia-08ab7cee1a9520d9394b; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/02/2012 AL 29/02/2012**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/feb_2012_spot_hidrob_0_0.xls) — guia-c145888f9255725d6a4f; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/02/2013 AL 28/02/2013**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Febrero2013_spot_hidrob_0_0.xls) — guia-a403b67511533492f499; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/02/2014 AL 28/02/2014**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/feb_2014_spot_hidrob.xls) — guia-3b05c2ce47cd2007d5d6; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/02/2015 AL 28/02/2015**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/febrero_2015_spot_hidrob.xls) — guia-abb6694258cece3735cd; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/02/2016 AL 29/02/2016**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/febrero_2016_spot_hidrob_0_0.xls) — guia-1e82b4b6d1e2bd52baa0; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/02/2017 AL 28/02/2017**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/febrero_2017_spot_hidrob_0_0.xls) — guia-57ded6525ce3b62b17e8; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/03/2012 AL 31/03/2012**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/mar_2012_spot_hidrob_0_0.xls) — guia-bf82a297c5c5473ed828; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/03/2013 AL 31/03/2013**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/marzo_2013_spot_hidrob_0_0.xls) — guia-b19ad3b4211ad908e266; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/03/2014 AL 31/03/2014**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Marz_2014_Spot_Hidrobiologico.xls) — guia-c4325db61964857103a5; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/03/2015 AL 31/03/2015**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/marzo_2015_spot_hidrob.xls) — guia-b6f628a8662f5252efc5; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/03/2016 AL 31/03/2016**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/marzo_2016_spot_hidrob_0_0.xls) — guia-fa621b1372f8e10f9e25; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/03/2017 AL 31/03/2017**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/marzo_2017_spot_hidrob_0_0.xls) — guia-a749f5ca626f2d861c87; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/04/2012 AL 30/04/2012**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/abril_2012_spot_hidrob_0_0.xls) — guia-8d504f5c089cf8754354; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/04/2013 AL 30/04/2013**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/abril_2013_spot_hidrob.xls) — guia-0290d9e50276c2c7a6df; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/04/2014 AL 30/04/2014**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Abr_2014_%2BSpot_Hidrobiologicos.xls) — guia-314fb573da701b3d1adf; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/04/2015 AL 30/04/2015**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/abril_2015_spot_hidrob.xls) — guia-573a0c0a41c7af5ab1e6; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/04/2016 AL 30/04/2016**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/abril_2016_spot_hidrob_1_0.xls) — guia-c4ee98664c75428e2fb7; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/04/2017 AL 30/04/2017**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/abril_2017_spot_hidrob_0_0.xls) — guia-c2904beea5219b429d94; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/05/2012 AL 31/05/2012**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/mayo_2012_spot_hidrob_0_0.xls) — guia-92bb6ebbfa270f6c251c; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/05/2013 AL 31/05/2013**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/mayo_2013_spot_hidrob..xls) — guia-7af85a2e0af6a5b6d3df; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/05/2014 AL 31/05/2014**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/mayo_2014_spot_hidrob.xls) — guia-0eb7c84ef0e6a00a3f7a; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/05/2015 AL 31/05/2015**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/mayo_2015_spot_hidrob.xls) — guia-29ce21b5030d5af4902d; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/05/2016 AL 31/05/2016**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/mayo_2016_spot_hidrob_0_0.xls) — guia-87835a5b95f818894858; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/05/2017 AL 31/05/2017**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/mayo_2017_spot_hidrob_0_0.xls) — guia-f45de857b0a4a67cdbc4; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/06/2012 AL 30/06/2012**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/junio_2012_spot_hidrob_0_0.xls) — guia-c04d1bc144c729ef247d; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/06/2013 AL 30/06/2013**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/junio_2013_spot_hidrob.xls) — guia-4ee01a706a84424b93e6; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/06/2014 AL 30/06/2014**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/junio_2014_spot_hidrob.xls) — guia-9fe58e70b8e7cb0eafc1; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/06/2015 AL 30/06/2015**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/junio_2015_spot_hidrob.xls) — guia-0aaa503bade65547939f; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/06/2016 AL 30/06/2016**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/junio_2016_spot_hidrob_0_0.xls) — guia-db3f7f03478d134ac685; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/06/2017 AL 30/06/2017**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/junio_dosmildiecisiete_0_0.xls) — guia-d105701e826a7653d2f5; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/07/2012 AL 31/07/2012**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/julio_2012_spot_hidrob_0_0.xls) — guia-da5e88de6f2cc41862e0; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/07/2013 AL 31/07/2013**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/julio_2013_spot_hidrob.xls) — guia-4320f8afce809dfb7b59; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/07/2014 AL 31/07/2014**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/julio_2014_spot_hidrob.xls) — guia-f3564947c971aecfc2fe; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/07/2015 AL 31/07/2015**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/julio_2015_spot_hidrob%20%281%29.xls) — guia-efef8f6fd11ac49a3148; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/07/2016 AL 31/07/2016**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/julio_2016_spot_hidrob_0_0.xls) — guia-ec64aae4b6deae89448b; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/07/2017 AL 31/07/2017**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Julio2017.xlsx) — guia-56b20a1b34c9d9c9599e; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/08/2012 AL 31/08/2012**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/agosto_2012_spot_hidrob_0_0.xls) — guia-77621c89e7fb7c1ec4a6; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/08/2013 AL 31/08/2013**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/agosto_2013_spot_hidrob.xls) — guia-943dfa09e32e1a7bf11e; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/08/2014 AL 31/08/2014**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/agosto_2014_spot_hidrob.xls) — guia-376e63adfca7d146c2e6; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/08/2015 AL 31/08/2015**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/agosto_2015_spot_hidrob.xls) — guia-cba968d98430c90bfe19; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/08/2016 AL 31/08/2016**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/agosto_2016_spot_hidrob_0_1.xls) — guia-1ef343d32fa6b5624e7c; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/08/2017 AL 31/08/2017**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/agosto_2017_spot_hidrob_0_0.xls) — guia-8f67c2d6261892c8c4fd; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/09/2012 AL 30/09/2012**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/setiembre_2012_spot_hidrob_0_0.xls) — guia-1b12f9246df742064d47; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/09/2013 AL 30/09/2013**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/setiembre_2013_spot_hidrob.xls) — guia-a938e976b5b61ef66738; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/09/2014 AL 30/09/2014**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/set_2014_spot_hidrob.xls) — guia-51b6ce514887d9a03774; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/09/2015 AL 30/09/2015**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/setiembre_2015_spot_hidrob.xls) — guia-5c93bbdecc4390f0a96f; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/09/2016 AL 30/09/2016**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/set2016_0_0.xls) — guia-49d4b80fefb474f893de; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/09/2017 AL 30/09/2017**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/setiembre_2017_spot_hidrob_0_0.xls) — guia-39e250e28dfc23adc5c5; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/10/2012 AL 31/10/2012**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/octubre_2012_spot_hidrob_0_0.xls) — guia-0e37efac04256f943c81; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/10/2013 AL 31/10/2013**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/octubre_2013_spot_hidrob.xls) — guia-55b52f460c9115b144d6; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/10/2014 AL 31/10/2014**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/oct_2014_spot_hidrob.xls) — guia-a1bbff92689b22d977f7; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/10/2015 AL 31/10/2015**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/octubre_2015_spot_hidrob.xls) — guia-b5e3cef148aed3f7f48d; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/10/2016 AL 31/10/2016**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/octubre_2016_spot_hidrob_0_0.xls) — guia-be054e9a07672b8e3078; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/10/2017 AL 31/10/2017**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/octubre_2017_spot_hidrob_0_0.xls) — guia-8676ea753c36f9f2a298; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/11/2012 AL 30/11/2012**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Noviemb_2012.xls) — guia-2f4ad2dbd1085a1bf49c; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/11/2013 AL 30/11/2013**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/noviembre_2013_spot_hidrob.xls) — guia-a273f7395d4b04b37f03; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/11/2014 AL 30/11/2014**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/nov_2014_spot_hidrob.xls) — guia-d46060df94a3683737ff; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/11/2015 AL 30/11/2015**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/noviembre2015spothidrob.xls) — guia-ada81f90ab590babfb7c; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/11/2016 AL 30/11/2016**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/noviembre_2016_spot_hidrob_0_0.xls) — guia-459f4342a01a57a61da7; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/11/2017 AL 30/11/2017**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/noviembre_2017_spot_hidrob_0_0.xls) — guia-f288cfdaeefb4dad5861; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/12/2012 AL 31/12/2012**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/diciembre_2012_spot_hidrob_0_0.xls) — guia-05c7574d590a2400d48f; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/12/2013 AL 31/12/2013**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/diciembre_2013_spot_hidrob.xls) — guia-3207669087e36af2a35f; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/12/2014 AL 31/12/2014**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/dic_2014_spot_hidrob.xls) — guia-2c4bd2cb7df37b4b754c; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/12/2015 AL 31/12/2015**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/diciembre_2015_spot_hidrob_0_0.xls) — guia-63fafb0594aeddc7a384; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/12/2016 AL 31/12/2016**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/dic-2016-spot-hidrob_0_0.xls) — guia-9bf0c1cc8633fa53fbe1; index-only; referencia; sin-determinar.
+- [**LISTADO PARA EL PERIODO: 01/12/2017 AL 31/12/2017**](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/diciembre_2017_spot_hidrob_0_0.xls) — guia-036dea8fc764c842617f; index-only; referencia; sin-determinar.
+- [**Pasos para corregir la versión 7.0 que no permite validar archivos – instalaciones anteriores al 05/02/2026**](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Pasos%20para%20corregir%20la%20versi%C3%B3n%207_REV%201_1.docx) — guia-4f2d7bb9887720d3c657; index-only; referencia; escritorio.
+- [**Q-105**](https://contenido.app.sunat.gob.pe/insc/Insumos+Quimicos+Inscrip+Registro/Actualiz+18octu2013/Formulario+F101.doc) — guia-d9df61dc7efeaac69425; index-only; referencia; sin-determinar.
+- [**Reglas de Validación DDJJ Boletos Aéreos (27/02/2026)**](https://cpe.sunat.gob.pe/sites/default/files/inline-files/AjustesValidaciones_Boleto%20Aereo_v20260227.xlsx) — guia-4fe65a0bea77681b3d1e; index-only; referencia; sin-determinar.
+- [**Tabla N° 2** Descripción del materia de la superficie exterior](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTAIT0116/Anexo1tabla2.doc) — guia-098b71db1569724582ce; index-only; referencia; sin-determinar.
+- [**Tabla N° 2** Descripción del materia de la superficie exterior](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/DESPA-IT.01.15/Anexo1Tabla2u.doc) — guia-6d8507d9107a1df5e785; index-only; referencia; sin-determinar.
+- [**Tabla N° 2** Tipo](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.14/Anexo1Tabla2.doc) — guia-487449f814d6fec4e42c; index-only; referencia; sin-determinar.
+- [**Tabla N° 2** Tipo](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/DESPA-IT.01.14/Anexo1Tabla2u.doc) — guia-c095dcf7b71140997205; index-only; referencia; sin-determinar.
+- [**Tabla N° 3 Composición del forro**](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTAIT0116/Anexo1tabla3.doc) — guia-1e984de7c5223dac1db8; index-only; referencia; sin-determinar.
+- [**Tabla N° 3**](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.12/AnexoTabla3u.doc) — guia-bc00ae0eb6a7e9f191dd; index-only; referencia; sin-determinar.
+- [**Tabla N° 3** Composición del forro](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/DESPA-IT.01.15/Anexo1Tabla3u.doc) — guia-61601cff540b098484d3; index-only; referencia; sin-determinar.
+- [**Tabla N° 4 Acabado**](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTAIT0116/Anexo1tabla4.doc) — guia-0e5558a200dd11d4af11; index-only; referencia; sin-determinar.
+- [**Tabla N° 4 Acabado**](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/DESPA-IT.01.15/Anexo1Tabla4u.doc) — guia-75b493f2a2bafc9a38de; index-only; referencia; sin-determinar.
+- [**Tabla N° 5 Accesorios**](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/DESPA-IT.01.15/Anexo1Tabla5u.doc) — guia-abb9b06c04aacb98bef8; index-only; referencia; sin-determinar.
+- [**Tabla N° 5 Accesorios**](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTAIT0116/Anexo1tabla5.doc) — guia-f1c1b31993b51c708eca; index-only; referencia; sin-determinar.
+- [**Tabla N° 6 Aplicaciones**](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTAIT0116/Anexo1tabla6modificada.doc) — guia-29a0f828fe624794c4ea; index-only; referencia; sin-determinar.
+- [**Tabla N° 6 Aplicaciones**](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/DESPA-IT.01.15/Anexo1Tabla6u.doc) — guia-341470ee43bfd10f97a8; index-only; referencia; sin-determinar.
+- [**Tabla N° 6** Consumo Agua](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/DESPA-IT.01.14/Anexo1Tabla6u.doc) — guia-595a8a88a812eb5d1ed3; index-only; referencia; sin-determinar.
+- [**Tabla N° 6** Consumo Agua](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.14/Anexo1Tabla6.doc) — guia-b6d5b60821bb4153294c; index-only; referencia; sin-determinar.
+- [**Tabla N° 7 Presentación del producto**](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTAIT0116/Anexo1tabla7.doc) — guia-a856349f987703c0b422; index-only; referencia; sin-determinar.
+- [**Tabla N° 7 Presentación del producto**](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/DESPA-IT.01.15/Anexo1Tabla7u.doc) — guia-efda7de359ad5fb8a0a2; index-only; referencia; sin-determinar.
+- [02:Conceptos Generales](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/DESPA-IT.01.11/Anexo2u.doc) — guia-251a1f936675b9b5fa44; index-only; referencia; sin-determinar.
+- [1.Solicitud de Suspensión de Levante](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/instructivos/docAnexos/INTA.IT.00.08/solicitud.doc) — guia-f3162ef655d9767892cf; index-only; referencia; sin-determinar.
+- [10 Anexo 01 Especificaciones Receptor (1).xlsx](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/10_Anexo%2001_Especificaciones%20Receptor%20%281%29.xlsx) — guia-88815bb846f10b899950; index-only; tecnico; sin-determinar.
+- [10 Anexo 02 Validaciones Receptor.xlsx](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/10_Anexo%2002_Validaciones%20Receptor.xlsx) — guia-54dcffc206ed31902ab0; index-only; referencia; sin-determinar.
+- [210 anexo1.xls](https://www.sunat.gob.pe/legislacion/superin/2004/210_anexo1.xls) — guia-d046400a0cb1fdc8c113; index-only; referencia; sin-determinar.
+- [7 2Nombres.doc](https://orientacion.sunat.gob.pe/images/imagenes/anexos/7_2Nombres.doc) — guia-0432e6238a53794efe63; index-only; referencia; sin-determinar.
+- [Anexo **0**](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTAIT0111/ANEXO%2001.doc) — guia-a6d4435479c21d0cc140; index-only; referencia; sin-determinar.
+- [Anexo 01 RIN 04DEROGADAS.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTAIT0111/Anexo%2001_RIN%2004DEROGADAS.doc) — guia-a4229cb1caad98868df3; index-only; referencia; sin-determinar.
+- [Anexo 01U.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTAIT0111/Anexo%2001U.doc) — guia-17d01e375e1d6820c97c; index-only; referencia; sin-determinar.
+- [Anexo 03](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTAIT0111/Anexo%2003.docx) — guia-1f29dca60831c6887da3; index-only; referencia; sin-determinar.
+- [Anexo 03 SDA.docx](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.11/Anexo%2003_SDA.docx) — guia-6362f23d684495ce8218; index-only; referencia; sin-determinar.
+- [anexo 045 2010.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/instructivos/docAnexos/INTA-IT.00.01/anexo-045-2010.doc) — guia-fce63d01c370b3bb3e1a; index-only; referencia; sin-determinar.
+- [Anexo 1  TABLA 1 Mod 216 2023u.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/DESPA-IT.01.14/Anexo_1_%20TABLA_1_Mod_216_2023u.doc) — guia-ca22d4277abc06a1928b; index-only; referencia; sin-determinar.
+- [Anexo 1 TABLA 1 Mod 216 2023u.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/DESPA-IT.01.14/Anexo_1_TABLA_1_Mod_216_2023u.doc) — guia-3539dffafbc9be040e86; index-only; referencia; sin-determinar.
+- [Anexo 2 :](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.17/Anexo02definiciones.doc) — guia-8d8ae79dbdf3e33ab525; index-only; referencia; sin-determinar.
+- [Anexo de la solicitud de derechos ARCO](https://www.sunat.gob.pe/orientacion/deInteres/anexo-ARCO.docx) — guia-f7b1134b296e886986be; index-only; referencia; sin-determinar.
+- [Anexo DUA FormatoAB.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/instructivos/docAnexos/INTA-IT.00.04/Anexo-DUA-FormatoAB.doc) — guia-e7d068f8627d38032671; index-only; referencia; sin-determinar.
+- [Anexo DUA FormatoC.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/instructivos/docAnexos/INTA-IT.00.04/Anexo-DUA-FormatoC.doc) — guia-8c096dfd5aa6e69bdf35; index-only; referencia; sin-determinar.
+- [anexo embarcaciones 2025 0.xlsx](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/anexo-embarcaciones-2025_0.xlsx) — guia-2bce41cc043682448f1c; index-only; referencia; sin-determinar.
+- [anexo I.xlsx](https://cpe.sunat.gob.pe/sites/default/files/inline-images/anexo_I.xlsx) — guia-e3985c9379ba7b0c9f4e; index-only; referencia; sin-determinar.
+- [anexo I.xlsx](https://cpe.sunat.gob.pe/sites/default/files/inline-images/anexo%20I.xlsx) — guia-e928f15cd525802dd12a; index-only; referencia; sin-determinar.
+- [Anexo II](https://cpe.sunat.gob.pe/sites/default/files/inline-images/anexo%20II.xlsx) — guia-afa32847e62590ea27c6; index-only; referencia; sin-determinar.
+- [Anexo II](https://cpe.sunat.gob.pe/sites/default/files/inline-images/anexo_II.xlsx) — guia-ed061a6aa33ac8d546eb; index-only; referencia; sin-determinar.
+- [Anexo III](https://cpe.sunat.gob.pe/sites/default/files/inline-images/anexo%20III.xlsx) — guia-157f95e4ef7f2bce6bdf; index-only; referencia; sin-determinar.
+- [Anexo III](https://cpe.sunat.gob.pe/sites/default/files/inline-images/anexo_III.xlsx) — guia-df647d9d3faa6e73fc15; index-only; referencia; sin-determinar.
+- [Anexo IV](https://cpe.sunat.gob.pe/sites/default/files/inline-images/anexo_IV.xlsx) — guia-3f63b1ff50e4d2965816; index-only; referencia; sin-determinar.
+- [Anexo IV](https://cpe.sunat.gob.pe/sites/default/files/inline-images/anexo%20IV.xlsx) — guia-a5b0ca990cb2f30795e5; index-only; referencia; sin-determinar.
+- [Anexo N 2](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.13/Anexo2Definiciones.doc) — guia-b1d4ecb6cb52d6d5fbae; index-only; referencia; sin-determinar.
+- [Anexo N° 1](https://orientacion.sunat.gob.pe/images/imagenes/anexos/7_1Anexo1.xls) — guia-a88308859bb2488a5619; index-only; referencia; sin-determinar.
+- [Anexo N° 2](https://orientacion.sunat.gob.pe/images/imagenes/anexos/7_3Anexo2.xls) — guia-172c2eaef8d8910c3fe5; index-only; referencia; sin-determinar.
+- [Anexo01RIN04DEROGADAS.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/DESPA-IT.01.11/Anexo01RIN04DEROGADAS.doc) — guia-dc9b1cf53132db5f144c; index-only; referencia; sin-determinar.
+- [ANEXO02.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.18/ANEXO02.doc) — guia-a3fbc7a6603158cba0a2; index-only; referencia; sin-determinar.
+- [ANEXO03.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.18/ANEXO03.doc) — guia-1f47e322fbec81039e8c; index-only; referencia; sin-determinar.
+- [ANEXO1.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.08/ANEXO1.doc) — guia-c9e2da971b898bdce8eb; index-only; referencia; sin-determinar.
+- [Anexo1tabla1.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTAIT0116/Anexo1tabla1.doc) — guia-cf331e9e599f61357e05; index-only; referencia; sin-determinar.
+- [Anexo1Tabla1.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.14/Anexo1Tabla1.doc) — guia-4d44ecaf714de87106bf; index-only; referencia; sin-determinar.
+- [ANEXO1Tabla10.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.17/ANEXO1Tabla10.doc) — guia-60b5306d4b6d8ef50b82; index-only; referencia; sin-determinar.
+- [ANEXO1Tabla11u.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.17/ANEXO1Tabla11u.doc) — guia-e249ee28e268da94b664; index-only; referencia; sin-determinar.
+- [Anexo1Tabla1u.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/DESPA-IT.01.15/Anexo1Tabla1u.doc) — guia-3c3414ebaead55debb3a; index-only; referencia; sin-determinar.
+- [Anexo1Tabla1u.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/DESPA-IT.01.14/Anexo1Tabla1u.doc) — guia-b3d9d20827423108171c; index-only; referencia; sin-determinar.
+- [ANEXO1Tabla1u.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.17/ANEXO1Tabla1u.doc) — guia-b5d4e3d5c060fe7ceaa4; index-only; referencia; sin-determinar.
+- [ANEXO1Tabla2u.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.17/ANEXO1Tabla2u.doc) — guia-f623c3d758cde05d7bcc; index-only; referencia; sin-determinar.
+- [Anexo1Tabla3.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.14/Anexo1Tabla3.doc) — guia-3054219d38fa1fd83a60; index-only; referencia; sin-determinar.
+- [Anexo1Tabla3.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importacA/instructivos/docAnexos/INTAIT0114/Anexo1Tabla3.doc) — guia-3cb3e11667c04fb96f77; index-only; referencia; sin-determinar.
+- [Anexo1Tabla3u.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/DESPA-IT.01.14/Anexo1Tabla3u.doc) — guia-d137cccba704d77624e7; index-only; referencia; sin-determinar.
+- [ANEXO1Tabla3u.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.17/ANEXO1Tabla3u.doc) — guia-a031af9e28b99a50721f; index-only; referencia; sin-determinar.
+- [Anexo1Tabla4.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.14/Anexo1Tabla4.doc) — guia-ac803f88d18a4e9545e2; index-only; referencia; sin-determinar.
+- [Anexo1Tabla4u.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/DESPA-IT.01.14/Anexo1Tabla4u.doc) — guia-bf57043ba407b7080ec2; index-only; referencia; sin-determinar.
+- [ANEXO1Tabla4u.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.17/ANEXO1Tabla4u.doc) — guia-ea8e0ea13c098e871cd8; index-only; referencia; sin-determinar.
+- [Anexo1Tabla5.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.14/Anexo1Tabla5.doc) — guia-fa0f575c4db379494fe5; index-only; referencia; sin-determinar.
+- [ANEXO1Tabla5u.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.17/ANEXO1Tabla5u.doc) — guia-d1611e9a715dc5b05255; index-only; referencia; sin-determinar.
+- [Anexo1tabla6.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTAIT0116/Anexo1tabla6.doc) — guia-23d16efcf2778ee9337b; index-only; referencia; sin-determinar.
+- [ANEXO1Tabla6u.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.17/ANEXO1Tabla6u.doc) — guia-b9d7abce1ba8a837d8ea; index-only; referencia; sin-determinar.
+- [ANEXO1Tabla7u.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.17/ANEXO1Tabla7u.doc) — guia-42ea7d4aae6db84edbc3; index-only; referencia; sin-determinar.
+- [Anexo1tabla8.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTAIT0116/Anexo1tabla8.doc) — guia-38ab997ee0c74065ee1f; index-only; referencia; sin-determinar.
+- [ANEXO1Tabla8u.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.17/ANEXO1Tabla8u.doc) — guia-c84053bc50b42af8e125; index-only; referencia; sin-determinar.
+- [Anexo1Tablas 1,2,4,5,6modificadas.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTAIT0114/Anexo1Tablas%201,2,4,5,6modificadas.doc) — guia-94948f70e489ff02a2b0; index-only; referencia; sin-determinar.
+- [Anexo2.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importacA/instructivos/docAnexos/INTAIT0114/Anexo2.doc) — guia-8a85dc98b000858243b9; index-only; referencia; sin-determinar.
+- [Anexo2.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.14/Anexo2.doc) — guia-ae1500b6e3951cfa5cd1; index-only; referencia; sin-determinar.
+- [Anexo2.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTAIT0114/Anexo2.doc) — guia-ba69c968957bb4993bd5; index-only; referencia; sin-determinar.
+- [ANEXO2.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.08/ANEXO2.doc) — guia-660cfc8e81e7c14fee3a; index-only; referencia; sin-determinar.
+- [Anexo2u.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/DESPA-IT.01.15/Anexo2u.doc) — guia-2d0846366460ad7c88a1; index-only; referencia; sin-determinar.
+- [Anexo2u.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/DESPA-IT.01.14/Anexo2u.doc) — guia-c7c1083c606ba342460f; index-only; referencia; sin-determinar.
+- [Anexo3.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.14/Anexo3.doc) — guia-5044b27e99da3d50c765; index-only; referencia; sin-determinar.
+- [Anexo3u.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/DESPA-IT.01.11/Anexo3u.doc) — guia-0fc4a4406a59abf5360a; index-only; referencia; sin-determinar.
+- [Anexo3u.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/DESPA-IT.01.15/Anexo3u.doc) — guia-692f29d42a9c2d536db6; index-only; referencia; sin-determinar.
+- [Anexo4u.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/DESPA-IT.01.15/Anexo4u.doc) — guia-90f164526ce097df8f72; index-only; referencia; sin-determinar.
+- [anexoD 117 2017 0.docx](https://cpe.sunat.gob.pe/sites/default/files/inline-files/anexoD-117-2017_0.docx) — guia-9bb0fc91b1825578f6fc; index-only; referencia; sin-determinar.
+- [Anexos DMA](https://www.aduanet.gob.pe/aduanas/operatividad/dma/listas.xls) — guia-265260a788d0376a9174; index-only; referencia; sin-determinar.
+- [Anexos PEI](https://cpe.sunat.gob.pe/sites/default/files/inline-images/Anexos_PEI.xlsx) — guia-32f1d55ec30da28d3be3; index-only; referencia; sin-determinar.
+- [Anexos PEI](https://cpe.sunat.gob.pe/sites/default/files/inline-images/Anexos%20PEI.xlsx) — guia-f2563c2a11780be3fc50; index-only; referencia; sin-determinar.
+- [anexosIM.doc](https://www.sunat.gob.pe/orientacionaduanera/incentivosmigratorios/anexosIM.doc) — guia-a365dd3680968265f698; index-only; referencia; sin-determinar.
+- [AnexoTabla2.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTAIT0112/AnexoTabla2.doc) — guia-e292cd5709beed75201c; index-only; referencia; sin-determinar.
+- [AnexoTabla2uu.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.12/AnexoTabla2uu.doc) — guia-7ff0b807a2e4e2842bb1; index-only; referencia; sin-determinar.
+- [AnexoTabla4.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTAIT0112/AnexoTabla4.doc) — guia-d06fbbe49e047e0d85bc; index-only; referencia; sin-determinar.
+- [AnexoTabla5.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTAIT0112/AnexoTabla5.doc) — guia-b6d93289e323c7ff5a16; index-only; referencia; sin-determinar.
+- [AnexoTabla7.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTAIT0112/AnexoTabla7.doc) — guia-37cefec1e48204ffb7ee; index-only; referencia; sin-determinar.
+- [Asignación de Especialistas para Reconocimiento Físico de Exportaciones](https://www.sunat.gob.pe/operatividadaduanera/atencionAduanas/deposito-Temporal/ad-maritima/formatoPrograma-ReconocimientoFisico.xls) — guia-1f3c7ef5f23f4accab96; index-only; referencia; sin-determinar.
+- [Asignación de Especialistas por Terminal de Almacenamiento](https://www.aduanet.gob.pe/operatividadAduana/atencionAduanas/reporte.xls) — guia-b8056128ac8f37ccdf16; index-only; referencia; sin-determinar.
+- [CONSULTA SERVICIO WEB.doc](https://contenido.app.sunat.gob.pe/insc/ComprobantesDePago+Electronicos/CONSULTA_SERVICIO_WEB.doc) — guia-611b65ec05b7850e6c00; index-only; tecnico; api.
+- [consultaxml.docx](https://cpe.sunat.gob.pe/sites/default/files/inline-images/consultaxml.docx) — guia-21af9549be57c185d93b; index-only; referencia; sin-determinar.
+- [Cuadro Reporte Cuentas Reportables Instituciones Financieras CRS 042021 rv.xls](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Cuadro-Reporte-Cuentas-Reportables_Instituciones-Financieras-CRS_042021_rv.xls) — guia-a20233cb9fb2e9d124f7; index-only; referencia; sin-determinar.
+- [Definiciones](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTAIT0113/Anexo2Definiciones.doc) — guia-19bd0cacd67cc5acd4cf; index-only; referencia; sin-determinar.
+- [en excel](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/formato-anexo-art62c.xls) — guia-cd6a53808d1a29bf44a7; index-only; referencia; sin-determinar.
+- [Estructura del Reemplazo RCE (7) (1).xlsx](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Estructura%20del%20Reemplazo%20RCE%20%287%29%20%281%29.xlsx) — guia-33e8ee0984b0129385b0; index-only; referencia; sin-determinar.
+- [Estructura del Reemplazo RVIE (3) (1).xlsx](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Estructura%20del%20Reemplazo%20RVIE%20%283%29%20%281%29.xlsx) — guia-08e655a7d4ac2e23b063; index-only; referencia; sin-determinar.
+- [Estructuras](https://cpe.sunat.gob.pe/sites/default/files/2026-06/Estructuras.xlsx) — guia-ee129c064fb1c78a5821; index-only; referencia; sin-determinar.
+- [formato decla.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/instructivos/docAnexos/INTA.IT.00.07/formato-decla.doc) — guia-dad306d7600ac8751960; index-only; referencia; sin-determinar.
+- [Formato Declaración Jurada del Régimen Excepcional del Impuesto a la Renta - Ley N° 32201](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Formato%20Declaraci%C3%B3n%20Jurada%20del%20R%C3%A9gimen%20Excepciona%20del%20Impuesto%20a%20la%20Renta%20-%20Ley%203220l.xlsx) — guia-c3f6dc099cee6bceb631; index-only; referencia; sin-determinar.
+- [Glosario de Términos](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTAIT0112/AnexoGlosariodeTerminos.doc) — guia-21963c7c18dd367956c2; index-only; referencia; sin-determinar.
+- [Guía de operaciones del servicio REST para envío de XML de recibos de servicios públicos](https://cpe.sunat.gob.pe/sites/default/files/inline-files/SUNAT_CPE_SSPP_TOKEN_Guia_operacion-Servicios%20%282%29_1%20%282%29.xlsx) — guia-6c10a3e15df89da9069a; index-only; tecnico; sin-determinar.
+- [horarioMesaPartes.xls](https://www.sunat.gob.pe/institucional/contactenos/horario-mesaPartes/horarioMesaPartes.xls) — guia-f3232f1616566e84b682; index-only; referencia; sin-determinar.
+- [http://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/anexos/anexo-1-ver-4-RIN-17-2017-cartilla.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/anexos/anexo-1-ver-4-RIN-17-2017-cartilla.doc) — guia-14cbe21f14e83f9f2aa5; index-only; referencia; sin-determinar.
+- [Imágenes](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importacA/instructivos/docAnexos/INTAIT0114/Anexo3.doc) — guia-af2f071c46c359e46f5b; index-only; referencia; sin-determinar.
+- [inconsistencias](https://emprender-anterior.sunat.gob.pe/archivos/11%20Inconsistencias.docx) — guia-d2e099783ae2228a6741; index-only; referencia; sin-determinar.
+- [Inmovilización Electrónica - IPCF](https://www.aduanet.gob.pe/operatividadAduana/trabajoLinea/ActaInmovilIPCF.doc) — guia-d2523725567387dadb52; index-only; referencia; app-movil.
+- [Instructivo para registrar direcciones electrónicas](https://contenido.app.sunat.gob.pe/insc/Cobranza/MANUAL_USUARIO_GC_ATC_direcciones_electronicas+v2+0+19-08-13.doc) — guia-52755a2ec35db5137cb0; index-only; referencia; sin-determinar.
+- [Listado de nuevos obligados a SEE OSE a partir del 01-01-2022](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Listado%20de%20nuevos%20obligados%20a%20OSE%2001012022%20%281%29.xlsx) — guia-631ead9d20458cf3c930; index-only; referencia; sin-determinar.
+- [Listado de nuevos obligados a utilizar el SEE OSE a partir del 01-07-2022](https://cpe.sunat.gob.pe/sites/default/files/inline-files/OBLIGADOS%20OSE%20JULIO%202022_publicaci%C3%B3n%20%281%29.xlsx) — guia-82e90d0814f24d4d0e4c; index-only; referencia; sin-determinar.
+- [Listado de nuevos obligados a utilizar el SEE OSE a partir del 01.07.2024](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Obligados%20a%20SEE%20OSE%20a%20partir%20del%2001.07.2024_%20%281%29.xlsx) — guia-7ce5ec78be6330221a60; index-only; referencia; sin-determinar.
+- [Listado de nuevos obligados a utilizar el SEE OSE a partir del 01.07.2025](https://cpe.sunat.gob.pe/sites/default/files/inline-files/OBLIGADOS_OSE_01072025.xlsx) — guia-25bf6dc285827b26babb; index-only; referencia; sin-determinar.
+- [Listado de nuevos obligados a utilizar el SEE OSE a partir del 01.07.2026](https://cpe.sunat.gob.pe/sites/default/files/2026-06/Listado%20de%20nuevos%20obligados%20a%20utilizar%20el%20SEE%20OSE%20a%20partir%20del%2001.07.2026_0.xlsx) — guia-174e0e468ac4ed933084; index-only; referencia; sin-determinar.
+- [Listado de nuevos obligados a utlizar el SEE OSE a partir del 01-07-2023](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Obligados%20a%20SEE%20OSE%20a%20partir%20del%2001.07.2023%20%281%29%20%281%29_0.xlsx) — guia-88915c2cc103f9317a7b; index-only; referencia; sin-determinar.
+- [Listado de Observaciones que migran a Error](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Listado%20de%20observaciones%20que%20migran%20a%20Error_0%20%283%29.xlsx) — guia-4b2cbe64e16f661e04e2; index-only; referencia; sin-determinar.
+- [Listado de Observaciones que migran a Error](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Listado%20de%20observaciones%20que%20migran%20a%20Error_0%20%281%29.xlsx) — guia-f0a4e1c4d816cdceaac8; index-only; referencia; sin-determinar.
+- [Listado de sujetos no domiciliados inscritos en el RUC.xlsx](https://orientacion.sunat.gob.pe/sites/default/files/2026-10/Listado%20de%20sujetos%20no%20domiciliados%20inscritos%20en%20el%20RUC.xlsx) — guia-b2bc15512b50eed0b9e4; index-only; referencia; sin-determinar.
+- [Manual de servicios WEB gestión de proveedores en la plataforma de confirmación de RHE y de la FE](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Manual%20del%20Servicio%20WEB%20de%20Gesti%C3%B3n%20de%20Proveedores%20en%20la%20Plataforma%20Confirmaci%C3%B3n%20RHE_FE.docx) — guia-9a8eb08ea4817b135fcd; index-only; tecnico; api.
+- [Manual del Servicio WEB Plataforma de Confirmación de Comprobantes de Pago Electrónicos](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Manual_Servicios_Confirmacion_13012022%20%281%29%20%284%29.docx) — guia-50361d492f74ef052a54; index-only; tecnico; api.
+- [Manual Técnico de Operatividad del Operador de Servicios Electrónicos](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Manual%20tecnico%20de%20operatividad%20OSE%20v5.2%20072024.docx) — guia-f692a262231f71f72667; index-only; referencia; sin-determinar.
+- [Manual URL – GRE (Actualizado 25/10/2022)](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Manual%20URL%20%E2%80%93%20GRE.xlsx) — guia-33fb18d19a2d0c5c8bfa; index-only; referencia; sin-determinar.
+- [Nombre del producto](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTAIT0112/AnexoTabla1.doc) — guia-5670edce092704a2cafc; index-only; referencia; sin-determinar.
+- [Observaciones realizadas por SUNAT / Centro de Control Virtual](https://emprender-anterior.sunat.gob.pe/archivos/11%20Forma%20para%20consultar%20una%20Carta%20Inductiva%20en%20SOL.docx) — guia-da34ff6bb62db7cab6e8; index-only; referencia; sol-web.
+- [Plantilla Estructura No Domiciliados (1) (1).xlsx](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Plantilla%20Estructura%20No%20Domiciliados%20%281%29%20%281%29.xlsx) — guia-495fe4537a51e50433e6; index-only; referencia; sin-determinar.
+- [Primer Trimestre 2022](https://emprender.sunat.gob.pe/sites/default/files/inline-files/modelo-202203-1erTrim_0.xlsx) — guia-4e9fbf92ba01319d9141; index-only; referencia; sin-determinar.
+- [proceso supension.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/instructivos/docAnexos/INTA.IT.00.08/proceso-supension.doc) — guia-1a6960355570e283f130; index-only; referencia; sin-determinar.
+- [Registro de ventas del precinto aduanero](https://www.sunat.gob.pe/legislacion/procedim/pcontrab/procEspecif/control-pe.00.08/anexos/Anexo6_Registro_Venta.doc) — guia-332e709bf5abdaddadaa; index-only; referencia; sin-determinar.
+- [registro voluntario.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/instructivos/docAnexos/INTA.IT.00.08/registro-voluntario.doc) — guia-0e46ef7676dbd96063af; index-only; referencia; sin-determinar.
+- [Reglas de validación - actualizado al 03.08.2026](https://cpe.sunat.gob.pe/sites/default/files/2026-08/Reglas%20de%20validaci%C3%B3n%20-%20actualizado%20al%2003.08.2026.xlsx) — guia-235af60092c9bcce4547; index-only; referencia; sin-determinar.
+- [Reglas de validación - actualizado al 26.08.2026](https://cpe.sunat.gob.pe/sites/default/files/2026-08/Reglas%20de%20validaci%C3%B3n%20-%20actualizado%20al%2026.08.2026.xlsx) — guia-67122492ef0b46489c8b; index-only; referencia; sin-determinar.
+- [Reglas de Validación de Archivos Planos (06.08.2020)](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Estructura%20-%20SEE-Empresas-Supervisadas_v_pub_05082020.xlsx) — guia-bf41829d96d01e9aad85; index-only; referencia; sin-determinar.
+- [Reglas de validación publicado al 25.09.2026.](https://cpe.sunat.gob.pe/sites/default/files/2026-09/Reglas%20de%20validaci%C3%B3n%20publicado%20al%2025.09.2026.xlsx) — guia-f0ea399f635dcd571a32; index-only; referencia; sin-determinar.
+- [Reglas de Validación Recibos de servicios públicos 02.07.2026.](https://cpe.sunat.gob.pe/sites/default/files/2026-07/Reglas%20de%20Validaci%C3%B3n%20Recibos%20de%20servicios%20p%C3%BAblicos%2002.07.2026.xlsx) — guia-1558ba973c5ef4e0a886; index-only; referencia; sin-determinar.
+- [Relación de Veedores Registrados ante SUNAT para el 2026](https://www.sunat.gob.pe/orientacionaduanera/veedores/relacionVeedores2026.xlsx) — guia-bb81c90acdbbffbbc127; index-only; referencia; sin-determinar.
+- [Segundo Trimestre 2022](https://emprender.sunat.gob.pe/sites/default/files/inline-files/modelo-202206-2doTrim_1.xlsx) — guia-a3c775163cc9e26b9487; index-only; referencia; sin-determinar.
+- [Tabla de parámetros Inscripción en el RCBFiscalizados1012.xls](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/Tabla_de_par%C3%A1metros_Inscripci%C3%B3n_en_el_RCBFiscalizados1012.xls) — guia-ea77f457b549f7210794; index-only; referencia; sin-determinar.
+- [Tabla N° 1](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.18/Tabla01u.doc) — guia-5c9e0f55943002cc68d0; index-only; referencia; sin-determinar.
+- [Tabla N° 10](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.18/Tabla10u.doc) — guia-b89870d5cb8c03be3d86; index-only; referencia; sin-determinar.
+- [Tabla N° 11](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.18/Tabla11u.doc) — guia-ee2ee2e796f133f65b8c; index-only; referencia; sin-determinar.
+- [Tabla N° 12](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.18/Tabla12u.doc) — guia-b911c418373049d7c671; index-only; referencia; sin-determinar.
+- [Tabla N° 13](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.18/Tabla13u.doc) — guia-c279dd1c6b425dd519cf; index-only; referencia; sin-determinar.
+- [Tabla N° 14](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.18/Tabla14u.doc) — guia-1bdc1e714b6ceacaf274; index-only; referencia; sin-determinar.
+- [Tabla N° 2](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.12/AnexoTabla2u.doc) — guia-0f206ab7aff5a0bd2896; index-only; referencia; sin-determinar.
+- [Tabla N° 2](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.18/Tabla02u.doc) — guia-89779f171de2720d3cf7; index-only; referencia; sin-determinar.
+- [Tabla N° 3](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.18/Tabla03u.doc) — guia-4b397c6bdb99a2b4b155; index-only; referencia; sin-determinar.
+- [Tabla N° 4](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.18/Tabla04u.doc) — guia-6f93f045bdbcfb1261e3; index-only; referencia; sin-determinar.
+- [Tabla N° 4](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.12/AnexoTabla4.doc) — guia-c1ade2129d21819fcbbb; index-only; referencia; sin-determinar.
+- [Tabla N° 5](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.12/AnexoTabla5.doc) — guia-259f78a15e88e35c7444; index-only; referencia; sin-determinar.
+- [Tabla N° 5](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.18/Tabla05u.doc) — guia-f994523cc29a79e2b6a8; index-only; referencia; sin-determinar.
+- [Tabla N° 6](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.18/Tabla06u.doc) — guia-8affed00900574b507d9; index-only; referencia; sin-determinar.
+- [Tabla N° 6](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.12/AnexoTabla6.doc) — guia-d733253beb66fe26508e; index-only; referencia; sin-determinar.
+- [Tabla N° 7](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.18/Tabla07u.doc) — guia-15cffc0b1efa3a2c8ece; index-only; referencia; sin-determinar.
+- [Tabla N° 8](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.18/Tabla08u.doc) — guia-41d759f99657506c7fc8; index-only; referencia; sin-determinar.
+- [Tabla N° 8](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.12/AnexoTabla8u.doc) — guia-6a6aeea95b44ce303056; index-only; referencia; sin-determinar.
+- [Tabla N° 9](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTA-IT.01.18/Tabla09u.doc) — guia-22e361b189c37572e4da; index-only; referencia; sin-determinar.
+- [Tabla3modificada.doc](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTAIT0112/Tabla3modificada.doc) — guia-c805aefb12473c6a11a7; index-only; referencia; sin-determinar.
+- [Tablas de codificación](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/DESPA-IT.01.11/ANEXO_1_TABLAS_DE_CODIFICACIONu.doc) — guia-5916c26f11294a403b91; index-only; referencia; sin-determinar.
+- [Uso del Producto](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/instructivos/docAnexos/INTAIT0112/AnexoTabla6.doc) — guia-4e6acc4a79666395bb10; index-only; referencia; sin-determinar.
+
+## archivo
+
+- [anexos 013 2019.zip](https://www.sunat.gob.pe/legislacion/superin/2019/anexos-013-2019.zip) — guia-b61fe715a29adc31a7ae; index-only; referencia; sin-determinar.
+- [anexos 097 2012.zip](https://www.sunat.gob.pe/legislacion/superin/2012/anexos-097-2012.zip) — guia-28af4c5559f0ac916a4d; index-only; referencia; sin-determinar.
+- [anexos 340 2017.zip](https://www.sunat.gob.pe/legislacion/superin/2017/anexos-340-2017.zip) — guia-844db9f1a8505c5890c7; index-only; referencia; sin-determinar.
+- [Anexos rs065 2013.zip](https://www.sunat.gob.pe/legislacion/superin/2013/Anexos-rs065-2013.zip) — guia-a2f789461868d4aa63e4; index-only; referencia; sin-determinar.
+- [Archivo XSD - 2.0](https://cpe.sunat.gob.pe/sites/default/files/inline-files/XSL%20-%20UBL%202.0%20%281%29%20%281%29.zip) — guia-3bcb3203c64c84d25134; index-only; tecnico; sin-determinar.
+- [Archivo XSD - 2.1 (Actualizado al 28/02/2022)](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Archivos%20XSD%20%281%29.zip) — guia-81d26fb965260c6eb090; index-only; referencia; sin-determinar.
+- [Archivo XSD – 2.1 (Actualizado 13.07.2022)](https://cpe.sunat.gob.pe/sites/default/files/inline-files/Archivo%20XSD.zip) — guia-775fb3a585a6cff7e6b4; index-only; referencia; sin-determinar.
+- [Archivo XSL - 2.0](https://cpe.sunat.gob.pe/sites/default/files/inline-files/XSL%20-%20UBL%202.0%20%281%29.zip) — guia-5f7400b5d31f72421271; index-only; tecnico; sin-determinar.
+- [Archivo XSL – 2.1 (Actualizado al 06/09/2022)](https://cpe.sunat.gob.pe/sites/default/files/inline-files/XSL%20Actualizado%20al%2006092022%20%281%29.zip) — guia-b09bb1fd709c5121dd7c; index-only; referencia; sin-determinar.
+- [Archivos_XSL - 2.0.1 (Actualizado 01.10.2026)](https://cpe.sunat.gob.pe/sites/default/files/2026-10/Archivos_XSL.10.zip) — guia-adcd204020c69e4a95ea; index-only; referencia; sin-determinar.
+- [ca.zip](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/ca.zip) — guia-07746765b9a670785ebf; index-only; referencia; sin-determinar.
+- [Cap01 98 Descripcion.zip](https://www.sunat.gob.pe/orientacionaduanera/aranceles/Cap01-98-Descripcion.zip) — guia-5c33c90b5d9e0e726e8c; index-only; referencia; sin-determinar.
+- [Elabora tu declaración](https://contenido.app.sunat.gob.pe/insc/PLAME/PLANTILLA+PDT+PLAME+FINAL+2+TODO.swf) — guia-100b59b2bdc89932ab81; index-only; referencia; sin-determinar; histórico.
+- [Estructura Carga Masiva](https://www.sunat.gob.pe/operatividadaduanera/manuales/drawback/estructura/DW-EstructuraCargaMasiva.zip) — guia-dddb49bd50b200b66df8; index-only; referencia; sin-determinar.
+- [Formato Acta de Constatación](https://www.aduanet.gob.pe/operatividadAduana/trabajoLinea/ActaConstatacion.zip) — guia-b3910a021afc507fe62c; index-only; referencia; sin-determinar.
+- [FV3800UtilitarioExcel 1 0.zip](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/FV3800UtilitarioExcel_1_0.zip) — guia-acfed39b0b72270922ed; index-only; referencia; sin-determinar.
+- [FV3800UtilitarioExcel 5 (1).zip](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/FV3800UtilitarioExcel_5%20%281%29.zip) — guia-58fce0ddc0357b86ee3c; index-only; referencia; sin-determinar.
+- [Instaladores del Sistema Facturador SUNAT SFS v 2.5](https://www2.sunat.gob.pe/facturador/SFS_v-2.5.zip) — guia-cfd5482b99e61e5dd21d; index-only; referencia; sin-determinar.
+- [Listado de Obligados a Emitir CPE a partir del 01-04-2022 (Factura Electrónica) y 01-06-2022 (Boleta de Venta electrónica)](https://www.sunat.gob.pe/padronesnotificaciones/obligados-EE/ListadoObligadosEmitir-CPE-01042022.zip) — guia-805373ff50cb9a672145; index-only; referencia; sin-determinar.
+- [Manual de Usuario - Realizar Pago Electrónico](https://www.aduanet.gob.pe/aduanas/mapa/PagoEl/Manual.zip) — guia-5454d1ab6abbc5bcb2fa; index-only; referencia; sin-determinar.
+- [Otras funcionalidades del PDT PLAME](https://contenido.app.sunat.gob.pe/insc/PLAME/PLANTILLA+PDT+PLAME+FINAL+3.swf) — guia-2b0919b620faef206cc5; index-only; referencia; sin-determinar; histórico.
+- [PLANTILLA PDT PLAME FINAL 1.swf](https://contenido.app.sunat.gob.pe/insc/PLAME/PLANTILLA+PDT+PLAME+FINAL+1.swf) — guia-fb01e47430bd32239421; index-only; referencia; sin-determinar; histórico.
+- [Registrar Solicitud (Legajamiento, Traslado entre Depósitos, Cambio de Precinto Aduanero, Trasiego, Llenado), Rectificar Declaración, Proceso de Traslado Entre Depósitos (Anular Solicitud, Entrega de Mercancía, Registrar Recepción), Consultas(Trazabilidad, Embarques, Saldos de Embarque, Solicitud Electrónicas)](https://www.sunat.gob.pe/operatividadaduanera/sda/tutoriales/2024/po-Transbordo-v2.zip) — guia-9431870e2277417f991a; index-only; referencia; sin-determinar.
+- [Sistema Nacional de Atención de Denuncias](https://www.sunat.gob.pe/mensajes/agosto/2012/SINAD/SINAD.zip) — guia-eb0795a0943e58cc3d9e; index-only; referencia; sin-determinar.
+- [Suscribirse a](https://asistenteaduanero.sunat.gob.pe/rss.xml) — guia-19e7d4080e5d49c59f14; index-only; tecnico; sin-determinar.
+
+## video
+
+- [¡Emitir facturas es más rápido, seguro y económico!](https://www.youtube.com/watch?v=eZOX2bqU_Hs) — guia-e2c5362152fe9b03ad48; transcript-reviewed; informativo; sin-determinar.
+- [¿Cómo cambio la actividad económica de mi negocio?](https://www.youtube.com/watch?v=Cx3BxxRgeQM) — guia-0a9afd8ed282e24e8d42; transcript-reviewed; procedimiento; sol-web.
+- [¿Cómo consultar las deudas pendientes de pago?](https://www.youtube.com/watch?v=6bpScLCtnfY) — guia-8b7eb9da93fd2b7dc94e; transcript-reviewed; procedimiento; sol-web.
+- [¿Cómo corrijo o actualizo una declaración o pago?](https://www.youtube.com/watch?v=_1pSREVfAjE) — guia-01bfd65a36f9f13ff390; transcript-reviewed; procedimiento; sin-determinar.
+- [¿Cómo crear o dar de baja a un usuario secundario?](https://www.youtube.com/watch?v=kskTQKDXEzk) — guia-bad0890fa5536562b65e; transcript-reviewed; procedimiento; sol-web.
+- [¿Cómo dar de alta o baja los tributos en el RUC?](https://www.youtube.com/watch?v=0VVVbaJkX1E) — guia-97dc044bb1a20d41b169; transcript-reviewed; procedimiento; sol-web.
+- [¿Cómo dar de baja comprobantes de pago físicos?](https://www.youtube.com/watch?v=4gOu9uyz07Y) — guia-8969874c3d010c4a36dd; transcript-reviewed; procedimiento; sol-web.
+- [¿Cómo declaro y pago el Nuevo RUS?](https://www.youtube.com/watch?v=BLnz1jcT2Co) — guia-dd75031cccc5d9760299; transcript-reviewed; procedimiento; sol-web.
+- [¿Cómo elimino pagos para revertir recibos por honorarios?](https://www.youtube.com/watch?v=UI1M6wa3QEo) — guia-38fede8e7855ede9725f; transcript-reviewed; procedimiento; app-movil, sol-web.
+- [¿Cómo emitir recibos por honorarios desde tu celular?](https://www.youtube.com/watch?v=_brzYacJiZ4) — guia-ac2b6dd264e91e181e85; transcript-reviewed; procedimiento; app-movil.
+- [¿Cómo generar tu reporte de rentas de cuarta categoría?](https://www.youtube.com/watch?v=EEQUSUtC0LM) — guia-0997b6bc2a8f75008b8b; transcript-reviewed; procedimiento; sol-web.
+- [¿Cómo genero el Número de Pago Sunat (NPS)?](https://www.youtube.com/watch?v=d2kRPkVpy8U) — guia-2570b50243d8a488a1b9; transcript-reviewed; procedimiento; sol-web.
+- [¿Cómo obtener un reporte de declaraciones juradas?](https://www.youtube.com/watch?v=gzvLCEvNS6g) — guia-c7295adcee1de64b5926; transcript-reviewed; procedimiento; sol-web.
+- [¿Cómo presento mi solicitud de devolución?](https://www.youtube.com/watch?v=Ln7yBSK9oek) — guia-9f9a9a30326aaaecedd5; transcript-reviewed; procedimiento; sin-determinar.
+- [¿Cómo registro los pagos de mis recibos por honorarios?](https://www.youtube.com/watch?v=CKQunRl09Wg) — guia-60fff7c269b72b35c160; transcript-reviewed; procedimiento; app-movil, sol-web.
+- [¿Cómo revertir un recibo por honorarios desde mi celular?](https://www.youtube.com/watch?v=7-QsZmALxbs) — guia-199126dd0eb0a8e1d58e; transcript-reviewed; procedimiento; app-movil.
+- [¿Cómo solicitar la baja de tu RUC de forma virtual?](https://www.youtube.com/watch?v=bJa18BIBBoE) — guia-723c7dcd80d383736fa1; transcript-reviewed; procedimiento; sol-web.
+- [¿Cómo suspendo temporalmente mis actividades?](https://www.youtube.com/watch?v=zGrt7hMVAVs) — guia-e68b1f39ae3b51111cd7; transcript-reviewed; procedimiento; sol-web.
+- [¿Cómo utilizar el Formulario Declara Fácil 621 – IGV Renta?](https://www.youtube.com/watch?v=JLhb-41Z-jo) — guia-fda449bae207fc80a7e5; transcript-reviewed; procedimiento; sol-web.
+- [¿Puedo revisar mis recibos por honorarios desde el celular?](https://www.youtube.com/watch?v=epr7CGh5E6E) — guia-ca04dd3b3e322a66ef62; transcript-reviewed; procedimiento; app-movil.
+- [#HablaSUNAT: ¿Cómo registrar entidades exoneradas de Renta y perceptoras de donaciones?](https://www.youtube.com/watch?v=ufLBQ3m96HI) — guia-914e05deb0a8b4a33dbc; transcript-reviewed; procedimiento; presencial.
+- [#HablaSunat: ¿Qué país le estamos dejando a las futuras generaciones? 💡 🇵🇪](https://www.youtube.com/watch?v=Smurmk1X65Q) — guia-04f597c99ecb059a188d; transcript-reviewed; referencia; sin-determinar.
+- [#HablaSunat: ¿Tienes alguna obligación tributaria pendiente? ¡Estás a tiempo de ponerte al día!](https://www.youtube.com/watch?v=82IxkNKduyw) — guia-ae0e246a65172388990c; transcript-reviewed; procedimiento; sin-determinar.
+- [#HablaSunat: Beneficios tributarios para donaciones ante desastres naturales](https://www.youtube.com/watch?v=1HBIa2RkGGA) — guia-914ffe6a10f1c64c6dde; transcript-reviewed; referencia; sin-determinar.
+- [#LQDS: Pagos virtuales con y sin Clave SOL 💻📱](https://www.youtube.com/watch?v=1eqbsogDcT8) — guia-b474c90a231aa583cc5b; transcript-reviewed; procedimiento; sol-web.
+- [Actualiza el domicilio fiscal en tu Ficha RUC](https://www.youtube.com/watch?v=V58lMMsvuX8) — guia-93a8b5623ed9da42229d; transcript-reviewed; procedimiento; sol-web, presencial.
+- [Actualiza tus datos de contacto desde Internet](https://www.youtube.com/watch?v=fXzXKcW8e7E) — guia-ef624c1e90796bd5a2b2; transcript-reviewed; procedimiento; sol-web.
+- [Actualización de Actividad Económica](https://www.youtube.com/watch?v=6Ar-JcXMWp0) — guia-26d9b0fdb11077ca037e; transcript-reviewed; informativo; sol-web.
+- [Actualización de datos de contacto](https://www.youtube.com/watch?v=vjMASnAnnyU) — guia-588b0144890c509f1a76; transcript-reviewed; procedimiento; app-movil, sol-web.
+- [Aplaza y/o fracciona tu deuda por el Art 36° del Código Tributario](https://www.youtube.com/watch?v=HW_poiSFO-0) — guia-7135c8681c2e977632e3; transcript-reviewed; procedimiento; sin-determinar.
+- [Baja de inscripción del RUC](https://www.youtube.com/watch?v=6FStrxow2vs) — guia-c880cbc578ea2fce0127; transcript-reviewed; procedimiento; sol-web.
+- [Buzón SOL](https://www.youtube.com/watch?v=71jnbP4JUws) — guia-ceb141076bad04656ffc; transcript-reviewed; procedimiento; app-movil, sol-web, presencial.
+- [Cómo pagar por internet una Orden de Pago - SUNAT](https://www.youtube.com/watch?v=pxaamjfvunY) — guia-ed66f4dc77a283024156; transcript-reviewed; procedimiento; sin-determinar.
+- [Comprobantes de pago Electrónico (Normativa, Modificatorias y Casuística)](https://www.youtube.com/watch?v=Y0vOvwxRR60) — guia-8e0bb6a2dd695a5fcc3a; transcript-reviewed; normativa; sol-web.
+- [Conoce si estás obligado a emitir Comprobantes de Pago Electrónicos](https://www.youtube.com/watch?v=CIudDbgNM2I) — guia-75728b9946e484a01d05; transcript-reviewed; procedimiento; sin-determinar.
+- [Consulta de facturas electrónicas](https://www.youtube.com/watch?v=BFK9zygvta0) — guia-0aa34916ec6d3caaea7f; transcript-reviewed; procedimiento; sol-web.
+- [Creación de usuario secundario por el Portal Sunat](https://www.youtube.com/watch?v=AJ6f60rvR8w) — guia-8136f2bbd01a6b8ae183; transcript-reviewed; procedimiento; sol-web.
+- [Cultura Tributaria - Pide Boleta Electrónica](https://www.youtube.com/watch?v=t_KBVXmeD7A) — guia-cc9e33f88a53d85491d4; transcript-reviewed; informativo; sin-determinar.
+- [Datos sobre el Certificado Digital Tributario](https://www.youtube.com/watch?v=c9UR_hyIgo0) — guia-121fda6fb4d3decdee81; transcript-reviewed; procedimiento; sol-web.
+- [Declara y paga tus impuestos por internet](https://www.youtube.com/watch?v=ssqqRlOrCrY) — guia-8eeeb72ec13c7cdc5295; transcript-reviewed; procedimiento; sol-web.
+- [Emisión de la Guía de Remisión Electrónica – Transportista](https://www.youtube.com/watch?v=7ytk_8XWLNo) — guia-3ea448441ec2a25349b4; transcript-reviewed; procedimiento; sol-web.
+- [Emite tu GRE como remitente desde tu celular](https://www.youtube.com/watch?v=pcwKDpdX0NA) — guia-c1550f629b19af717c7a; transcript-reviewed; procedimiento; app-movil.
+- [Facturación Electrónica \| Andrés Choy](https://www.youtube.com/watch?v=S72HBEWT-hE) — guia-af3be59410bac4439574; transcript-reviewed; informativo; sin-determinar.
+- [Facturación Electrónica \| Beneficios](https://www.youtube.com/watch?v=Z-1kBafmZTc) — guia-5f113688d866a9871852; transcript-reviewed; referencia; sin-determinar.
+- [GRE por eventos App Emprender](https://www.youtube.com/watch?v=AqUf-zrXVXM) — guia-7c5acbe199a41b548ead; transcript-reviewed; procedimiento; app-movil.
+- [GRE Transportista desde el #APP Emprender](https://www.youtube.com/watch?v=DhgzGiUkL4g) — guia-83f16aa47c1a54efdb21; transcript-reviewed; procedimiento; app-movil.
+- [Guía de Remisión Electrónica Remitente](https://www.youtube.com/watch?v=qlv2EDHRqRo) — guia-e8169980d40dd45f15c9; transcript-reviewed; procedimiento; sol-web.
+- [Hazlo bien \| Buzón Electrónico](https://www.youtube.com/watch?v=EmWjLkMv3kk) — guia-834c5ffe0afef3ab3d56; transcript-reviewed; referencia; sol-web.
+- [Importa Fácil: conoce el estado de tu envío postal](https://www.youtube.com/watch?v=IlqT5PWtuBU) — guia-6ad63eb4b314902210f4; transcript-reviewed; procedimiento; sin-determinar.
+- [Importa Fácil: sigue tu envío desde el App SUNAT](https://www.youtube.com/watch?v=7wheD1oHnow) — guia-e175bc37b1ea1e8ab8d3; transcript-reviewed; procedimiento; app-movil.
+- [Inscripción al RUC por la APP Personas Sunat](https://www.youtube.com/watch?v=6m4nVtNQo08) — guia-ac716b931f9ca52f87a6; transcript-reviewed; procedimiento; app-movil.
+- [LOS ERRORES MÁS FRECUENTES EN EL PROCESO DE EXPORTACIÓN](https://www.youtube.com/watch?v=A15woF-1AZc) — guia-f698f1c6e6c6531615cd; transcript-reviewed; procedimiento; sin-determinar.
+- [LQDS: Solicitud de devolución por abono en cuenta](https://www.youtube.com/watch?v=qWk3j8CME0Y) — guia-b071f0421c3155bc8aa5; transcript-reviewed; procedimiento; app-movil.
+- [Masificación y Obligatoriedad de la Emisión de CPE](https://www.youtube.com/watch?v=9Gr8IZflDws) — guia-feafd42b1d1ff9c779de; transcript-reviewed; informativo; sol-web.
+- [Nueva versión de la Guía de Remisión Electrónica](https://www.youtube.com/watch?v=55L1BAjC7Cs) — guia-c52c4d7ee370e1b8cfdb; transcript-reviewed; tecnico; app-movil, sol-web.
+- [Nuevo SEE - Empresas Supervisadas](https://www.youtube.com/watch?v=V17B5Dl7YM8) — guia-9a7371c90b07cdd7b455; visual-reviewed; tecnico; escritorio, sol-web; histórico.
+- [Obtén y recupera tu Clave SOL desde la APP Personas](https://www.youtube.com/watch?v=3CxJea5ztZw) — guia-79909572f52847a1be8f; transcript-reviewed; procedimiento; sol-web.
+- [Pago de cuota de Fraccionamiento Especial](https://www.youtube.com/watch?v=GmJG11rDZ2M) — guia-3b44d1e263ab36a8dce8; transcript-reviewed; procedimiento; sol-web.
+- [Pago de Tributos con NPS](https://www.youtube.com/watch?v=KkT2St7-bOo) — guia-0addd3f1b0581f2cccc7; transcript-reviewed; procedimiento; sol-web.
+- [Pago Sin Clave SOL](https://www.youtube.com/watch?v=ngQpys8hGGU) — guia-8fd09a4df9e27f734c78; transcript-reviewed; procedimiento; sol-web.
+- [Pasos para emitir facturas electrónicas](https://www.youtube.com/watch?v=TxzekQ_Bg5M) — guia-177a62ae42f332ce008e; transcript-reviewed; procedimiento; sol-web.
+- [Pasos para emitir notas de crédito electrónicas](https://www.youtube.com/watch?v=IsXpwhlFbAk) — guia-ed299bd301afb6d01741; transcript-reviewed; procedimiento; sol-web.
+- [Pasos para emitir notas de débito electrónicas](https://www.youtube.com/watch?v=vz_Gd-NGIqM) — guia-9c4bae942b04f18c711c; transcript-reviewed; procedimiento; sol-web.
+- [Pide y Gana: Aprende a registrarte y participar paso a paso \| Tutorial SUNAT](https://www.youtube.com/watch?v=KmbLzJqStoI) — guia-63fe6eb0dffd7a09e65e; transcript-reviewed; procedimiento; sin-determinar.
+- [Podcast Sunat](https://www.youtube.com/watch?v=OKAQnz3DFqk) — guia-7cc104b5bfcf5ed6ff26; transcript-reviewed; procedimiento; app-movil.
+- [Podcast Sunat \| Beneficios de la emisión de CPE](https://www.youtube.com/watch?v=byb1-Pt6Ee4) — guia-68d3e3b3dba6b37761fa; transcript-reviewed; procedimiento; app-movil, sol-web.
+- [Podcast Sunat \| Certificado Digital Tributario](https://www.youtube.com/watch?v=DPVepjGSG0k) — guia-fc2cb38c453ce13867e7; transcript-reviewed; procedimiento; sol-web.
+- [Podcast Sunat \| Emite CPE desde tu PC o celular](https://www.youtube.com/watch?v=I-A_W9VUy3c) — guia-8b0b0bfe7d22ca2222a5; transcript-reviewed; procedimiento; app-movil.
+- [Podcast Sunat \| Nuevos plazos de envío de facturas electrónicas](https://www.youtube.com/watch?v=VdnN4Bof4CQ) — guia-da6829b0f0f8566be4c4; transcript-reviewed; procedimiento; sin-determinar.
+- [Presenta la declaración del Beneficiario Final](https://www.youtube.com/watch?v=qaBGGawyrkQ) — guia-8c53d8867e091c5142f5; visual-reviewed; procedimiento; escritorio, sol-web; histórico.
+- [RCE - Función agregar](https://www.youtube.com/watch?v=L-OG-XGhMKY) — guia-6b8ab9f6e79a574959d7; transcript-reviewed; procedimiento; sin-determinar.
+- [RCE - Función eliminar](https://www.youtube.com/watch?v=Nj_Gs764Aoc) — guia-d6c11bb260bf96aeb000; transcript-reviewed; procedimiento; sin-determinar.
+- [RCE - Función Importar](https://www.youtube.com/watch?v=YBFnhHQaR_w) — guia-fa1d56677f60af01358a; transcript-reviewed; procedimiento; sin-determinar.
+- [RCE - Introducción](https://www.youtube.com/watch?v=ikMJ7AFpW1M) — guia-22310636c681b2d0d6c5; transcript-reviewed; procedimiento; sol-web.
+- [RCE - Reemplazar propuesta](https://www.youtube.com/watch?v=0QQ-7Rwv8_4) — guia-238da3dfd84ae89c7fb8; transcript-reviewed; tecnico; sin-determinar.
+- [RCE – Registro de operaciones con sujetos no domiciliados](https://www.youtube.com/watch?v=nJiK8gUQC0E) — guia-5f4c10af1893102da066; transcript-reviewed; procedimiento; sol-web.
+- [Registro de solicitud de Drawback](https://www.youtube.com/watch?v=3cPFIPNQb9Q) — guia-499ba66c0028708128f1; transcript-reviewed; procedimiento; sol-web.
+- [Registro del Catálogo de Productos](https://www.youtube.com/watch?v=ciRRcVTzVoI) — guia-d1ffc5eb95a63e4a9baa; transcript-reviewed; tecnico; sin-determinar.
+- [Registro para el control de bienes fiscalizados](https://www.youtube.com/watch?v=YJ6WZG5e9HQ) — guia-9db95c1417a0d0ad1a0e; transcript-reviewed; procedimiento; sin-determinar.
+- [Renovación del registro para el control de bienes fiscalizados](https://www.youtube.com/watch?v=oYpTsnDRvkY) — guia-cfa19bcdae0038588fef; transcript-reviewed; procedimiento; sin-determinar.
+- [RVIE \| Agregar y modificar el tipo de cambio](https://www.youtube.com/watch?v=R3R8q8WHQEo) — guia-4b98977314a1f26329b4; transcript-reviewed; procedimiento; sin-determinar.
+- [RVIE \| Función Aceptar propuesta](https://www.youtube.com/watch?v=xx5KgoIdahk) — guia-fc0dfe979d7d0ec25668; transcript-reviewed; procedimiento; sin-determinar.
+- [RVIE \| Función Agregar](https://www.youtube.com/watch?v=CxDm1nfAmUE) — guia-49b5d78070cee96ee0ab; transcript-reviewed; procedimiento; sin-determinar.
+- [RVIE \| Función Editar](https://www.youtube.com/watch?v=Rk7Zi072oo8) — guia-7e4209a2fe9f7fe3509e; transcript-reviewed; procedimiento; sin-determinar.
+- [RVIE \| Función Eliminar](https://www.youtube.com/watch?v=HCcM8-6H-YE) — guia-048d92f83bd8f18601d4; transcript-reviewed; procedimiento; sin-determinar.
+- [RVIE \| Generar Registro](https://www.youtube.com/watch?v=x5kQ38Z_EpA) — guia-4fc21ede8a49149c5915; transcript-reviewed; procedimiento; sin-determinar.
+- [RVIE \| Incorporar comprobantes de pago de manera masiva](https://www.youtube.com/watch?v=m7JZp7daTl0) — guia-c0bb4af2c10e4d8e64ab; transcript-reviewed; procedimiento; sin-determinar.
+- [RVIE \| Introducción](https://www.youtube.com/watch?v=qsFVltoxfTg) — guia-e41689c2aed4a30158af; transcript-reviewed; procedimiento; sol-web.
+- [Sigue los pasos para solicitar el Fraccionamiento Especial](https://www.youtube.com/watch?v=vXgo3_A4W3U) — guia-7005cfd7a090f28895c7; transcript-reviewed; procedimiento; sin-determinar.
+- [SIRE \| Guía para aceptar propuesta](https://www.youtube.com/watch?v=zPSwryG-MtY) — guia-9d5362dd5d28455abe72; transcript-reviewed; procedimiento; sol-web.
+- [SIRE \| Guía para complementar propuesta](https://www.youtube.com/watch?v=TS_-XI8CnS4) — guia-315279d3064e6dac164e; transcript-reviewed; procedimiento; sol-web.
+- [SIRE \| Guía para reemplazar propuesta](https://www.youtube.com/watch?v=zsMqp23myHY) — guia-df229f916d184cb1b527; transcript-reviewed; procedimiento; sol-web.
+- [Sistema Integrado de Registros Electrónicos](https://www.youtube.com/watch?v=G3lP60J2-ns) — guia-468ef2e9d6105d066e7c; transcript-reviewed; tecnico; api.
+- [Solicita la suspensión de retenciones de cuarta categoría](https://www.youtube.com/watch?v=FoZaA0Le-IU) — guia-190d1d6c6b4d55f8dee0; transcript-reviewed; procedimiento; sol-web.
+- [Suspensión temporal del RUC](https://www.youtube.com/watch?v=nVnoenpZJnk) — guia-db3391261974bc096c95; transcript-reviewed; procedimiento; sol-web.
+- [Todo lo que debes saber del Reporte Financiero](https://www.youtube.com/watch?v=clpoRu_59b8) — guia-d1f7514bbbff8003d1c3; transcript-reviewed; referencia; sin-determinar.
+- [Ventajas de la emisión de comprobantes electrónicos](https://www.youtube.com/watch?v=6g_xe8TXc_0) — guia-9ddda70f1e6bec3d902e; transcript-reviewed; informativo; sin-determinar.
+- [Video enlazado por SUNAT (7laS4Cc1VBk)](https://www.youtube.com/watch?v=7laS4Cc1VBk) — guia-ad7b7f56120e51a00a53; transcript-reviewed; referencia; sin-determinar.
+- [Video enlazado por SUNAT (etIZppAAq9w)](https://www.youtube.com/watch?v=etIZppAAq9w) — guia-4bcad9e6849fd518cd33; transcript-reviewed; procedimiento; sol-web.
+- [Video enlazado por SUNAT (qe6IRY4fHB4)](https://www.youtube.com/watch?v=qe6IRY4fHB4) — guia-00f6acc63c48b19e7fd4; transcript-reviewed; procedimiento; sol-web.
+- [watch](https://www.youtube.com/watch?v=KCLYG0hKJOg) — guia-caa9069a972a105da3f2; transcript-reviewed; tecnico; api.
+
+## Depuración
+
+El catálogo activo no conserva registros ni listas de URL fallidas. Las cantidades retiradas se mantienen como información agregada. Un enlace inventariado sigue pendiente de revisión de contenido aunque su formato y dominio sean válidos.

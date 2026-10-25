@@ -1,0 +1,57 @@
+name: Error de funcionamiento
+description: Reportar un fallo con información técnica y datos sintéticos.
+title: "[Error] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        No incluyas Clave SOL, RUC/DNI reales, nombres de clientes, periodos, importes, documentos, capturas de cuentas, cookies, tokens, HAR, planillas, bases o archivos DPAPI.
+        Las vulnerabilidades se reportan por el canal privado de SECURITY.md.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Revisión de privacidad
+      options:
+        - label: Revisé el reporte y contiene solo información técnica y datos sintéticos.
+          required: true
+  - type: input
+    id: version
+    attributes:
+      label: Versión o commit del proyecto
+      placeholder: 0.1.0-alpha.1
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Versiones de Windows, Node y Brave
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Modo de navegador
+      options:
+        - hybrid
+        - uia
+        - No aplica
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Pasos para reproducir
+      description: Usa etiquetas genéricas y datos inventados. No adjuntes sesiones reales.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Resultado esperado y observado
+    validations:
+      required: true
+  - type: input
+    id: diagnostic
+    attributes:
+      label: Código técnico saneado, si existe
+      placeholder: target_obscured

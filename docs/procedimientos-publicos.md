@@ -1,6 +1,6 @@
 # Procedimientos públicos SUNAT
 
-**Revisión documental:** 23/10/2026. **Evidencia:** guia_publica; no se realizaron trámites ni se comprobaron permisos de una cuenta. Fuentes oficiales consultadas con Exa y Firecrawl mediante Composio.
+**Revisión documental general:** 23/10/2026. **Ampliación NPS:** 24/10/2026; guías oficiales de generación/pago y observación del formulario de consulta, sin ejecutar operaciones tributarias. **Evidencia general:** guia_publica, salvo las observaciones de consulta NPS identificadas en su ficha; no se realizaron presentaciones, generaciones ni pagos. Fuentes oficiales consultadas con Exa y Firecrawl mediante Composio.
 
 ## Uso de las fichas
 
@@ -26,6 +26,9 @@ Las fuentes sin fecha editorial y las capturas antiguas requieren comprobar la p
 | sire-api-acceso | Revisar acceso API | Credenciales API en SOL | Autenticación, no registros |
 | declara-facil-621 | IGV y renta mensual | Declaraciones y Pagos | Secuencia publicada |
 | consulta-declaraciones-pagos | Declaraciones y constancias | Dos accesos SOL diferentes | Rutas y límites separados |
+| nps-consulta | Consultar NPS y su estado | Trámites y Consultas / Personas | Pantalla observada; no pago |
+| nps-generacion | Generar NPS desde una declaración o boleta | Declaraciones y Pagos | Guía oficial; presentación separada del pago |
+| nps-pago | Pagar un NPS generado | Canal bancario | Paso externo; constancia FV 1663 |
 | consulta-deuda | Valores pendientes | Trámites y Consultas / Personas, Empresas | Ruta publicada |
 | detracciones-consulta-pago | Consulta de pagos / depósitos | Según consulta | Ruta interna parcial |
 | detracciones-pago | Preparar y pagar detracciones | Declaraciones y Pagos | Acceso y búsqueda |
@@ -400,6 +403,48 @@ La fuente contempla MPV además de presencial para algunos errores de código de
 
 **Resultado web:** declaración registrada; no exportación embarcada/regularizada.
 **Pendiente:** ruta exacta, controles y documentos vigentes. No sustituir por Importa Fácil o exportación definitiva general.
+
+## nps-consulta — Consulta de Número de Pago SUNAT
+
+**Acceso:** Trámites y Consultas, perfil Personas. **Evidencia:** ruta_observada el 24/10/2026; formulario abierto, sin ejecutar una búsqueda ni un pago. **Ruta confirmada por menú, sin buscador:** Personas → Mis declaraciones informativas → Presento mis declaraciones y pagos → Declarativas → Consulta de NPS. `routeId: nps-consulta-menu-sol-personas`; destino comprobado: Consulta de Número de Pago SUNAT. No es un pago ni una búsqueda de operaciones verificada.
+
+**Procedencia:** controles renderizados de la página oficial autenticada. No se encontró en esta revisión un manual público específico de esta consulta. [Concepto oficial de NPS](https://orientacion.sunat.gob.pe/nps-numero-de-pago-sunat-personas), apartados de generación y pago, aporta contexto; no se le atribuyen las etiquetas observadas. Fuente sin fecha editorial visible; revisión 24/10/2026.
+
+1. Reutilizar la ruta observada de consulta en `sunat://operaciones`. Si cambió, explorar únicamente el tramo faltante.
+2. Confirmar el título **Consulta de Número de Pago SUNAT** y **Criterios de Búsqueda de NPS**.
+3. Elegir el criterio que corresponda al pedido: número de NPS; fechas Desde/Hasta; o Estado del NPS. La pantalla observada ofrece Vigente, Pagado, Vencido y Anulado. Cada bloque tiene su propio botón Buscar: no elegir un Buscar ambiguo sin comprobar el bloque.
+4. Tras consultar, revisar las filas/detalle y el estado. Una pantalla vacía antes de buscar no acredita ausencia de NPS. No aplicar límites de otras consultas a este formulario.
+
+**Frontera:** abrir/consultar no genera NPS ni paga. Si se pidió generar o pagar, usar la ficha específica, sin sustituir el pedido por esta consulta. No se comprobó búsqueda, detalle, pago ni acceso desde Empresas.
+
+## nps-generacion — Generar Número de Pago SUNAT
+
+**Acceso:** Mis Declaraciones y Pagos, distinto de Trámites y Consultas. **Evidencia:** guia_publica; generación no ejecutada.
+
+**Fuentes:** [Generación del NPS](https://orientacion.sunat.gob.pe/6652-03-generacion-del-nps), acceso publicado; [guía de funcionalidades](https://e-plataformaunica.sunat.gob.pe/app/recaudacion/tributaria/internet/html/archivos-ayuda/AyudasFuncionalidadesParte3.pdf), pp. 11–15, fases Complete, Presente/Pague y Constancia; [Canal Virtual](https://e-renta.sunat.gob.pe/ol-ti-itcanal-bs/canal.do), pasos 1–3 y opción NPS. Sin fecha editorial/versionado visible en el contenido consultado; revisión 24/10/2026. Las ayudas conservan interfaces históricas: cotejar etiquetas vigentes.
+
+**Complemento audiovisual oficial:** [¿Cómo genero el Número de Pago Sunat (NPS)?](https://www.youtube.com/watch?v=d2kRPkVpy8U), canal SUNAT, publicado el 18/03/2026. Se revisaron sus subtítulos: acceso 0:44–1:01; ruta de boletas 1:03–1:17; preparación y generación 1:18–1:46; constancia y pago posterior 1:49–2:07. Evidencia documental, sin observar esta ruta en una cuenta.
+
+1. Identificar el formulario, tributos, periodo y deuda solicitados; leer también su ficha. No volver a presentar una declaración existente solo para obtener un código de pago.
+2. Entrar por Declaraciones y Pagos; elegir y completar el formulario correcto. Revisar la bandeja y el preliminar. Un preliminar no es una presentación.
+   Para una boleta de pago, el video publica **Mis declaraciones y pagos → Presentación y pago → Boletas de pago → tipo de pago**; «Pago de tributos» es su ejemplo, no una elección automática para cualquier deuda. Completar la información, Siguiente, revisar el importe y Pagar ahora según los controles actuales.
+3. Revisar **Presentar/Pagar/NPS** o **Presente/Pague**, según interfaz, y la opción **Número de Pago SUNAT**. Antes del clic que presente o genere, mostrar contribuyente, formularios, tributos, periodos e importes y obtener aprobación expresa. La generación puede incluir presentación de declaraciones; explicarlo en esa aprobación.
+4. Comprobar el NPS/voucher con su deuda asociada y, cuando corresponda, la constancia de presentación. Mantener ambos resultados separados del pago bancario.
+
+**Punto decisivo del video (1:33–1:42):** indica que elegir NPS ya genera el código y luego muestra Presentar/Pagar. Obtener la aprobación antes de seleccionar NPS, sin esperar a un botón posterior. La constancia de generación se utiliza para pagar después; no acredita pago.
+
+**Límite de ejecución:** ficha de orientación y preparación. El trabajo tributario debe corresponder al formulario y fase concretos (por ejemplo, presentación del 621), con cuenta importada verificada y aprobación del servidor; esta ficha genérica no habilita otro tipo de envío.
+**Pendiente:** ruta y controles actuales de generación, restricciones y vigencia del NPS deben comprobarse en pantalla. No fijar listas de bancos, exclusiones, plazos ni cifras de ejemplos antiguos. Si el resultado es incierto, consultar antes de generar nuevamente.
+
+## nps-pago — Pago posterior de un NPS
+
+**Canal:** entidad bancaria o canal de pago autorizado. **Evidencia:** guia_publica; paso externo al navegador SUNAT controlado por este MCP. **Fuente:** [Concepto oficial de NPS](https://orientacion.sunat.gob.pe/nps-numero-de-pago-sunat-personas), párrafos de pago y constancia; sin fecha editorial visible, revisión 24/10/2026.
+
+1. Partir de un NPS ya generado. Comprobar estado, deuda y vigencia; si figura Pagado o hubo un intento incierto, verificar la constancia antes de repetir.
+2. El usuario efectúa el pago en un canal autorizado indicando el NPS. Este MCP no accede a banca ni solicita claves bancarias. La generación del código no constituye débito ni prueba el pago.
+3. Verificar la constancia del pago, identificada por SUNAT como **Formulario Virtual 1663 – Boleta de Pago**, y después consultar el estado del NPS. No deducir pago de una presentación o de un voucher de generación.
+
+**Frontera:** cualquier pago requiere autorización específica de acción y datos. No abrir bancos desde una ruta SOL ni marcar el trabajo como pagado por una pantalla pendiente. Comprobar canales actualmente disponibles en la fuente/pantalla; no asumir que NPS y NPD son equivalentes.
 
 ## Mantenimiento y procedencia
 

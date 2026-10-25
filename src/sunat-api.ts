@@ -76,6 +76,7 @@ export async function validateCpe(config: SunatConfig, input: ValidateCpeInput):
 
   const send = (token: string) => fetch(url, {
     method: 'POST',
+    redirect: 'error',
     headers: {
       Authorization: `Bearer ${token}`,
       'Content-Type': 'application/json',
@@ -126,6 +127,7 @@ async function requestAccessToken(config: SunatConfig, key: string): Promise<str
 
   const response = await fetch(url, {
     method: 'POST',
+    redirect: 'error',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded', Accept: 'application/json' },
     body: form,
     signal: AbortSignal.timeout(config.timeoutMs),

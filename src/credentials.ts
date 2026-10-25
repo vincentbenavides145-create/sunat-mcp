@@ -1,7 +1,9 @@
 import { spawn } from 'node:child_process';
 import { mkdir, readFile, rename, writeFile } from 'node:fs/promises';
-import os from 'node:os';
 import path from 'node:path';
+import { createHash, randomBytes, randomUUID } from 'node:crypto';
+import { operatorDirectory } from './operator-storage.js';
+import { ProcessLease } from './process-lease.js';
 
 export type SunatLoginMode = 'ruc' | 'dni';
 
@@ -11,40 +13,46 @@ export interface SunatSireApiCredential {
 }
 
 export interface SunatAccountCredential {
+  id?: string;
+  taxpayerId?: string;
   accountKey: string;
   mode: SunatLoginMode;
   document: string;
   username?: string;
   password: string;
+  sessionRuc?: string;
   sireApi?: SunatSireApiCredential;
 }
 
 interface VaultPayload {
   version: 1;
   accounts: SunatAccountCredential[];
+  operationKey?: string;
 }
 
 interface VaultEnvelope {
   version: 1;
   encrypted: string;
+  encoding?: 'utf8-dpapi';
 }
 
-const localAppData = process.env.LOCALAPPDATA ?? path.join(os.homedir(), 'AppData', 'Local');
-const vaultDirectory = path.join(localAppData, 'SUNAT MCP', 'credentials');
+const vaultDirectory = path.join(operatorDirectory(), 'credentials');
 const vaultPath = path.join(vaultDirectory, 'accounts.dpapi.json');
-const maxAccounts = 500;
 const maxSecretPayloadBytes = 2_000_000;
+const vaultLease = new ProcessLease('vault-' + createHash('sha256').update(vaultPath).digest('hex'));
+let vaultWrites: Promise<unknown> = Promise.resolve();
 
 const protectScript = [
   '$ErrorActionPreference = "Stop"',
   '[Console]::InputEncoding = New-Object System.Text.UTF8Encoding($false)',
   '[Console]::OutputEncoding = New-Object System.Text.UTF8Encoding($false)',
   '$plain = [Console]::In.ReadToEnd()',
-  '$secure = ConvertTo-SecureString -String $plain -AsPlainText -Force',
-  '[Console]::Out.Write((ConvertFrom-SecureString -SecureString $secure))',
+  'Add-Type -AssemblyName System.Security',
+  '$bytes = [Text.Encoding]::UTF8.GetBytes($plain)',
+  'try { $cipher = [Security.Cryptography.ProtectedData]::Protect($bytes, $null, [Security.Cryptography.DataProtectionScope]::CurrentUser); [Console]::Out.Write([Convert]::ToBase64String($cipher)) } finally { [Array]::Clear($bytes, 0, $bytes.Length) }',
 ].join('; ');
 
-const unprotectScript = [
+const legacyUnprotectScript = [
   '$ErrorActionPreference = "Stop"',
   '[Console]::InputEncoding = New-Object System.Text.UTF8Encoding($false)',
   '[Console]::OutputEncoding = New-Object System.Text.UTF8Encoding($false)',
@@ -54,13 +62,24 @@ const unprotectScript = [
   'try { [Console]::Out.Write([Runtime.InteropServices.Marshal]::PtrToStringBSTR($ptr)) } finally { [Runtime.InteropServices.Marshal]::ZeroFreeBSTR($ptr) }',
 ].join('; ');
 
+const unprotectScript = [
+  '$ErrorActionPreference = "Stop"',
+  '[Console]::InputEncoding = New-Object System.Text.UTF8Encoding($false)',
+  '[Console]::OutputEncoding = New-Object System.Text.UTF8Encoding($false)',
+  'Add-Type -AssemblyName System.Security',
+  '$cipher = [Convert]::FromBase64String([Console]::In.ReadToEnd())',
+  '$bytes = [Security.Cryptography.ProtectedData]::Unprotect($cipher, $null, [Security.Cryptography.DataProtectionScope]::CurrentUser)',
+  'try { [Console]::Out.Write([Text.Encoding]::UTF8.GetString($bytes)) } finally { [Array]::Clear($bytes, 0, $bytes.Length) }',
+].join('; ');
+
 export function normalizeAccountKey(value: string): string {
   return value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim().replace(/\s+/g, ' ').toLocaleLowerCase('es-PE');
 }
 
 function runDpapi(script: string, input: string): Promise<string> {
   if (process.platform !== 'win32') throw new Error('El almacén cifrado de cuentas solo funciona en Windows.');
-  if (Buffer.byteLength(input, 'utf8') > maxSecretPayloadBytes) throw new Error('La planilla supera el límite permitido para credenciales.');
+  const maxInput = script === protectScript ? maxSecretPayloadBytes : maxSecretPayloadBytes * 2;
+  if (Buffer.byteLength(input, 'utf8') > maxInput) throw new Error('La planilla supera el límite permitido para credenciales.');
   const encodedScript = Buffer.from(script, 'utf16le').toString('base64');
   return new Promise((resolve, reject) => {
     const child = spawn('powershell.exe', ['-NoLogo', '-NoProfile', '-NonInteractive', '-EncodedCommand', encodedScript], {
@@ -111,6 +130,8 @@ function runDpapi(script: string, input: string): Promise<string> {
 }
 
 function validateAccount(account: SunatAccountCredential): void {
+  if (account.id !== undefined && !/^[a-f0-9-]{36}$/.test(account.id)) throw new Error('Identificador local de cuenta no válido.');
+  if (account.taxpayerId !== undefined && !/^[a-f0-9-]{36}$/.test(account.taxpayerId)) throw new Error('Identificador local de contribuyente no válido.');
   if (!account.accountKey.trim() || account.accountKey.length > 160) throw new Error('Cada fila requiere un nombre de cuenta único de hasta 160 caracteres.');
   if (account.mode !== 'ruc' && account.mode !== 'dni') throw new Error('El tipo de documento debe ser RUC o DNI.');
   const document = account.document.replace(/\D/g, '');
@@ -119,6 +140,7 @@ function validateAccount(account: SunatAccountCredential): void {
   }
   if (account.mode === 'ruc' && !account.username?.trim()) throw new Error('Cada cuenta de acceso por RUC requiere su usuario SOL.');
   if (!account.password || account.password.length > 256) throw new Error('La columna de Clave SOL contiene un valor vacío o demasiado largo.');
+  if (account.sessionRuc !== undefined && (!/^\d{11}$/.test(account.sessionRuc) || account.mode === 'ruc' && account.sessionRuc !== account.document)) throw new Error('El RUC de sesión esperado no coincide con el formato de la cuenta.');
   if (account.sireApi !== undefined) {
     if (account.mode !== 'ruc' || !account.username?.trim()) throw new Error('Las credenciales API SIRE requieren una cuenta con RUC y usuario SOL.');
     if (typeof account.sireApi.clientId !== 'string' || !account.sireApi.clientId.trim() || account.sireApi.clientId.length > 256
@@ -136,17 +158,20 @@ async function readVault(): Promise<VaultPayload> {
     if (error && typeof error === 'object' && 'code' in error && error.code === 'ENOENT') return { version: 1, accounts: [] };
     throw new Error('No se pudo leer el almacén local de credenciales.');
   }
-  if (envelope.version !== 1 || typeof envelope.encrypted !== 'string') throw new Error('El almacén de credenciales tiene un formato desconocido.');
+  if (envelope.version !== 1 || typeof envelope.encrypted !== 'string' || envelope.encoding !== undefined && envelope.encoding !== 'utf8-dpapi') throw new Error('El almacén de credenciales tiene un formato desconocido.');
   let decrypted: string;
   try {
-    decrypted = await runDpapi(unprotectScript, envelope.encrypted);
+    decrypted = await runDpapi(envelope.encoding === 'utf8-dpapi' ? unprotectScript : legacyUnprotectScript, envelope.encrypted);
   } catch {
     throw new Error('No se pudo descifrar el almacén. Inícialo desde la misma cuenta de Windows que lo importó.');
   }
   try {
     const payload = JSON.parse(decrypted) as VaultPayload;
-    if (payload.version !== 1 || !Array.isArray(payload.accounts) || payload.accounts.length > maxAccounts) throw new Error('invalid');
+    if (payload.version !== 1 || !Array.isArray(payload.accounts)) throw new Error('invalid');
+    if (payload.operationKey !== undefined && !/^[a-f0-9]{64}$/.test(payload.operationKey)) throw new Error('invalid');
+    const ids = new Set<string>();
     for (const account of payload.accounts) validateAccount(account);
+    for (const account of payload.accounts) if (account.id) { if (ids.has(account.id)) throw new Error('invalid'); ids.add(account.id); }
     return payload;
   } catch {
     throw new Error('El almacén descifrado no cumple el formato esperado.');
@@ -154,7 +179,7 @@ async function readVault(): Promise<VaultPayload> {
 }
 
 export async function saveSunatAccountCredentials(imported: SunatAccountCredential[]): Promise<{ added: number; updated: number }> {
-  if (imported.length === 0 || imported.length > maxAccounts) throw new Error(`La importación debe contener entre 1 y ${maxAccounts} cuentas.`);
+  if (imported.length === 0) throw new Error('La importación debe contener al menos una cuenta.');
   const byKey = new Map<string, SunatAccountCredential>();
   for (const account of imported) {
     validateAccount(account);
@@ -163,7 +188,7 @@ export async function saveSunatAccountCredentials(imported: SunatAccountCredenti
     byKey.set(normalized, account);
   }
 
-  const existing = await readVault();
+  return await mutateVault(async (existing) => {
   const merged = new Map(existing.accounts.map((account) => [normalizeAccountKey(account.accountKey), account]));
   let added = 0;
   let updated = 0;
@@ -171,21 +196,55 @@ export async function saveSunatAccountCredentials(imported: SunatAccountCredenti
     if (merged.has(key)) updated++;
     else added++;
     const previous = merged.get(key);
-    merged.set(key, account.sireApi || !previous?.sireApi ? account : { ...account, sireApi: previous.sireApi });
+    const sameIdentity = previous?.document === account.document && previous.mode === account.mode && previous.sessionRuc === account.sessionRuc;
+    merged.set(key, { ...account, id: sameIdentity ? previous.id ?? randomUUID() : randomUUID(), taxpayerId: sameIdentity ? previous.taxpayerId : undefined, ...(!account.sireApi && sameIdentity && previous?.sireApi ? { sireApi: previous.sireApi } : {}) });
   }
-  if (merged.size > maxAccounts) throw new Error(`El almacén no puede superar ${maxAccounts} cuentas.`);
-  const plaintext = JSON.stringify({ version: 1, accounts: [...merged.values()] } satisfies VaultPayload);
+  existing.accounts = [...merged.values()];
+  return { added, updated };
+  });
+}
+
+async function mutateVault<T>(mutation: (payload: VaultPayload) => Promise<T>): Promise<T> {
+  const pending = vaultWrites.then(async () => {
+    vaultLease.acquire();
+    try {
+      const payload = await readVault();
+      const result = await mutation(payload);
+      payload.operationKey ??= randomBytes(32).toString('hex');
+      for (const account of payload.accounts) account.id ??= randomUUID();
+      const taxpayers = new Map<string, string>();
+      const identity = (account: SunatAccountCredential) => account.mode === 'ruc' ? account.document : account.sessionRuc ?? `dni:${account.document}`;
+      for (const account of payload.accounts) if (account.taxpayerId) taxpayers.set(identity(account), account.taxpayerId);
+      for (const account of payload.accounts) {
+        account.taxpayerId = taxpayers.get(identity(account)) ?? randomUUID();
+        taxpayers.set(identity(account), account.taxpayerId);
+      }
+      await writeVault(payload);
+      return result;
+    } finally { vaultLease.release(); }
+  });
+  vaultWrites = pending.catch(() => undefined);
+  return pending;
+}
+
+async function writeVault(payload: VaultPayload): Promise<void> {
+  const plaintext = JSON.stringify(payload);
   const encrypted = await runDpapi(protectScript, plaintext);
-  const envelope: VaultEnvelope = { version: 1, encrypted };
+  const envelope: VaultEnvelope = { version: 1, encrypted, encoding: 'utf8-dpapi' };
   await mkdir(vaultDirectory, { recursive: true });
   const tempPath = `${vaultPath}.${process.pid}.tmp`;
   await writeFile(tempPath, `${JSON.stringify(envelope)}\n`, { encoding: 'utf8', flag: 'w' });
   await rename(tempPath, vaultPath);
-  return { added, updated };
+}
+
+async function operationalVault(): Promise<VaultPayload> {
+  const payload = await readVault();
+  if (payload.operationKey && payload.accounts.every((account) => account.id && account.taxpayerId)) return payload;
+  return await mutateVault(async (current) => current);
 }
 
 export async function findSunatAccountCredential(accountKey?: string): Promise<SunatAccountCredential> {
-  const payload = await readVault();
+  const payload = await operationalVault();
   if (!accountKey?.trim()) {
     if (payload.accounts.length === 1) return payload.accounts[0];
     if (payload.accounts.length === 0) throw new Error('No hay cuentas importadas en el almacén local.');
@@ -195,6 +254,12 @@ export async function findSunatAccountCredential(accountKey?: string): Promise<S
   const account = payload.accounts.find((entry) => normalizeAccountKey(entry.accountKey) === normalized);
   if (!account) throw new Error('No se encontró una coincidencia exacta en el almacén local. Revisa el nombre de cuenta o vuelve a importar la planilla.');
   return account;
+}
+
+/** Metadata and HMAC key remain local; the ledger stores only opaque IDs/digests. */
+export async function getOperationalVault(): Promise<{ key: Buffer; accounts: SunatAccountCredential[] }> {
+  const payload = await operationalVault();
+  return { key: Buffer.from(payload.operationKey!, 'hex'), accounts: payload.accounts };
 }
 
 /** Return non-identifying local vault status; never exposes account names or secrets. */

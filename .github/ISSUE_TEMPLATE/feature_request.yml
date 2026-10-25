@@ -1,0 +1,24 @@
+name: Propuesta de mejora
+description: Proponer una capacidad o mejora del proyecto.
+title: "[Mejora] "
+body:
+  - type: markdown
+    attributes:
+      value: No incluyas datos de contribuyentes, credenciales ni documentos reales. Una propuesta no autoriza operaciones tributarias.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema y resultado que necesitas
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Propuesta y alternativas
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Guía oficial pública relacionada, si corresponde
+      description: Solo enlaces públicos; nunca URL de una sesión autenticada.

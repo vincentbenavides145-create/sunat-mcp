@@ -101,7 +101,7 @@ Antes del paso que presenta o confirma una operación tributaria, mostrar acció
 
 ## Cobertura documental revisada el 23/10/2026
 
-El índice `sunat://procedimientos` contiene 27 fichas; cada una se consulta con `sunat://procedimientos/{id}`. La fuente mantenida es [Procedimientos públicos](procedimientos-publicos.md), investigada con fuentes oficiales mediante Exa y Firecrawl en Composio. Cubre RUC, SIRE, declaración mensual, consultas de pagos/deuda, detracciones, buzón, comprobantes, T-Registro/PLAME, devoluciones, fraccionamiento, correcciones, renta anual y referencias aduaneras. La cobertura parcial y los manuales históricos están marcados en cada ficha.
+El índice `sunat://procedimientos` contiene 30 fichas; cada una se consulta con `sunat://procedimientos/{id}`. La fuente mantenida es [Procedimientos públicos](procedimientos-publicos.md), investigada con fuentes oficiales mediante Exa y Firecrawl en Composio. Cubre RUC, SIRE, declaración mensual, consultas de pagos/deuda, detracciones, buzón, comprobantes, T-Registro/PLAME, devoluciones, fraccionamiento, correcciones, renta anual y referencias aduaneras. La cobertura parcial y los manuales históricos están marcados en cada ficha.
 
 Los IDs documentales se distinguen de `observedRoutes`: no se añadieron rutas observadas por leer manuales. Se separan el registro de una solicitud, su constancia, el pago y la resolución posterior. Los límites de intervalo publicados se aplican por canal y se resuelven con consultas sucesivas si el pedido es más amplio.
 
@@ -115,3 +115,19 @@ Los IDs documentales se distinguen de `observedRoutes`: no se añadieron rutas o
 - [Formas de acceso al SIRE](https://cpe.sunat.gob.pe/node/158)
 - [Reportes Electrónicos](https://centrovirtual.sunat.gob.pe/tramites/reportes-electronicos)
 - [Operatividad Aduanera](https://www.sunat.gob.pe/operatividadaduanera/index.html)
+
+## NPS: consulta, generación y pago
+
+Ampliación 24/10/2026. `nps-consulta` documenta el formulario observado y la ruta Personas → Mis declaraciones informativas → Presento mis declaraciones y pagos → Declarativas → Consulta de NPS. Se abrió su destino sin ejecutar búsquedas ni pagos; evidencia `ruta_observada`. Reutilizar `routeId: nps-consulta-menu-sol-personas`.
+
+`nps-generacion` y `nps-pago` enlazan las guías oficiales de [generación](https://orientacion.sunat.gob.pe/6652-03-generacion-del-nps) y [concepto/pago](https://orientacion.sunat.gob.pe/nps-numero-de-pago-sunat-personas). La generación pertenece a Declaraciones y Pagos y puede acompañar una presentación; el pago posterior se realiza por un canal autorizado. No confundirlos con la consulta SOL, ni registrar un voucher NPS como constancia de pago. Ver las tres fichas para requisitos, comprobaciones y fronteras.
+
+## Biblioteca documental de los índices oficiales
+
+La herramienta `sunat_guias` devuelve primero fichas estructuradas con pasos locales y rutas observadas asociadas. Filtra canal y operación; el [catálogo de referencias](guias-oficiales.md) se consulta explícitamente con alcance referencias o todo. Las fuentes fallidas se retiran y se conservan cantidades agregadas; las copias se fusionan solo con huella binaria idéntica. Sus IDs documentales no crean rutas ni contratos fiscales nuevos. Las revisiones adicionales pueden persistirse con una huella del contenido consultado para reutilizar sus pasos sin abrir de nuevo la URL.
+
+## Accesos SOL sin ventanas del portal
+
+`sunat_brave_ejecutar_lote` acepta `entryPoint` como alternativa a `routeId` o `steps`: `declaraciones-pagos`, `tramites-consultas`, `renta-anual-personas` y `renta-anual-empresas`. Navega en la pestaña controlada; los destinos públicos, fuentes y fecha de revisión están en `data/operation-index.json`. Una dirección pública no demuestra acceso de la cuenta ni finalización del trámite. Renta Empresas conserva la página de entrada oficial, sin seleccionar campaña ni formulario.
+
+Las ventanas hijas excepcionales deben proceder del clic y contexto actuales y terminar en HTTPS SUNAT. Al seguirlas se descartan controles y aprobaciones anteriores y se comprueba otra vez la cuenta importada; nunca se escoge la última ventana ni se repite un clic incierto.

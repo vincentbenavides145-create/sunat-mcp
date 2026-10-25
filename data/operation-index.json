@@ -1,5 +1,19 @@
 {
   "schemaVersion": 1,
+  "officialGuideLibrary": {
+    "tool": "sunat_guias",
+    "catalog": "data/official-guides.json",
+    "report": "docs/guias-oficiales.md",
+    "note": "Consulta local de fichas estructuradas y fuentes operativas revisadas; canal y operación explícitos. Referencias adicionales bajo alcance referencias o todo. Fuentes fallidas retiradas y revisiones reutilizables con huella de contenido. Los IDs documentales no son routeId ni autorizan envíos."
+  },
+  "workManagement": {
+    "tool": "sunat_trabajos",
+    "resourceUri": "sunat://flujos",
+    "executionTool": "sunat_brave_ejecutar_lote",
+    "executionArgument": "trabajoId",
+    "mode": "assisted",
+    "note": "Los contratos enlazan fichas y finalidades; no certifican recorridos fiscales completos. Los envíos requieren cuenta importada verificada, trabajo, aprobación explícita y conciliación humana si el resultado es incierto."
+  },
   "purpose": "Clasifica solicitudes por acceso SOL y perfil, y conserva rutas de menú observadas para que el MCP las reutilice. Las rutas no son procedimientos completados y siempre se comprueba la pantalla actual.",
   "evidenceStates": {
     "inventariado": "El acceso o servicio aparece en el menú o en información oficial; su recorrido completo no está verificado.",
@@ -25,6 +39,7 @@
     {
       "id": "declaraciones-pagos",
       "label": "Mis Declaraciones y Pagos",
+      "navigation": { "url": "https://e-menu.sunat.gob.pe/cl-ti-itmenu2/MenuInternetPlataforma.htm?exe=55.1.1.1.1", "source": "https://www.sunat.gob.pe/p/js/apps/main.js", "reviewedAt": "2026-10-25", "evidence": "guia_publica" },
       "aliases": [
         "declaración mensual",
         "pagar IGV",
@@ -45,6 +60,7 @@
     {
       "id": "tramites-consultas",
       "label": "Mis Trámites y Consultas",
+      "navigation": { "url": "https://e-menu.sunat.gob.pe/cl-ti-itmenucabina/MenuInternet.htm", "source": "https://www.sunat.gob.pe/sol.html", "reviewedAt": "2026-10-25", "evidence": "guia_publica" },
       "aliases": [
         "consultar",
         "ficha RUC",
@@ -68,6 +84,7 @@
     {
       "id": "renta-anual-personas",
       "label": "Declara Renta Anual — Personas",
+      "navigation": { "url": "https://e-renta.sunat.gob.pe/loader/recaudaciontributaria/declaracionpago/formularios?idFormulario=menu", "source": "https://www.sunat.gob.pe/sol.html", "reviewedAt": "2026-10-25", "evidence": "guia_publica" },
       "aliases": [
         "renta anual persona",
         "renta anual persona natural",
@@ -83,6 +100,7 @@
     {
       "id": "renta-anual-empresas",
       "label": "Declara Renta Anual — Empresas",
+      "navigation": { "url": "https://www.sunat.gob.pe/renta/renta.html", "source": "https://www.sunat.gob.pe/sol.html", "reviewedAt": "2026-10-25", "evidence": "guia_publica", "note": "Página oficial de entrada; no equivale a abrir el formulario 710 ni a elegir una campaña." },
       "aliases": [
         "renta anual empresa",
         "renta anual empresa jurídica",
@@ -599,6 +617,61 @@
           "Serpost",
           "exportación postal"
         ]
+      },
+      {
+        "id": "nps-consulta",
+        "title": "Consulta de Número de Pago SUNAT (NPS)",
+        "entryPoint": "tramites-consultas",
+        "profiles": [
+          "personas"
+        ],
+        "evidence": "ruta_observada",
+        "coverage": "formulario_consulta_observado",
+        "resourceUri": "sunat://procedimientos/nps-consulta",
+        "aliases": [
+          "consulta de NPS",
+          "consultar NPS",
+          "estado del NPS",
+          "NPS vigente",
+          "NPS pagado"
+        ]
+      },
+      {
+        "id": "nps-generacion",
+        "title": "Generación de NPS desde declaraciones o boletas",
+        "entryPoint": "declaraciones-pagos",
+        "profiles": [
+          "personas",
+          "empresas"
+        ],
+        "evidence": "guia_publica",
+        "coverage": "generacion_documentada_no_ejecutada",
+        "resourceUri": "sunat://procedimientos/nps-generacion",
+        "aliases": [
+          "generar NPS",
+          "generación de NPS",
+          "Número de Pago SUNAT",
+          "pago con NPS",
+          "pagos NPS"
+        ]
+      },
+      {
+        "id": "nps-pago",
+        "title": "Pago posterior de un NPS generado",
+        "entryPoint": "canal-bancario",
+        "profiles": [
+          "personas",
+          "empresas"
+        ],
+        "evidence": "guia_publica",
+        "coverage": "paso_externo_no_automatizado",
+        "resourceUri": "sunat://procedimientos/nps-pago",
+        "aliases": [
+          "pagar NPS",
+          "pago bancario NPS",
+          "constancia NPS",
+          "Formulario 1663"
+        ]
       }
     ]
   },
@@ -620,9 +693,33 @@
         "Gestión de Compras"
       ],
       "destination": "Registro de Compras Electrónico",
+      "destinationChecks": ["Periodo", "Propuesta"],
       "evidence": "ruta_observada",
       "observedAt": "2026-10-22",
       "gate": "Si SUNAT informa que el usuario no está registrado como obligado en el sistema, detenerse y comunicarlo; no intentar seleccionar un período."
+    },
+    {
+      "id": "nps-consulta-menu-sol-personas",
+      "aliases": [
+        "consulta de NPS",
+        "consultar NPS",
+        "estado del NPS"
+      ],
+      "entryPoint": "tramites-consultas",
+      "profile": "personas",
+      "procedureId": "nps-consulta",
+      "path": [
+        "Personas",
+        "Mis declaraciones informativas",
+        "Presento mis declaraciones y pagos",
+        "Declarativas",
+        "Consulta de NPS"
+      ],
+      "destination": "Consulta de Número de Pago SUNAT",
+      "destinationChecks": ["Criterios de Búsqueda de NPS", "Número de NPS", "Estado del NPS"],
+      "evidence": "ruta_observada",
+      "observedAt": "2026-10-24",
+      "gate": "Solo consulta. Generar un NPS o efectuar el pago son fases distintas; no se ejecutaron búsquedas ni pagos al observar esta ruta."
     }
   ]
 }

@@ -55,6 +55,7 @@ async function main(): Promise<void> {
     const documentColumn = await resolveColumn('Columna de RUC/DNI: ');
     const usernameColumn = await resolveColumn('Columna de usuario SOL (obligatoria para RUC; Enter si no aplica): ', true);
     const passwordColumn = await resolveColumn('Columna de Clave SOL: ');
+    const sessionRucColumn = await resolveColumn('Columna de RUC de sesión esperado para accesos DNI (opcional; Enter si no aplica): ', true);
     const sireClientIdColumn = await resolveColumn('Columna de client_id API SIRE (opcional; Enter si no aplica): ', true);
     const sireClientSecretColumn = await resolveColumn('Columna de client_secret API SIRE (opcional; Enter si no aplica): ', true);
     if (Boolean(sireClientIdColumn) !== Boolean(sireClientSecretColumn)) {
@@ -68,6 +69,7 @@ async function main(): Promise<void> {
       const document = cellText(row.getCell(documentColumn!), 'RUC/DNI').replace(/\D/g, '');
       const username = usernameColumn ? cellText(row.getCell(usernameColumn), 'usuario SOL') : '';
       const password = cellText(row.getCell(passwordColumn!), 'Clave SOL');
+      const sessionRuc = sessionRucColumn ? cellText(row.getCell(sessionRucColumn), 'RUC de sesión').replace(/\D/g, '') : undefined;
       const sireClientId = sireClientIdColumn ? cellText(row.getCell(sireClientIdColumn), 'client_id API SIRE') : '';
       const sireClientSecret = sireClientSecretColumn ? cellText(row.getCell(sireClientSecretColumn), 'client_secret API SIRE') : '';
       if (!accountKey && !document && !username && !password && !sireClientId && !sireClientSecret) continue;
@@ -89,6 +91,7 @@ async function main(): Promise<void> {
         document,
         ...(username ? { username } : {}),
         password,
+        ...(sessionRuc ? { sessionRuc } : {}),
         ...(sireClientId && sireClientSecret ? { sireApi: { clientId: sireClientId, clientSecret: sireClientSecret } } : {}),
       });
     }

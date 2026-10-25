@@ -2,8 +2,14 @@ import { mkdtemp, readFile, rm } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import { createHash } from 'node:crypto';
+import { buildApprovalFingerprint } from './approval-state.js';
+import { beginBravePageContext, scrollBraveElementIntoView } from './windows-ui.js';
+import { browserMode, getCdpBrowser, getCdpConnectionState } from './cdp-browser.js';
+import { isSunatLoginUrl, isSunatSessionPageUrl } from './browser-context.js';
 import type { SunatAccountCredential } from './credentials.js';
-import { activateBraveElement, captureBraveWindow, focusBraveElement, getBraveAddressBar, getBravePageUiState, getBraveUiState, getBraveUrl, getNativeNavigationMetrics, hasBraveWindows, invokeBraveElement, isSunatTabLabel, loginWithSavedSunatCredentialNatively, NativeUiError, rememberBraveWindow, scrollBraveDocument, selectBraveTab, sendBraveKeys, typeBraveText, typeBraveTextSequence, walkUiaElements, type UiaElement, type UiaWindow } from './windows-ui.js';
+import { assertAccountRuc, rucFromHeader } from './account-session.js';
+import { acquireBrowserLease } from './process-lease.js';
+import { activateBraveElement, captureBraveWindow, findBraveRouteControl, focusBraveElement, getBraveAddressBar, getBravePageUiState, getBraveUiState, getBraveUrl, getNativeNavigationMetrics, hasBraveWindows, invokeBraveElement, isSunatTabLabel, loginWithSavedSunatCredentialNatively, NativeUiError, rememberBraveWindow, scrollBraveDocument, selectBraveTab, sendBraveKeys, typeBraveText, typeBraveTextSequence, walkUiaElements, type UiaElement, type UiaWindow, type UiaSearchResult } from './windows-ui.js';
 
 const LOGIN_TIMEOUT_MS = 30_000;
 
@@ -11,18 +17,71 @@ export type BrowserStep =
   | { action: 'navigate'; url: string }
   | { action: 'snapshot' }
   | { action: 'click'; ref: string }
-  | { action: 'scroll'; direction: 'up' | 'down' | 'left' | 'right' }
+  | { action: 'scroll'; direction: 'up' | 'down' | 'left' | 'right'; ref?: never }
+  | { action: 'scroll'; ref: string; direction?: never }
   | { action: 'fill'; ref: string; text: string };
 
-export interface BrowserSnapshot { text: string; url: string; fingerprint: string; capturedAt: number }
+export interface BrowserSnapshot { text: string; url: string; fingerprint: string; approvalFingerprint?: string; capturedAt: number; pageHasFocus?: boolean; accountRuc?: string; formValues?: Array<{ field: string; value: string }> }
+
+/** Keep action outcomes and one final page reading, without repeating whole pages. */
+export function compactBrowserResults(outputs: unknown[]): unknown[] {
+  let lastSnapshot = -1;
+  for (let index = outputs.length - 1; index >= 0; index--) {
+    const item = outputs[index];
+    if (item && typeof item === 'object' && 'snapshot' in item && typeof item.snapshot === 'string') { lastSnapshot = index; break; }
+  }
+  return outputs.map((item, index) => {
+    if (index === lastSnapshot || !item || typeof item !== 'object' || !('snapshot' in item) || typeof item.snapshot !== 'string') return item;
+    const { snapshot: _snapshot, ...rest } = item;
+    return { ...rest, snapshotOmitted: true };
+  });
+}
 let latestSnapshot: BrowserSnapshot | undefined;
 const latestSelectors = new Map<string, UiaElement>();
+const navigationReferences = new Set<string>();
 let referenceIds = new Map<string, string>();
 let nextReferenceId = 1;
+let nativeLogin = false;
+let lastEngine: 'uia' | 'cdp' | undefined;
+const useCdp = () => !nativeLogin && browserMode() === 'hybrid';
+
+function invalidateReferences(): void {
+  latestSnapshot = undefined;
+  latestSelectors.clear();
+  navigationReferences.clear();
+}
+
+export async function beginBrowserInteraction(allowNavigation = false, deadlineAt?: number): Promise<void> {
+  acquireBrowserLease();
+  const engine = useCdp() ? 'cdp' : 'uia';
+  if (lastEngine !== engine) invalidateReferences();
+  lastEngine = engine;
+  if (engine === 'cdp') {
+    try { await (await getCdpBrowser()).bind(); }
+    catch (error) { invalidateReferences(); throw error; }
+    return;
+  }
+  try {
+    if (!await beginBravePageContext(allowNavigation, deadlineAt)) return;
+  } catch (error) {
+    latestSnapshot = undefined;
+    latestSelectors.clear();
+    navigationReferences.clear();
+    throw error;
+  }
+  latestSnapshot = undefined;
+  latestSelectors.clear();
+  navigationReferences.clear();
+}
 
 export function getLatestBrowserSnapshot(): BrowserSnapshot | undefined {
   if (latestSnapshot && Date.now() - latestSnapshot.capturedAt > 30_000) return undefined;
   return latestSnapshot;
+}
+
+/** Current rendered form values for the human approval, never stale values from another client. */
+export function getCurrentFormValues(): Array<{ field: string; value: string }> {
+  return getLatestBrowserSnapshot()?.formValues ?? [];
 }
 
 function snapshotReference(line: string): string | undefined {
@@ -30,10 +89,12 @@ function snapshotReference(line: string): string | undefined {
     ?? line.match(/\[ref=(?<ref>e\d+)\]/)?.groups?.ref;
 }
 
-export function describeSnapshotReference(snapshot: string, ref: string): { role: string; label: string; raw: string } | undefined {
+export function describeSnapshotReference(snapshot: string, ref: string): { role: string; label: string; raw: string; navigation?: boolean } | undefined {
   const line = snapshot.split(/\r?\n/).find((value) => snapshotReference(value) === ref);
   if (!line) return undefined;
-  return describeSnapshotLine(line);
+  const reference = describeSnapshotLine(line);
+  const native = latestSelectors.get(ref);
+  return { ...reference, ...(navigationReferences.has(ref) && native?.name === reference.label ? { navigation: true } : {}) };
 }
 
 function describeSnapshotLine(line: string): { role: string; label: string; raw: string } {
@@ -60,7 +121,7 @@ export function findSnapshotReferencesByLabel(snapshot: string, label: string): 
   const genericMatches: Array<{ ref: string; role: string; label: string }> = [];
   for (const line of snapshot.split(/\r?\n/)) {
     const ref = snapshotReference(line);
-    if (!ref || /\[disabled\]/.test(line)) continue;
+    if (!ref || /\[(?:disabled|offscreen)\]/.test(line)) continue;
     const reference = describeSnapshotLine(line);
     if (normalizeAccessibleLabel(reference.label) !== wanted) continue;
     const match = { ref, role: reference.role, label: reference.label };
@@ -73,14 +134,18 @@ export function findSnapshotReferencesByLabel(snapshot: string, label: string): 
 export function isAuthenticatedSunatPage(snapshot: { text: string; url: string }): boolean {
   try {
     const url = new URL(snapshot.url);
-    return url.protocol === 'https:' && url.hostname.endsWith('.sunat.gob.pe') &&
-      (url.hostname === 'e-menu.sunat.gob.pe' || /\/cl-ti-itmenu\/MenuInternet/i.test(url.pathname)) &&
-      !/loginMenuSol/i.test(url.pathname) &&
+    return isSunatSessionPageUrl(url.toString()) &&
       snapshot.text.split(/\r?\n/).some((line) => /^\s*@e\d+\s+(?:button|link)\s+"(?:salir|cerrar sesi[oó]n|desconectar)"/i.test(line) && !/\[(?:disabled|offscreen)\]/.test(line));
   } catch { return false; }
 }
 
-export function isTaxCommitControl(reference: { role: string; label: string }): boolean {
+export function isTaxCommitControl(reference: { role: string; label: string; navigation?: boolean }): boolean {
+  const label = normalizeAccessibleLabel(reference.label);
+  // A tab selects a panel. Service titles are harmless only with native menu
+  // ancestry, never merely because the model supplied a link or a saved route.
+  if (reference.role === 'tab') return false;
+  if (/^(?:cancelar (?:busqueda|filtro)|cerrar (?:ayuda|vista previa)|volver|regresar)$/.test(label)) return false;
+  if (reference.navigation && /^(?:registrar comprobantes de pago|emitir recibos? por honorarios?(?: electronicos?)?|emitir factura(?: electronica)?|emitir boleta de venta|emitir comprobantes de pago|declarar y pagar|consultar y pagar)$/.test(label)) return false;
   const text = `${reference.role} ${reference.label}`.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
   // Some SOL services persist a proposal or file a request with "Generar".
   // Keep its object explicit: generating a report is ordinary consultation.
@@ -97,14 +162,7 @@ export function isSensitiveInput(reference: { role: string; label: string }): bo
 
 export function sanitizeSnapshotForMcp(snapshot: string): string {
   return snapshot.split(/\r?\n/).map((line) => {
-    if (/^URL:\s*https:\/\/api-seguridad\.sunat\.gob\.pe\//i.test(line)) {
-      try {
-        const url = new URL(line.slice(4).trim());
-        const loginPath = url.pathname.replace(/\/v1\/clientessol\/[^/]+\/oauth2\/loginMenuSol/i, '/v1/clientessol/[oculto]/oauth2/loginMenuSol');
-        if (loginPath !== url.pathname) return `URL: ${url.origin}${loginPath} [parámetros de acceso ocultos]`;
-        return `URL: ${url.origin}${url.pathname} [parámetros de acceso ocultos]`;
-      } catch { return 'URL: acceso oficial de SUNAT [oculta]'; }
-    }
+    if (/^URL:\s*https:\/\//i.test(line)) return `URL: ${sanitizePageUrlForMcp(line.slice(4).trim())}`;
     const legacy = line.match(/^([\t ]*@e\d+\s+)(.*)$/);
     const current = line.match(/^([\t ]*-\s*)(.*\[ref=e\d+\])(.*)$/);
     const match = legacy ?? current;
@@ -121,14 +179,16 @@ export function sanitizeSnapshotForMcp(snapshot: string): string {
   }).join('\n');
 }
 
-function sanitizePageUrlForMcp(value: string): string {
+export function sanitizePageUrlForMcp(value: string): string {
   try {
     const url = new URL(value);
     if (url.hostname.toLowerCase() === 'api-seguridad.sunat.gob.pe') {
       url.pathname = url.pathname.replace(/\/v1\/clientessol\/[^/]+\/oauth2\/loginMenuSol/i, '/v1/clientessol/[oculto]/oauth2/loginMenuSol');
-      url.search = '';
-      url.hash = '';
     }
+    // SOL also sends serialized account/session data on ordinary service URLs.
+    // Keep the real URL only in process for routing and approval comparisons.
+    url.search = '';
+    url.hash = '';
     return url.toString();
   } catch {
     return 'https://api-seguridad.sunat.gob.pe/[URL oculta]';
@@ -148,6 +208,49 @@ function assertSunatUrl(value: string): void {
   }
 }
 
+export type FocusedRouteResult = 'clicked' | 'expanded' | 'snapshot_required' | 'ambiguous' | 'session_changed';
+
+export function exactRouteSearchMatches(search: UiaSearchResult, label: string): UiaElement[] | undefined {
+  if (search.hasMore || search.matchCount > search.matches.length) return undefined;
+  const matches = new Map<string, UiaElement>();
+  for (const candidate of search.matches) {
+    const element = candidate.isInvokable || /^(Hyperlink|Link|TabItem|MenuItem|TreeItem|ListItem)$/.test(candidate.type ?? '') ? candidate : candidate.invokableAncestor;
+    if (element?.selector && element.isEnabled !== false && element.isOffscreen !== true && normalizeAccessibleLabel(element.name ?? '') === normalizeAccessibleLabel(label)) matches.set(element.selector, element);
+  }
+  return [...matches.values()];
+}
+
+/** Only safe known navigation. Ambiguous or tax-looking controls require a full decision snapshot. */
+export async function executeFocusedRouteStep(label: string, expectedUrl: string): Promise<FocusedRouteResult> {
+  if (useCdp()) {
+    const fresh = await snapshotNative();
+    if (fresh.url !== expectedUrl) return 'session_changed';
+    const matches = findSnapshotReferencesByLabel(fresh.text, label);
+    if (matches.length > 1) return 'ambiguous';
+    if (!matches.length) return 'snapshot_required';
+    const reference = describeSnapshotReference(fresh.text, matches[0].ref);
+    if (!reference || isTaxCommitControl(reference)) return 'snapshot_required';
+    if (/\[expanded\]/.test(reference.raw)) return 'expanded';
+    try { await (await getCdpBrowser()).click(latestSelectors.get(matches[0].ref)!.selector!); }
+    finally { invalidateReferences(); }
+    return 'clicked';
+  }
+  const focused = await findBraveRouteControl(label, expectedUrl);
+  if (!focused) return 'snapshot_required';
+  const url = getBraveUrl(focused.window);
+  if (!url || url.toString() !== expectedUrl) return 'session_changed';
+  assertSunatUrl(url.toString());
+  const matches = exactRouteSearchMatches(focused.search, label);
+  if (!matches || matches.length > 1) return 'ambiguous';
+  if (!matches.length) return 'snapshot_required';
+  const reference = { role: roleForUia(matches[0]) ?? 'generic', label: matches[0].name ?? '' };
+  if (isTaxCommitControl(reference)) return 'snapshot_required';
+  // An exception here is an uncertain action: callers must stop, never retry it.
+  try { await activateBraveElement(matches[0]); }
+  finally { latestSnapshot = undefined; latestSelectors.clear(); navigationReferences.clear(); }
+  return 'clicked';
+}
+
 function findInputRefs(snapshot: string): Array<{ ref: string; line: string }> {
   return snapshot.split(/\r?\n/).flatMap((line) => {
     const ref = snapshotReference(line);
@@ -164,10 +267,7 @@ function findRef(snapshot: string, role: RegExp, label: RegExp): string | undefi
 }
 
 function loginPageUrl(value: string): boolean {
-  try {
-    const url = new URL(value);
-    return url.protocol === 'https:' && (url.hostname === 'sunat.gob.pe' || url.hostname.endsWith('.sunat.gob.pe')) && /loginMenuSol/i.test(url.pathname);
-  } catch { return false; }
+  return isSunatLoginUrl(value);
 }
 
 async function selectSunatWindow(state: import('./windows-ui.js').UiaInspectResult, deadlineAt?: number): Promise<UiaWindow> {
@@ -216,8 +316,9 @@ function roleForUia(element: UiaElement): string | undefined {
   return undefined;
 }
 
-export function buildNativeSnapshot(window: UiaWindow, url: URL): { text: string; fingerprint: string } {
+export function buildNativeSnapshot(window: UiaWindow, url: URL): { text: string; fingerprint: string; approvalFingerprint: string; formValues: Array<{ field: string; value: string }> } {
   latestSelectors.clear();
+  navigationReferences.clear();
   const lines = [`URL: ${sanitizePageUrlForMcp(url.toString())}`];
   const roots: UiaElement[] = [];
   const findRoots = (elements: UiaElement[]) => {
@@ -230,30 +331,49 @@ export function buildNativeSnapshot(window: UiaWindow, url: URL): { text: string
   if (!roots.length) throw new NativeUiError('no_document', 'Brave todavía no muestra el documento SUNAT.');
   const nextIds = new Map<string, string>();
   const formState: unknown[] = [];
-  walkUiaElements(roots, (element) => {
+  const formValues: Array<{ field: string; value: string }> = [];
+  const containsInput = (element: UiaElement): boolean => element.isEditable === true || /^(Edit|ComboBox|CheckBox|RadioButton)$/.test(element.type ?? '') || (element.children ?? []).some(containsInput);
+  const visit = (element: UiaElement, inMenu = false) => {
+    const menu = inMenu || (/^(Menu|MenuBar|Tree|Tab)$/.test(element.type ?? '') || element.automationId === 'divSubMenuIzquierda') && !containsInput(element);
     const isInput = element.type === 'Edit' || element.type === 'ComboBox' || element.isEditable === true;
     const text = element.name || (isInput ? element.automationId || 'Campo de texto' : element.isInvokable ? element.automationId || 'Control sin etiqueta' : '');
     const label = text.replace(/[\r\n]+/g, ' ').trim();
     const role = roleForUia(element);
+    if (/^(Edit|ComboBox|CheckBox|RadioButton)$/.test(element.type ?? '') && element.automationId !== 'txtBusca' && !element.isPassword && !isSensitiveInput({ role: element.type ?? '', label: `${element.name ?? ''} ${element.automationId ?? ''}` })) formValues.push({ field: element.name || element.automationId || 'Campo', value: element.value ?? element.toggleState ?? String(element.isSelected ?? '') });
     if (role && label) {
       if (element.selector && (isInput || element.isInvokable || /^(button|link|checkbox|tab|option|menuitem|treeitem)$/.test(role))) {
         const key = `${window.hwnd}:${element.selector}`;
         const ref = referenceIds.get(key) ?? `e${nextReferenceId++}`;
         nextIds.set(key, ref);
         latestSelectors.set(ref, element);
-        lines.push(`@${ref} ${role} ${JSON.stringify(label)}${element.isEnabled === false ? ' [disabled]' : ''}${element.isOffscreen ? ' [offscreen]' : ''}`);
+        if (menu && /^(Hyperlink|Link|MenuItem|TreeItem|TabItem|ListItem)$/.test(element.type ?? '')) navigationReferences.add(ref);
+        lines.push(`@${ref} ${role} ${JSON.stringify(label)}${element.isEnabled === false ? ' [disabled]' : ''}${element.isOffscreen ? ' [offscreen]' : ''}${element.expandState === 'expanded' ? ' [expanded]' : ''}`);
         formState.push([element.selector, element.type, element.name, element.value, element.isEnabled, element.toggleState, element.isSelected]);
       } else {
         lines.push(`- ${role} ${JSON.stringify(label)}`);
       }
     }
-  });
+    for (const child of element.children ?? []) visit(child, menu);
+  };
+  for (const root of roots) visit(root);
   referenceIds = nextIds;
   const text = lines.join('\n');
-  return { text, fingerprint: createHash('sha256').update(JSON.stringify([url.toString(), text, formState])).digest('hex') };
+  return { text, fingerprint: createHash('sha256').update(JSON.stringify([url.toString(), text, formState])).digest('hex'), approvalFingerprint: buildApprovalFingerprint(window, url, roots), formValues };
 }
 
 async function snapshotNative(deadlineAt?: number): Promise<BrowserSnapshot> {
+  if (useCdp()) {
+    try {
+      const { window, url, background, accountRuc } = await (await getCdpBrowser()).snapshot();
+      const result = buildNativeSnapshot(window, url);
+      latestSnapshot = { ...result, url: url.toString(), capturedAt: Date.now(), pageHasFocus: !background, accountRuc };
+      return latestSnapshot;
+    } catch (error) {
+      invalidateReferences();
+      if (error instanceof NativeUiError) throw error;
+      throw new NativeUiError('cdp_read_failed', 'No se pudo leer la página SUNAT mediante CDP. No se activó Brave ni se reintentó una acción.');
+    }
+  }
   let state = await getBravePageUiState(deadlineAt);
   if (!(state.windows ?? []).some((window) => {
     const url = getBraveUrl(window);
@@ -264,18 +384,68 @@ async function snapshotNative(deadlineAt?: number): Promise<BrowserSnapshot> {
   if (!url) throw new Error('No se pudo leer la página actual de Brave.');
   assertSunatUrl(url.toString());
   const result = buildNativeSnapshot(window, url);
-  latestSnapshot = { ...result, url: sanitizePageUrlForMcp(url.toString()), capturedAt: Date.now() };
+  latestSnapshot = { ...result, url: url.toString(), capturedAt: Date.now() };
   return latestSnapshot;
 }
 
 async function fillNativeReference(ref: string, text: string, deadlineAt?: number): Promise<void> {
   const element = latestSelectors.get(ref);
   if (!element?.selector) throw new Error('La referencia de Brave ya no está vigente.');
+  if (useCdp()) { await (await getCdpBrowser()).fill(element.selector, text); return; }
   await focusBraveElement(element.selector, deadlineAt);
   await typeBraveText(text, true, deadlineAt, { automationId: element.automationId, name: element.name, password: false });
 }
 
-export async function loginWithSunatAccount(account: SunatAccountCredential | undefined, reuseSession: boolean, requestDeadlineAt?: number): Promise<{ authenticated: boolean; reusedSession: boolean; usedSavedBrowserCredential?: boolean; requiresUserAction?: string; code?: string }> {
+export async function loginWithSunatAccount(account: SunatAccountCredential | undefined, reuseSession: boolean, requestDeadlineAt?: number) {
+  acquireBrowserLease();
+  // Prepare/reuse the official background tab before native credential entry.
+  // This shares the persistent connection and never navigates an unrelated tab.
+  if (browserMode() === 'hybrid') await (await getCdpBrowser()).bind();
+  nativeLogin = true;
+  invalidateReferences();
+  try {
+    await beginBravePageContext(true, requestDeadlineAt);
+    return await loginNativelyWithSunatAccount(account, reuseSession, requestDeadlineAt);
+  }
+  finally { nativeLogin = false; lastEngine = undefined; invalidateReferences(); }
+}
+
+/** Verify fresh rendered emitter identity; the cached account key never authorizes a transaction. */
+export async function verifySunatAccount(expectedRuc: string): Promise<void> {
+  await snapshotNative();
+  if (!latestSnapshot || !isAuthenticatedSunatPage(latestSnapshot)) throw new Error('SUNAT no muestra una sesión autenticada verificable.');
+  let actual = latestSnapshot.accountRuc;
+  if (!actual && useCdp()) {
+    const header = latestSnapshot.text.split('\n').find((line) => /^@e\d+ link "Bienvenido,/.test(line));
+    const ref = header?.match(/^@(e\d+)/)?.[1];
+    if (ref) {
+      const opened = await executeBrowserBatch([{ action: 'click', ref }, { action: 'snapshot' }]);
+      if ((opened as unknown[]).some((item) => Boolean(item && typeof item === 'object' && 'error' in item))) throw new Error('No se pudo verificar la cabecera de la cuenta.');
+      actual = getLatestBrowserSnapshot()?.accountRuc;
+      // Close only the same harmless account-header toggle, then refresh refs.
+      const close = getLatestBrowserSnapshot()?.text.split('\n').find((line) => /^@e\d+ link "Bienvenido,/.test(line))?.match(/^@(e\d+)/)?.[1];
+      if (close) await executeBrowserBatch([{ action: 'click', ref: close }, { action: 'snapshot' }]);
+    }
+  }
+  if (!actual && !useCdp()) {
+    const state = await getBravePageUiState();
+    const texts: string[] = [];
+    const visit = (node: UiaElement, header = false) => {
+      if (node.isOffscreen || node.isPassword || /^(Edit|ComboBox)$/.test(node.type ?? '')) return;
+      const inside = header || node.automationId === 'divCabecera';
+      if (inside && node.name) texts.push(node.name);
+      node.children?.forEach((child) => visit(child, inside));
+    };
+    for (const window of state.windows ?? []) window.elements?.forEach((node) => visit(node));
+    actual = rucFromHeader(texts.join(' '));
+  }
+  try { assertAccountRuc(expectedRuc, actual); }
+  catch (error) { invalidateReferences(); throw error; }
+}
+
+export function resetBrowserContext(): void { invalidateReferences(); referenceIds.clear(); }
+
+async function loginNativelyWithSunatAccount(account: SunatAccountCredential | undefined, reuseSession: boolean, requestDeadlineAt?: number): Promise<{ authenticated: boolean; reusedSession: boolean; usedSavedBrowserCredential?: boolean; requiresUserAction?: string; code?: string }> {
   if (!account) return await loginWithSavedSunatCredentialNatively(requestDeadlineAt);
   const deadlineAt = Math.min(requestDeadlineAt ?? Number.POSITIVE_INFINITY, Date.now() + LOGIN_TIMEOUT_MS);
   try {
@@ -342,10 +512,17 @@ export async function loginWithSunatAccount(account: SunatAccountCredential | un
 export async function executeBrowserBatch(steps: BrowserStep[], deadlineAt?: number): Promise<unknown> {
   if (process.platform !== 'win32') throw new Error('SUNAT Perú MCP solo está disponible en Windows.');
   const results: unknown[] = [];
-  for (const step of steps) {
+  for (const [index, step] of steps.entries()) {
     try {
       if (step.action === 'navigate') {
         assertSunatUrl(step.url);
+        if (useCdp()) {
+          await (await getCdpBrowser()).navigate(step.url);
+          invalidateReferences();
+          referenceIds.clear();
+          results.push({ action: 'navigate', transport: 'cdp', url: sanitizePageUrlForMcp(step.url) });
+          continue;
+        }
         const state = await getBraveUiState(deadlineAt, true, 8);
         const window = await selectSunatWindow(state, deadlineAt);
         const addressBar = getBraveAddressBar(window);
@@ -358,31 +535,40 @@ export async function executeBrowserBatch(steps: BrowserStep[], deadlineAt?: num
         referenceIds.clear();
         results.push({ action: 'navigate', url: sanitizePageUrlForMcp(step.url) });
       } else if (step.action === 'snapshot') {
-        const fresh = await snapshotNative(deadlineAt);
-        results.push({ action: 'snapshot', origin: sanitizePageUrlForMcp(fresh.url), snapshot: sanitizeSnapshotForMcp(fresh.text) });
+        const fresh = index > 0 && steps[index - 1].action === 'snapshot' && getLatestBrowserSnapshot() || await snapshotNative(deadlineAt);
+        results.push({ action: 'snapshot', transport: useCdp() ? 'cdp' : 'uia', ...(fresh.pageHasFocus === undefined ? {} : { pageHasFocus: fresh.pageHasFocus }), origin: sanitizePageUrlForMcp(fresh.url), snapshot: sanitizeSnapshotForMcp(fresh.text) });
       } else if (step.action === 'click') {
         const element = latestSelectors.get(step.ref);
         if (!latestSnapshot || !element?.selector) throw new Error('Referencia de interfaz vencida.');
-        await activateBraveElement(element, deadlineAt);
+        const change = useCdp() ? await (await getCdpBrowser()).click(element.selector) : undefined;
+        if (!useCdp()) await activateBraveElement(element, deadlineAt);
         latestSnapshot = undefined;
         latestSelectors.clear();
-        results.push({ action: 'click', success: true });
+        results.push({ action: 'click', transport: useCdp() ? 'cdp' : 'uia', success: true, ...(change?.contextChanged ? { contextChanged: true } : {}) });
       } else if (step.action === 'scroll') {
-        if (!getLatestBrowserSnapshot()) await snapshotNative(deadlineAt);
-        await scrollBraveDocument(step.direction, deadlineAt);
+        if (step.ref) {
+          const element = getLatestBrowserSnapshot() && latestSelectors.get(step.ref);
+          if (!element?.selector || element.isEnabled === false) throw new NativeUiError('stale_reference', 'Toma una lectura nueva antes de desplazar este control.');
+          if (useCdp()) await (await getCdpBrowser()).scroll(undefined, element.selector);
+          else await scrollBraveElementIntoView(element.selector, deadlineAt);
+        } else {
+          if (!getLatestBrowserSnapshot()) await snapshotNative(deadlineAt);
+          if (useCdp()) await (await getCdpBrowser()).scroll(step.direction);
+          else await scrollBraveDocument(step.direction!, deadlineAt);
+        }
         latestSnapshot = undefined;
         latestSelectors.clear();
-        results.push({ action: 'scroll', success: true });
+        results.push({ action: 'scroll', transport: useCdp() ? 'cdp' : 'uia', success: true });
       } else {
         const reference = latestSnapshot ? describeSnapshotReference(latestSnapshot.text, step.ref) : undefined;
         if (!reference || isSensitiveInput(reference)) throw new Error('Campo no permitido o referencia vencida.');
         await fillNativeReference(step.ref, step.text, deadlineAt);
-        results.push({ action: 'fill', success: true });
+        results.push({ action: 'fill', transport: useCdp() ? 'cdp' : 'uia', success: true });
       }
     } catch (error) {
       latestSnapshot = undefined;
       latestSelectors.clear();
-      results.push({ action: step.action, code: error instanceof NativeUiError ? error.code : 'navigation_failed', error: error instanceof Error && (error instanceof NativeUiError || error.message.includes('HTTPS')) ? error.message : 'No se pudo completar la acción en Brave con UI Automation.' });
+      results.push({ action: step.action, code: error instanceof NativeUiError ? error.code : 'navigation_failed', ...(error instanceof NativeUiError && error.actionDispatched !== undefined ? { actionDispatched: error.actionDispatched } : {}), error: error instanceof Error && (error instanceof NativeUiError || error.message.includes('HTTPS')) ? error.message : `No se pudo completar la acción en Brave mediante ${useCdp() ? 'CDP' : 'UI Automation'}. No se reintentó el clic.` });
       break;
     }
   }
@@ -392,6 +578,7 @@ export async function executeBrowserBatch(steps: BrowserStep[], deadlineAt?: num
 export async function captureBrowserScreenshot(): Promise<Buffer> {
   const current = await snapshotNative();
   if (loginPageUrl(current.url)) throw new Error('No se captura la pantalla de inicio de sesión para proteger los datos de acceso.');
+  if (useCdp()) return await (await getCdpBrowser()).screenshot();
   const tempDir = await mkdtemp(path.join(os.tmpdir(), 'sunat-mcp-'));
   const screenshotPath = path.join(tempDir, 'active-page.png');
   try {
@@ -404,10 +591,19 @@ export async function captureBrowserScreenshot(): Promise<Buffer> {
   }
 }
 
-export async function getNativeBrowserStatus(): Promise<{ connected: boolean; session: string; browserName?: string; message?: string; metrics?: ReturnType<typeof getNativeNavigationMetrics> }> {
+export async function waitForBrowserLabel(label: string, timeoutMs = 8000, stopOnGate = false): Promise<boolean> {
+  if (useCdp()) return await (await getCdpBrowser()).waitForLabel(label, timeoutMs, stopOnGate);
+  return await import('./windows-ui.js').then((ui) => ui.waitForBraveLabel(label, timeoutMs));
+}
+
+export async function getNativeBrowserStatus(): Promise<{ connected: boolean; session: string; browserName?: string; message?: string; cdpConnected?: boolean; cdpState?: string; mode?: string; metrics?: ReturnType<typeof getNativeNavigationMetrics> }> {
   if (process.platform !== 'win32') return { connected: false, session: 'windows-native', message: 'SUNAT Perú MCP solo está disponible en Windows.' };
   try {
     const connected = await hasBraveWindows();
+    if (browserMode() === 'hybrid') {
+      const cdpState = getCdpConnectionState();
+      return { connected, session: 'windows-hybrid', mode: 'hybrid', cdpConnected: cdpState === 'connected', cdpState, browserName: 'Brave existente', metrics: getNativeNavigationMetrics() };
+    }
     return { connected, session: 'windows-native', browserName: 'Brave predeterminado del usuario', metrics: getNativeNavigationMetrics() };
   } catch {
     return { connected: false, session: 'windows-native', message: 'No se pudo acceder a la interfaz del Brave que ya está abierto.' };

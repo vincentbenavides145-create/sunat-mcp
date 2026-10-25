@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Reportar una vulnerabilidad en privado
+    url: https://github.com/vincentbenavides145-create/sunat-mcp/security/advisories/new
+    about: Consulta SECURITY.md. No publiques secretos ni datos tributarios en issues.

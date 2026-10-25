@@ -70,6 +70,7 @@ export async function checkSireApiAccess(account: SunatAccountCredential): Promi
   try {
     const response = await fetch(url, {
       method: 'POST',
+      redirect: 'error',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded', Accept: 'application/json' },
       body: form,
       signal: AbortSignal.timeout(timeoutMs()),

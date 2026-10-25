@@ -307,6 +307,15 @@ export async function observeProcedureSnapshot(snapshot?: BrowserSnapshot): Prom
 
 export async function renderProcedureLearning(id?: string): Promise<string> {
   const store = await readStore();
+  return renderStoredProcedureLearning(store, id);
+}
+
+export async function renderProcedureLearningBatch(ids: string[]): Promise<Record<string, string>> {
+  const store = await readStore();
+  return Object.fromEntries([...new Set(ids)].map((id) => [id, renderStoredProcedureLearning(store, id)]));
+}
+
+function renderStoredProcedureLearning(store: Awaited<ReturnType<typeof readStore>>, id?: string): string {
   const entries = Object.entries(store.procedures).filter(([key]) => id === undefined || key.startsWith(id + ':'));
   if (!entries.length) return '';
   if (id) return '\n\n## Aprendizaje local del procedimiento\n\n' + entries.map(([key, variants]) => renderExperience(key, variants)).join('\n\n');

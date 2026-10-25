@@ -2,5 +2,10 @@
 
 [mcp_servers.sunat_peru]
 command = "node"
-args = ["./node_modules/tsx/dist/cli.mjs", "./src/index.ts"]
+args = ["--import", "tsx", "./src/index.ts"]
 cwd = "C:/RUTA/A/SUNAT-MCP"
+
+[mcp_servers.sunat_peru.env]
+SUNAT_BROWSER_MODE = "hybrid"
+SUNAT_CDP_ENDPOINT = "http://127.0.0.1:9222"
+SUNAT_OPERATOR_ID = "default"

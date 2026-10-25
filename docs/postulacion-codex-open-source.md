@@ -1,5 +1,7 @@
 # Preparación para Codex for Open Source
 
+> Archivo histórico de preparación. Las condiciones del programa y los estados de la tabla corresponden a la revisión indicada; no describen la publicación actual ni son requisitos para distribuir este proyecto en GitHub. Para instalación, licencia, soporte y versiones vigentes consulta el [README](../README.md), [SECURITY.md](../SECURITY.md) y [Releases](https://github.com/vincentbenavides145-create/sunat-mcp/releases).
+
 Este documento registra los requisitos oficiales de la convocatoria y el estado conocido del proyecto para preparar una postulación honesta. No implica que el proyecto ya cumpla los criterios ni garantiza selección.
 
 Fuentes oficiales consultadas el 21 de octubre de 2026:
