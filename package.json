@@ -19,6 +19,8 @@
   },
   "description": "MCP local para Windows para navegar SUNAT con Brave nativo y consultar servicios oficiales.",
   "scripts": {
+    "setup": "powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File ./install.ps1",
+    "setup:check": "node scripts/setup.mjs --check",
     "start": "node --import tsx src/index.ts",
     "dev": "tsx watch src/index.ts",
     "sunat:importar-cuentas": "tsx src/import-accounts.ts",

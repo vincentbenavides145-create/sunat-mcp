@@ -11,15 +11,15 @@ Conecta tu IA con SUNAT desde Brave en Windows. Código abierto bajo licencia MI
 - Gestionar trabajos de varios clientes por turnos, con comprobación de cuenta y protección ante envíos duplicados.
 - Validar comprobantes mediante la API oficial, con sus credenciales configuradas.
 
-## Requisitos e instalación
+## Instalar con Codex
 
-Windows 10/11, Brave y Node.js 22 o 24 recomendados. Necesitas un cliente MCP compatible con solicitudes de aprobación.
+En Codex para Windows 10/11, pide:
 
-1. Descarga o clona el proyecto y sigue la [guía de instalación](docs/instalacion.md).
-2. Registra el servidor con [esta configuración de ejemplo](codex-mcp.example.toml).
-3. Abre Brave y pide una operación, por ejemplo: «Consulta la guía del formulario 621» o «Ve a Consulta de NPS».
+> Instala el MCP https://github.com/vincentbenavides145-create/sunat-mcp en mi equipo. Lee AGENTS.md, ejecuta install.ps1, verifica la instalación y activa la integración en Codex.
 
-Para iniciar sesión, usa una única credencial guardada en Brave o importa una planilla local de cuentas. CAPTCHA y OTP se completan en el navegador.
+Codex instala los requisitos y dependencias, genera la configuración, incorpora la skill SUNAT y registra el MCP. No necesitas editar `.env` ni TOML. El instalador elige CDP si ya está disponible; en caso contrario configura el modo nativo.
+
+Los permisos de Windows/Brave y el login son personales. Después puedes pedir «Ve a Consulta de NPS». [Instalación y límites](docs/instalacion.md).
 
 ## Navegación híbrida: CDP + UI Automation
 
@@ -59,7 +59,7 @@ Versión alfa con cobertura parcial: las guías y rutas no certifican todos los 
 - [Skill SUNAT del proyecto](.agents/skills/sunat/SKILL.md).
 - [Informe de 20 casos de navegación y consulta](docs/pruebas-operaciones-comunes-2026-10-25.md).
 
-124 pruebas automatizadas; comprobaciones en Windows con Node 22 y 24. Para desarrollo: `npm run check` y `npm test`.
+Pruebas automatizadas y comprobaciones en Windows con Node 22 y 24. Para desarrollo: `npm run check` y `npm test`.
 
 ## Licencia
 

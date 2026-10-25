@@ -2,10 +2,11 @@
 
 ## En desarrollo
 
+- Instalador para Codex en Windows: requisitos con WinGet, dependencias, configuración automática, skill global y registro por CLI. Verifica stdio sin conectar Brave y conserva otras integraciones, archivos privados y cambios del usuario.
 - Las rutas revelan un enlace único fuera de vista y releen la página antes de continuar, conservando las comprobaciones de sesión y aprobación.
 - El aprendizaje exige evidencia de menú y excluye botones y campos de formulario; las rutas antiguas no válidas se retiran en la siguiente escritura local.
 - Se reconocen los avisos de registro de empleador y validación de afectación para detener la navegación del servicio.
-- Se amplían las regresiones a 124 pruebas y se documentan [20 casos de navegación y consulta](docs/pruebas-operaciones-comunes-2026-10-25.md), sus límites y una incidencia de lectura tras el login aún sin causa determinada.
+- Se amplían las regresiones a 140 pruebas, incluidas instalación, conservación de configuración y rutas Windows con símbolos. Se documentan [20 casos de navegación y consulta](docs/pruebas-operaciones-comunes-2026-10-25.md), sus límites y una incidencia de lectura tras el login aún sin causa determinada.
 
 ## 0.1.0-alpha.1 — 2026-10-25
 

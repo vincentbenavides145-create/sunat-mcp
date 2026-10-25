@@ -1,5 +1,12 @@
 # SUNAT MCP project rules
 
+## Installing when the user asks Codex
+
+- For a request to install this MCP, inspect and run the repository's `install.ps1` in Windows PowerShell: `powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File ./install.ps1`. Do not leave the user to copy templates, choose paths or edit TOML. It installs missing Node.js/Brave through WinGet, dependencies, local configuration, the SUNAT skill and the Codex stdio registration. Resolve missing platform prerequisites using official distributors if WinGet is unavailable.
+- The default installer chooses hybrid only from an already available, verified Brave loopback endpoint; otherwise a new installation explicitly selects UI Automation. Preserve existing `.env`, credentials, jobs, skills modified by the user and unrelated Codex integrations. Never enable debugging or open another browser/profile automatically.
+- Complete the installer and `npm run setup:check`. Reload the calling client's MCP integrations through available local controls when supported and safe; do not interrupt an active tax job or claim the current conversation has new tools before checking their availability. Client reload and browser authorization are separate. Do not reconnect CDP just to verify installation: the installer checks stdio with isolated temporary data and no browser tool calls.
+- CAPTCHA, OTP, account selection, browser permission and operating-system elevation remain personal approvals. Report the precise remaining platform step if it cannot be completed by the assistant, rather than asking the user to configure files manually.
+
 ## Routing and browser work
 
 - Always use the SUNAT procedure skill for every SUNAT operation. Before the first browser action, including login for a requested operation, read the matching procedure card and its local observations. Use its published guidance together with a confirmed catalog/profile route; explore only missing or changed steps. Do not start menu discovery from scratch when the procedure or an observed route already covers it. A published procedure remains guidance, not proof of account eligibility or a completed transaction.

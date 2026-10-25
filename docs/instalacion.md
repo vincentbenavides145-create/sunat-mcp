@@ -1,63 +1,52 @@
-# Instalar desde GitHub
+# Instalar con Codex
 
-Esta versión alfa funciona en Windows 10/11 con Node.js y Brave. El servidor MCP usa `stdio` y se ejecuta en tu equipo. Las pruebas de distribución cubren Node 22 y 24; usa una de esas versiones. No requiere desplegar un servidor ni crear cuentas en servicios de memoria.
+En Codex para Windows, pide:
 
-## Obtener el proyecto
+> Instala el MCP https://github.com/vincentbenavides145-create/sunat-mcp en mi equipo. Lee AGENTS.md, ejecuta install.ps1, verifica la instalación y activa la integración en Codex.
 
-Descarga **Source code (zip)** desde [Releases](https://github.com/vincentbenavides145-create/sunat-mcp/releases) y descomprímelo en una carpeta propia. También puedes clonar el repositorio con GitHub Desktop. Abre una terminal en esa carpeta y ejecuta:
+Codex debe descargar o clonar la rama `main`, revisar el instalador y ejecutarlo. Para obtener estos cambios usa [Code → Download ZIP](https://github.com/vincentbenavides145-create/sunat-mcp/archive/refs/heads/main.zip) o clona el repositorio; una release anterior puede no incluir el instalador.
 
-```powershell
-npm ci
-Copy-Item .env.example .env
-```
+## Qué hace automáticamente
 
-`npm ci` utiliza el lockfile e instala WinApp, Playwright Core y SQLite nativo; no descarga un navegador. Si SQLite necesita compilar y no encuentra herramientas de compilación, usa Node 22/24 x64 con sus actualizaciones y vuelve a instalar. El soporte ARM64 no se ha validado de extremo a extremo.
+1. Detecta Node.js y Brave; instala los que falten mediante WinGet. Requiere Windows 10/11 y Codex instalado. Node 22/24 son las versiones comprobadas.
+2. Ejecuta `npm ci` y crea `.env` si falta, sin reemplazar valores existentes.
+3. Configura CDP si detecta un endpoint local de Brave verificado. Si no hay uno, una instalación nueva usa UI Automation, que puede activar Brave. No habilita depuración, abre perfiles ni reinicia el navegador.
+4. Comprueba el servidor y sus siete herramientas por stdio, con datos temporales aislados y sin conectar el navegador.
+5. Instala la skill SUNAT en el directorio de skills de Codex y registra `sunat_peru` con rutas absolutas. El registro usa la [CLI oficial de Codex](https://developers.openai.com/codex/mcp), sin editar manualmente TOML.
+6. Codex verifica la instalación con `npm run setup:check` y recarga las integraciones mediante los controles disponibles del cliente. Si este no permite recargarlas en la conversación actual, debe indicar que la activación requiere una nueva sesión; el registro queda preparado.
 
-El `.env` inicial permite configurar modo y puerto. Las variables de API CPE pueden quedar vacías si solo necesitas la navegación web. No coloques Clave SOL en ese archivo ni en la conversación.
+No tienes que copiar `.env.example` ni `codex-mcp.example.toml`. Esos archivos siguen siendo plantillas para instalaciones manuales u otros clientes MCP.
 
-## Elegir conexión con Brave
+## Comando del instalador
 
-**Híbrido (`hybrid`)** usa CDP para trabajar en la web sin activar la pestaña. Requiere que tu instalación de Brave ya ofrezca un endpoint de depuración local autorizado y compatible. El MCP no habilita ese modo, reinicia Brave ni cambia sus ajustes por ti.
-
-1. Comprueba en tu instalación la disponibilidad del acceso de depuración de Brave. El mecanismo y sus restricciones dependen de la versión y de las políticas del navegador.
-2. Autoriza la conexión local cuando Brave lo solicite. Configura en `.env` el endpoint que realmente ofrezca; la plantilla contiene `http://127.0.0.1:9222` como ejemplo, no como garantía de que esté disponible.
-3. Mantén el listener exclusivamente en loopback. No uses `0.0.0.0`, una IP de red, un proxy público ni un túnel.
-4. Si tu Brave no permite esa conexión sobre el perfil existente, usa el modo nativo o espera soporte compatible. No copies cookies ni crees otro perfil para trasladar una sesión tributaria.
-
-**Nativo (`uia`)** funciona sin CDP y puede activar Brave para operar. Para elegirlo cambia `SUNAT_BROWSER_MODE=uia` en `.env` y en la configuración MCP; las variables del cliente pueden prevalecer sobre `.env`. Mantén una única ventana Brave identificable y una sesión Windows interactiva desbloqueada para la entrada de teclado.
-
-Una desconexión CDP detiene el flujo. Recarga el MCP cuando decidas iniciar otra conexión; puede volver a pedir autorización. No se promete un permiso permanente.
-
-## Registrar en un cliente MCP
-
-Copia [codex-mcp.example.toml](../codex-mcp.example.toml) a la configuración local de Codex, reemplazando `C:/RUTA/A/SUNAT-MCP` por tu carpeta. Conserva el comando `node`, los argumentos y el directorio de trabajo. Reinicia o recarga el servidor desde tu cliente. Otros clientes compatibles necesitan el mismo comando por `stdio` y soporte de solicitud de aprobación para los envíos tributarios; la compatibilidad con todos los clientes no está certificada.
-
-La API y el navegador son capacidades distintas. Dejar vacías las credenciales API no impide consultar las guías locales.
-
-## Primera comprobación
-
-1. Abre Brave con tu perfil habitual y evita varias pestañas SUNAT durante la vinculación.
-2. Solicita al asistente consultar una guía con `sunat_guias`, sin iniciar una operación tributaria.
-3. Si necesitas diagnóstico, solicita `sunat_estado` con `comprobarNavegador:true`: comprueba el estado local, sin abrir una conexión CDP.
-4. Solicita una consulta o navegación concreta. En híbrido, cuando falta la pestaña SUNAT el MCP abre el acceso oficial en segundo plano.
-5. Para login, usa una única credencial guardada por Brave o importa una planilla local mediante `npm run sunat:importar-cuentas`. La planilla no se distribuye ni se sube a Git. Con varias cuentas importadas indica el nombre exacto de cliente. CAPTCHA/OTP se completan en Brave.
-
-Las presentaciones, pagos, emisiones y anulaciones requieren una cuenta importada verificable, un trabajo y aprobación explícita del dato final. No uses una acción tributaria como prueba de instalación.
-
-## Verificar el código sin entrar en SUNAT
+Lo ejecuta Codex desde la carpeta descargada:
 
 ```powershell
-npm run check
-npm test
-npm run check:public
-npm run check:secrets
-npm audit
+powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File ./install.ps1
 ```
 
-Las pruebas crean bóvedas y bases sintéticas en carpetas temporales. No necesitan Clave SOL, no navegan tu sesión ni presentan operaciones. Los comandos `check:public` y `check:secrets` son controles de desarrollo y publicación: requieren Git y una clonación completa, no un ZIP. La revisión de secretos descarga un ejecutable Gitleaks de la versión fijada y verifica su SHA-256 antes de ejecutarlo.
+Si Node y npm ya están disponibles, también puede usar `npm run setup`. La comprobación posterior `npm run setup:check` no instala, no modifica archivos ni solicita depuración.
 
-## Datos locales y problemas
+`-Mode auto` es el valor predeterminado. `-Mode uia` o `-Mode hybrid` eligen el modo al crear una configuración nueva; una configuración existente se conserva. Para cambiarla después, consulta la [navegación híbrida](navegacion-hibrida.md).
 
-La bóveda y los trabajos están bajo `%LOCALAPPDATA%\SUNAT MCP\`; no los copies al repositorio. Conserva juntos bóveda y ledger para evitar perder la historia de duplicados. DPAPI está ligado al usuario Windows. Los snapshots y capturas sí se comparten con el cliente de IA que utiliza las herramientas.
+## Datos y reinstalaciones
 
-Si hay un problema, usa la plantilla de [issues](https://github.com/vincentbenavides145-create/sunat-mcp/issues/new/choose) con versiones y código de error saneado, sin datos de cuentas, documentos ni capturas reales. Para vulnerabilidades consulta [SECURITY.md](../SECURITY.md).
+El instalador conserva `.env`, bóveda, trabajos y otras integraciones de Codex. Antes de agregar una entrada, guarda una copia de `config.toml` dentro del directorio local de Codex. No imprime esa configuración ni los secretos. La skill solo se actualiza si su contenido anterior sigue siendo el que instaló este proyecto; una skill ajena o editada por el usuario se conserva y se informa el conflicto.
+
+Si las dependencias ya coinciden con el lockfile y el runtime verificados por el instalador, se reutilizan. Si hace falta reinstalarlas y hay un servidor dueño de la sesión Brave, se detiene la instalación: Codex debe terminar o pausar el trabajo y detener ese servidor antes de continuar. No se repiten registros inciertos: se consulta lo que quedó guardado. Una entrada deshabilitada o perteneciente a otra instalación no se sustituye automáticamente.
+
+## Lo que requiere al usuario
+
+Windows puede solicitar permisos al instalar programas. Brave puede pedir autorización de depuración si se usa CDP. CAPTCHA, OTP y la elección entre cuentas ambiguas se completan personalmente; no son pasos de edición de configuración.
+
+Abre tu Brave habitual para operar. El login puede usar una única credencial guardada o cuentas importadas desde una planilla local. Las credenciales API son opcionales para navegar y consultar guías; validación CPE y comprobación de acceso SIRE necesitan las credenciales correspondientes. El instalador no las inventa ni importa cuentas por su cuenta.
+
+El instalador no garantiza la compatibilidad de todas las versiones de Codex/Brave. Si WinGet no está disponible, Codex debe resolver los requisitos desde sus distribuidores oficiales; si la CLI de Codex no existe o una política administrada bloquea la instalación, debe informar ese impedimento concreto.
+
+## Desarrollo y problemas
+
+Las comprobaciones de desarrollo están en [CONTRIBUTING.md](../CONTRIBUTING.md). La [referencia MCP](referencia-mcp.md) conserva los parámetros de herramientas, cuentas y trabajos. Para otros clientes existe la [plantilla de registro](../codex-mcp.example.toml).
+
+La bóveda y los trabajos están bajo `%LOCALAPPDATA%\SUNAT MCP\`. DPAPI está ligado al usuario Windows: conserva juntos bóveda y ledger. No los copies al repositorio. Las lecturas y capturas se comparten con el cliente de IA.
+
+Reporta problemas con versiones y códigos saneados, sin datos de cuentas ni capturas reales. Consulta [SECURITY.md](../SECURITY.md) para vulnerabilidades y límites de seguridad.
