@@ -85,7 +85,11 @@ function runDpapi(script: string, input: string): Promise<string> {
     const child = spawn('powershell.exe', ['-NoLogo', '-NoProfile', '-NonInteractive', '-EncodedCommand', encodedScript], {
       stdio: ['pipe', 'pipe', 'ignore'],
       windowsHide: true,
-      env: { SystemRoot: process.env.SystemRoot, WINDIR: process.env.WINDIR, TEMP: process.env.TEMP, TMP: process.env.TMP, Path: process.env.Path ?? process.env.PATH },
+      env: {
+        SystemRoot: process.env.SystemRoot, WINDIR: process.env.WINDIR,
+        USERPROFILE: process.env.USERPROFILE, APPDATA: process.env.APPDATA, LOCALAPPDATA: process.env.LOCALAPPDATA,
+        TEMP: process.env.TEMP, TMP: process.env.TMP, Path: process.env.Path ?? process.env.PATH,
+      },
     });
     const stdout: Buffer[] = [];
     let length = 0;

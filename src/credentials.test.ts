@@ -5,7 +5,7 @@ import { spawn } from 'node:child_process';
 import os from 'node:os';
 import path from 'node:path';
 
-test('Windows vault selects one account, distinguishes accounts and preserves API credentials on reimport', { skip: process.platform !== 'win32' }, async () => {
+test('Windows vault selects one account, distinguishes accounts and preserves API credentials on reimport', { skip: process.platform !== 'win32', timeout: 180_000 }, async () => {
   const directory = await mkdtemp(path.join(os.tmpdir(), 'sunat-vault-test-'));
   process.env.LOCALAPPDATA = directory;
   const vault = await import('./credentials.js');
@@ -15,7 +15,11 @@ test('Windows vault selects one account, distinguishes accounts and preserves AP
     // A pre-upgrade SecureString vault is read and migrated without changing the account.
     const legacy = await new Promise<string>((resolve, reject) => {
       const script = '[Console]::InputEncoding = New-Object System.Text.UTF8Encoding($false); $plain = [Console]::In.ReadToEnd(); ConvertFrom-SecureString (ConvertTo-SecureString -String $plain -AsPlainText -Force)';
-      const child = spawn('powershell.exe', ['-NoLogo', '-NoProfile', '-NonInteractive', '-EncodedCommand', Buffer.from(script, 'utf16le').toString('base64')], { windowsHide: true, stdio: ['pipe', 'pipe', 'ignore'], env: { SystemRoot: process.env.SystemRoot, WINDIR: process.env.WINDIR, TEMP: process.env.TEMP, TMP: process.env.TMP, Path: process.env.Path ?? process.env.PATH } });
+      const child = spawn('powershell.exe', ['-NoLogo', '-NoProfile', '-NonInteractive', '-EncodedCommand', Buffer.from(script, 'utf16le').toString('base64')], { windowsHide: true, timeout: 60_000, stdio: ['pipe', 'pipe', 'ignore'], env: {
+        SystemRoot: process.env.SystemRoot, WINDIR: process.env.WINDIR,
+        USERPROFILE: process.env.USERPROFILE, APPDATA: process.env.APPDATA, LOCALAPPDATA: process.env.LOCALAPPDATA,
+        TEMP: process.env.TEMP, TMP: process.env.TMP, Path: process.env.Path ?? process.env.PATH,
+      } });
       let output = ''; child.stdout.on('data', (chunk) => { output += chunk; });
       child.on('error', reject); child.on('close', (code) => code === 0 ? resolve(output.trim()) : reject(new Error('Synthetic legacy vault failed')));
       child.stdin.end(JSON.stringify({ version: 1, accounts: [first] }));

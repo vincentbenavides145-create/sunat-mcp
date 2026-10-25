@@ -10,7 +10,7 @@ Primera distribución pública del código bajo licencia MIT. Versión alfa para
 - Bóveda DPAPI, comprobación de cuenta y trabajos con protección ante duplicados, aprobaciones de un solo uso y resultados inciertos.
 - Correcciones de validación NPS, animaciones y padres expandidos, carga tardía de marcos, acceso anual y avisos de obligación SIRE.
 - Documentación de instalación, contribución, seguridad, plantillas y controles automáticos para publicación.
-- Pruebas nativas serializadas y plazo acotado de DPAPI ajustado para el inicio en un Windows limpio; el proceso MCP de prueba se termina si vence su plazo.
+- Pruebas nativas serializadas, entorno de perfil Windows conservado y plazo acotado de DPAPI ajustado para el inicio en un Windows limpio; los procesos de prueba tienen terminación ante vencimiento de plazo.
 
 ### Evidencia y limitaciones
 

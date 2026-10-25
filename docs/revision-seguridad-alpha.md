@@ -18,7 +18,7 @@ Revisión local del código y de los archivos candidatos de distribución. No es
 
 - Transporte MCP por stdio. No se añadió un servidor HTTP/SSE ni un acceso remoto a la sesión.
 - CDP limitado a loopback con comprobación del proceso Brave; URL SUNAT por HTTPS, referencias ligadas al documento y operaciones DOM fijas. No acepta JavaScript suministrado por el modelo.
-- Credenciales DPAPI y teclado nativo mediante stdin; sin secretos en argumentos. El script de entrada es código local fijo. El importador rechaza fórmulas y no se ofrece como herramienta remota.
+- Credenciales DPAPI y teclado nativo mediante stdin; sin secretos en argumentos. DPAPI recibe una lista acotada de variables de sistema y rutas estándar del perfil Windows, sin heredar variables de API. El script de entrada es código local fijo. El importador rechaza fórmulas y no se ofrece como herramienta remota.
 - Identificadores de operador y trabajo validados; SQL con parámetros para entradas variables. La bóveda y el ledger se ligan para no reiniciar silenciosamente la deduplicación.
 - Trabajos `submitting`/`uncertain` no se reenvían; la aprobación liga cuenta, formulario y control actual. Los errores CDP no disparan reconexiones ni entradas de respaldo.
 - Se bloquean redirecciones HTTP en OAuth CPE, OAuth SIRE y consultas CPE para no reenviar cuerpos sensibles a otro destino. Se añadieron regresiones con red simulada.
