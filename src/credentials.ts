@@ -44,18 +44,19 @@ let vaultWrites: Promise<unknown> = Promise.resolve();
 
 const protectScript = [
   '$ErrorActionPreference = "Stop"',
-  '[Console]::InputEncoding = New-Object System.Text.UTF8Encoding($false)',
-  '[Console]::OutputEncoding = New-Object System.Text.UTF8Encoding($false)',
+  '[Console]::InputEncoding = [Text.UTF8Encoding]::new($false)',
+  '[Console]::OutputEncoding = [Text.UTF8Encoding]::new($false)',
   '$plain = [Console]::In.ReadToEnd()',
-  'Add-Type -AssemblyName System.Security',
+  "$null = [Reflection.Assembly]::Load('System.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a')",
   '$bytes = [Text.Encoding]::UTF8.GetBytes($plain)',
   'try { $cipher = [Security.Cryptography.ProtectedData]::Protect($bytes, $null, [Security.Cryptography.DataProtectionScope]::CurrentUser); [Console]::Out.Write([Convert]::ToBase64String($cipher)) } finally { [Array]::Clear($bytes, 0, $bytes.Length) }',
 ].join('; ');
 
 const legacyUnprotectScript = [
   '$ErrorActionPreference = "Stop"',
-  '[Console]::InputEncoding = New-Object System.Text.UTF8Encoding($false)',
-  '[Console]::OutputEncoding = New-Object System.Text.UTF8Encoding($false)',
+  'Import-Module ($PSHOME + "\\Modules\\Microsoft.PowerShell.Security\\Microsoft.PowerShell.Security.psd1") -ErrorAction Stop',
+  '[Console]::InputEncoding = [Text.UTF8Encoding]::new($false)',
+  '[Console]::OutputEncoding = [Text.UTF8Encoding]::new($false)',
   '$cipher = [Console]::In.ReadToEnd()',
   '$secure = ConvertTo-SecureString -String $cipher',
   '$ptr = [Runtime.InteropServices.Marshal]::SecureStringToBSTR($secure)',
@@ -64,9 +65,9 @@ const legacyUnprotectScript = [
 
 const unprotectScript = [
   '$ErrorActionPreference = "Stop"',
-  '[Console]::InputEncoding = New-Object System.Text.UTF8Encoding($false)',
-  '[Console]::OutputEncoding = New-Object System.Text.UTF8Encoding($false)',
-  'Add-Type -AssemblyName System.Security',
+  '[Console]::InputEncoding = [Text.UTF8Encoding]::new($false)',
+  '[Console]::OutputEncoding = [Text.UTF8Encoding]::new($false)',
+  "$null = [Reflection.Assembly]::Load('System.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a')",
   '$cipher = [Convert]::FromBase64String([Console]::In.ReadToEnd())',
   '$bytes = [Security.Cryptography.ProtectedData]::Unprotect($cipher, $null, [Security.Cryptography.DataProtectionScope]::CurrentUser)',
   'try { [Console]::Out.Write([Text.Encoding]::UTF8.GetString($bytes)) } finally { [Array]::Clear($bytes, 0, $bytes.Length) }',

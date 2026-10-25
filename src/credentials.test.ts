@@ -14,7 +14,7 @@ test('Windows vault selects one account, distinguishes accounts and preserves AP
     assert.equal((await vault.getSunatCredentialVaultStatus()).credentialCount, 0);
     // A pre-upgrade SecureString vault is read and migrated without changing the account.
     const legacy = await new Promise<string>((resolve, reject) => {
-      const script = '[Console]::InputEncoding = New-Object System.Text.UTF8Encoding($false); $plain = [Console]::In.ReadToEnd(); ConvertFrom-SecureString (ConvertTo-SecureString -String $plain -AsPlainText -Force)';
+      const script = 'Import-Module ($PSHOME + "\\Modules\\Microsoft.PowerShell.Security\\Microsoft.PowerShell.Security.psd1") -ErrorAction Stop; [Console]::InputEncoding = [Text.UTF8Encoding]::new($false); $plain = [Console]::In.ReadToEnd(); ConvertFrom-SecureString (ConvertTo-SecureString -String $plain -AsPlainText -Force)';
       const child = spawn('powershell.exe', ['-NoLogo', '-NoProfile', '-NonInteractive', '-EncodedCommand', Buffer.from(script, 'utf16le').toString('base64')], { windowsHide: true, timeout: 60_000, stdio: ['pipe', 'pipe', 'ignore'], env: {
         SystemRoot: process.env.SystemRoot, WINDIR: process.env.WINDIR,
         USERPROFILE: process.env.USERPROFILE, APPDATA: process.env.APPDATA, LOCALAPPDATA: process.env.LOCALAPPDATA,

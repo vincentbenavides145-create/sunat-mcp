@@ -11,6 +11,7 @@ Primera distribución pública del código bajo licencia MIT. Versión alfa para
 - Correcciones de validación NPS, animaciones y padres expandidos, carga tardía de marcos, acceso anual y avisos de obligación SIRE.
 - Documentación de instalación, contribución, seguridad, plantillas y controles automáticos para publicación.
 - Pruebas nativas serializadas, entorno de perfil Windows conservado y plazo acotado de DPAPI ajustado para el inicio en un Windows limpio; los procesos de prueba tienen terminación ante vencimiento de plazo.
+- Carga directa de las clases .NET para DPAPI y del módulo local de seguridad para migrar bóvedas antiguas, evitando la búsqueda automática de módulos.
 
 ### Evidencia y limitaciones
 
