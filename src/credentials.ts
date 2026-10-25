@@ -95,7 +95,7 @@ function runDpapi(script: string, input: string): Promise<string> {
       settled = true;
       child.kill();
       reject(new Error('Windows no respondió al proteger las credenciales.'));
-    }, 15_000);
+    }, 60_000);
     child.stdout.on('data', (chunk: Buffer) => {
       length += chunk.length;
       if (length > maxSecretPayloadBytes * 2) {

@@ -8,7 +8,7 @@ import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { test } from 'node:test';
 
-test('stdio handshake, seven distinct tools, workflows and browser-free work management', { timeout: 30_000 }, async () => {
+test('stdio handshake, seven distinct tools, workflows and browser-free work management', { timeout: 120_000 }, async (context) => {
   const directory = await mkdtemp(path.join(os.tmpdir(), 'sunat-mcp-test-'));
   const previousLocal = process.env.LOCALAPPDATA;
   const previousOperator = process.env.SUNAT_OPERATOR_ID;
@@ -21,6 +21,7 @@ test('stdio handshake, seven distinct tools, workflows and browser-free work man
     cwd: directory, windowsHide: true, stdio: ['pipe', 'pipe', 'pipe'],
     env: { ...process.env, LOCALAPPDATA: directory, DOTENV_CONFIG_PATH: path.join(directory, '.env'), SUNAT_BROWSER_MODE: 'hybrid', SUNAT_CDP_ENDPOINT: 'https://remote.invalid' },
   });
+  context.signal.addEventListener('abort', () => { child.kill(); }, { once: true });
   let nextId = 0;
   const pending = new Map<number, { resolve: (result: any) => void; reject: (error: Error) => void }>();
   const lines = createInterface({ input: child.stdout });

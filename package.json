@@ -26,7 +26,7 @@
     "check": "tsc --noEmit",
     "check:public": "node scripts/check-public-files.mjs",
     "check:secrets": "node scripts/check-secrets.mjs",
-    "test": "node --import tsx --test src/*.test.ts scripts/*.test.mjs"
+    "test": "node --import tsx --test --test-concurrency=1 src/*.test.ts scripts/*.test.mjs"
   },
   "dependencies": {
     "@microsoft/winappcli": "^0.7.1",
