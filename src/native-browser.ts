@@ -10,7 +10,8 @@ import { diagnoseCdpFailure, describeCdpFailure } from './cdp-diagnostics.js';
 import type { SunatAccountCredential } from './credentials.js';
 import { assertAccountRuc, rucFromHeader } from './account-session.js';
 import { acquireBrowserLease } from './process-lease.js';
-import { activateBraveElement, captureBraveWindow, findBraveRouteControl, focusBraveElement, getBraveAddressBar, getBravePageUiState, getBraveUiState, getBraveUrl, getNativeNavigationMetrics, hasBraveWindows, invokeBraveElement, isSunatTabLabel, loginWithSavedSunatCredentialNatively, NativeUiError, rememberBraveWindow, scrollBraveDocument, selectBraveTab, sendBraveKeys, typeBraveText, typeBraveTextSequence, walkUiaElements, type UiaElement, type UiaWindow, type UiaSearchResult } from './windows-ui.js';
+import { loginWithSavedSunatCredentialNatively } from './saved-credential-login.js';
+import { activateBraveElement, captureBraveWindow, findBraveRouteControl, focusBraveElement, getBraveAddressBar, getBravePageUiState, getBraveUiState, getBraveUrl, getNativeNavigationMetrics, hasBraveWindows, invokeBraveElement, isSunatTabLabel, NativeUiError, rememberBraveWindow, scrollBraveDocument, selectBraveTab, sendBraveKeys, typeBraveText, typeBraveTextSequence, walkUiaElements, type UiaElement, type UiaWindow, type UiaSearchResult } from './windows-ui.js';
 
 const LOGIN_TIMEOUT_MS = 30_000;
 
