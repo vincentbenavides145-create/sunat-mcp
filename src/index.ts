@@ -10,6 +10,7 @@ import { getLearnedRoute, isLearnableMenuControl, rememberDiscoveredNavigation, 
 import { checkSireApiAccess } from './sire-api.js';
 import { readSunatConfig, validateCpe } from './sunat-api.js';
 import { releaseBraveUi, NativeUiError } from './windows-ui.js';
+import { sanitizeCdpDiagnostic } from './cdp-diagnostics.js';
 import { beginBrowserInteraction } from './native-browser.js';
 import { waitForBrowserLabel } from './native-browser.js';
 import { disconnectCdp } from './cdp-browser.js';
@@ -420,6 +421,7 @@ async function executeObservedRoute(routeId: string, checkpoint?: (count: number
         const detail = Array.isArray(result) ? result.find((step: any) => typeof step?.code === 'string') : undefined;
         const failure = new NativeUiError(detail?.code ?? 'navigation_failed', 'La ruta se detuvo; no se repetirá el clic.');
         if (typeof detail?.actionDispatched === 'boolean') failure.actionDispatched = detail.actionDispatched;
+        failure.diagnostic = sanitizeCdpDiagnostic(detail?.diagnostic);
         throw failure;
       }
     },

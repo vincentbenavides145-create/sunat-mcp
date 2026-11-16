@@ -362,11 +362,58 @@ test('CDP binds one SUNAT tab and its frames without activating unrelated tabs o
     await driver.click(target.selector!);
     await driver.scroll(undefined, target.selector!);
     actionFailure = true;
-    await assert.rejects(driver.click(target.selector!), (error: any) => error.code === 'cdp_click_failed' && error.actionDispatched === true && !/uncertain click/.test(error.message));
+    await assert.rejects(driver.click(target.selector!), (error: any) => error.code === 'cdp_click_failed' && error.actionDispatched === true && !/uncertain click/.test(error.message) && error.diagnostic?.stage === 'click' && error.diagnostic.reason === 'unknown');
     assert.deepEqual(calls, ['scroll', 'click', 'scroll', 'scroll', 'click']);
     await assert.rejects(driver.click('cdp:other-document:1'));
     assert.equal(calls.length, 5);
   } finally { dom.window.close(); }
+});
+
+const leakyPageError = 'Execution context was destroyed, most likely because of a navigation to https://e-menu.sunat.gob.pe/cl-ti-itmenu/x?token=SECRETTOKEN for RUC 20123456789 "Juan Perez"';
+const leakPattern = /SECRETTOKEN|20123456789|sunat\.gob|Juan|Perez/;
+
+test('a failed page read reports a sanitised cause and keeps the original exception out of the error', async () => {
+  let detached = false;
+  const frame = { url: () => menu, isDetached: () => detached, evaluate: async () => { detached = true; throw Object.assign(new Error(leakyPageError), { name: 'Error' }); } } as unknown as Frame;
+  const page = { url: () => menu, isClosed: () => false, mainFrame: () => frame, frames: () => [frame] } as unknown as Page;
+  const driver = new CdpSunatBrowser({ isConnected: () => true, contexts: () => [{ pages: () => [page] }] } as unknown as Browser);
+  await assert.rejects(driver.snapshot(), (error: any) => {
+    assert.equal(error.code, 'cdp_operation_failed');
+    assert.deepEqual({ ...error.diagnostic, digest: undefined }, { stage: 'read', reason: 'execution_context_destroyed', operation: 'snapshot', errorName: 'Error', frameDetached: true, pageClosed: false, loginPage: false, digest: undefined });
+    assert.match(error.message, /navegó o se recargó/);
+    assert.match(error.message, /lectura nueva/);
+    assert.doesNotMatch(JSON.stringify({ message: error.message, diagnostic: error.diagnostic, stack: undefined }), leakPattern);
+    assert.equal(error.cause, undefined);
+    return true;
+  });
+});
+
+test('a frame that detaches while its visibility is checked keeps the read-failure code and gains a diagnostic', async () => {
+  const main = { url: () => menu, evaluate: async () => { throw new Error('main frame must not be read'); } } as unknown as Frame;
+  const child = {
+    url: () => menu,
+    isDetached: () => true,
+    parentFrame: () => main,
+    frameElement: async () => { throw new Error(`Frame was detached while reading ${leakyPageError}`); },
+  } as unknown as Frame;
+  const page = { url: () => menu, isClosed: () => false, mainFrame: () => main, frames: () => [child] } as unknown as Page;
+  const driver = new CdpSunatBrowser({ isConnected: () => true, contexts: () => [{ pages: () => [page] }] } as unknown as Browser);
+  await assert.rejects(driver.snapshot(), (error: any) => {
+    assert.equal(error.code, 'cdp_read_failed');
+    assert.equal(error.diagnostic.stage, 'frame');
+    assert.equal(error.diagnostic.reason, 'execution_context_destroyed'); // the first matching pattern wins
+    assert.equal(error.diagnostic.frameDetached, true);
+    assert.doesNotMatch(JSON.stringify({ message: error.message, diagnostic: error.diagnostic }), leakPattern);
+    return true;
+  });
+});
+
+test('probes that throw on partially closed pages are omitted instead of masking the original failure', async () => {
+  let reading = false; // binding the tab legitimately needs a working isClosed(); only probes made after the failure may throw
+  const frame = { url: () => menu, isDetached: () => { throw new Error('probe failed'); }, evaluate: async () => { reading = true; throw new Error('Timeout 6000ms exceeded.'); } } as unknown as Frame;
+  const page = { url: () => menu, isClosed: () => { if (reading) throw new Error('probe failed'); return false; }, mainFrame: () => frame, frames: () => [frame] } as unknown as Page;
+  const driver = new CdpSunatBrowser({ isConnected: () => true, contexts: () => [{ pages: () => [page] }] } as unknown as Browser);
+  await assert.rejects(driver.snapshot(), (error: any) => error.code === 'cdp_operation_failed' && error.diagnostic.reason === 'timeout' && !('frameDetached' in error.diagnostic) && !('pageClosed' in error.diagnostic));
 });
 
 test('multiple SUNAT tabs are rejected instead of choosing an account from the active foreground', async () => {

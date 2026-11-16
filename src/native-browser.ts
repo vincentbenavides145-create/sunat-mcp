@@ -6,6 +6,7 @@ import { buildApprovalFingerprint } from './approval-state.js';
 import { beginBravePageContext, scrollBraveElementIntoView } from './windows-ui.js';
 import { browserMode, getCdpBrowser, getCdpConnectionState } from './cdp-browser.js';
 import { isSunatLoginUrl, isSunatSessionPageUrl } from './browser-context.js';
+import { diagnoseCdpFailure, describeCdpFailure } from './cdp-diagnostics.js';
 import type { SunatAccountCredential } from './credentials.js';
 import { assertAccountRuc, rucFromHeader } from './account-session.js';
 import { acquireBrowserLease } from './process-lease.js';
@@ -372,7 +373,11 @@ async function snapshotNative(deadlineAt?: number): Promise<BrowserSnapshot> {
     } catch (error) {
       invalidateReferences();
       if (error instanceof NativeUiError) throw error;
-      throw new NativeUiError('cdp_read_failed', 'No se pudo leer la página SUNAT mediante CDP. No se activó Brave ni se reintentó una acción.');
+      // An unexpected exception: keep only its sanitised classification, never its text.
+      const diagnostic = diagnoseCdpFailure(error, { stage: 'read' });
+      const failure = new NativeUiError('cdp_read_failed', `${describeCdpFailure(diagnostic, 'No se pudo leer la página SUNAT mediante CDP')} No se activó Brave ni se reintentó una acción.`);
+      failure.diagnostic = diagnostic;
+      throw failure;
     }
   }
   let state = await getBravePageUiState(deadlineAt);
@@ -569,7 +574,7 @@ export async function executeBrowserBatch(steps: BrowserStep[], deadlineAt?: num
     } catch (error) {
       latestSnapshot = undefined;
       latestSelectors.clear();
-      results.push({ action: step.action, code: error instanceof NativeUiError ? error.code : 'navigation_failed', ...(error instanceof NativeUiError && error.actionDispatched !== undefined ? { actionDispatched: error.actionDispatched } : {}), error: error instanceof Error && (error instanceof NativeUiError || error.message.includes('HTTPS')) ? error.message : `No se pudo completar la acción en Brave mediante ${useCdp() ? 'CDP' : 'UI Automation'}. No se reintentó el clic.` });
+      results.push({ action: step.action, code: error instanceof NativeUiError ? error.code : 'navigation_failed', ...(error instanceof NativeUiError && error.actionDispatched !== undefined ? { actionDispatched: error.actionDispatched } : {}), ...(error instanceof NativeUiError && error.diagnostic ? { diagnostic: error.diagnostic } : {}), error: error instanceof Error && (error instanceof NativeUiError || error.message.includes('HTTPS')) ? error.message : `No se pudo completar la acción en Brave mediante ${useCdp() ? 'CDP' : 'UI Automation'}. No se reintentó el clic.` });
       break;
     }
   }

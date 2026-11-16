@@ -6,6 +6,7 @@
 - Las rutas revelan un enlace único fuera de vista y releen la página antes de continuar, conservando las comprobaciones de sesión y aprobación.
 - El aprendizaje exige evidencia de menú y excluye botones y campos de formulario; las rutas antiguas no válidas se retiran en la siguiente escritura local.
 - Se reconocen los avisos de registro de empleador y validación de afectación para detener la navegación del servicio.
+- Los fallos CDP (`cdp_operation_failed`, `cdp_read_failed`, `cdp_click_failed`) incluyen un `diagnostic` con la causa clasificada (contexto destruido por navegación, marco desprendido, pestaña cerrada, tiempo agotado, excepción del adaptador...), sin conservar la excepción original ni datos de página. Antes `cdp_operation_failed` no permitía determinar la causa. Los errores al comprobar la visibilidad de un marco durante la lectura también reciben diagnóstico. Véase [Diagnóstico de fallos CDP](docs/navegacion-hibrida.md#diagnóstico-de-fallos-cdp).
 - Se amplían las regresiones a 140 pruebas, incluidas instalación, conservación de configuración y rutas Windows con símbolos. Se documentan [20 casos de navegación y consulta](docs/pruebas-operaciones-comunes-2026-10-25.md), sus límites y una incidencia de lectura tras el login aún sin causa determinada.
 
 ## 0.1.0-alpha.1 — 2026-10-25

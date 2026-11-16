@@ -3,6 +3,7 @@ import { spawn } from 'node:child_process';
 import { readFileSync } from 'node:fs';
 import * as winapp from '@microsoft/winappcli';
 import { verifyActiveSunatTab, isSunatLoginUrl, isSunatSessionPageUrl } from './browser-context.js';
+import type { CdpDiagnostic } from './cdp-diagnostics.js';
 const UI_COMMAND_TIMEOUT_MS = 6_000;
 const UI_WORKFLOW_ID = `sunat-mcp-${process.pid}-${randomUUID()}`;
 let targetWindow: number | undefined;
@@ -16,6 +17,8 @@ const nativeMetrics = new Map<string, { calls: number; failures: number; totalMs
 
 export class NativeUiError extends Error {
   actionDispatched?: boolean;
+  /** Sanitised classification of a CDP failure; never the original exception or page data. */
+  diagnostic?: CdpDiagnostic;
   constructor(public readonly code: string, message = 'Windows no pudo completar la acción en Brave.') { super(message); }
 }
 

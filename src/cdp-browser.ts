@@ -9,6 +9,7 @@ import { NativeUiError, type UiaElement, type UiaWindow } from './windows-ui.js'
 import { acquireBrowserLease } from './process-lease.js';
 import { isSunatLoginUrl } from './browser-context.js';
 import { entryPointUrls, isSunatEntryPoint, isOfficialSunatUrl, followSunatPopup } from './sunat-navigation.js';
+import { diagnoseCdpFailure, describeCdpFailure, type CdpDiagnostic, type CdpFailureStage } from './cdp-diagnostics.js';
 export { isOfficialSunatUrl } from './sunat-navigation.js';
 
 const execFileAsync = promisify(execFile);
@@ -105,7 +106,7 @@ async function resolveWebsocket(endpoint: URL): Promise<string> {
 interface PageRead { documentId: string; url: string; title: string; focused: boolean; children: UiaElement[] }
 interface Reference { frame: Frame; id: string; documentId: string }
 
-function pageOperationError(error: unknown): NativeUiError {
+function pageOperationError(error: unknown, diagnostic: CdpDiagnostic): NativeUiError {
   const message = (error as Error)?.message ?? '';
   const reasons: Record<string, string> = {
     cdp_authentication_required: 'SUNAT solicita autenticación. Usa el inicio de sesión nativo; CDP no lee credenciales.',
@@ -115,7 +116,10 @@ function pageOperationError(error: unknown): NativeUiError {
     no_scroll_container: 'La página no expone un panel desplazable.',
   };
   for (const [code, description] of Object.entries(reasons)) if (new RegExp(`\\b${code}\\b`).test(message)) return new NativeUiError(code, description);
-  return new NativeUiError('cdp_operation_failed', 'La operación CDP no se pudo verificar. No se repitió ni se cambió a entrada nativa.');
+  // The original exception is deliberately dropped (it may embed page data); only its sanitised classification survives.
+  const failure = new NativeUiError('cdp_operation_failed', `${describeCdpFailure(diagnostic, 'La operación CDP no se pudo verificar')} No se repitió ni se cambió a entrada nativa.`);
+  failure.diagnostic = diagnostic;
+  return failure;
 }
 
 export class CdpSunatBrowser {
@@ -142,6 +146,18 @@ export class CdpSunatBrowser {
     return this.operation!;
   }
   connected(): boolean { return this.browser.isConnected(); }
+  /** Classify a CDP failure with cheap, side-effect-free state probes. A probe that throws is simply omitted. */
+  private diagnose(error: unknown, stage: CdpFailureStage, operation?: unknown, frame?: Frame): CdpDiagnostic {
+    const probe = <T>(read: () => T): T | undefined => { try { return read(); } catch { return undefined; } };
+    const page = this.page;
+    return diagnoseCdpFailure(error, {
+      stage,
+      operation,
+      frameDetached: frame ? probe(() => frame.isDetached()) : undefined,
+      pageClosed: page ? probe(() => page.isClosed()) : undefined,
+      loginPage: page ? probe(() => isSunatLoginUrl(page.url())) : undefined,
+    });
+  }
   async bind(): Promise<void> {
     if (this.pendingBinding) return this.pendingBinding;
     const pending = this.bindPage();
@@ -206,7 +222,18 @@ export class CdpSunatBrowser {
     if (!this.operation) throw new NativeUiError('stale_reference');
     const { run, revision } = this.operation;
     try { return await frame.evaluate(run, { ...args, adapterRevision: revision }); }
-    catch (error) { throw pageOperationError(error); }
+    catch (error) { throw pageOperationError(error, this.diagnose(error, 'read', args.operation, frame)); }
+  }
+  /** `frameVisible` for the read path: a CDP failure keeps its `cdp_read_failed` code but gains a sanitised diagnostic. */
+  private async frameVisibleForRead(frame: Frame, page: Page): Promise<boolean> {
+    try { return await this.frameVisible(frame, page); }
+    catch (error) {
+      if (error instanceof NativeUiError) throw error;
+      const diagnostic = this.diagnose(error, 'frame', undefined, frame);
+      const failure = new NativeUiError('cdp_read_failed', `${describeCdpFailure(diagnostic, 'No se pudo leer la página SUNAT mediante CDP')} No se activó Brave ni se reintentó una acción.`);
+      failure.diagnostic = diagnostic;
+      throw failure;
+    }
   }
   private async frameVisible(frame: Frame, page: Page): Promise<boolean> {
     if (frame === page.mainFrame()) return true;
@@ -232,7 +259,7 @@ export class CdpSunatBrowser {
     let background = false;
     for (const frame of page.frames()) {
       if (!isOfficialSunatUrl(frame.url())) continue;
-      if (!await this.frameVisible(frame, page)) continue;
+      if (!await this.frameVisibleForRead(frame, page)) continue;
       const read = await this.run(frame, { operation: 'snapshot' }) as PageRead;
       if (frame === page.mainFrame()) background = !read.focused;
       if (!isOfficialSunatUrl(read.url)) throw new NativeUiError('cdp_session_changed');
@@ -262,7 +289,7 @@ export class CdpSunatBrowser {
     if (!reference || !isOfficialSunatUrl(reference.frame.url()) || !await this.frameVisible(reference.frame, this.page!)) throw new NativeUiError('stale_reference');
     let handle;
     try { handle = await reference.frame.evaluateHandle(operation.run, { operation: 'element', id: reference.id, documentId: reference.documentId, adapterRevision: operation.revision }); }
-    catch (error) { throw pageOperationError(error); }
+    catch (error) { throw pageOperationError(error, this.diagnose(error, 'element', 'element', reference.frame)); }
     const element = handle.asElement();
     if (!element) { await handle.dispose(); throw new NativeUiError('stale_reference'); }
     return element;
@@ -300,7 +327,13 @@ export class CdpSunatBrowser {
       return { contextChanged: false };
     } catch (error) {
       this.references.clear();
-      const failure = error instanceof NativeUiError ? error : new NativeUiError('cdp_click_failed', 'No se pudo verificar el clic CDP. No se repitió.');
+      let failure: NativeUiError;
+      if (error instanceof NativeUiError) failure = error;
+      else {
+        const diagnostic = this.diagnose(error, 'click');
+        failure = new NativeUiError('cdp_click_failed', `${describeCdpFailure(diagnostic, 'No se pudo verificar el clic CDP')} No se repitió.`);
+        failure.diagnostic = diagnostic;
+      }
       failure.actionDispatched = dispatched;
       throw failure;
     }

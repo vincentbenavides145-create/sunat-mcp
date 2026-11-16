@@ -1,4 +1,5 @@
 import { describeSnapshotReference, findSnapshotReferencesByLabel, isAuthenticatedSunatPage, isTaxCommitControl, type BrowserSnapshot, type FocusedRouteResult } from './native-browser.js';
+import { sanitizeCdpDiagnostic, type CdpDiagnostic } from './cdp-diagnostics.js';
 
 export interface NavigationRoute { path: string[]; destination: string; destinationChecks?: string[] }
 export interface RouteNavigationIo {
@@ -16,6 +17,8 @@ export interface RouteNavigationResult {
   label?: string;
   code?: string;
   actionDispatched?: boolean;
+  /** Sanitised CDP classification of the failing step, when there is one. */
+  diagnostic?: CdpDiagnostic;
 }
 const normalize = (text: string) => text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^\p{L}\p{N}]+/gu, ' ').trim().toLowerCase();
 export const hasSunatNavigationGate = (text: string) => /no se encuentra registrado como obligado|no esta registrado como obligado|acceso no autorizado|no (?:se encuentra|esta) autorizado|no tiene acceso|no ha sido registrado como empleador|no cumple con las validaciones de afectaci/.test(normalize(text));
@@ -25,8 +28,9 @@ export async function navigateObservedRoute(route: NavigationRoute, learned: boo
   let completed = 0;
   const result = (status: RouteNavigationResult['status'], label?: string): RouteNavigationResult => ({ status, stepsCompleted: completed, ...(label ? { label } : {}) });
   const failure = (error: unknown, label?: string): RouteNavigationResult => {
-    const detail = error as { code?: string; actionDispatched?: boolean };
-    return { ...result('action_failed', label), ...(typeof detail?.code === 'string' && /^[a-z_]+$/.test(detail.code) ? { code: detail.code } : {}), ...(typeof detail?.actionDispatched === 'boolean' ? { actionDispatched: detail.actionDispatched } : {}) };
+    const detail = error as { code?: string; actionDispatched?: boolean; diagnostic?: unknown };
+    const diagnostic = sanitizeCdpDiagnostic(detail?.diagnostic);
+    return { ...result('action_failed', label), ...(typeof detail?.code === 'string' && /^[a-z_]+$/.test(detail.code) ? { code: detail.code } : {}), ...(typeof detail?.actionDispatched === 'boolean' ? { actionDispatched: detail.actionDispatched } : {}), ...(diagnostic ? { diagnostic } : {}) };
   };
   const read = async () => { const snapshot = await io.snapshot(); await io.observed(snapshot); return snapshot; };
   let currentLabel: string | undefined;
