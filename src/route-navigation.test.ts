@@ -109,6 +109,22 @@ test('SUNAT preconditions and missing authentication stop before any action', as
   }
 });
 
+test('a failing step reports only the sanitised CDP diagnostic, never extra fields attached to the error', async () => {
+  const { io } = harness([page('@e1 link "Personas"')]);
+  io.focusedClick = async () => {
+    throw Object.assign(new Error('RUC 20123456789'), {
+      code: 'cdp_operation_failed',
+      actionDispatched: false,
+      diagnostic: { stage: 'read', reason: 'execution_context_destroyed', operation: 'snapshot', errorName: 'Error', digest: 'abcdef12', message: 'RUC 20123456789', url: 'https://e-menu.sunat.gob.pe/x' },
+    });
+  };
+  const result = await navigateObservedRoute({ path: ['Personas', 'Compras'], destination: 'Destino' }, true, io);
+  assert.equal(result.status, 'action_failed');
+  assert.equal(result.code, 'cdp_operation_failed');
+  assert.deepEqual(result.diagnostic, { stage: 'read', reason: 'execution_context_destroyed', operation: 'snapshot', errorName: 'Error', digest: 'abcdef12' });
+  assert.doesNotMatch(JSON.stringify(result), /20123456789|sunat\.gob/);
+});
+
 test('a failed final read retains progress instead of inviting a route replay', async () => {
   const { calls, io } = harness([page('@e1 link "Personas"')]);
   const result = await navigateObservedRoute({ path: ['Personas'], destination: 'Destino' }, true, io);

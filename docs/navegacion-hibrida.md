@@ -32,6 +32,21 @@ Las URL públicas de snapshots, resultados y solicitudes de aprobación omiten t
 
 Las rutas guardadas reutilizan padres de menú expandidos y pueden volver mediante «Ir al inicio» cuando un servicio oculta los perfiles. El adaptador espera las animaciones propias de SOL antes de medir el punto del clic. Las esperas de destino descubren marcos oficiales que se agreguen durante la carga, sin capturas ni sondeo de fondo. Una ruta puede declarar `destinationChecks` para exigir señales de su formulario: NPS usa sus criterios y filtros en lugar de un supuesto campo Periodo. Los fallos conservan `code` y, cuando se conoce, `actionDispatched`; no reintentan una entrada incierta.
 
+### Diagnóstico de fallos CDP
+
+Los errores `cdp_operation_failed`, `cdp_read_failed` y `cdp_click_failed` incluyen un objeto `diagnostic` que clasifica la causa sin exponer la excepción original, que puede contener texto de página, URL, RUC o datos de formulario. Solo se informan campos de un conjunto cerrado:
+
+| Campo | Contenido |
+|---|---|
+| `stage` | Fase del fallo: `read`, `frame`, `element` o `click`. |
+| `reason` | `execution_context_destroyed`, `frame_detached`, `target_closed`, `connection_closed`, `timeout`, `serialization`, `adapter_exception` o `unknown`. |
+| `operation` | Operación fija del adaptador (por ejemplo `snapshot`), solo si cumple un patrón estricto. |
+| `errorName` | Clase estándar de JavaScript, u `Other`. |
+| `frameDetached`, `pageClosed`, `loginPage` | Comprobaciones locales sin efectos secundarios; se omiten si no se pudieron leer. |
+| `digest` | Ocho caracteres de un hash del mensaje normalizado (sin URL, textos entre comillas ni cifras), para saber si dos fallos tienen la misma forma. |
+
+Cuando la causa es `execution_context_destroyed` o `frame_detached`, la página cambió durante la operación y el mensaje indica obtener una lectura nueva antes de continuar. Nunca se repite una acción ni se reconecta CDP por este motivo. Los `unknown` con el mismo `digest` en varias ocasiones indican una causa que merece una clasificación propia.
+
 Si un enlace exacto y único queda fuera de vista, la ruta lo revela y toma una lectura nueva antes de actuar; varias coincidencias o un cambio de sesión detienen el recorrido. El aprendizaje exige evidencia nativa/DOM de menú y excluye acciones de formularios. Los perfiles antiguos omiten rutas de controles como «Continuar», «Buscar» y campos de pago; la siguiente escritura limpia esos registros y conserva las rutas válidas, sin límites de longitud o cantidad. Los avisos observados de registro de empleador y validación de afectación también detienen el servicio afectado; no se guardan permisos ni se eluden requisitos.
 
 Para el acceso nativo se reconocen los formularios oficiales de autenticación estándar y anual, incluido su botón «Entrar». Las ventanas auxiliares propiedad de la ventana de Brave no se confunden con una segunda ventana principal; no se elige entre ventanas principales reales. Los avisos de acceso u obligación de SUNAT detienen la operación afectada, sin guardar permisos ni eludir su restricción. Cuando faltan señales específicas del formulario, la espera se interrumpe ante un aviso y vuelve a leer la pantalla; un título de menú o panel provisional no confirma el destino.
